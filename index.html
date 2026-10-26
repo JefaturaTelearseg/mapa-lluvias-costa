@@ -444,7 +444,7 @@ var ALERTA_COL={desborde:'#E5533C',inundacion:'#3D8BE0',aviso:'#F2B63D',marea:'#
 function render(d){
   // Hora de corte y aviso si los datos tienen más de 4 horas
   var corte=$('corte'),viejo=false;
-  try{viejo=(new Date().getTime()-new Date(d.actualizado).getTime())>4*3600000;}catch(e){}
+  try{viejo=(new Date().getTime()-new Date(d.actualizado).getTime())>14*3600000;}catch(e){}
   corte.className=viejo?'small corte-viejo':'small';
   corte.innerHTML='Última actualización: '+esc(d.actualizado_texto)+(viejo?' · puede no estar al día':'')+'. La pestaña Lluvia en vivo se actualiza sola.';
 
