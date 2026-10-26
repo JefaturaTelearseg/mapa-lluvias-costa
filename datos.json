@@ -1,0 +1,74 @@
+{
+  "actualizado": "2026-10-26T17:58:00-05:00",
+  "actualizado_texto": "lunes 26 oct 2026, 17:58",
+  "alertas": [
+    {"tipo": "desborde", "texto": "12 ríos y canales desbordados en El Oro, Guayas y Santa Elena (SNGR)."},
+    {"tipo": "inundacion", "texto": "27 puntos con agua en Guayaquil en la madrugada del 26 (Segura EP)."},
+    {"tipo": "aviso", "texto": "Advertencia del INAMHI hasta el miércoles 28; el 26 y 27 son los días más fuertes."}
+  ],
+  "marea": {
+    "titulo": "Aguaje 25 al 28 oct · INOCAR",
+    "altura": "4,50 m",
+    "texto": "pleamar hoy en Guayaquil-río",
+    "horas": [
+      {"dia": "Lun 26", "hora": "19:31"},
+      {"dia": "Mar 27", "hora": "~20:20"},
+      {"dia": "Mié 28", "hora": "~21:10"}
+    ],
+    "nota": "Las horas con ~ son estimadas. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
+    "zonas": [
+      {"lat": -2.23, "lon": -79.91, "radio_m": 5500, "titulo": "Sur de Guayaquil y Estero Salado"},
+      {"lat": -2.13, "lon": -79.85, "radio_m": 5500, "titulo": "Riberas de Samborondón y Durán"},
+      {"lat": -2.36, "lon": -79.76, "radio_m": 9000, "titulo": "Esteros y zona camaronera de Taura"},
+      {"lat": -2.70, "lon": -80.15, "radio_m": 17000, "titulo": "Puná y Posorja"},
+      {"lat": -3.27, "lon": -80.03, "radio_m": 8000, "titulo": "Puerto Bolívar y costa de El Oro"}
+    ],
+    "zonas_texto": "Zona baja o cercana a esteros. Riesgo de inundación por aguaje del 25 al 28 de octubre, sobre todo en la pleamar de la noche."
+  },
+  "tramos": [
+    {"id": "sur", "riesgo": "alto", "nombre": "Troncal Sur: Durán – Machala – Arenillas", "clientes": "AQ1 y Biomar",
+     "situacion": "Desbordes hoy en Balao, Tenguel, El Guabo, Pasaje, Santa Rosa y Machala. Es el tramo más comprometido.",
+     "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua."},
+    {"id": "urb", "riesgo": "alto", "nombre": "Guayaquil, Samborondón y Durán", "clientes": "AQ1 y Biomar",
+     "situacion": "27 puntos con agua en la madrugada. Esta noche coinciden lluvia y pleamar de aguaje.",
+     "recomendacion": "Evitar zonas bajas, Estero Salado y riberas entre las 17:30 y las 21:30."},
+    {"id": "costa", "riesgo": "medio", "nombre": "Vía a la Costa y Ruta del Spondylus", "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
+     "situacion": "Río California desbordado en La Ponga (Colonche). Oleaje de 0,40 a 2 m en el perfil costero.",
+     "recomendacion": "Precaución en puentes y pasos de esteros; no detenerse junto a la playa durante el aguaje."},
+    {"id": "manabi", "riesgo": "medio", "nombre": "Guayaquil – Manabí hasta Pedernales", "clientes": "AQ1 y Biomar",
+     "situacion": "Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Socavaciones en la vía Jama–Canoa este mes.",
+     "recomendacion": "Revisar el estado de vías del ECU 911 antes de salir y evitar viajar de noche."},
+    {"id": "quevedo", "riesgo": "medio", "nombre": "Guayaquil – Quevedo – Santo Domingo", "clientes": "AQ1",
+     "situacion": "Ríos con nivel en aumento en Los Ríos y Guayas. La vía Alóag–Santo Domingo se reabrió el 25 de octubre tras deslizamientos.",
+     "recomendacion": "Salir con precaución y no seguir desvíos por vías secundarias."}
+  ],
+  "desbordes": [
+    {"lat": -3.27, "lon": -79.95, "lugar": "Machala", "detalle": "Canal El Macho (La Providencia, Las Kathyas) y canal La Puentecita (Nueve de Mayo)", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -3.15, "lon": -79.77, "lugar": "El Guabo", "detalle": "Río Chaguana (barrio 10 de Octubre, parroquia Tendales)", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -3.31, "lon": -79.82, "lugar": "Pasaje", "detalle": "Río Buenavista (parroquia Buenavista)", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -3.45, "lon": -79.95, "lugar": "Santa Rosa", "detalle": "Río Carne Amarga (cabecera cantonal)", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -1.72, "lon": -79.96, "lugar": "Daule", "detalle": "Estero El Cañal (El Laurel) y ríos Pula y Jaboncillo", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -2.99, "lon": -79.79, "lugar": "Tenguel", "detalle": "Ríos Pilco y Tenguel", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -2.91, "lon": -79.81, "lugar": "Balao", "detalle": "Río Balao (cabecera cantonal)", "fuente": "SNGR, 26 oct 2026"},
+    {"lat": -1.96, "lon": -80.62, "lugar": "Colonche (Santa Elena)", "detalle": "Río California (comuna La Ponga)", "fuente": "SNGR, 26 oct 2026"}
+  ],
+  "inundaciones": [
+    {"lat": -2.07, "lon": -79.96, "lugar": "Pascuales (Guayaquil)", "detalle": "Av. Joya de los Sachas con acumulación de agua.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.09, "lon": -79.92, "lugar": "Vergeles (Guayaquil)", "detalle": "Av. 3 NE y callejones del sector.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.11, "lon": -79.905, "lugar": "Samanes (Guayaquil)", "detalle": "Calles del sector con agua, incluida Samanes 1.", "fuente": "Segura EP y Metro Ecuador, 26 oct"},
+    {"lat": -2.13, "lon": -79.895, "lugar": "Sauces (Guayaquil)", "detalle": "Av. Isidro Ayora y calles internas de Sauces 6.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.14, "lon": -79.912, "lugar": "Av. Benjamín Carrión (Guayaquil)", "detalle": "Cerca del City Mall.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.163, "lon": -79.90, "lugar": "Kennedy (Guayaquil)", "detalle": "Calles del sector con acumulación de agua.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.174, "lon": -79.912, "lugar": "Urdesa (Guayaquil)", "detalle": "Av. Víctor Emilio Estrada, en Costanera y Jiguas.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.185, "lon": -79.888, "lugar": "La Atarazana (Guayaquil)", "detalle": "Calles del sector con acumulación de agua.", "fuente": "Segura EP, madrugada del 26 oct"},
+    {"lat": -2.168, "lon": -79.945, "lugar": "Av. del Bombero (Guayaquil)", "detalle": "Inundación y problemas de tránsito.", "fuente": "Metro Ecuador, 26 oct"},
+    {"lat": -2.235, "lon": -79.89, "lugar": "Av. 25 de Julio (Guayaquil)", "detalle": "Inundación y problemas de tránsito en el sur.", "fuente": "Metro Ecuador, 26 oct"},
+    {"lat": -2.905, "lon": -79.815, "lugar": "Balao", "detalle": "Calles y viviendas inundadas por el desborde del río Balao.", "fuente": "Prefectura del Guayas y SNGR, 26 oct"},
+    {"lat": -2.995, "lon": -79.785, "lugar": "Tenguel", "detalle": "Calles y viviendas inundadas; en algunos puntos el agua llegó a la cintura.", "fuente": "Prefectura del Guayas y SNGR, 26 oct"}
+  ],
+  "vias": [
+    {"lat": -0.10, "lon": -80.30, "lugar": "Vía Jama–Canoa", "detalle": "Socavación en los km 34, 35 y 41 (reporte del 4 de octubre).", "fuente": "MIT / prensa"},
+    {"lat": -0.33, "lon": -78.95, "lugar": "Vía Alóag–Santo Domingo", "detalle": "Deslizamientos en los km 68 y 70; reabierta el 25 de octubre.", "fuente": "Prensa Latina, 26 oct"}
+  ],
+  "fuentes": "SNGR, INAMHI, INOCAR, Segura EP, Prefectura del Guayas y medios nacionales"
+}

@@ -86,6 +86,7 @@ h2{font-family:var(--display);font-weight:500;font-size:15px;letter-spacing:.8px
 .m-foot{padding:10px 20px 16px;font-size:12px;color:#A6B3C5;border-top:1px solid #2E405B}
 .ico{background:none;border:0}
 .chip svg{vertical-align:-3px;margin-right:6px}
+.corte-viejo{color:#F2B63D!important;font-weight:700}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#1A2638;color:#EEF2F7}
 .leaflet-popup-content{margin:12px 14px;font-size:13px;line-height:1.45}
 .leaflet-container a.leaflet-popup-close-button{color:#A6B3C5}
@@ -111,23 +112,21 @@ if(document.documentMode){document.write('<div style="font-family:Arial,sans-ser
     <div>
       <p class="eyebrow">Monitoreo GPS · AQ1 y BIOMAR</p>
       <h1>Lluvias en la Costa y rutas de la flota</h1>
-      <p class="small">Reportes oficiales al lunes 26 oct 2026, 16:30. La pestaña Lluvia en vivo se actualiza sola.</p>
+      <p class="small" id="corte">Cargando datos…</p>
     </div>
 
     <button class="btn-reco" type="button" data-open-reco>&#9888; Recomendaciones de seguridad</button>
 
     <div class="card">
       <h2>Alertas de hoy</h2>
-      <p class="alerta"><i style="background:#E5533C"></i>12 ríos y canales desbordados en El Oro, Guayas y Santa Elena (SNGR).</p>
-      <p class="alerta"><i style="background:#3D8BE0"></i>27 puntos con agua en Guayaquil en la madrugada (Segura EP).</p>
-      <p class="alerta"><i style="background:#F2B63D"></i>Advertencia del INAMHI hasta el miércoles 28; el 26 y 27 son los días más fuertes.</p>
+      <div id="alertas" style="display:flex;flex-direction:column;gap:8px"></div>
     </div>
 
     <div class="card marea">
-      <p class="eyebrow">Aguaje 25 al 28 oct · INOCAR</p>
-      <p style="margin:0"><span class="big">4,50 m</span> pleamar hoy en Guayaquil-río</p>
-      <div class="hrs"><div>Lun 26<b>19:31</b></div><div>Mar 27<b>~20:20</b></div><div>Mié 28<b>~21:10</b></div></div>
-      <p class="small">Martes y miércoles son estimados. Evitar zonas bajas y esteros unas 2 h antes y después.</p>
+      <p class="eyebrow" id="mareaTitulo"></p>
+      <p style="margin:0"><span class="big" id="mareaAltura"></span> <span id="mareaTexto"></span></p>
+      <div class="hrs" id="mareaHoras"></div>
+      <p class="small" id="mareaNota"></p>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:10px">
@@ -138,11 +137,8 @@ if(document.documentMode){document.write('<div style="font-family:Arial,sans-ser
     <div style="display:flex;flex-direction:column;gap:8px">
       <h2>Fuentes</h2>
       <ul class="fuentes">
-        <li>SNGR, monitoreo de cuerpos hídricos (26 oct)</li>
-        <li>INAMHI, Advertencia N.° 83</li>
-        <li>INOCAR, aguaje y tabla de mareas</li>
-        <li>Segura EP, puntos anegados</li>
-        <li>Lluvia en vivo: Windy.com · Mapa base: Esri</li>
+        <li id="fuentesDatos">SNGR, INAMHI, INOCAR, Segura EP y medios nacionales</li>
+        <li>Lluvia en vivo: Windy.com · Mapa base: Esri · Trazado de rutas: OSRM / OpenStreetMap</li>
       </ul>
       <p class="small">Trazados y ubicaciones referenciales. No se muestran placas ni posiciones reales de las unidades.</p>
     </div>
@@ -305,58 +301,23 @@ if(document.documentMode){document.write('<div style="font-family:Arial,sans-ser
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script>
 (function(){
-var LV={alto:'Alto',medio:'Medio'};
-var COL={alto:'#E5533C',medio:'#F2A93B'};
-var TRAMOS=[
-  {id:'sur',name:'Troncal Sur: Durán – Machala – Arenillas',cli:'AQ1 y Biomar',lvl:'alto',
-   txt:'Desbordes hoy en Balao, Tenguel, El Guabo, Pasaje, Santa Rosa y Machala. Es el tramo más comprometido.',
-   rec:'Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua.',
-   lines:[[[-2.17,-79.83],[-2.24,-79.73],[-2.30,-79.70],[-2.48,-79.64],[-2.67,-79.62],[-2.91,-79.81],[-2.99,-79.79],[-3.06,-79.74],[-3.24,-79.83],[-3.26,-79.96],[-3.45,-79.96],[-3.55,-80.06]]]},
-  {id:'urb',name:'Guayaquil, Samborondón y Durán',cli:'AQ1 y Biomar',lvl:'alto',
-   txt:'27 puntos con agua en la madrugada. Esta noche coinciden lluvia y pleamar de aguaje.',
-   rec:'Evitar zonas bajas, Estero Salado y riberas entre las 17:30 y las 21:30.',zone:{c:[-2.15,-79.90],r:14000}},
-  {id:'costa',name:'Vía a la Costa y Ruta del Spondylus',cli:'Biomar (AQ1 hasta Chongón y Cerecita)',lvl:'medio',
-   txt:'Río California desbordado en La Ponga (Colonche). Oleaje de 0,40 a 2 m en el perfil costero.',
-   rec:'Precaución en puentes y pasos de esteros; no detenerse junto a la playa durante el aguaje.',
-   lines:[[[-2.17,-79.92],[-2.23,-80.07],[-2.30,-80.27],[-2.41,-80.38],[-2.23,-80.86],[-2.21,-80.96]],[[-2.23,-80.86],[-2.02,-80.73],[-1.98,-80.73],[-1.94,-80.73],[-1.84,-80.74]]]},
-  {id:'manabi',name:'Guayaquil – Manabí hasta Pedernales',cli:'AQ1 y Biomar',lvl:'medio',
-   txt:'Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Socavaciones en la vía Jama–Canoa este mes.',
-   rec:'Revisar el estado de vías del ECU 911 antes de salir y evitar viajar de noche.',
-   lines:[[[-2.15,-79.95],[-1.92,-80.00],[-1.82,-80.23],[-1.35,-80.58],[-1.05,-80.45],[-0.60,-80.42],[-0.20,-80.26],[0.07,-80.05]]]},
-  {id:'quevedo',name:'Guayaquil – Quevedo – Santo Domingo',cli:'AQ1',lvl:'medio',
-   txt:'Ríos con nivel en aumento en Los Ríos y Guayas. La vía Alóag–Santo Domingo se reabrió el 25 de octubre tras deslizamientos.',
-   rec:'Salir con precaución y no seguir desvíos por vías secundarias.',
-   lines:[[[-2.15,-79.95],[-1.86,-79.98],[-1.62,-79.98],[-1.36,-79.91],[-1.05,-79.63],[-1.03,-79.46],[-0.89,-79.49],[-0.25,-79.17],[0.00,-79.40]]]}
-];
-var DESBORDES=[
-  {c:[-3.27,-79.95],t:'Machala',d:'Canal El Macho (La Providencia, Las Kathyas) y canal La Puentecita (Nueve de Mayo)'},
-  {c:[-3.15,-79.77],t:'El Guabo',d:'Río Chaguana (barrio 10 de Octubre, parroquia Tendales)'},
-  {c:[-3.31,-79.82],t:'Pasaje',d:'Río Buenavista (parroquia Buenavista)'},
-  {c:[-3.45,-79.95],t:'Santa Rosa',d:'Río Carne Amarga (cabecera cantonal)'},
-  {c:[-1.72,-79.96],t:'Daule',d:'Estero El Cañal (El Laurel) y ríos Pula y Jaboncillo'},
-  {c:[-2.99,-79.79],t:'Tenguel',d:'Ríos Pilco y Tenguel'},
-  {c:[-2.91,-79.81],t:'Balao',d:'Río Balao (cabecera cantonal)'},
-  {c:[-1.96,-80.62],t:'Colonche (Santa Elena)',d:'Río California (comuna La Ponga)'}
-];
-var ANEGADOS=[
-  {c:[-2.07,-79.96],t:'Pascuales',d:'Av. Joya de los Sachas'},{c:[-2.09,-79.92],t:'Vergeles',d:'Av. 3 NE y callejones del sector'},
-  {c:[-2.11,-79.905],t:'Samanes',d:'Agua en vías del sector'},{c:[-2.13,-79.895],t:'Sauces',d:'Av. Isidro Ayora y calles internas'},
-  {c:[-2.14,-79.912],t:'Av. Benjamín Carrión',d:'Cerca del City Mall'},{c:[-2.163,-79.90],t:'Kennedy',d:'Agua en vías del sector'},
-  {c:[-2.174,-79.912],t:'Urdesa',d:'Av. Víctor Emilio Estrada (Costanera y Jiguas)'},{c:[-2.185,-79.888],t:'La Atarazana',d:'Agua en vías del sector'}
-];
-var MAREA=[
-  {c:[-2.23,-79.91],r:5500,t:'Sur de Guayaquil y Estero Salado'},{c:[-2.13,-79.85],r:5500,t:'Riberas de Samborondón y Durán'},
-  {c:[-2.36,-79.76],r:9000,t:'Esteros y zona camaronera de Taura'},{c:[-2.70,-80.15],r:17000,t:'Puná y Posorja'},
-  {c:[-3.27,-80.03],r:8000,t:'Puerto Bolívar y costa de El Oro'}
-];
-var VIAS=[
-  {c:[-0.10,-80.30],t:'Vía Jama–Canoa',d:'Socavación en los km 34, 35 y 41 (reporte del 4 de octubre).'},
-  {c:[-0.33,-78.95],t:'Vía Alóag–Santo Domingo',d:'Deslizamientos en los km 68 y 70; reabierta el 25 de octubre.'}
-];
+var EMBED={"actualizado":"2026-10-26T17:58:00-05:00","actualizado_texto":"lunes 26 oct 2026, 17:58","alertas":[{"tipo":"desborde","texto":"12 ríos y canales desbordados en El Oro, Guayas y Santa Elena (SNGR)."},{"tipo":"inundacion","texto":"27 puntos con agua en Guayaquil en la madrugada del 26 (Segura EP)."},{"tipo":"aviso","texto":"Advertencia del INAMHI hasta el miércoles 28; el 26 y 27 son los días más fuertes."}],"marea":{"titulo":"Aguaje 25 al 28 oct · INOCAR","altura":"4,50 m","texto":"pleamar hoy en Guayaquil-río","horas":[{"dia":"Lun 26","hora":"19:31"},{"dia":"Mar 27","hora":"~20:20"},{"dia":"Mié 28","hora":"~21:10"}],"nota":"Las horas con ~ son estimadas. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.","zonas":[{"lat":-2.23,"lon":-79.91,"radio_m":5500,"titulo":"Sur de Guayaquil y Estero Salado"},{"lat":-2.13,"lon":-79.85,"radio_m":5500,"titulo":"Riberas de Samborondón y Durán"},{"lat":-2.36,"lon":-79.76,"radio_m":9000,"titulo":"Esteros y zona camaronera de Taura"},{"lat":-2.7,"lon":-80.15,"radio_m":17000,"titulo":"Puná y Posorja"},{"lat":-3.27,"lon":-80.03,"radio_m":8000,"titulo":"Puerto Bolívar y costa de El Oro"}],"zonas_texto":"Zona baja o cercana a esteros. Riesgo de inundación por aguaje del 25 al 28 de octubre, sobre todo en la pleamar de la noche."},"tramos":[{"id":"sur","riesgo":"alto","nombre":"Troncal Sur: Durán – Machala – Arenillas","clientes":"AQ1 y Biomar","situacion":"Desbordes hoy en Balao, Tenguel, El Guabo, Pasaje, Santa Rosa y Machala. Es el tramo más comprometido.","recomendacion":"Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua."},{"id":"urb","riesgo":"alto","nombre":"Guayaquil, Samborondón y Durán","clientes":"AQ1 y Biomar","situacion":"27 puntos con agua en la madrugada. Esta noche coinciden lluvia y pleamar de aguaje.","recomendacion":"Evitar zonas bajas, Estero Salado y riberas entre las 17:30 y las 21:30."},{"id":"costa","riesgo":"medio","nombre":"Vía a la Costa y Ruta del Spondylus","clientes":"Biomar (AQ1 hasta Chongón y Cerecita)","situacion":"Río California desbordado en La Ponga (Colonche). Oleaje de 0,40 a 2 m en el perfil costero.","recomendacion":"Precaución en puentes y pasos de esteros; no detenerse junto a la playa durante el aguaje."},{"id":"manabi","riesgo":"medio","nombre":"Guayaquil – Manabí hasta Pedernales","clientes":"AQ1 y Biomar","situacion":"Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Socavaciones en la vía Jama–Canoa este mes.","recomendacion":"Revisar el estado de vías del ECU 911 antes de salir y evitar viajar de noche."},{"id":"quevedo","riesgo":"medio","nombre":"Guayaquil – Quevedo – Santo Domingo","clientes":"AQ1","situacion":"Ríos con nivel en aumento en Los Ríos y Guayas. La vía Alóag–Santo Domingo se reabrió el 25 de octubre tras deslizamientos.","recomendacion":"Salir con precaución y no seguir desvíos por vías secundarias."}],"desbordes":[{"lat":-3.27,"lon":-79.95,"lugar":"Machala","detalle":"Canal El Macho (La Providencia, Las Kathyas) y canal La Puentecita (Nueve de Mayo)","fuente":"SNGR, 26 oct 2026"},{"lat":-3.15,"lon":-79.77,"lugar":"El Guabo","detalle":"Río Chaguana (barrio 10 de Octubre, parroquia Tendales)","fuente":"SNGR, 26 oct 2026"},{"lat":-3.31,"lon":-79.82,"lugar":"Pasaje","detalle":"Río Buenavista (parroquia Buenavista)","fuente":"SNGR, 26 oct 2026"},{"lat":-3.45,"lon":-79.95,"lugar":"Santa Rosa","detalle":"Río Carne Amarga (cabecera cantonal)","fuente":"SNGR, 26 oct 2026"},{"lat":-1.72,"lon":-79.96,"lugar":"Daule","detalle":"Estero El Cañal (El Laurel) y ríos Pula y Jaboncillo","fuente":"SNGR, 26 oct 2026"},{"lat":-2.99,"lon":-79.79,"lugar":"Tenguel","detalle":"Ríos Pilco y Tenguel","fuente":"SNGR, 26 oct 2026"},{"lat":-2.91,"lon":-79.81,"lugar":"Balao","detalle":"Río Balao (cabecera cantonal)","fuente":"SNGR, 26 oct 2026"},{"lat":-1.96,"lon":-80.62,"lugar":"Colonche (Santa Elena)","detalle":"Río California (comuna La Ponga)","fuente":"SNGR, 26 oct 2026"}],"inundaciones":[{"lat":-2.07,"lon":-79.96,"lugar":"Pascuales (Guayaquil)","detalle":"Av. Joya de los Sachas con acumulación de agua.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.09,"lon":-79.92,"lugar":"Vergeles (Guayaquil)","detalle":"Av. 3 NE y callejones del sector.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.11,"lon":-79.905,"lugar":"Samanes (Guayaquil)","detalle":"Calles del sector con agua, incluida Samanes 1.","fuente":"Segura EP y Metro Ecuador, 26 oct"},{"lat":-2.13,"lon":-79.895,"lugar":"Sauces (Guayaquil)","detalle":"Av. Isidro Ayora y calles internas de Sauces 6.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.14,"lon":-79.912,"lugar":"Av. Benjamín Carrión (Guayaquil)","detalle":"Cerca del City Mall.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.163,"lon":-79.9,"lugar":"Kennedy (Guayaquil)","detalle":"Calles del sector con acumulación de agua.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.174,"lon":-79.912,"lugar":"Urdesa (Guayaquil)","detalle":"Av. Víctor Emilio Estrada, en Costanera y Jiguas.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.185,"lon":-79.888,"lugar":"La Atarazana (Guayaquil)","detalle":"Calles del sector con acumulación de agua.","fuente":"Segura EP, madrugada del 26 oct"},{"lat":-2.168,"lon":-79.945,"lugar":"Av. del Bombero (Guayaquil)","detalle":"Inundación y problemas de tránsito.","fuente":"Metro Ecuador, 26 oct"},{"lat":-2.235,"lon":-79.89,"lugar":"Av. 25 de Julio (Guayaquil)","detalle":"Inundación y problemas de tránsito en el sur.","fuente":"Metro Ecuador, 26 oct"},{"lat":-2.905,"lon":-79.815,"lugar":"Balao","detalle":"Calles y viviendas inundadas por el desborde del río Balao.","fuente":"Prefectura del Guayas y SNGR, 26 oct"},{"lat":-2.995,"lon":-79.785,"lugar":"Tenguel","detalle":"Calles y viviendas inundadas; en algunos puntos el agua llegó a la cintura.","fuente":"Prefectura del Guayas y SNGR, 26 oct"}],"vias":[{"lat":-0.1,"lon":-80.3,"lugar":"Vía Jama–Canoa","detalle":"Socavación en los km 34, 35 y 41 (reporte del 4 de octubre).","fuente":"MIT / prensa"},{"lat":-0.33,"lon":-78.95,"lugar":"Vía Alóag–Santo Domingo","detalle":"Deslizamientos en los km 68 y 70; reabierta el 25 de octubre.","fuente":"Prensa Latina, 26 oct"}],"fuentes":"SNGR, INAMHI, INOCAR, Segura EP, Prefectura del Guayas y medios nacionales"};
+var LV={alto:'Alto',medio:'Medio',bajo:'Bajo'};
+var COL={alto:'#E5533C',medio:'#F2A93B',bajo:'#3FAE7A'};
 
-function each(list,fn){for(var i=0;i<list.length;i++)fn(list[i],i);}
+function each(list,fn){if(!list)return;for(var i=0;i<list.length;i++)fn(list[i],i);}
 function $(id){return document.getElementById(id);}
-function pop(t,d,s){return '<b>'+t+'</b><br>'+d+(s?'<span class="pop-src">'+s+'</span>':'');}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function pop(t,d,s){return '<b>'+esc(t)+'</b><br>'+d+(s?'<span class="pop-src">'+esc(s)+'</span>':'');}
+
+// Geometría fija de los corredores (puntos por donde pasa cada uno; el trazado se calcula por carretera)
+var VIA={
+  sur:[[-2.17,-79.835],[-2.67,-79.62],[-3.258,-79.955],[-3.55,-80.06]],
+  costa:[[-2.17,-79.92],[-2.226,-80.858],[-1.84,-80.74]],
+  manabi:[[-2.17,-79.92],[-1.35,-80.58],[-1.055,-80.455],[0.071,-80.053]],
+  quevedo:[[-2.17,-79.92],[-1.027,-79.463],[-0.253,-79.175]]
+};
+var ZONA={urb:{c:[-2.15,-79.90],r:14000}};
 
 var map=L.map('map',{zoomSnap:0.25,minZoom:5,maxZoom:17}).fitBounds([[-3.7,-81.1],[0.25,-78.9]]);
 map.zoomControl.setPosition('topright');
@@ -379,19 +340,7 @@ var FONDOS={
 var fondoActual='mapa'; FONDOS.mapa.addTo(map);
 
 var G={rutas:L.layerGroup(),desbordes:L.layerGroup(),anegados:L.layerGroup(),marea:L.layerGroup(),vias:L.layerGroup()};
-var tramoLayers={};
 
-each(TRAMOS,function(tr){
-  var l;
-  if(tr.lines){
-    G.rutas.addLayer(L.polyline(tr.lines,{color:'#111A28',weight:9,opacity:0.6,interactive:false}));
-    l=L.polyline(tr.lines,{color:COL[tr.lvl],weight:5,opacity:1,lineCap:'round',lineJoin:'round'});
-  } else {
-    l=L.circle(tr.zone.c,{radius:tr.zone.r,color:COL[tr.lvl],weight:2.5,fillColor:COL[tr.lvl],fillOpacity:0.12,dashArray:'7 6'});
-  }
-  l.bindPopup(pop(tr.name,'<b style="color:'+COL[tr.lvl]+'">Riesgo '+LV[tr.lvl]+'</b> · '+tr.cli+'<br>'+tr.txt+'<br><i>'+tr.rec+'</i>'));
-  G.rutas.addLayer(l); tramoLayers[tr.id]=l;
-});
 // Íconos
 var SVG={
   peligro:'<svg width="28" height="26" viewBox="0 0 28 26"><path d="M14 2 26.5 24H1.5z" fill="#E5533C" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><rect x="12.7" y="9" width="2.6" height="8" rx="1.2" fill="#FFFFFF"/><circle cx="14" cy="20.4" r="1.5" fill="#FFFFFF"/></svg>',
@@ -401,33 +350,46 @@ var SVG={
 function icono(k,w,h){return L.divIcon({className:'ico',html:SVG[k],iconSize:[w,h],iconAnchor:[w/2,h/2],popupAnchor:[0,-h/2]});}
 function mini(k){return SVG[k].replace(/width="\d+" height="\d+"/,'width="16" height="16"');}
 
-each(MAREA,function(m){
-  var txt=pop('Riesgo por marea · '+m.t,'Zona baja o cercana a esteros. Riesgo de inundación por aguaje del 25 al 28 de octubre, sobre todo en la pleamar de la noche.','Fuente: INOCAR');
-  G.marea.addLayer(L.circle(m.c,{radius:m.r,color:'#0E9AA7',weight:1.5,fillColor:'#0E9AA7',fillOpacity:0.18,dashArray:'3 5'}).bindPopup(txt));
-  G.marea.addLayer(L.marker(m.c,{icon:icono('marea',30,30)}).bindPopup(txt));
-});
-each(DESBORDES,function(p){G.desbordes.addLayer(L.marker(p.c,{icon:icono('peligro',28,26),zIndexOffset:500})
-  .bindPopup(pop('Peligro · Desborde en '+p.t,p.d,'Fuente: SNGR, 26 oct 2026')));});
-
-// Calles y sectores inundados
-var INUNDACIONES=[
-  {c:[-2.07,-79.96],t:'Pascuales (Guayaquil)',d:'Av. Joya de los Sachas con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.09,-79.92],t:'Vergeles (Guayaquil)',d:'Av. 3 NE y callejones del sector.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.11,-79.905],t:'Samanes (Guayaquil)',d:'Calles del sector con agua, incluida Samanes 1.',s:'Segura EP y Metro Ecuador, 26 oct'},
-  {c:[-2.13,-79.895],t:'Sauces (Guayaquil)',d:'Av. Isidro Ayora y calles internas de Sauces 6.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.14,-79.912],t:'Av. Benjamín Carrión (Guayaquil)',d:'Cerca del City Mall.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.163,-79.90],t:'Kennedy (Guayaquil)',d:'Calles del sector con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.174,-79.912],t:'Urdesa (Guayaquil)',d:'Av. Víctor Emilio Estrada, en Costanera y Jiguas.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.185,-79.888],t:'La Atarazana (Guayaquil)',d:'Calles del sector con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
-  {c:[-2.168,-79.945],t:'Av. del Bombero (Guayaquil)',d:'Inundación y problemas de tránsito.',s:'Metro Ecuador, 26 oct'},
-  {c:[-2.235,-79.89],t:'Av. 25 de Julio (Guayaquil)',d:'Inundación y problemas de tránsito en el sur.',s:'Metro Ecuador, 26 oct'},
-  {c:[-2.905,-79.815],t:'Balao',d:'Calles y viviendas inundadas por el desborde del río Balao.',s:'Prefectura del Guayas y SNGR, 26 oct'},
-  {c:[-2.995,-79.785],t:'Tenguel',d:'Calles y viviendas inundadas; en algunos puntos el agua llegó a la cintura.',s:'Prefectura del Guayas y SNGR, 26 oct'}
-];
-each(INUNDACIONES,function(p){G.anegados.addLayer(L.marker(p.c,{icon:icono('inundacion',26,26),zIndexOffset:300})
-  .bindPopup(pop('Calle inundada · '+p.t,p.d,'Fuente: '+p.s)));});
-each(VIAS,function(p){G.vias.addLayer(L.circleMarker(p.c,{radius:7,color:'#FFFFFF',weight:2,fillColor:'#7A8696',fillOpacity:1})
-  .bindPopup(pop('Antecedente vial · '+p.t,p.d)));});
+// Corredores: se dibujan una vez; el texto viene de los datos
+var tramoLayers={},casings={};
+function aplicarRuta(id,latlngs){
+  tramoLayers[id].setLatLngs(latlngs); casings[id].setLatLngs(latlngs);
+  tramoLayers[id].setStyle({dashArray:null,opacity:1}); casings[id].setStyle({opacity:0.6});
+}
+function trazar(id){
+  var key='ruta_v1_'+id;
+  try{var c=window.localStorage&&localStorage.getItem(key);if(c){aplicarRuta(id,JSON.parse(c));return;}}catch(e){}
+  var coords=[];each(VIA[id],function(p){coords.push(p[1]+','+p[0]);});
+  var x=new XMLHttpRequest();
+  x.open('GET','https://router.project-osrm.org/route/v1/driving/'+coords.join(';')+'?overview=full&geometries=geojson',true);
+  x.timeout=20000;
+  x.onload=function(){
+    try{
+      var d=JSON.parse(x.responseText); if(!d.routes||!d.routes.length)return;
+      var g=d.routes[0].geometry.coordinates,ll=[];
+      each(g,function(c,i){if(i%3===0)ll.push([Math.round(c[1]*1e5)/1e5,Math.round(c[0]*1e5)/1e5]);});
+      ll.push([g[g.length-1][1],g[g.length-1][0]]);
+      aplicarRuta(id,ll);
+      try{localStorage.setItem(key,JSON.stringify(ll));}catch(e){}
+    }catch(e){}
+  };
+  x.send();
+}
+function asegurarTramo(id,lvl){
+  var color=COL[lvl]||COL.medio;
+  if(tramoLayers[id]){tramoLayers[id].setStyle({color:color,fillColor:color});return tramoLayers[id];}
+  var l;
+  if(VIA[id]){
+    casings[id]=L.polyline(VIA[id],{color:'#111A28',weight:9,opacity:0,interactive:false});
+    G.rutas.addLayer(casings[id]);
+    l=L.polyline(VIA[id],{color:color,weight:5,opacity:0.45,dashArray:'2 10',lineCap:'round',lineJoin:'round'});
+    tramoLayers[id]=l; G.rutas.addLayer(l); trazar(id);
+  } else if(ZONA[id]){
+    l=L.circle(ZONA[id].c,{radius:ZONA[id].r,color:color,weight:2.5,fillColor:color,fillOpacity:0.12,dashArray:'7 6'});
+    tramoLayers[id]=l; G.rutas.addLayer(l);
+  }
+  return l;
+}
 
 // Capas propias
 var CAPAS=[['rutas','Rutas','#E5533C'],['desbordes','Desbordes','peligro'],['anegados','Calles inundadas','inundacion'],['marea','Marea','marea'],['vias','Vías','#94A0B2']];
@@ -477,26 +439,84 @@ function showTab(t){
 $('tabRutas').onclick=function(){showTab('rutas');};
 $('tabLluvia').onclick=function(){showTab('lluvia');};
 
-// Tramos en el panel
-var ul=$('tramos'),tramoBtns=[];
-each(TRAMOS,function(tr){
-  var li=document.createElement('li'),b=document.createElement('button');
-  b.type='button';b.className='tramo';b.setAttribute('aria-pressed','false');
-  b.style.borderLeft='5px solid '+COL[tr.lvl];
-  b.innerHTML='<span class="top"><span><span class="name">'+tr.name+'</span><br><span class="cli">'+tr.cli+'</span></span><span class="lvl" style="background:'+COL[tr.lvl]+'">'+LV[tr.lvl]+'</span></span><p>'+tr.txt+'</p><p class="rec">'+tr.rec+'</p>';
-  b.onclick=function(){
-    showTab('rutas');
-    each(tramoBtns,function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');
-    if(!map.hasLayer(G.rutas))setLayer('rutas',true);
-    var l=tramoLayers[tr.id];
-    setTimeout(function(){
-      map.flyToBounds(l.getBounds(),{padding:[60,60],maxZoom:tr.zone?11:9,duration:0.6});
-      setTimeout(function(){l.openPopup(tr.zone?tr.zone.c:undefined);},650);
-    },80);
-    if(window.innerWidth<=820){var mw=document.querySelector('.mapwrap');if(mw&&mw.scrollIntoView)mw.scrollIntoView(true);}
+// Pintar los datos
+var ALERTA_COL={desborde:'#E5533C',inundacion:'#3D8BE0',aviso:'#F2B63D',marea:'#0E9AA7',via:'#94A0B2'};
+function render(d){
+  // Hora de corte y aviso si los datos tienen más de 4 horas
+  var corte=$('corte'),viejo=false;
+  try{viejo=(new Date().getTime()-new Date(d.actualizado).getTime())>4*3600000;}catch(e){}
+  corte.className=viejo?'small corte-viejo':'small';
+  corte.innerHTML='Última actualización: '+esc(d.actualizado_texto)+(viejo?' · puede no estar al día':'')+'. La pestaña Lluvia en vivo se actualiza sola.';
+
+  var al=$('alertas');al.innerHTML='';
+  each(d.alertas,function(a){var p=document.createElement('p');p.className='alerta';
+    p.innerHTML='<i style="background:'+(ALERTA_COL[a.tipo]||'#F2B63D')+'"></i>'+esc(a.texto);al.appendChild(p);});
+
+  var m=d.marea||{};
+  $('mareaTitulo').textContent=m.titulo||'';
+  $('mareaAltura').textContent=m.altura||'';
+  $('mareaTexto').textContent=m.texto||'';
+  $('mareaNota').textContent=m.nota||'';
+  var mh=$('mareaHoras');mh.innerHTML='';
+  each(m.horas,function(h){var div=document.createElement('div');div.innerHTML=esc(h.dia)+'<b>'+esc(h.hora)+'</b>';mh.appendChild(div);});
+  if($('fuentesDatos'))$('fuentesDatos').textContent=d.fuentes||'';
+
+  G.marea.clearLayers();
+  each(m.zonas,function(z){
+    var txt=pop('Riesgo por marea · '+z.titulo,esc(m.zonas_texto||''),'Fuente: INOCAR');
+    G.marea.addLayer(L.circle([z.lat,z.lon],{radius:z.radio_m||6000,color:'#0E9AA7',weight:1.5,fillColor:'#0E9AA7',fillOpacity:0.18,dashArray:'3 5'}).bindPopup(txt));
+    G.marea.addLayer(L.marker([z.lat,z.lon],{icon:icono('marea',30,30)}).bindPopup(txt));
+  });
+  G.desbordes.clearLayers();
+  each(d.desbordes,function(p){G.desbordes.addLayer(L.marker([p.lat,p.lon],{icon:icono('peligro',28,26),zIndexOffset:500})
+    .bindPopup(pop('Peligro · Desborde en '+p.lugar,esc(p.detalle),'Fuente: '+p.fuente)));});
+  G.anegados.clearLayers();
+  each(d.inundaciones,function(p){G.anegados.addLayer(L.marker([p.lat,p.lon],{icon:icono('inundacion',26,26),zIndexOffset:300})
+    .bindPopup(pop('Calle inundada · '+p.lugar,esc(p.detalle),'Fuente: '+p.fuente)));});
+  G.vias.clearLayers();
+  each(d.vias,function(p){G.vias.addLayer(L.circleMarker([p.lat,p.lon],{radius:7,color:'#FFFFFF',weight:2,fillColor:'#7A8696',fillOpacity:1})
+    .bindPopup(pop('Vía · '+p.lugar,esc(p.detalle),p.fuente?'Fuente: '+p.fuente:'')));});
+
+  var ul=$('tramos'),tramoBtns=[];ul.innerHTML='';
+  each(d.tramos,function(tr){
+    var l=asegurarTramo(tr.id,tr.riesgo); if(!l)return;
+    var color=COL[tr.riesgo]||COL.medio, nivel=LV[tr.riesgo]||tr.riesgo;
+    l.bindPopup(pop(tr.nombre,'<b style="color:'+color+'">Riesgo '+esc(nivel)+'</b> · '+esc(tr.clientes)+'<br>'+esc(tr.situacion)+'<br><i>'+esc(tr.recomendacion)+'</i>'));
+    var li=document.createElement('li'),b=document.createElement('button');
+    b.type='button';b.className='tramo';b.setAttribute('aria-pressed','false');b.style.borderLeft='5px solid '+color;
+    b.innerHTML='<span class="top"><span><span class="name">'+esc(tr.nombre)+'</span><br><span class="cli">'+esc(tr.clientes)+'</span></span><span class="lvl" style="background:'+color+'">'+esc(nivel)+'</span></span><p>'+esc(tr.situacion)+'</p><p class="rec">'+esc(tr.recomendacion)+'</p>';
+    b.onclick=function(){
+      showTab('rutas');
+      each(tramoBtns,function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');
+      if(!map.hasLayer(G.rutas))setLayer('rutas',true);
+      setTimeout(function(){
+        map.flyToBounds(l.getBounds(),{padding:[60,60],maxZoom:ZONA[tr.id]?11:9,duration:0.6});
+        setTimeout(function(){l.openPopup(ZONA[tr.id]?ZONA[tr.id].c:undefined);},650);
+      },80);
+      if(window.innerWidth<=820){var mw=document.querySelector('.mapwrap');if(mw&&mw.scrollIntoView)mw.scrollIntoView(true);}
+    };
+    tramoBtns.push(b); li.appendChild(b); ul.appendChild(li);
+  });
+}
+
+// Carga datos.json (publicado junto a la página); si no se puede, usa la copia incluida
+var ultimo=EMBED.actualizado;
+function cargar(primera){
+  var x=new XMLHttpRequest();
+  try{x.open('GET','datos.json?t='+new Date().getTime(),true);}catch(e){if(primera)render(EMBED);return;}
+  x.timeout=15000;
+  x.onload=function(){
+    try{
+      if(x.status&&(x.status<200||x.status>=300))throw 0;
+      var d=JSON.parse(x.responseText);
+      if(primera||d.actualizado!==ultimo){ultimo=d.actualizado;render(d);}
+    }catch(e){if(primera)render(EMBED);}
   };
-  tramoBtns.push(b); li.appendChild(b); ul.appendChild(li);
-});
+  x.onerror=x.ontimeout=function(){if(primera)render(EMBED);};
+  x.send();
+}
+cargar(true);
+setInterval(function(){cargar(false);},30*60000);
 
 $('toggleSide').onclick=function(){
   var a=$('app'),col=a.className.indexOf('collapsed')>-1;
