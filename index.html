@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa Lluvias Costa</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+/* Mapa a pantalla completa con panel oscuro a la izquierda; arriba, pestañas entre rutas/alertas y lluvia en vivo */
+:root{
+  --chrome:#111A28; --chrome-2:#1A2638; --chrome-3:#24334A; --line:#2E405B;
+  --fg:#EEF2F7; --muted:#A6B3C5; --accent:#F2B63D;
+  --display:'Oswald','Arial Narrow',Arial,sans-serif; --body:'Public Sans',Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:#111A28;color:#EEF2F7;font-family:var(--body);font-size:14px;line-height:1.45}
+.app{position:relative;height:100%;display:flex}
+.side{width:370px;flex:none;background:var(--chrome);border-right:1px solid var(--line);overflow-y:auto;
+  padding:16px 16px 24px 16px;display:flex;flex-direction:column;gap:16px;transition:margin-left .25s}
+.app.collapsed .side{margin-left:-370px}
+.mapwrap{position:relative;flex:1;min-width:0}
+.view{position:absolute;top:0;right:0;bottom:0;left:0}
+#map{background:#CFE0EA}
+#windy{border:0;width:100%;height:100%;display:block;background:#111A28}
+.brand img{height:40px;display:block}
+.card{background:var(--chrome-2);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+h1{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.1;margin:0}
+h2{font-family:var(--display);font-weight:500;font-size:15px;letter-spacing:.8px;text-transform:uppercase;margin:0;color:var(--muted)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);margin:0}
+.small{font-size:12.5px;color:var(--muted);margin:0}
+.alerta{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;margin:0}
+.alerta i{flex:none;width:8px;height:8px;border-radius:50%;margin-top:6px}
+.marea .big{font-family:var(--display);font-size:30px;font-weight:600;line-height:1}
+.hrs{display:flex;gap:8px}
+.hrs div{flex:1;background:var(--chrome-3);border-radius:8px;padding:6px 8px;font-size:12px;color:var(--muted)}
+.hrs b{display:block;font-size:15px;color:var(--fg)}
+.tramos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.tramo{width:100%;text-align:left;font:inherit;color:inherit;background:var(--chrome-2);border:1px solid var(--chrome-2);border-radius:12px;
+  padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:6px}
+.tramo:hover,.tramo[aria-pressed="true"]{background:var(--chrome-3)}
+.tramo:focus-visible,.chip:focus-visible,.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tramo .top{display:flex;justify-content:space-between;align-items:flex-start}
+.tramo .top > span:first-child{padding-right:10px}
+.tramo .name{font-weight:700;font-size:14.5px}
+.tramo .cli{font-size:12px;color:var(--muted)}
+.tramo p{margin:0;font-size:13px}
+.tramo .rec{color:var(--muted)}
+.lvl{flex:none;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:999px;color:#111A28}
+.fuentes{margin:0;padding-left:18px;font-size:12.5px;color:var(--muted)}
+
+.topbar{position:absolute;z-index:1000;top:12px;left:12px;right:64px;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;pointer-events:none}
+.group{pointer-events:auto;display:flex;flex-wrap:wrap;gap:4px;background:rgba(17,26,40,.94);border-radius:12px;padding:5px;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.tab,.chip{font:inherit;font-size:12.5px;font-weight:600;color:var(--fg);background:transparent;border:0;border-radius:8px;padding:7px 11px;cursor:pointer;white-space:nowrap}
+.tab{font-family:var(--display);font-size:14px;letter-spacing:.4px;text-transform:uppercase;padding:7px 13px}
+.tab[aria-selected="true"],.chip[aria-pressed="true"]{background:var(--accent);color:#111A28}
+.chip .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.group.hide{display:none}
+.toggle-side{position:absolute;z-index:1001;left:0;top:50%;margin-top:-28px;width:22px;height:56px;border:0;border-radius:0 8px 8px 0;background:var(--chrome);color:var(--fg);cursor:pointer}
+.windy-note{position:absolute;z-index:1000;left:12px;bottom:14px;background:rgba(17,26,40,.94);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--muted);max-width:420px}
+
+.btn-reco{pointer-events:auto;font:inherit;font-family:var(--display);font-size:14px;letter-spacing:.4px;text-transform:uppercase;
+  background:#E5533C;color:#FFFFFF;border:0;border-radius:12px;padding:12px 16px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.btn-reco:hover{background:#F0644D}
+.btn-reco:focus-visible,.m-close:focus-visible,.m-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.side .btn-reco{width:100%;box-shadow:none;font-size:15px}
+.modal{position:fixed;z-index:3000;top:0;right:0;bottom:0;left:0;background:rgba(5,10,18,.72);display:none;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}
+.m-box{background:#111A28;color:#EEF2F7;border:1px solid #2E405B;border-radius:16px;width:100%;max-width:980px;max-height:100%;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.m-head{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 20px 12px;border-bottom:1px solid #2E405B}
+.m-head h2{font-size:24px;color:#EEF2F7;letter-spacing:.3px;text-transform:none;font-weight:600}
+.m-close{font:inherit;font-size:22px;line-height:1;background:#24334A;color:#EEF2F7;border:0;border-radius:10px;width:40px;height:40px;cursor:pointer;flex:none}
+.m-tabs{display:flex;flex-wrap:wrap;gap:6px;padding:12px 20px 0}
+.m-tab{font:inherit;font-size:13px;font-weight:600;color:#EEF2F7;background:#1A2638;border:0;border-radius:999px;padding:7px 13px;cursor:pointer}
+.m-tab[aria-selected="true"]{background:#F2B63D;color:#111A28}
+.m-body{overflow-y:auto;padding:16px 20px 20px}
+.m-grid{display:flex;flex-wrap:wrap;gap:12px}
+.m-card{flex:1 1 280px;min-width:0;background:#1A2638;border-radius:12px;padding:14px 16px;border-top:4px solid var(--ac,#F2B63D)}
+.m-card h3{font-family:var(--display);font-weight:600;font-size:17px;margin:0 0 8px;letter-spacing:.3px}
+.m-card ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.5}
+.m-card li{margin-bottom:5px}
+.m-regla{background:#F2B63D;color:#111A28;border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;margin-bottom:12px}
+.m-foot{padding:10px 20px 16px;font-size:12px;color:#A6B3C5;border-top:1px solid #2E405B}
+.ico{background:none;border:0}
+.chip svg{vertical-align:-3px;margin-right:6px}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#1A2638;color:#EEF2F7}
+.leaflet-popup-content{margin:12px 14px;font-size:13px;line-height:1.45}
+.leaflet-container a.leaflet-popup-close-button{color:#A6B3C5}
+.pop-src{display:block;margin-top:4px;color:#A6B3C5;font-size:11.5px}
+.leaflet-top.leaflet-right{margin-top:4px}
+@media (max-width:820px){
+  .app{flex-direction:column-reverse;height:auto}
+  .side{width:auto;border-right:0;border-top:1px solid var(--line);overflow:visible}
+  .app.collapsed .side{margin-left:0}
+  .mapwrap{height:80vh;flex:none}
+  .toggle-side{display:none}
+  .topbar{right:12px}
+}
+</style>
+<script>
+if(document.documentMode){document.write('<div style="font-family:Arial,sans-serif;padding:40px;background:#111A28;color:#ffffff;font-size:18px;line-height:1.5"><b>Este navegador ya no es compatible.</b><br>Internet Explorer fue retirado por Microsoft. Abra este archivo en Microsoft Edge, Google Chrome, Safari, Firefox u Opera.</div>');}
+</script>
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="brand"><img src="data:image/png;base64,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" alt="TeleArseg"></div>
+    <div>
+      <p class="eyebrow">Monitoreo GPS · AQ1 y BIOMAR</p>
+      <h1>Lluvias en la Costa y rutas de la flota</h1>
+      <p class="small">Reportes oficiales al lunes 26 oct 2026, 16:30. La pestaña Lluvia en vivo se actualiza sola.</p>
+    </div>
+
+    <button class="btn-reco" type="button" data-open-reco>&#9888; Recomendaciones de seguridad</button>
+
+    <div class="card">
+      <h2>Alertas de hoy</h2>
+      <p class="alerta"><i style="background:#E5533C"></i>12 ríos y canales desbordados en El Oro, Guayas y Santa Elena (SNGR).</p>
+      <p class="alerta"><i style="background:#3D8BE0"></i>27 puntos con agua en Guayaquil en la madrugada (Segura EP).</p>
+      <p class="alerta"><i style="background:#F2B63D"></i>Advertencia del INAMHI hasta el miércoles 28; el 26 y 27 son los días más fuertes.</p>
+    </div>
+
+    <div class="card marea">
+      <p class="eyebrow">Aguaje 25 al 28 oct · INOCAR</p>
+      <p style="margin:0"><span class="big">4,50 m</span> pleamar hoy en Guayaquil-río</p>
+      <div class="hrs"><div>Lun 26<b>19:31</b></div><div>Mar 27<b>~20:20</b></div><div>Mié 28<b>~21:10</b></div></div>
+      <p class="small">Martes y miércoles son estimados. Evitar zonas bajas y esteros unas 2 h antes y después.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <h2>Tramos de ruta</h2>
+      <ul class="tramos" id="tramos"></ul>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <h2>Fuentes</h2>
+      <ul class="fuentes">
+        <li>SNGR, monitoreo de cuerpos hídricos (26 oct)</li>
+        <li>INAMHI, Advertencia N.° 83</li>
+        <li>INOCAR, aguaje y tabla de mareas</li>
+        <li>Segura EP, puntos anegados</li>
+        <li>Lluvia en vivo: Windy.com · Mapa base: Esri</li>
+      </ul>
+      <p class="small">Trazados y ubicaciones referenciales. No se muestran placas ni posiciones reales de las unidades.</p>
+    </div>
+  </aside>
+
+  <div class="mapwrap">
+    <div id="map" class="view" aria-label="Mapa con rutas y zonas afectadas"></div>
+    <div id="windyView" class="view" style="display:none">
+      <iframe id="windy" title="Lluvia en vivo" loading="lazy" src="about:blank"></iframe>
+    </div>
+    <button class="toggle-side" id="toggleSide" aria-label="Ocultar o mostrar el panel">&#8249;</button>
+
+    <div class="topbar">
+      <div class="group" role="tablist">
+        <button class="tab" role="tab" id="tabRutas" aria-selected="true">Rutas y alertas</button>
+        <button class="tab" role="tab" id="tabLluvia" aria-selected="false">Lluvia en vivo</button>
+      </div>
+      <div class="group" id="capas"></div>
+      <div class="group" id="fondos"></div>
+      <div class="group hide" id="wxCapas"></div>
+      <button class="btn-reco" type="button" data-open-reco>&#9888; Recomendaciones de seguridad</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="reco" role="dialog" aria-modal="true" aria-labelledby="recoTitle">
+  <div class="m-box">
+    <div class="m-head">
+      <div>
+        <p class="eyebrow">Conductores AQ1 y Biomar · temporada de lluvias</p>
+        <h2 id="recoTitle">Recomendaciones de seguridad</h2>
+      </div>
+      <button class="m-close" type="button" id="recoClose" aria-label="Cerrar">&#215;</button>
+    </div>
+    <div class="m-tabs" id="recoTabs">
+      <button class="m-tab" type="button" data-cat="todas" aria-selected="true">Todas</button>
+      <button class="m-tab" type="button" data-cat="antes" aria-selected="false">Antes de salir</button>
+      <button class="m-tab" type="button" data-cat="manejo" aria-selected="false">Al manejar</button>
+      <button class="m-tab" type="button" data-cat="rutas" aria-selected="false">Rutas a evitar</button>
+      <button class="m-tab" type="button" data-cat="emergencias" aria-selected="false">Emergencias</button>
+      <button class="m-tab" type="button" data-cat="seguridad" aria-selected="false">Seguridad y comunicación</button>
+    </div>
+    <div class="m-body">
+      <div class="m-regla">La vida del conductor va primero que la carga y la unidad. Ninguna entrega justifica cruzar una vía inundada o pasar por un deslave.</div>
+      <div class="m-grid" id="recoGrid">
+        <div class="m-card" data-cat="antes" style="--ac:#3D8BE0">
+          <h3>Antes de salir</h3>
+          <ul>
+            <li>Revisar las alertas del INAMHI y la SNGR, y el estado de vías del ECU 911.</li>
+            <li>Salir con precaución y tener identificada una ruta alterna por si la vía está afectada.</li>
+            <li>Celular cargado, cargador en la cabina y número del Centro de Monitoreo guardado.</li>
+            <li>Llevar linterna, chaleco reflectivo, triángulos, capa de lluvia, agua y botiquín.</li>
+            <li>Evitar salir de noche o de madrugada por vías con alerta.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="antes" style="--ac:#3D8BE0">
+          <h3>Revisión del vehículo</h3>
+          <ul>
+            <li>Llantas con buen labrado y presión correcta.</li>
+            <li>Frenos, luces, direccionales y luces de emergencia funcionando.</li>
+            <li>Plumas en buen estado y líquido limpiaparabrisas.</li>
+            <li>Tanque lleno: los desvíos alargan la ruta.</li>
+            <li>GPS, botón de pánico y dashcam (AQ1) funcionando antes de arrancar.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="manejo" style="--ac:#F2B63D">
+          <h3>Manejo con lluvia</h3>
+          <ul>
+            <li>Bajar la velocidad y al menos duplicar la distancia con el vehículo de adelante.</li>
+            <li>Luces bajas encendidas, aun de día. No usar luces altas con lluvia o neblina.</li>
+            <li>Sin frenazos ni giros bruscos. Si el vehículo patina, soltar el acelerador y mantener el volante firme.</li>
+            <li>Cuidado con baches y alcantarillas tapados por el agua.</li>
+            <li>No adelantar en curvas ni con poca visibilidad.</li>
+            <li>Atención a motos, peatones y vehículos detenidos sin luces.</li>
+            <li>Si la lluvia no deja ver, detenerse en un lugar seguro e iluminado (gasolinera) con luces de emergencia, nunca en una curva.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="manejo" style="--ac:#F2B63D">
+          <h3>Después de pasar agua</h3>
+          <ul>
+            <li>Probar los frenos con suavidad hasta que respondan bien.</li>
+            <li>Revisar luces de alerta del tablero.</li>
+            <li>Si el motor se apagó dentro del agua, no volver a encenderlo: reportarlo como avería.</li>
+            <li>Informar al Centro de Monitoreo y a mantenimiento.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="rutas" style="--ac:#E5533C">
+          <h3>Rutas y lugares a evitar</h3>
+          <ul>
+            <li>Vías junto a ríos, esteros y canales con nivel alto o desbordados.</li>
+            <li>Puentes con el agua cerca del tablero o con troncos y escombros acumulados.</li>
+            <li>Pasos a desnivel y zonas bajas que se inundan rápido (Guayaquil, Samborondón, Durán).</li>
+            <li>Tramos bajo taludes o laderas, sobre todo en Manabí y en las vías hacia la Sierra.</li>
+            <li>Caminos de tierra y accesos a camaroneras con lodo: riesgo de quedarse atascado.</li>
+            <li>Zonas bajas y orillas de esteros en la hora de la pleamar.</li>
+            <li>Vías secundarias o desvíos que no haya autorizado el Centro de Monitoreo.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="emergencias" style="--ac:#E5533C">
+          <h3>Vía inundada</h3>
+          <ul>
+            <li>Detenerse antes del agua, en un punto alto y visible.</li>
+            <li>No cruzar si no se ve el borde de la vía o si el agua corre: unos 30 cm de agua en movimiento pueden arrastrar un vehículo liviano.</li>
+            <li>Si hay que pasar un charco corto y poco profundo: primera marcha, despacio y sin detenerse.</li>
+            <li>Si el agua sube alrededor del vehículo, salir y buscar un sitio alto; avisar apenas se pueda.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="emergencias" style="--ac:#E5533C">
+          <h3>Deslave o cierre de vía</h3>
+          <ul>
+            <li>No pasar por encima del material ni bordearlo. Retroceder a un punto seguro.</li>
+            <li>No detenerse bajo laderas con caída de piedras o lodo, ni junto a quebradas.</li>
+            <li>Reportar y esperar: el Centro de Monitoreo verifica la vía y la alterna.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="emergencias" style="--ac:#E5533C">
+          <h3>Si el vehículo se daña</h3>
+          <ul>
+            <li>Orillarse en un sitio seguro y visible, lejos de ríos y taludes.</li>
+            <li>Luces de emergencia y triángulos colocados.</li>
+            <li>Llamar al Centro de Monitoreo e informar la ubicación.</li>
+            <li>No abandonar la unidad ni la carga, salvo riesgo para la vida.</li>
+            <li>No aceptar ayuda ni remolque de desconocidos.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="seguridad" style="--ac:#94A0B2">
+          <h3>Seguridad personal y de la carga</h3>
+          <ul>
+            <li>Puertas con seguro y vidrios arriba en filas, paradas y zonas inundadas.</li>
+            <li>Desconfiar de personas que piden detenerse o ofrecen ayuda en vías con agua o cerradas.</li>
+            <li>Para detenerse, preferir gasolineras o puestos policiales; no lugares oscuros o despoblados.</li>
+            <li>No comentar la ruta ni la carga por teléfono o redes sociales.</li>
+            <li>Ante una amenaza, activar el botón de pánico y no oponer resistencia.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="seguridad" style="--ac:#94A0B2">
+          <h3>Tormentas eléctricas</h3>
+          <ul>
+            <li>Quedarse dentro del vehículo con las puertas cerradas; es más seguro que afuera.</li>
+            <li>No detenerse bajo árboles, postes o vallas.</li>
+            <li>No acercarse a cables caídos ni a postes dañados; reportarlos.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="seguridad" style="--ac:#94A0B2">
+          <h3>Comunicación con el Centro de Monitoreo</h3>
+          <ul>
+            <li>Avisar al salir, en cada parada no programada y al llegar.</li>
+            <li>Al reportar: ubicación, qué pasa y si hay heridos.</li>
+            <li>Contestar las llamadas de verificación. Tres intentos sin respuesta activan el protocolo de emergencia y el ECU 911.</li>
+            <li>No apagar ni desconectar el GPS ni la dashcam: en AQ1 una desconexión es alerta alta.</li>
+            <li>Emergencias: ECU 911.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="m-foot">Basado en los protocolos de monitoreo GPS de AQ1 y Biomar y en las recomendaciones de la SNGR y el INAMHI. Jefatura de Monitoreo — Telearseg.</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(function(){
+var LV={alto:'Alto',medio:'Medio'};
+var COL={alto:'#E5533C',medio:'#F2A93B'};
+var TRAMOS=[
+  {id:'sur',name:'Troncal Sur: Durán – Machala – Arenillas',cli:'AQ1 y Biomar',lvl:'alto',
+   txt:'Desbordes hoy en Balao, Tenguel, El Guabo, Pasaje, Santa Rosa y Machala. Es el tramo más comprometido.',
+   rec:'Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua.',
+   lines:[[[-2.17,-79.83],[-2.24,-79.73],[-2.30,-79.70],[-2.48,-79.64],[-2.67,-79.62],[-2.91,-79.81],[-2.99,-79.79],[-3.06,-79.74],[-3.24,-79.83],[-3.26,-79.96],[-3.45,-79.96],[-3.55,-80.06]]]},
+  {id:'urb',name:'Guayaquil, Samborondón y Durán',cli:'AQ1 y Biomar',lvl:'alto',
+   txt:'27 puntos con agua en la madrugada. Esta noche coinciden lluvia y pleamar de aguaje.',
+   rec:'Evitar zonas bajas, Estero Salado y riberas entre las 17:30 y las 21:30.',zone:{c:[-2.15,-79.90],r:14000}},
+  {id:'costa',name:'Vía a la Costa y Ruta del Spondylus',cli:'Biomar (AQ1 hasta Chongón y Cerecita)',lvl:'medio',
+   txt:'Río California desbordado en La Ponga (Colonche). Oleaje de 0,40 a 2 m en el perfil costero.',
+   rec:'Precaución en puentes y pasos de esteros; no detenerse junto a la playa durante el aguaje.',
+   lines:[[[-2.17,-79.92],[-2.23,-80.07],[-2.30,-80.27],[-2.41,-80.38],[-2.23,-80.86],[-2.21,-80.96]],[[-2.23,-80.86],[-2.02,-80.73],[-1.98,-80.73],[-1.94,-80.73],[-1.84,-80.74]]]},
+  {id:'manabi',name:'Guayaquil – Manabí hasta Pedernales',cli:'AQ1 y Biomar',lvl:'medio',
+   txt:'Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Socavaciones en la vía Jama–Canoa este mes.',
+   rec:'Revisar el estado de vías del ECU 911 antes de salir y evitar viajar de noche.',
+   lines:[[[-2.15,-79.95],[-1.92,-80.00],[-1.82,-80.23],[-1.35,-80.58],[-1.05,-80.45],[-0.60,-80.42],[-0.20,-80.26],[0.07,-80.05]]]},
+  {id:'quevedo',name:'Guayaquil – Quevedo – Santo Domingo',cli:'AQ1',lvl:'medio',
+   txt:'Ríos con nivel en aumento en Los Ríos y Guayas. La vía Alóag–Santo Domingo se reabrió el 25 de octubre tras deslizamientos.',
+   rec:'Salir con precaución y no seguir desvíos por vías secundarias.',
+   lines:[[[-2.15,-79.95],[-1.86,-79.98],[-1.62,-79.98],[-1.36,-79.91],[-1.05,-79.63],[-1.03,-79.46],[-0.89,-79.49],[-0.25,-79.17],[0.00,-79.40]]]}
+];
+var DESBORDES=[
+  {c:[-3.27,-79.95],t:'Machala',d:'Canal El Macho (La Providencia, Las Kathyas) y canal La Puentecita (Nueve de Mayo)'},
+  {c:[-3.15,-79.77],t:'El Guabo',d:'Río Chaguana (barrio 10 de Octubre, parroquia Tendales)'},
+  {c:[-3.31,-79.82],t:'Pasaje',d:'Río Buenavista (parroquia Buenavista)'},
+  {c:[-3.45,-79.95],t:'Santa Rosa',d:'Río Carne Amarga (cabecera cantonal)'},
+  {c:[-1.72,-79.96],t:'Daule',d:'Estero El Cañal (El Laurel) y ríos Pula y Jaboncillo'},
+  {c:[-2.99,-79.79],t:'Tenguel',d:'Ríos Pilco y Tenguel'},
+  {c:[-2.91,-79.81],t:'Balao',d:'Río Balao (cabecera cantonal)'},
+  {c:[-1.96,-80.62],t:'Colonche (Santa Elena)',d:'Río California (comuna La Ponga)'}
+];
+var ANEGADOS=[
+  {c:[-2.07,-79.96],t:'Pascuales',d:'Av. Joya de los Sachas'},{c:[-2.09,-79.92],t:'Vergeles',d:'Av. 3 NE y callejones del sector'},
+  {c:[-2.11,-79.905],t:'Samanes',d:'Agua en vías del sector'},{c:[-2.13,-79.895],t:'Sauces',d:'Av. Isidro Ayora y calles internas'},
+  {c:[-2.14,-79.912],t:'Av. Benjamín Carrión',d:'Cerca del City Mall'},{c:[-2.163,-79.90],t:'Kennedy',d:'Agua en vías del sector'},
+  {c:[-2.174,-79.912],t:'Urdesa',d:'Av. Víctor Emilio Estrada (Costanera y Jiguas)'},{c:[-2.185,-79.888],t:'La Atarazana',d:'Agua en vías del sector'}
+];
+var MAREA=[
+  {c:[-2.23,-79.91],r:5500,t:'Sur de Guayaquil y Estero Salado'},{c:[-2.13,-79.85],r:5500,t:'Riberas de Samborondón y Durán'},
+  {c:[-2.36,-79.76],r:9000,t:'Esteros y zona camaronera de Taura'},{c:[-2.70,-80.15],r:17000,t:'Puná y Posorja'},
+  {c:[-3.27,-80.03],r:8000,t:'Puerto Bolívar y costa de El Oro'}
+];
+var VIAS=[
+  {c:[-0.10,-80.30],t:'Vía Jama–Canoa',d:'Socavación en los km 34, 35 y 41 (reporte del 4 de octubre).'},
+  {c:[-0.33,-78.95],t:'Vía Alóag–Santo Domingo',d:'Deslizamientos en los km 68 y 70; reabierta el 25 de octubre.'}
+];
+
+function each(list,fn){for(var i=0;i<list.length;i++)fn(list[i],i);}
+function $(id){return document.getElementById(id);}
+function pop(t,d,s){return '<b>'+t+'</b><br>'+d+(s?'<span class="pop-src">'+s+'</span>':'');}
+
+var map=L.map('map',{zoomSnap:0.25,minZoom:5,maxZoom:17}).fitBounds([[-3.7,-81.1],[0.25,-78.9]]);
+map.zoomControl.setPosition('topright');
+
+var ESRI='https://server.arcgisonline.com/ArcGIS/rest/services/';
+function esri(path,opt){return L.tileLayer(ESRI+path+'/MapServer/tile/{z}/{y}/{x}',opt||{});}
+var FONDOS={
+  mapa:esri('World_Street_Map',{maxZoom:19,attribution:'Mapa © Esri, HERE, Garmin, OpenStreetMap'}),
+  relieve:esri('World_Topo_Map',{maxZoom:19,attribution:'Mapa © Esri, HERE, Garmin, OpenStreetMap'}),
+  satelite:L.layerGroup([
+    esri('World_Imagery',{maxZoom:19,attribution:'Imágenes © Esri, Maxar, Earthstar Geographics'}),
+    esri('Reference/World_Transportation',{maxZoom:19}),
+    esri('Reference/World_Boundaries_and_Places',{maxZoom:19})
+  ]),
+  oscuro:L.layerGroup([
+    esri('Canvas/World_Dark_Gray_Base',{maxZoom:16,attribution:'Mapa © Esri, HERE, Garmin'}),
+    esri('Canvas/World_Dark_Gray_Reference',{maxZoom:16})
+  ])
+};
+var fondoActual='mapa'; FONDOS.mapa.addTo(map);
+
+var G={rutas:L.layerGroup(),desbordes:L.layerGroup(),anegados:L.layerGroup(),marea:L.layerGroup(),vias:L.layerGroup()};
+var tramoLayers={};
+
+each(TRAMOS,function(tr){
+  var l;
+  if(tr.lines){
+    G.rutas.addLayer(L.polyline(tr.lines,{color:'#111A28',weight:9,opacity:0.6,interactive:false}));
+    l=L.polyline(tr.lines,{color:COL[tr.lvl],weight:5,opacity:1,lineCap:'round',lineJoin:'round'});
+  } else {
+    l=L.circle(tr.zone.c,{radius:tr.zone.r,color:COL[tr.lvl],weight:2.5,fillColor:COL[tr.lvl],fillOpacity:0.12,dashArray:'7 6'});
+  }
+  l.bindPopup(pop(tr.name,'<b style="color:'+COL[tr.lvl]+'">Riesgo '+LV[tr.lvl]+'</b> · '+tr.cli+'<br>'+tr.txt+'<br><i>'+tr.rec+'</i>'));
+  G.rutas.addLayer(l); tramoLayers[tr.id]=l;
+});
+// Íconos
+var SVG={
+  peligro:'<svg width="28" height="26" viewBox="0 0 28 26"><path d="M14 2 26.5 24H1.5z" fill="#E5533C" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><rect x="12.7" y="9" width="2.6" height="8" rx="1.2" fill="#FFFFFF"/><circle cx="14" cy="20.4" r="1.5" fill="#FFFFFF"/></svg>',
+  inundacion:'<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11.5" fill="#2F7FD6" stroke="#FFFFFF" stroke-width="2"/><path d="M13 5.5c3.2 4.2 4.8 6.6 4.8 8.7a4.8 4.8 0 0 1-9.6 0c0-2.1 1.6-4.5 4.8-8.7z" fill="#FFFFFF"/></svg>',
+  marea:'<svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13.5" fill="#0E9AA7" stroke="#FFFFFF" stroke-width="2"/><path d="M7 12.5c2-2 4-2 6 0s4 2 6 0 3-1.6 4-1.2M7 18c2-2 4-2 6 0s4 2 6 0 3-1.6 4-1.2" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/></svg>'
+};
+function icono(k,w,h){return L.divIcon({className:'ico',html:SVG[k],iconSize:[w,h],iconAnchor:[w/2,h/2],popupAnchor:[0,-h/2]});}
+function mini(k){return SVG[k].replace(/width="\d+" height="\d+"/,'width="16" height="16"');}
+
+each(MAREA,function(m){
+  var txt=pop('Riesgo por marea · '+m.t,'Zona baja o cercana a esteros. Riesgo de inundación por aguaje del 25 al 28 de octubre, sobre todo en la pleamar de la noche.','Fuente: INOCAR');
+  G.marea.addLayer(L.circle(m.c,{radius:m.r,color:'#0E9AA7',weight:1.5,fillColor:'#0E9AA7',fillOpacity:0.18,dashArray:'3 5'}).bindPopup(txt));
+  G.marea.addLayer(L.marker(m.c,{icon:icono('marea',30,30)}).bindPopup(txt));
+});
+each(DESBORDES,function(p){G.desbordes.addLayer(L.marker(p.c,{icon:icono('peligro',28,26),zIndexOffset:500})
+  .bindPopup(pop('Peligro · Desborde en '+p.t,p.d,'Fuente: SNGR, 26 oct 2026')));});
+
+// Calles y sectores inundados
+var INUNDACIONES=[
+  {c:[-2.07,-79.96],t:'Pascuales (Guayaquil)',d:'Av. Joya de los Sachas con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.09,-79.92],t:'Vergeles (Guayaquil)',d:'Av. 3 NE y callejones del sector.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.11,-79.905],t:'Samanes (Guayaquil)',d:'Calles del sector con agua, incluida Samanes 1.',s:'Segura EP y Metro Ecuador, 26 oct'},
+  {c:[-2.13,-79.895],t:'Sauces (Guayaquil)',d:'Av. Isidro Ayora y calles internas de Sauces 6.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.14,-79.912],t:'Av. Benjamín Carrión (Guayaquil)',d:'Cerca del City Mall.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.163,-79.90],t:'Kennedy (Guayaquil)',d:'Calles del sector con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.174,-79.912],t:'Urdesa (Guayaquil)',d:'Av. Víctor Emilio Estrada, en Costanera y Jiguas.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.185,-79.888],t:'La Atarazana (Guayaquil)',d:'Calles del sector con acumulación de agua.',s:'Segura EP, madrugada del 26 oct'},
+  {c:[-2.168,-79.945],t:'Av. del Bombero (Guayaquil)',d:'Inundación y problemas de tránsito.',s:'Metro Ecuador, 26 oct'},
+  {c:[-2.235,-79.89],t:'Av. 25 de Julio (Guayaquil)',d:'Inundación y problemas de tránsito en el sur.',s:'Metro Ecuador, 26 oct'},
+  {c:[-2.905,-79.815],t:'Balao',d:'Calles y viviendas inundadas por el desborde del río Balao.',s:'Prefectura del Guayas y SNGR, 26 oct'},
+  {c:[-2.995,-79.785],t:'Tenguel',d:'Calles y viviendas inundadas; en algunos puntos el agua llegó a la cintura.',s:'Prefectura del Guayas y SNGR, 26 oct'}
+];
+each(INUNDACIONES,function(p){G.anegados.addLayer(L.marker(p.c,{icon:icono('inundacion',26,26),zIndexOffset:300})
+  .bindPopup(pop('Calle inundada · '+p.t,p.d,'Fuente: '+p.s)));});
+each(VIAS,function(p){G.vias.addLayer(L.circleMarker(p.c,{radius:7,color:'#FFFFFF',weight:2,fillColor:'#7A8696',fillOpacity:1})
+  .bindPopup(pop('Antecedente vial · '+p.t,p.d)));});
+
+// Capas propias
+var CAPAS=[['rutas','Rutas','#E5533C'],['desbordes','Desbordes','peligro'],['anegados','Calles inundadas','inundacion'],['marea','Marea','marea'],['vias','Vías','#94A0B2']];
+var btns={};
+function setLayer(k,on){ if(on)map.addLayer(G[k]); else map.removeLayer(G[k]); btns[k].setAttribute('aria-pressed',on?'true':'false'); }
+each(CAPAS,function(c){
+  var k=c[0],b=document.createElement('button');b.className='chip';b.type='button';
+  b.innerHTML=(SVG[c[2]]?mini(c[2]):'<span class="dot" style="background:'+c[2]+'"></span>')+c[1];btns[k]=b;
+  b.onclick=function(){setLayer(k,b.getAttribute('aria-pressed')!=='true');};
+  $('capas').appendChild(b); setLayer(k,true);
+});
+var fondoBtns=[];
+each([['mapa','Mapa'],['relieve','Relieve'],['satelite','Satélite'],['oscuro','Oscuro']],function(f){
+  var k=f[0],b=document.createElement('button');b.className='chip';b.type='button';b.textContent=f[1];
+  b.setAttribute('aria-pressed',k===fondoActual?'true':'false');
+  b.onclick=function(){ map.removeLayer(FONDOS[fondoActual]); fondoActual=k; FONDOS[k].addTo(map);
+    each(fondoBtns,function(x){x.b.setAttribute('aria-pressed',x.k===k?'true':'false');}); };
+  fondoBtns.push({k:k,b:b}); $('fondos').appendChild(b);
+});
+
+// Lluvia en vivo (Windy)
+var wxActual='rain';
+function windyUrl(ov){
+  return 'https://embed.windy.com/embed2.html?lat=-1.9&lon=-79.9&detailLat=-2.19&detailLon=-79.89&zoom=7&level=surface&overlay='+ov+
+    '&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1';
+}
+var wxBtns=[];
+each([['rain','Lluvia'],['thunder','Tormentas'],['clouds','Nubes'],['wind','Viento']],function(w){
+  var k=w[0],b=document.createElement('button');b.className='chip';b.type='button';b.textContent=w[1];
+  b.setAttribute('aria-pressed',k===wxActual?'true':'false');
+  b.onclick=function(){wxActual=k;$('windy').src=windyUrl(k);
+    each(wxBtns,function(x){x.b.setAttribute('aria-pressed',x.k===k?'true':'false');});};
+  wxBtns.push({k:k,b:b}); $('wxCapas').appendChild(b);
+});
+function showTab(t){
+  var rutas=t==='rutas';
+  $('tabRutas').setAttribute('aria-selected',rutas?'true':'false');
+  $('tabLluvia').setAttribute('aria-selected',rutas?'false':'true');
+  $('map').style.display=rutas?'block':'none';
+  $('windyView').style.display=rutas?'none':'block';
+  $('capas').className=rutas?'group':'group hide';
+  $('fondos').className=rutas?'group':'group hide';
+  $('wxCapas').className=rutas?'group hide':'group';
+  if(!rutas && $('windy').src.indexOf('windy')<0) $('windy').src=windyUrl(wxActual);
+  if(rutas) setTimeout(function(){map.invalidateSize();},50);
+}
+$('tabRutas').onclick=function(){showTab('rutas');};
+$('tabLluvia').onclick=function(){showTab('lluvia');};
+
+// Tramos en el panel
+var ul=$('tramos'),tramoBtns=[];
+each(TRAMOS,function(tr){
+  var li=document.createElement('li'),b=document.createElement('button');
+  b.type='button';b.className='tramo';b.setAttribute('aria-pressed','false');
+  b.style.borderLeft='5px solid '+COL[tr.lvl];
+  b.innerHTML='<span class="top"><span><span class="name">'+tr.name+'</span><br><span class="cli">'+tr.cli+'</span></span><span class="lvl" style="background:'+COL[tr.lvl]+'">'+LV[tr.lvl]+'</span></span><p>'+tr.txt+'</p><p class="rec">'+tr.rec+'</p>';
+  b.onclick=function(){
+    showTab('rutas');
+    each(tramoBtns,function(x){x.setAttribute('aria-pressed','false');});b.setAttribute('aria-pressed','true');
+    if(!map.hasLayer(G.rutas))setLayer('rutas',true);
+    var l=tramoLayers[tr.id];
+    setTimeout(function(){
+      map.flyToBounds(l.getBounds(),{padding:[60,60],maxZoom:tr.zone?11:9,duration:0.6});
+      setTimeout(function(){l.openPopup(tr.zone?tr.zone.c:undefined);},650);
+    },80);
+    if(window.innerWidth<=820){var mw=document.querySelector('.mapwrap');if(mw&&mw.scrollIntoView)mw.scrollIntoView(true);}
+  };
+  tramoBtns.push(b); li.appendChild(b); ul.appendChild(li);
+});
+
+$('toggleSide').onclick=function(){
+  var a=$('app'),col=a.className.indexOf('collapsed')>-1;
+  a.className=col?'app':'app collapsed'; this.innerHTML=col?'&#8249;':'&#8250;';
+  setTimeout(function(){map.invalidateSize();},300);
+};
+window.addEventListener('resize',function(){map.invalidateSize();});
+
+// Ventana de recomendaciones
+var reco=$('reco'),lastFocus=null;
+function openReco(){lastFocus=document.activeElement;reco.className='modal open';$('recoClose').focus();}
+function closeReco(){reco.className='modal';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+each(document.querySelectorAll('[data-open-reco]'),function(b){b.onclick=openReco;});
+$('recoClose').onclick=closeReco;
+reco.onclick=function(e){if(e.target===reco)closeReco();};
+document.addEventListener('keydown',function(e){if((e.key==='Escape'||e.keyCode===27)&&reco.className.indexOf('open')>-1)closeReco();});
+var recoTabs=document.querySelectorAll('#recoTabs .m-tab'),recoCards=document.querySelectorAll('#recoGrid .m-card');
+each(recoTabs,function(t){t.onclick=function(){
+  var cat=t.getAttribute('data-cat');
+  each(recoTabs,function(x){x.setAttribute('aria-selected',x===t?'true':'false');});
+  each(recoCards,function(c){c.style.display=(cat==='todas'||c.getAttribute('data-cat')===cat)?'':'none';});
+};});
+})();
+
+</script>
+</body>
+</html>
