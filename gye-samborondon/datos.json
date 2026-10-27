@@ -1,55 +1,363 @@
 {
-  "actualizado": "2026-10-27T10:30:00-05:00",
-  "actualizado_texto": "martes 27 oct 2026, 10:30",
+  "actualizado": "2026-10-27T10:55:00-05:00",
+  "actualizado_texto": "martes 27 oct 2026, 10:55",
   "alertas": [
-    {"tipo": "inundacion", "texto": "Esta mañana la marea alta volvió a dejar agua en Cristo del Consuelo, Urdesa, el centro y el suburbio (Segura EP)."},
-    {"tipo": "intransitable", "texto": "Ayer hubo vehículos atrapados en Los Ceibos (Leopoldo Carrera Calvo, cerca de la Av. del Bombero)."},
-    {"tipo": "via", "texto": "La ATM cerró de forma preventiva los túneles Santa Ana y San Eduardo durante la tormenta del lunes."},
-    {"tipo": "aviso", "texto": "Advertencia del INAMHI vigente hasta el miércoles 28 a las 23:00, con lluvias de moderadas a muy fuertes."}
+    {
+      "tipo": "aviso",
+      "texto": "INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00 en Guayaquil. Advertencia N.° 83 hasta el miércoles 28 a las 23:00."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Esta mañana la marea alta dejó agua en 4 puntos: Cristo del Consuelo, Urdesa, calle 18 y Alcedo, y Maulme y 10 de Agosto (Segura EP)."
+    },
+    {
+      "tipo": "intransitable",
+      "texto": "Anoche Alborada etapa 13 y Samanes 2 seguían con agua a la rodilla; en Los Ceibos un vehículo quedó casi sumergido."
+    },
+    {
+      "tipo": "marea",
+      "texto": "Pleamar de 4,48 m hoy a las 20:16: si llueve de tarde, el agua tardará más en bajar."
+    },
+    {
+      "tipo": "via",
+      "texto": "La ATM restableció el tránsito anoche en Carlos Julio Arosemena, Av. del Bombero, Av. de las Américas, vía a Daule y Perimetral."
+    }
   ],
   "marea": {
     "titulo": "Aguaje 25 al 28 oct · INOCAR",
-    "altura": "~4,5 m",
-    "texto": "pleamar de la noche en Guayaquil-río",
+    "altura": "4,48 m",
+    "texto": "pleamar de hoy en Guayaquil-río (07:36 y 20:16)",
     "horas": [
-      {"dia": "Mar 27", "hora": "~20:20"},
-      {"dia": "Mié 28", "hora": "~21:10"}
+      {
+        "dia": "Mar 27",
+        "hora": "20:16"
+      },
+      {
+        "dia": "Mié 28",
+        "hora": "~21:00"
+      },
+      {
+        "dia": "Jue 29",
+        "hora": "~21:45"
+      }
     ],
-    "nota": "Horas estimadas a partir de la pleamar del lunes 26 (19:31, 4,50 m). Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después."
+    "nota": "Las horas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después."
   },
   "puntos": [
-    {"lat": -2.2135, "lon": -79.9165, "lugar": "Cristo del Consuelo", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Calles E y Otavalo con acumulación de agua por marea alta.", "fuente": "Segura EP (C5GYE)", "fecha": "27 oct, mañana"},
-    {"lat": -2.1695, "lon": -79.9058, "lugar": "Av. Jorge Pérez Concha y Av. Víctor Emilio Estrada", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Acumulación de agua en la intersección, sector Urdesa.", "fuente": "Segura EP (C5GYE)", "fecha": "27 oct, mañana"},
-    {"lat": -2.2003, "lon": -79.9025, "lugar": "Calle 18 y Alcedo", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Acumulación de agua por marea alta.", "fuente": "Segura EP (C5GYE)", "fecha": "27 oct, mañana"},
-    {"lat": -2.1932, "lon": -79.8985, "lugar": "Enrique Maulme y 10 de Agosto", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Acumulación de agua por marea alta.", "fuente": "Segura EP (C5GYE)", "fecha": "27 oct, mañana"},
-    {"lat": -2.1950, "lon": -79.8792, "lugar": "Malecón Simón Bolívar (centro)", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Calles con agua en el tramo del malecón por marea alta.", "fuente": "Segura EP / Metro Ecuador", "fecha": "27 oct, mañana"},
-    {"lat": -2.1702, "lon": -79.9455, "lugar": "Los Ceibos: Leopoldo Carrera Calvo", "canton": "Guayaquil", "nivel": "intransitable", "detalle": "Un vehículo quedó casi sumergido, con el agua a la altura de las ventanas, cerca de la Av. del Bombero.", "fuente": "Diario Extra", "fecha": "26 oct, tarde"},
-    {"lat": -2.1662, "lon": -79.9385, "lugar": "Av. del Bombero hacia Av. José Rodríguez Bonín", "canton": "Guayaquil", "nivel": "alto", "detalle": "Acumulación de agua en la vía.", "fuente": "Segura EP, corte 14:45", "fecha": "26 oct, tarde"},
-    {"lat": -2.1740, "lon": -79.9120, "lugar": "Urdesa: Av. Víctor Emilio Estrada", "canton": "Guayaquil", "nivel": "alto", "detalle": "Colapso vial y acumulación de agua en Costanera y Jiguas.", "fuente": "Segura EP / Vistazo", "fecha": "26 oct"},
-    {"lat": -2.1400, "lon": -79.9120, "lugar": "Av. Benjamín Carrión (City Mall)", "canton": "Guayaquil", "nivel": "alto", "detalle": "Colapso vial con agua en la calzada.", "fuente": "Segura EP / Vistazo", "fecha": "26 oct"},
-    {"lat": -2.1080, "lon": -79.9400, "lugar": "Vía a Daule", "canton": "Guayaquil", "nivel": "alto", "detalle": "Colapso vial por la lluvia.", "fuente": "Vistazo", "fecha": "26 oct"},
-    {"lat": -2.1100, "lon": -79.9050, "lugar": "Samanes", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Calles del sector con agua.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.1300, "lon": -79.8950, "lugar": "Sauces: Av. Isidro Ayora", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Agua en la avenida y en calles internas de Sauces 6.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.0700, "lon": -79.9600, "lugar": "Pascuales: Av. Joya de los Sachas", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Acumulación de agua.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.0900, "lon": -79.9200, "lugar": "Vergeles: Av. 3 NE", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Agua en la avenida y callejones del sector.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.1630, "lon": -79.9000, "lugar": "Kennedy", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Calles del sector con acumulación de agua.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.1850, "lon": -79.8880, "lugar": "La Atarazana", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Calles del sector con acumulación de agua.", "fuente": "Segura EP", "fecha": "26 oct"},
-    {"lat": -2.2350, "lon": -79.8900, "lugar": "Av. 25 de Julio", "canton": "Guayaquil", "nivel": "acumulacion", "detalle": "Inundación y problemas de tránsito en el sur.", "fuente": "Metro Ecuador", "fecha": "26 oct"},
-    {"lat": -2.1830, "lon": -79.9230, "lugar": "Túnel San Eduardo", "canton": "Guayaquil", "nivel": "cerrado", "detalle": "Cierre preventivo de la ATM durante la tormenta.", "fuente": "ATM / Vistazo", "fecha": "26 oct"},
-    {"lat": -2.1805, "lon": -79.8775, "lugar": "Túnel Santa Ana", "canton": "Guayaquil", "nivel": "cerrado", "detalle": "Cierre preventivo de la ATM durante la tormenta.", "fuente": "ATM / Vistazo", "fecha": "26 oct"},
-    {"lat": -2.1350, "lon": -79.8700, "lugar": "Av. Samborondón (varios tramos)", "canton": "Samborondón", "nivel": "alto", "detalle": "Agua sobre la calzada y la acera en varios tramos; cortes de luz en el sector.", "fuente": "Diario Extra", "fecha": "26 oct, tarde"},
-    {"lat": -2.1500, "lon": -79.8620, "lugar": "La Puntilla: plazas comerciales", "canton": "Samborondón", "nivel": "acumulacion", "detalle": "El agua entró en algunos locales comerciales.", "fuente": "Diario Extra", "fecha": "26 oct, tarde"}
+    {
+      "lat": -2.2135,
+      "lon": -79.9165,
+      "lugar": "Cristo del Consuelo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles E y Otavalo con acumulación de agua por marea alta.",
+      "fuente": "Segura EP (C5GYE)",
+      "fecha": "27 oct, mañana"
+    },
+    {
+      "lat": -2.1695,
+      "lon": -79.9058,
+      "lugar": "Av. Jorge Pérez Concha y Av. Víctor Emilio Estrada",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en la intersección, sector Urdesa.",
+      "fuente": "Segura EP (C5GYE)",
+      "fecha": "27 oct, mañana"
+    },
+    {
+      "lat": -2.2003,
+      "lon": -79.9025,
+      "lugar": "Calle 18 y Alcedo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por marea alta.",
+      "fuente": "Segura EP (C5GYE)",
+      "fecha": "27 oct, mañana"
+    },
+    {
+      "lat": -2.1932,
+      "lon": -79.8985,
+      "lugar": "Enrique Maulme y 10 de Agosto",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por marea alta.",
+      "fuente": "Segura EP (C5GYE)",
+      "fecha": "27 oct, mañana"
+    },
+    {
+      "lat": -2.195,
+      "lon": -79.8792,
+      "lugar": "Malecón Simón Bolívar (centro)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles con agua en el tramo del malecón por marea alta.",
+      "fuente": "Segura EP / Metro Ecuador",
+      "fecha": "27 oct, mañana"
+    },
+    {
+      "lat": -2.1255,
+      "lon": -79.899,
+      "lugar": "Alborada etapa 13",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Calles y avenidas anegadas; los moradores caminaban con el agua hasta las rodillas.",
+      "fuente": "Primicias",
+      "fecha": "26 oct, 21:00"
+    },
+    {
+      "lat": -2.1045,
+      "lon": -79.906,
+      "lugar": "Samanes 2",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Calles aún inundadas en la noche.",
+      "fuente": "Primicias",
+      "fecha": "26 oct, 21:00"
+    },
+    {
+      "lat": -2.1555,
+      "lon": -79.892,
+      "lugar": "Mall del Sol y alrededores",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "El agua ingresó al centro comercial y a calles cercanas.",
+      "fuente": "El Mercurio",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1,
+      "lon": -79.999,
+      "lugar": "Monte Sinaí y Socio Vivienda",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Inundación y acumulación de agua en calles del sector.",
+      "fuente": "SNGR / El Diario",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1702,
+      "lon": -79.9455,
+      "lugar": "Los Ceibos: Leopoldo Carrera Calvo",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Un vehículo quedó casi sumergido, con el agua a la altura de las ventanas, cerca de la Av. del Bombero.",
+      "fuente": "Diario Extra",
+      "fecha": "26 oct, tarde"
+    },
+    {
+      "lat": -2.1662,
+      "lon": -79.9385,
+      "lugar": "Av. del Bombero hacia Av. José Rodríguez Bonín",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Acumulación de agua en la vía.",
+      "fuente": "Segura EP, corte 14:45",
+      "fecha": "26 oct, tarde"
+    },
+    {
+      "lat": -2.174,
+      "lon": -79.912,
+      "lugar": "Urdesa: Av. Víctor Emilio Estrada",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Colapso vial y acumulación de agua en Costanera y Jiguas.",
+      "fuente": "Segura EP / Vistazo",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.14,
+      "lon": -79.912,
+      "lugar": "Av. Benjamín Carrión (City Mall)",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Colapso vial con agua en la calzada.",
+      "fuente": "Segura EP / Vistazo",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.108,
+      "lon": -79.94,
+      "lugar": "Vía a Daule",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Colapso vial por la lluvia del lunes; la ATM restableció el tránsito después de las 20:00.",
+      "fuente": "Vistazo / ATM (Primicias)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.13,
+      "lon": -79.895,
+      "lugar": "Sauces: Av. Isidro Ayora",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Agua en la avenida y en calles internas de Sauces 6.",
+      "fuente": "Segura EP",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.07,
+      "lon": -79.96,
+      "lugar": "Pascuales: Av. Joya de los Sachas",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua.",
+      "fuente": "Segura EP",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.09,
+      "lon": -79.92,
+      "lugar": "Vergeles: Av. 3 NE",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Agua en la avenida y callejones del sector.",
+      "fuente": "Segura EP",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.163,
+      "lon": -79.9,
+      "lugar": "Kennedy",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles del sector con acumulación de agua.",
+      "fuente": "Segura EP",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.185,
+      "lon": -79.888,
+      "lugar": "La Atarazana",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles del sector con acumulación de agua.",
+      "fuente": "Segura EP",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.235,
+      "lon": -79.89,
+      "lugar": "Av. 25 de Julio",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Inundación y problemas de tránsito en el sur.",
+      "fuente": "Metro Ecuador",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.183,
+      "lon": -79.923,
+      "lugar": "Túnel San Eduardo",
+      "canton": "Guayaquil",
+      "nivel": "cerrado",
+      "detalle": "Cierre preventivo de la ATM durante la tormenta.",
+      "fuente": "ATM / Vistazo",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1805,
+      "lon": -79.8775,
+      "lugar": "Túnel Santa Ana",
+      "canton": "Guayaquil",
+      "nivel": "cerrado",
+      "detalle": "Cierre preventivo de la ATM durante la tormenta.",
+      "fuente": "ATM / Vistazo",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.135,
+      "lon": -79.87,
+      "lugar": "Av. Samborondón (varios tramos)",
+      "canton": "Samborondón",
+      "nivel": "alto",
+      "detalle": "Agua sobre la calzada y la acera en varios tramos; cortes de luz en el sector.",
+      "fuente": "Diario Extra",
+      "fecha": "26 oct, tarde"
+    },
+    {
+      "lat": -2.15,
+      "lon": -79.862,
+      "lugar": "La Puntilla: plazas comerciales",
+      "canton": "Samborondón",
+      "nivel": "acumulacion",
+      "detalle": "El agua entró en algunos locales comerciales.",
+      "fuente": "Diario Extra",
+      "fecha": "26 oct, tarde"
+    }
   ],
   "recurrentes": [
-    {"lat": -2.1405, "lon": -79.8655, "lugar": "Los Arcos (La Puntilla)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -2.1355, "lon": -79.8630, "lugar": "Entre Ríos (La Puntilla)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -2.1290, "lon": -79.8710, "lugar": "Parque Histórico (La Puntilla)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -2.1380, "lon": -79.8600, "lugar": "Av. Diana Quintana (La Puntilla)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -1.9625, "lon": -79.7245, "lugar": "Mercado Municipal (cabecera cantonal)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -1.9610, "lon": -79.7255, "lugar": "Plaza Cívica (cabecera cantonal)", "canton": "Samborondón", "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.", "fuente": "Municipio de Samborondón (El Universo, 21 oct)"},
-    {"lat": -2.0985, "lon": -79.8585, "lugar": "Ciudad Celeste (ingreso)", "canton": "Samborondón", "detalle": "Agua acumulada en unas cuatro cuadras desde la garita, según vecinos.", "fuente": "Residentes (El Universo, 21 oct)"},
-    {"lat": -2.1050, "lon": -79.8570, "lugar": "Biblos (ingreso)", "canton": "Samborondón", "detalle": "Calles cubiertas de agua cerca de la garita tras lluvias fuertes, según vecinos.", "fuente": "Residentes (El Universo, 21 oct)"},
-    {"lat": -2.1460, "lon": -79.8640, "lugar": "Plaza Samborondón (Clínica Kennedy)", "canton": "Samborondón", "detalle": "Con lluvias intensas el agua ha llegado a los escalones de un acceso.", "fuente": "Residentes (El Universo, 21 oct)"}
+    {
+      "lat": -2.1405,
+      "lon": -79.8655,
+      "lugar": "Los Arcos (La Puntilla)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.1355,
+      "lon": -79.863,
+      "lugar": "Entre Ríos (La Puntilla)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.129,
+      "lon": -79.871,
+      "lugar": "Parque Histórico (La Puntilla)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.138,
+      "lon": -79.86,
+      "lugar": "Av. Diana Quintana (La Puntilla)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -1.9625,
+      "lon": -79.7245,
+      "lugar": "Mercado Municipal (cabecera cantonal)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -1.961,
+      "lon": -79.7255,
+      "lugar": "Plaza Cívica (cabecera cantonal)",
+      "canton": "Samborondón",
+      "detalle": "Punto de anegación recurrente con lluvias, marea alta y aguaje.",
+      "fuente": "Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.0985,
+      "lon": -79.8585,
+      "lugar": "Ciudad Celeste (ingreso)",
+      "canton": "Samborondón",
+      "detalle": "Agua acumulada en unas cuatro cuadras desde la garita, según vecinos.",
+      "fuente": "Residentes (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.105,
+      "lon": -79.857,
+      "lugar": "Biblos (ingreso)",
+      "canton": "Samborondón",
+      "detalle": "Calles cubiertas de agua cerca de la garita tras lluvias fuertes, según vecinos.",
+      "fuente": "Residentes (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.146,
+      "lon": -79.864,
+      "lugar": "Plaza Samborondón (Clínica Kennedy)",
+      "canton": "Samborondón",
+      "detalle": "Con lluvias intensas el agua ha llegado a los escalones de un acceso.",
+      "fuente": "Residentes (El Universo, 21 oct)"
+    }
   ],
-  "fuentes": "Segura EP, ATM, Municipio de Samborondón, INAMHI, INOCAR, Metro Ecuador, Diario Extra, Vistazo, El Universo"
+  "fuentes": "Segura EP (C5GYE), COE municipal de Guayaquil, ATM, Municipio de Samborondón, INAMHI, INOCAR, Primicias, Metro Ecuador, Diario Extra, Vistazo, El Mercurio, El Universo"
 }
