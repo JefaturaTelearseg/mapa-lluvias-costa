@@ -7,7 +7,7 @@ Página: https://jefaturatelearseg.github.io/mapa-lluvias-costa/
 
 Jefatura de Monitoreo — Telearseg
 
-## Calles inundadas — Guayaquil y Samborondón
+## Calles inundadas — Guayaquil, Samborondón y Durán
 
 Página: https://jefaturatelearseg.github.io/mapa-lluvias-costa/gye-samborondon/
 

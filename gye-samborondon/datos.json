@@ -7,6 +7,10 @@
       "texto": "INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00 en Guayaquil. Advertencia N.° 83 hasta el miércoles 28 a las 23:00."
     },
     {
+      "tipo": "aviso",
+      "texto": "Durán: hoy hay clases no presenciales en zonas afectadas. Aún no hay reportes por calle del 26 y 27; se muestran los sectores que se inundan seguido."
+    },
+    {
       "tipo": "inundacion",
       "texto": "Esta mañana la marea alta dejó agua en 4 puntos: Cristo del Consuelo, Urdesa, calle 18 y Alcedo, y Maulme y 10 de Agosto (Segura EP)."
     },
@@ -17,10 +21,6 @@
     {
       "tipo": "marea",
       "texto": "Pleamar de 4,48 m hoy a las 20:16: si llueve de tarde, el agua tardará más en bajar."
-    },
-    {
-      "tipo": "via",
-      "texto": "La ATM restableció el tránsito anoche en Carlos Julio Arosemena, Av. del Bombero, Av. de las Américas, vía a Daule y Perimetral."
     }
   ],
   "marea": {
@@ -437,7 +437,47 @@
       "canton": "Samborondón",
       "detalle": "Con lluvias intensas el agua ha llegado a los escalones de un acceso.",
       "fuente": "Residentes (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.165,
+      "lon": -79.828,
+      "lugar": "El Recreo, etapas 1 a 4",
+      "canton": "Durán",
+      "detalle": "El agua superó las aceras y amenazó con entrar a las viviendas en la última lluvia fuerte con reporte detallado (19 oct). Los vecinos dicen que se inunda siempre.",
+      "fuente": "Expreso y El Universo, 19 oct"
+    },
+    {
+      "lat": -2.178,
+      "lon": -79.84,
+      "lugar": "Ciudadela Primavera 1",
+      "canton": "Durán",
+      "detalle": "Vías anegadas desde la madrugada en la última lluvia fuerte reportada (19 oct), cerca del Puente de la Unidad Nacional.",
+      "fuente": "Expreso y El Universo, 19 oct"
+    },
+    {
+      "lat": -2.182,
+      "lon": -79.835,
+      "lugar": "Ciudadela Panorama",
+      "canton": "Durán",
+      "detalle": "Vías con acumulación de agua en la última lluvia fuerte reportada (19 oct).",
+      "fuente": "Expreso, 19 oct"
+    },
+    {
+      "lat": -2.1735,
+      "lon": -79.8225,
+      "lugar": "Centro de Durán",
+      "canton": "Durán",
+      "detalle": "Acumulación de agua en la última lluvia fuerte reportada (19 oct).",
+      "fuente": "El Universo, 19 oct"
+    },
+    {
+      "lat": -2.19,
+      "lon": -79.829,
+      "lugar": "Ciudadela Abel Gilbert",
+      "canton": "Durán",
+      "detalle": "Acumulación de agua en la última lluvia fuerte reportada (19 oct).",
+      "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), COE municipal de Guayaquil, ATM, Municipio de Samborondón, INAMHI, INOCAR, Primicias, Metro Ecuador, Diario Extra, Vistazo, El Mercurio, El Universo"
+  "fuentes": "Segura EP (C5GYE), COE municipal de Guayaquil, ATM, Municipio de Samborondón, INAMHI, INOCAR, Primicias, Metro Ecuador, Diario Extra, Vistazo, El Mercurio, El Universo, Municipio de Durán, Expreso"
 }
