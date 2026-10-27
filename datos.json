@@ -1,32 +1,32 @@
 {
-  "actualizado": "2026-10-27T10:55:00-05:00",
-  "actualizado_texto": "martes 27 oct 2026, 10:55",
+  "actualizado": "2026-10-27T18:10:00-05:00",
+  "actualizado_texto": "martes 27 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "desborde",
-      "texto": "Suben a 15 los ríos y canales desbordados en Guayas, El Oro, Santa Elena, Esmeraldas y Los Ríos (SNGR, corte 07:00)."
+      "texto": "15 ríos y canales siguen desbordados en Guayas, El Oro, Santa Elena, Esmeraldas y Los Ríos (SNGR, corte 07:00); Guayas es la provincia más afectada."
     },
     {
       "tipo": "desborde",
-      "texto": "Nuevo desborde del río Jaguas en Taura (Naranjal), junto a la Troncal Sur."
+      "texto": "Troncal Sur: ríos Jaguas (Taura), Balao, Tenguel y Pilco desbordados; norte de Machala sigue inundado por el canal El Macho."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00 en Guayaquil; Advertencia N.° 83 vigente hasta el miércoles 28 a las 23:00."
+      "texto": "Esta noche se prevén lluvias de hasta 20 mm en Guayaquil; Advertencia INAMHI N.° 83 vigente hasta el miércoles 28 a las 23:00."
     },
     {
       "tipo": "inundacion",
-      "texto": "Guayaquil: 57 zonas afectadas y 170 mm de lluvia el lunes (COE municipal); clases no presenciales hoy en sectores de Guayaquil, Durán y Samborondón."
+      "texto": "Guayaquil: 89 sectores afectados por la lluvia del lunes (Segura EP); clases no presenciales hoy en zonas de Guayaquil, Durán y Samborondón."
     },
     {
       "tipo": "marea",
-      "texto": "Pleamar de 4,48 m hoy a las 20:16 en Guayaquil-río; esta mañana la marea alta dejó agua en 4 puntos de la ciudad."
+      "texto": "Pleamar de 4,48 m hoy a las 20:16 en Guayaquil-río: evitar zonas bajas entre las 18:00 y las 22:00."
     }
   ],
   "marea": {
     "titulo": "Aguaje 25 al 28 oct · INOCAR",
     "altura": "4,48 m",
-    "texto": "pleamar hoy en Guayaquil-río (07:36 y 20:16)",
+    "texto": "pleamar hoy en Guayaquil-río (07:36 y 20:16; bajamar 0,51 m a las 15:00)",
     "horas": [
       {
         "dia": "Mar 27",
@@ -82,7 +82,7 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Nuevo desborde del río Jaguas en Taura (Naranjal), junto a la vía. Machala con más de 120 sectores inundados; ríos Chaguana (El Guabo), Balao, Pilco y Tenguel desbordados. Es el tramo más comprometido.",
+      "situacion": "Ríos Jaguas (Taura), Balao, Tenguel y Pilco desbordados junto a la vía; el norte de Machala sigue inundado por el canal El Macho y hay familias evacuadas; río Chaguana desbordado en El Guabo. Lluvias de intensidad muy alta previstas hoy en El Oro y Guayas. Es el tramo más comprometido.",
       "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua, sobre todo en Taura, Balao–Tenguel y los accesos a Machala y El Guabo."
     },
     {
@@ -90,8 +90,8 @@
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "57 zonas afectadas el lunes; esta mañana la marea alta dejó agua en Cristo del Consuelo, Urdesa, el centro y el suburbio. INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00. En Samborondón hubo agua en la Av. Samborondón y La Puntilla; en Durán hay clases no presenciales y El Recreo, Primavera y Panorama se inundan con frecuencia.",
-      "recomendacion": "Salir y circular con precaución; evitar zonas bajas, Estero Salado y riberas entre las 15:00 y las 22:00, cuando coinciden el pico de lluvia y la pleamar de las 20:16."
+      "situacion": "89 sectores afectados por la lluvia del lunes (Segura EP); esta mañana la marea alta dejó agua en Cristo del Consuelo, Urdesa, la 18 y Alcedo y el Malecón. Se prevén lluvias de hasta 20 mm esta noche, coincidiendo con la pleamar de las 20:16. En Samborondón hubo agua en la Av. Samborondón y La Puntilla el lunes; en Durán hay clases no presenciales y El Recreo, Primavera y Panorama se inundan con frecuencia.",
+      "recomendacion": "Salir y circular con precaución; evitar zonas bajas, Estero Salado, el Malecón y las riberas de Samborondón y Durán entre las 18:00 y las 22:00, cuando coinciden la lluvia y la pleamar."
     },
     {
       "id": "costa",
@@ -204,6 +204,20 @@
       "lugar": "Cristo del Consuelo y suburbio (Guayaquil)",
       "detalle": "Agua por marea alta esta mañana en calles E y Otavalo, 18 y Alcedo, y Maulme y 10 de Agosto.",
       "fuente": "Segura EP / Metro Ecuador, 27 oct 2026"
+    },
+    {
+      "lat": -2.265,
+      "lon": -79.885,
+      "lugar": "Guasmo Sur y coop. Unión de Bananeros (Guayaquil)",
+      "detalle": "Inundaciones reportadas por Segura EP tras la lluvia del lunes 26.",
+      "fuente": "Segura EP (El Comercio), 27 oct 2026"
+    },
+    {
+      "lat": -2.148,
+      "lon": -79.893,
+      "lugar": "La Garzota y Guayacanes (Guayaquil)",
+      "detalle": "Sectores afectados por la lluvia del lunes 26; árboles caídos en Guayacanes.",
+      "fuente": "Segura EP (El Comercio), 27 oct 2026"
     },
     {
       "lat": -2.105,
@@ -351,8 +365,8 @@
       "lat": -2.155,
       "lon": -79.94,
       "lugar": "Vía Perimetral, Mapasingue Este (Guayaquil)",
-      "detalle": "Deslizamientos de tierra durante la lluvia del 26; también en Vista Alegre.",
-      "fuente": "Metro Ecuador, 26 oct 2026"
+      "detalle": "Deslizamientos de tierra durante la lluvia del 26; también en la coop. El Cóndor y Vista Alegre.",
+      "fuente": "Segura EP (El Comercio), 27 oct 2026"
     },
     {
       "lat": -2.177,
@@ -369,5 +383,5 @@
       "fuente": "Vistazo (ATM), 26 oct 2026"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 27 oct), INAMHI, INOCAR, Segura EP, COE municipal de Guayaquil, ATM, Metro Ecuador, Primicias, El Universo, Vistazo, Extra, El Mercurio"
+  "fuentes": "SNGR (corte 07:00 del 27 oct), INAMHI (Advertencia N.° 83), INOCAR, Segura EP, ATM, El Comercio, Primicias, El Diario, Diario Extra, Metro Ecuador, Vistazo, El Universo, Expreso, El Mercurio"
 }

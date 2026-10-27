@@ -1,26 +1,26 @@
 {
-  "actualizado": "2026-10-27T10:55:00-05:00",
-  "actualizado_texto": "martes 27 oct 2026, 10:55",
+  "actualizado": "2026-10-27T18:10:00-05:00",
+  "actualizado_texto": "martes 27 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00 en Guayaquil. Advertencia N.° 83 hasta el miércoles 28 a las 23:00."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Durán: hoy hay clases no presenciales en zonas afectadas. Aún no hay reportes por calle del 26 y 27; se muestran los sectores que se inundan seguido."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Esta mañana la marea alta dejó agua en 4 puntos: Cristo del Consuelo, Urdesa, calle 18 y Alcedo, y Maulme y 10 de Agosto (Segura EP)."
-    },
-    {
-      "tipo": "intransitable",
-      "texto": "Anoche Alborada etapa 13 y Samanes 2 seguían con agua a la rodilla; en Los Ceibos un vehículo quedó casi sumergido."
+      "texto": "Se prevén lluvias de hasta 20 mm esta noche en Guayaquil. Advertencia INAMHI N.° 83 hasta el miércoles 28 a las 23:00."
     },
     {
       "tipo": "marea",
-      "texto": "Pleamar de 4,48 m hoy a las 20:16: si llueve de tarde, el agua tardará más en bajar."
+      "texto": "Pleamar de 4,48 m hoy a las 20:16: si llueve, el agua tardará en bajar en zonas bajas y riberas."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Esta mañana la marea alta dejó agua en Cristo del Consuelo, Pérez Concha y V. E. Estrada, la 18 y Alcedo, Maulme y 10 de Agosto y el Malecón (Segura EP)."
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Durán y Samborondón: clases no presenciales hoy en zonas afectadas; sin reportes nuevos por calle hoy. Se muestran los sectores que se inundan seguido."
+    },
+    {
+      "tipo": "intransitable",
+      "texto": "Balance Segura EP: 89 sectores afectados por la lluvia del lunes; Los Ceibos y Alborada 13 llegaron a estar intransitables."
     }
   ],
   "marea": {
@@ -363,6 +363,36 @@
       "detalle": "Acumulación de agua reportada por Segura EP.",
       "fuente": "Segura EP (Diario Extra)",
       "fecha": "26 oct"
+    },
+    {
+      "lat": -2.265,
+      "lon": -79.885,
+      "lugar": "Guasmo Sur y coop. Unión de Bananeros",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Inundaciones reportadas por Segura EP tras la lluvia del lunes.",
+      "fuente": "Segura EP (El Comercio)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.148,
+      "lon": -79.893,
+      "lugar": "La Garzota",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Sector afectado por la lluvia del lunes.",
+      "fuente": "Segura EP (El Comercio)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.118,
+      "lon": -79.905,
+      "lugar": "Guayacanes",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Sector afectado; árbol caído en la etapa 4.",
+      "fuente": "Segura EP (El Comercio)",
+      "fecha": "26 oct"
     }
   ],
   "recurrentes": [
@@ -479,5 +509,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), COE municipal de Guayaquil, ATM, Municipio de Samborondón, INAMHI, INOCAR, Primicias, Metro Ecuador, Diario Extra, Vistazo, El Mercurio, El Universo, Municipio de Durán, Expreso"
+  "fuentes": "Segura EP (C5GYE), ATM, INAMHI, INOCAR, Municipio de Samborondón, El Comercio, El Diario, Primicias, Metro Ecuador, Diario Extra, Vistazo, El Mercurio, El Universo, Expreso"
 }
