@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calles Inundadas GYE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+/* Mapa a pantalla completa con panel oscuro a la izquierda; arriba, pestañas entre rutas/alertas y lluvia en vivo */
+:root{
+  --chrome:#111A28; --chrome-2:#1A2638; --chrome-3:#24334A; --line:#2E405B;
+  --fg:#EEF2F7; --muted:#A6B3C5; --accent:#F2B63D;
+  --display:'Oswald','Arial Narrow',Arial,sans-serif; --body:'Public Sans',Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:#111A28;color:#EEF2F7;font-family:var(--body);font-size:14px;line-height:1.45}
+.app{position:relative;height:100%;display:flex}
+.side{width:370px;flex:none;background:var(--chrome);border-right:1px solid var(--line);overflow-y:auto;
+  padding:16px 16px 24px 16px;display:flex;flex-direction:column;gap:16px;transition:margin-left .25s}
+.app.collapsed .side{margin-left:-370px}
+.mapwrap{position:relative;flex:1;min-width:0}
+.view{position:absolute;top:0;right:0;bottom:0;left:0}
+#map{background:#CFE0EA}
+#windy{border:0;width:100%;height:100%;display:block;background:#111A28}
+.brand img{height:40px;display:block}
+.card{background:var(--chrome-2);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+h1{font-family:var(--display);font-weight:600;font-size:24px;line-height:1.1;margin:0}
+h2{font-family:var(--display);font-weight:500;font-size:15px;letter-spacing:.8px;text-transform:uppercase;margin:0;color:var(--muted)}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);margin:0}
+.small{font-size:12.5px;color:var(--muted);margin:0}
+.alerta{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;margin:0}
+.alerta i{flex:none;width:8px;height:8px;border-radius:50%;margin-top:6px}
+.marea .big{font-family:var(--display);font-size:30px;font-weight:600;line-height:1}
+.hrs{display:flex;gap:8px}
+.hrs div{flex:1;background:var(--chrome-3);border-radius:8px;padding:6px 8px;font-size:12px;color:var(--muted)}
+.hrs b{display:block;font-size:15px;color:var(--fg)}
+.tramos{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.tramo{width:100%;text-align:left;font:inherit;color:inherit;background:var(--chrome-2);border:1px solid var(--chrome-2);border-radius:12px;
+  padding:12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:6px}
+.tramo:hover,.tramo[aria-pressed="true"]{background:var(--chrome-3)}
+.tramo:focus-visible,.chip:focus-visible,.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tramo .top{display:flex;justify-content:space-between;align-items:flex-start}
+.tramo .top > span:first-child{padding-right:10px}
+.tramo .name{font-weight:700;font-size:14.5px}
+.tramo .cli{font-size:12px;color:var(--muted)}
+.tramo p{margin:0;font-size:13px}
+.tramo .rec{color:var(--muted)}
+.lvl{flex:none;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:999px;color:#111A28}
+.fuentes{margin:0;padding-left:18px;font-size:12.5px;color:var(--muted)}
+
+.topbar{position:absolute;z-index:1000;top:12px;left:12px;right:64px;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;pointer-events:none}
+.group{pointer-events:auto;display:flex;flex-wrap:wrap;gap:4px;background:rgba(17,26,40,.94);border-radius:12px;padding:5px;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.tab,.chip{font:inherit;font-size:12.5px;font-weight:600;color:var(--fg);background:transparent;border:0;border-radius:8px;padding:7px 11px;cursor:pointer;white-space:nowrap}
+.tab{font-family:var(--display);font-size:14px;letter-spacing:.4px;text-transform:uppercase;padding:7px 13px}
+.tab[aria-selected="true"],.chip[aria-pressed="true"]{background:var(--accent);color:#111A28}
+.chip .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.group.hide{display:none}
+.toggle-side{position:absolute;z-index:1001;left:0;top:50%;margin-top:-28px;width:22px;height:56px;border:0;border-radius:0 8px 8px 0;background:var(--chrome);color:var(--fg);cursor:pointer}
+.windy-note{position:absolute;z-index:1000;left:12px;bottom:14px;background:rgba(17,26,40,.94);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--muted);max-width:420px}
+
+.btn-reco{pointer-events:auto;font:inherit;font-family:var(--display);font-size:14px;letter-spacing:.4px;text-transform:uppercase;
+  background:#E5533C;color:#FFFFFF;border:0;border-radius:12px;padding:12px 16px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.btn-reco:hover{background:#F0644D}
+.btn-reco:focus-visible,.m-close:focus-visible,.m-tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.side .btn-reco{width:100%;box-shadow:none;font-size:15px}
+.modal{position:fixed;z-index:3000;top:0;right:0;bottom:0;left:0;background:rgba(5,10,18,.72);display:none;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}
+.m-box{background:#111A28;color:#EEF2F7;border:1px solid #2E405B;border-radius:16px;width:100%;max-width:980px;max-height:100%;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.m-head{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 20px 12px;border-bottom:1px solid #2E405B}
+.m-head h2{font-size:24px;color:#EEF2F7;letter-spacing:.3px;text-transform:none;font-weight:600}
+.m-close{font:inherit;font-size:22px;line-height:1;background:#24334A;color:#EEF2F7;border:0;border-radius:10px;width:40px;height:40px;cursor:pointer;flex:none}
+.m-tabs{display:flex;flex-wrap:wrap;gap:6px;padding:12px 20px 0}
+.m-tab{font:inherit;font-size:13px;font-weight:600;color:#EEF2F7;background:#1A2638;border:0;border-radius:999px;padding:7px 13px;cursor:pointer}
+.m-tab[aria-selected="true"]{background:#F2B63D;color:#111A28}
+.m-body{overflow-y:auto;padding:16px 20px 20px}
+.m-grid{display:flex;flex-wrap:wrap;gap:12px}
+.m-card{flex:1 1 280px;min-width:0;background:#1A2638;border-radius:12px;padding:14px 16px;border-top:4px solid var(--ac,#F2B63D)}
+.m-card h3{font-family:var(--display);font-weight:600;font-size:17px;margin:0 0 8px;letter-spacing:.3px}
+.m-card ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.5}
+.m-card li{margin-bottom:5px}
+.m-regla{background:#F2B63D;color:#111A28;border-radius:12px;padding:12px 16px;font-weight:700;font-size:15px;margin-bottom:12px}
+.m-foot{padding:10px 20px 16px;font-size:12px;color:#A6B3C5;border-top:1px solid #2E405B}
+.ico{background:none;border:0}
+.chip svg{vertical-align:-3px;margin-right:6px}
+.corte-viejo{color:#F2B63D!important;font-weight:700}
+.modo{font:inherit;font-family:var(--display);font-size:14px;letter-spacing:.4px;text-transform:uppercase;color:var(--fg);background:transparent;border:0;border-radius:8px;padding:8px 13px;cursor:pointer;white-space:nowrap;display:flex;align-items:center}
+.modo[aria-pressed="true"]{background:var(--accent);color:#111A28}
+.modo:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.live{width:10px;height:10px;border-radius:50%;background:#E5533C;margin-right:8px;box-shadow:0 0 0 0 rgba(229,83,60,.7);animation:pulso 1.6s infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(229,83,60,.7)}70%{box-shadow:0 0 0 8px rgba(229,83,60,0)}100%{box-shadow:0 0 0 0 rgba(229,83,60,0)}}
+.sw-zona{width:14px;height:11px;border-radius:3px;background:#4F8FE0;border:1px solid #2F5FAE;margin-right:8px}
+.leyenda{position:absolute;z-index:1000;right:12px;bottom:28px;background:rgba(17,26,40,.94);border-radius:12px;padding:10px 14px;display:flex;flex-direction:column;gap:8px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.35);max-width:260px}
+.leyenda > div{display:flex;flex-direction:column;gap:5px}
+.leyenda span{display:flex;align-items:center;gap:8px}
+.leyenda .ln{display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid #FFFFFF;flex:none}
+.leyenda .sq{display:inline-block;width:14px;height:11px;border-radius:3px;background:#4F8FE0;border:1px solid #2F5FAE;flex:none}
+.resumen{display:flex;gap:6px}
+.res{flex:1;background:var(--chrome-3);border-radius:8px;border-top:4px solid #2F7FD6;padding:6px 6px 8px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.res b{font-family:var(--display);font-size:24px;line-height:1.1}
+.res span{font-size:10.5px;line-height:1.25;color:var(--muted)}
+.filtros{display:flex;gap:6px;flex-wrap:wrap}
+.filtros .chip{background:var(--chrome-2)}
+.filtros .chip[aria-pressed="true"]{background:var(--accent);color:#111A28}
+.vacio{font-size:13px;color:var(--muted);background:var(--chrome-2);border-radius:12px;padding:12px 14px}
+@media (max-width:820px){.leyenda{display:none}}
+@media (prefers-reduced-motion:reduce){.live{animation:none}}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#1A2638;color:#EEF2F7}
+.leaflet-popup-content{margin:12px 14px;font-size:13px;line-height:1.45}
+.leaflet-container a.leaflet-popup-close-button{color:#A6B3C5}
+.pop-src{display:block;margin-top:4px;color:#A6B3C5;font-size:11.5px}
+.leaflet-top.leaflet-right{margin-top:4px}
+@media (max-width:820px){
+  .app{flex-direction:column-reverse;height:auto}
+  .side{width:auto;border-right:0;border-top:1px solid var(--line);overflow:visible}
+  .app.collapsed .side{margin-left:0}
+  .mapwrap{height:80vh;flex:none}
+  .toggle-side{display:none}
+  .topbar{right:12px}
+}
+</style>
+<script>
+if(document.documentMode){document.write('<div style="font-family:Arial,sans-serif;padding:40px;background:#111A28;color:#ffffff;font-size:18px;line-height:1.5"><b>Este navegador ya no es compatible.</b><br>Internet Explorer fue retirado por Microsoft. Abra este archivo en Microsoft Edge, Google Chrome, Safari, Firefox u Opera.</div>');}
+</script>
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="brand"><img src="data:image/png;base64,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" alt="TeleArseg"></div>
+    <div>
+      <p class="eyebrow">Jefatura de Monitoreo · Telearseg</p>
+      <h1>Calles inundadas en Guayaquil y Samborondón</h1>
+      <p class="small" id="corte">Cargando datos…</p>
+    </div>
+
+    <button class="btn-reco" type="button" data-open-reco>&#9888; Recomendaciones de seguridad</button>
+
+    <div class="card">
+      <h2>Resumen</h2>
+      <div class="resumen" id="resumen"></div>
+      <div id="alertas" style="display:flex;flex-direction:column;gap:8px"></div>
+    </div>
+
+    <div class="card marea">
+      <p class="eyebrow" id="mareaTitulo"></p>
+      <p style="margin:0"><span class="big" id="mareaAltura"></span> <span id="mareaTexto"></span></p>
+      <div class="hrs" id="mareaHoras"></div>
+      <p class="small" id="mareaNota"></p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <h2>Puntos reportados</h2>
+      <div class="filtros" id="filtroCanton">
+        <button class="chip" type="button" data-canton="todos" aria-pressed="true">Todos</button>
+        <button class="chip" type="button" data-canton="Guayaquil" aria-pressed="false">Guayaquil</button>
+        <button class="chip" type="button" data-canton="Samborondón" aria-pressed="false">Samborondón</button>
+      </div>
+      <ul class="tramos" id="puntos"></ul>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <h2>Fuentes</h2>
+      <ul class="fuentes">
+        <li id="fuentesDatos"></li>
+        <li>Zonas inundables: Municipio de Guayaquil (estudios de Interagua y ESPOL, eventos 2007–2024)</li>
+        <li>Lluvia en vivo: Windy.com · Mapa base: Esri</li>
+      </ul>
+      <p class="small">Ubicaciones referenciales, en la intersección o el sector que indica cada fuente.</p>
+    </div>
+  </aside>
+
+  <div class="mapwrap">
+    <div id="map" class="view" aria-label="Mapa de calles inundadas en Guayaquil y Samborondón"></div>
+    <div id="windyView" class="view" style="display:none">
+      <iframe id="windy" title="Lluvia en vivo" loading="lazy" src="about:blank"></iframe>
+    </div>
+    <button class="toggle-side" id="toggleSide" aria-label="Ocultar o mostrar el panel">&#8249;</button>
+
+    <div class="topbar">
+      <div class="group modos" id="modos">
+        <button class="modo" type="button" id="btnReal" aria-pressed="true"><span class="live"></span>Tiempo real</button>
+        <button class="modo" type="button" id="btnZonas" aria-pressed="false"><span class="sw-zona"></span>Zonas inundables</button>
+        <button class="modo" type="button" id="btnLluvia" aria-pressed="false">&#9748; Lluvia en vivo</button>
+      </div>
+      <div class="group" id="fondos"></div>
+      <div class="group hide" id="wxCapas"></div>
+      <button class="btn-reco" type="button" data-open-reco>&#9888; Recomendaciones</button>
+    </div>
+
+    <div class="leyenda" id="leyenda">
+      <div id="leyReal">
+        <b>Tiempo real</b>
+        <span><i class="ln" style="background:#C2412D"></i>Intransitable</span>
+        <span><i class="ln" style="background:#E8892B"></i>Agua alta / colapso vial</span>
+        <span><i class="ln" style="background:#2F7FD6"></i>Acumulación de agua</span>
+        <span><i class="ln" style="background:#6B7787"></i>Vía o túnel cerrado</span>
+      </div>
+      <div id="leyZonas" style="display:none">
+        <b>Zonas inundables</b>
+        <span><i class="sq"></i>Zona propensa a inundarse</span>
+        <span><i class="ln" style="background:#7B5CC8"></i>Punto crítico recurrente (Samborondón)</span>
+        <span class="small" id="zonasEstado"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="reco" role="dialog" aria-modal="true" aria-labelledby="recoTitle">
+  <div class="m-box">
+    <div class="m-head">
+      <div>
+        <p class="eyebrow">Circulación en Guayaquil y Samborondón con lluvia</p>
+        <h2 id="recoTitle">Recomendaciones de seguridad</h2>
+      </div>
+      <button class="m-close" type="button" id="recoClose" aria-label="Cerrar">&#215;</button>
+    </div>
+    <div class="m-tabs" id="recoTabs">
+      <button class="m-tab" type="button" data-cat="todas" aria-selected="true">Todas</button>
+      <button class="m-tab" type="button" data-cat="antes" aria-selected="false">Antes de salir</button>
+      <button class="m-tab" type="button" data-cat="manejo" aria-selected="false">En la ciudad</button>
+      <button class="m-tab" type="button" data-cat="emergencias" aria-selected="false">Emergencias</button>
+    </div>
+    <div class="m-body">
+      <div class="m-regla">La vida del conductor va primero que la carga y la unidad. Si no se ve el borde de la calle o el agua corre, no se cruza.</div>
+      <div class="m-grid" id="recoGrid">
+        <div class="m-card" data-cat="antes" style="--ac:#3D8BE0">
+          <h3>Antes de salir</h3>
+          <ul>
+            <li>Revisar este mapa y los reportes de Segura EP, la ATM y el ECU 911.</li>
+            <li>Salir con precaución y tener una ruta alterna por avenidas principales.</li>
+            <li>Revisar la hora de la pleamar: con marea alta el agua no drena.</li>
+            <li>Celular cargado y número del Centro de Monitoreo guardado.</li>
+            <li>Llantas, frenos, luces y plumas en buen estado.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="manejo" style="--ac:#F2B63D">
+          <h3>Manejo en la ciudad</h3>
+          <ul>
+            <li>Bajar la velocidad y duplicar la distancia; luces bajas encendidas.</li>
+            <li>No pasar rápido por charcos: la ola entra al motor y moja a peatones y motos.</li>
+            <li>Cuidado con alcantarillas destapadas y baches tapados por el agua.</li>
+            <li>Evitar pasos a desnivel, túneles y calles junto al Estero Salado y al río.</li>
+            <li>Atención a semáforos apagados por cortes de luz: tratar el cruce como pare.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="manejo" style="--ac:#F2B63D">
+          <h3>Zonas a evitar con lluvia fuerte</h3>
+          <ul>
+            <li>Zonas inundables marcadas en el mapa, sobre todo en el norte y el suroeste.</li>
+            <li>Malecón y centro, suburbio y riberas en la hora de la pleamar.</li>
+            <li>Ingresos a urbanizaciones de Samborondón con anegación recurrente.</li>
+            <li>Calles secundarias y desvíos sin iluminación.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="emergencias" style="--ac:#E5533C">
+          <h3>Calle inundada</h3>
+          <ul>
+            <li>Detenerse antes del agua, en un punto alto y visible.</li>
+            <li>No cruzar si el agua pasa la mitad de la llanta o si corre: puede apagar el motor o arrastrar el vehículo.</li>
+            <li>Si hay que pasar un charco corto y poco profundo: primera marcha, despacio y sin detenerse.</li>
+            <li>Si el motor se apaga en el agua, no volver a encenderlo; reportarlo.</li>
+          </ul>
+        </div>
+        <div class="m-card" data-cat="emergencias" style="--ac:#E5533C">
+          <h3>Tormenta eléctrica y seguridad</h3>
+          <ul>
+            <li>Quedarse dentro del vehículo; no detenerse bajo árboles, postes ni vallas.</li>
+            <li>No acercarse a cables caídos; reportarlos.</li>
+            <li>Puertas con seguro y vidrios arriba en congestiones y calles inundadas.</li>
+            <li>Emergencias: ECU 911. Avisar al Centro de Monitoreo cualquier parada no programada.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="m-foot">Basado en las recomendaciones de Segura EP, la SNGR y el INAMHI y en los protocolos de monitoreo GPS. Jefatura de Monitoreo — Telearseg.</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(function(){
+var EMBED={"actualizado":"2026-10-27T10:30:00-05:00","actualizado_texto":"martes 27 oct 2026, 10:30","alertas":[{"tipo":"inundacion","texto":"Esta mañana la marea alta volvió a dejar agua en Cristo del Consuelo, Urdesa, el centro y el suburbio (Segura EP)."},{"tipo":"intransitable","texto":"Ayer hubo vehículos atrapados en Los Ceibos (Leopoldo Carrera Calvo, cerca de la Av. del Bombero)."},{"tipo":"via","texto":"La ATM cerró de forma preventiva los túneles Santa Ana y San Eduardo durante la tormenta del lunes."},{"tipo":"aviso","texto":"Advertencia del INAMHI vigente hasta el miércoles 28 a las 23:00, con lluvias de moderadas a muy fuertes."}],"marea":{"titulo":"Aguaje 25 al 28 oct · INOCAR","altura":"~4,5 m","texto":"pleamar de la noche en Guayaquil-río","horas":[{"dia":"Mar 27","hora":"~20:20"},{"dia":"Mié 28","hora":"~21:10"}],"nota":"Horas estimadas a partir de la pleamar del lunes 26 (19:31, 4,50 m). Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después."},"puntos":[{"lat":-2.2135,"lon":-79.9165,"lugar":"Cristo del Consuelo","canton":"Guayaquil","nivel":"acumulacion","detalle":"Calles E y Otavalo con acumulación de agua por marea alta.","fuente":"Segura EP (C5GYE)","fecha":"27 oct, mañana"},{"lat":-2.1695,"lon":-79.9058,"lugar":"Av. Jorge Pérez Concha y Av. Víctor Emilio Estrada","canton":"Guayaquil","nivel":"acumulacion","detalle":"Acumulación de agua en la intersección, sector Urdesa.","fuente":"Segura EP (C5GYE)","fecha":"27 oct, mañana"},{"lat":-2.2003,"lon":-79.9025,"lugar":"Calle 18 y Alcedo","canton":"Guayaquil","nivel":"acumulacion","detalle":"Acumulación de agua por marea alta.","fuente":"Segura EP (C5GYE)","fecha":"27 oct, mañana"},{"lat":-2.1932,"lon":-79.8985,"lugar":"Enrique Maulme y 10 de Agosto","canton":"Guayaquil","nivel":"acumulacion","detalle":"Acumulación de agua por marea alta.","fuente":"Segura EP (C5GYE)","fecha":"27 oct, mañana"},{"lat":-2.195,"lon":-79.8792,"lugar":"Malecón Simón Bolívar (centro)","canton":"Guayaquil","nivel":"acumulacion","detalle":"Calles con agua en el tramo del malecón por marea alta.","fuente":"Segura EP / Metro Ecuador","fecha":"27 oct, mañana"},{"lat":-2.1702,"lon":-79.9455,"lugar":"Los Ceibos: Leopoldo Carrera Calvo","canton":"Guayaquil","nivel":"intransitable","detalle":"Un vehículo quedó casi sumergido, con el agua a la altura de las ventanas, cerca de la Av. del Bombero.","fuente":"Diario Extra","fecha":"26 oct, tarde"},{"lat":-2.1662,"lon":-79.9385,"lugar":"Av. del Bombero hacia Av. José Rodríguez Bonín","canton":"Guayaquil","nivel":"alto","detalle":"Acumulación de agua en la vía.","fuente":"Segura EP, corte 14:45","fecha":"26 oct, tarde"},{"lat":-2.174,"lon":-79.912,"lugar":"Urdesa: Av. Víctor Emilio Estrada","canton":"Guayaquil","nivel":"alto","detalle":"Colapso vial y acumulación de agua en Costanera y Jiguas.","fuente":"Segura EP / Vistazo","fecha":"26 oct"},{"lat":-2.14,"lon":-79.912,"lugar":"Av. Benjamín Carrión (City Mall)","canton":"Guayaquil","nivel":"alto","detalle":"Colapso vial con agua en la calzada.","fuente":"Segura EP / Vistazo","fecha":"26 oct"},{"lat":-2.108,"lon":-79.94,"lugar":"Vía a Daule","canton":"Guayaquil","nivel":"alto","detalle":"Colapso vial por la lluvia.","fuente":"Vistazo","fecha":"26 oct"},{"lat":-2.11,"lon":-79.905,"lugar":"Samanes","canton":"Guayaquil","nivel":"acumulacion","detalle":"Calles del sector con agua.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.13,"lon":-79.895,"lugar":"Sauces: Av. Isidro Ayora","canton":"Guayaquil","nivel":"acumulacion","detalle":"Agua en la avenida y en calles internas de Sauces 6.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.07,"lon":-79.96,"lugar":"Pascuales: Av. Joya de los Sachas","canton":"Guayaquil","nivel":"acumulacion","detalle":"Acumulación de agua.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.09,"lon":-79.92,"lugar":"Vergeles: Av. 3 NE","canton":"Guayaquil","nivel":"acumulacion","detalle":"Agua en la avenida y callejones del sector.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.163,"lon":-79.9,"lugar":"Kennedy","canton":"Guayaquil","nivel":"acumulacion","detalle":"Calles del sector con acumulación de agua.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.185,"lon":-79.888,"lugar":"La Atarazana","canton":"Guayaquil","nivel":"acumulacion","detalle":"Calles del sector con acumulación de agua.","fuente":"Segura EP","fecha":"26 oct"},{"lat":-2.235,"lon":-79.89,"lugar":"Av. 25 de Julio","canton":"Guayaquil","nivel":"acumulacion","detalle":"Inundación y problemas de tránsito en el sur.","fuente":"Metro Ecuador","fecha":"26 oct"},{"lat":-2.183,"lon":-79.923,"lugar":"Túnel San Eduardo","canton":"Guayaquil","nivel":"cerrado","detalle":"Cierre preventivo de la ATM durante la tormenta.","fuente":"ATM / Vistazo","fecha":"26 oct"},{"lat":-2.1805,"lon":-79.8775,"lugar":"Túnel Santa Ana","canton":"Guayaquil","nivel":"cerrado","detalle":"Cierre preventivo de la ATM durante la tormenta.","fuente":"ATM / Vistazo","fecha":"26 oct"},{"lat":-2.135,"lon":-79.87,"lugar":"Av. Samborondón (varios tramos)","canton":"Samborondón","nivel":"alto","detalle":"Agua sobre la calzada y la acera en varios tramos; cortes de luz en el sector.","fuente":"Diario Extra","fecha":"26 oct, tarde"},{"lat":-2.15,"lon":-79.862,"lugar":"La Puntilla: plazas comerciales","canton":"Samborondón","nivel":"acumulacion","detalle":"El agua entró en algunos locales comerciales.","fuente":"Diario Extra","fecha":"26 oct, tarde"}],"recurrentes":[{"lat":-2.1405,"lon":-79.8655,"lugar":"Los Arcos (La Puntilla)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-2.1355,"lon":-79.863,"lugar":"Entre Ríos (La Puntilla)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-2.129,"lon":-79.871,"lugar":"Parque Histórico (La Puntilla)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-2.138,"lon":-79.86,"lugar":"Av. Diana Quintana (La Puntilla)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-1.9625,"lon":-79.7245,"lugar":"Mercado Municipal (cabecera cantonal)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-1.961,"lon":-79.7255,"lugar":"Plaza Cívica (cabecera cantonal)","canton":"Samborondón","detalle":"Punto de anegación recurrente con lluvias, marea alta y aguaje.","fuente":"Municipio de Samborondón (El Universo, 21 oct)"},{"lat":-2.0985,"lon":-79.8585,"lugar":"Ciudad Celeste (ingreso)","canton":"Samborondón","detalle":"Agua acumulada en unas cuatro cuadras desde la garita, según vecinos.","fuente":"Residentes (El Universo, 21 oct)"},{"lat":-2.105,"lon":-79.857,"lugar":"Biblos (ingreso)","canton":"Samborondón","detalle":"Calles cubiertas de agua cerca de la garita tras lluvias fuertes, según vecinos.","fuente":"Residentes (El Universo, 21 oct)"},{"lat":-2.146,"lon":-79.864,"lugar":"Plaza Samborondón (Clínica Kennedy)","canton":"Samborondón","detalle":"Con lluvias intensas el agua ha llegado a los escalones de un acceso.","fuente":"Residentes (El Universo, 21 oct)"}],"fuentes":"Segura EP, ATM, Municipio de Samborondón, INAMHI, INOCAR, Metro Ecuador, Diario Extra, Vistazo, El Universo"};
+var NIVEL={
+  intransitable:{t:'Intransitable',c:'#C2412D'},
+  alto:{t:'Agua alta / colapso vial',c:'#E8892B'},
+  acumulacion:{t:'Acumulación de agua',c:'#2F7FD6'},
+  cerrado:{t:'Vía o túnel cerrado',c:'#6B7787'}
+};
+var ZONAS_URL='https://services7.arcgis.com/NWWHhu45fOJtCgG3/arcgis/rest/services/Zonas_Inundables_GYE/FeatureServer/0/query';
+
+function each(list,fn){if(!list)return;for(var i=0;i<list.length;i++)fn(list[i],i);}
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+var map=L.map('map',{zoomSnap:0.25,minZoom:9,maxZoom:18}).fitBounds([[-2.26,-79.99],[-2.04,-79.82]]);
+map.zoomControl.setPosition('topright');
+
+var ESRI='https://server.arcgisonline.com/ArcGIS/rest/services/';
+function esri(path,opt){return L.tileLayer(ESRI+path+'/MapServer/tile/{z}/{y}/{x}',opt||{});}
+var FONDOS={
+  mapa:esri('World_Street_Map',{maxZoom:19,attribution:'Mapa © Esri, HERE, Garmin, OpenStreetMap'}),
+  satelite:L.layerGroup([
+    esri('World_Imagery',{maxZoom:19,attribution:'Imágenes © Esri, Maxar, Earthstar Geographics'}),
+    esri('Reference/World_Transportation',{maxZoom:19}),
+    esri('Reference/World_Boundaries_and_Places',{maxZoom:19})
+  ]),
+  oscuro:L.layerGroup([
+    esri('Canvas/World_Dark_Gray_Base',{maxZoom:16,attribution:'Mapa © Esri, HERE, Garmin'}),
+    esri('Canvas/World_Dark_Gray_Reference',{maxZoom:16})
+  ])
+};
+var fondoActual='mapa'; FONDOS.mapa.addTo(map);
+map.createPane('zonas'); map.getPane('zonas').style.zIndex=380;
+
+var G={real:L.layerGroup().addTo(map),zonas:L.layerGroup(),recurrentes:L.layerGroup()};
+
+// Íconos
+function gota(color){return '<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11.5" fill="'+color+'" stroke="#FFFFFF" stroke-width="2"/><path d="M13 5.5c3.2 4.2 4.8 6.6 4.8 8.7a4.8 4.8 0 0 1-9.6 0c0-2.1 1.6-4.5 4.8-8.7z" fill="#FFFFFF"/></svg>';}
+var CERRADO='<svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11.5" fill="#6B7787" stroke="#FFFFFF" stroke-width="2"/><rect x="6.5" y="11" width="13" height="4" rx="1.5" fill="#FFFFFF"/></svg>';
+var RECURRENTE='<svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1.5 22.5 12 12 22.5 1.5 12z" fill="#7B5CC8" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/><rect x="10.8" y="6.5" width="2.4" height="7" rx="1.1" fill="#FFFFFF"/><circle cx="12" cy="16.6" r="1.4" fill="#FFFFFF"/></svg>';
+function divIcon(html,s){return L.divIcon({className:'ico',html:html,iconSize:[s,s],iconAnchor:[s/2,s/2],popupAnchor:[0,-s/2]});}
+function iconoNivel(n){return n==='cerrado'?divIcon(CERRADO,26):divIcon(gota((NIVEL[n]||NIVEL.acumulacion).c),n==='intransitable'?30:26);}
+
+// Botones de modo
+var on={real:true,zonas:false};
+function pintarModos(){
+  $('btnReal').setAttribute('aria-pressed',on.real?'true':'false');
+  $('btnZonas').setAttribute('aria-pressed',on.zonas?'true':'false');
+  $('leyReal').style.display=on.real?'':'none';
+  $('leyZonas').style.display=on.zonas?'':'none';
+  $('leyenda').style.display=(on.real||on.zonas)?'':'none';
+}
+function vistaMapa(){
+  if($('map').style.display!=='none')return;
+  $('map').style.display='block';$('windyView').style.display='none';
+  $('btnLluvia').setAttribute('aria-pressed','false');
+  $('fondos').className='group';$('wxCapas').className='group hide';
+  setTimeout(function(){map.invalidateSize();},50);
+}
+function enLluvia(){return $('btnLluvia').getAttribute('aria-pressed')==='true';}
+$('btnReal').onclick=function(){var w=enLluvia();vistaMapa();on.real=w?true:!on.real;
+  if(on.real)map.addLayer(G.real);else map.removeLayer(G.real);pintarModos();};
+$('btnZonas').onclick=function(){var w=enLluvia();vistaMapa();on.zonas=w?true:!on.zonas;
+  if(on.zonas){map.addLayer(G.zonas);map.addLayer(G.recurrentes);cargarZonas();}
+  else{map.removeLayer(G.zonas);map.removeLayer(G.recurrentes);}
+  pintarModos();};
+
+// Zonas inundables (servicio público del Municipio de Guayaquil), se cargan al primer uso
+var zonasCargadas=false,zonasCargando=false;
+function cargarZonas(){
+  if(zonasCargadas||zonasCargando)return;
+  zonasCargando=true;$('zonasEstado').textContent='Cargando zonas…';
+  var q='?where='+encodeURIComponent('Shape__Area>2000')+'&outFields=*&outSR=4326&geometryPrecision=5&maxAllowableOffset=0.00012&f=geojson';
+  var x=new XMLHttpRequest();
+  x.open('GET',ZONAS_URL+q,true);x.timeout=40000;
+  x.onload=function(){
+    zonasCargando=false;
+    try{
+      var g=JSON.parse(x.responseText);
+      G.zonas.addLayer(L.geoJSON(g,{pane:'zonas',style:{color:'#2F5FAE',weight:1,fillColor:'#4F8FE0',fillOpacity:0.38},
+        onEachFeature:function(f,l){var ha=f.properties&&f.properties['Área_ha'];
+          l.bindPopup('<b>Zona inundable</b><br>Zona propensa a inundarse con lluvias intensas o marea alta'+(ha?' · '+(Math.round(ha*10)/10).toLocaleString('es-EC')+' ha':'')+'.<br><i>No significa que esté inundada en este momento.</i><span class="pop-src">Fuente: Municipio de Guayaquil (Interagua, ESPOL, eventos 2007–2024)</span>');}}));
+      zonasCargadas=true;$('zonasEstado').textContent='Fuente: Municipio de Guayaquil';
+    }catch(e){$('zonasEstado').textContent='No se pudieron cargar las zonas. Intente de nuevo.';}
+  };
+  x.onerror=x.ontimeout=function(){zonasCargando=false;$('zonasEstado').textContent='No se pudieron cargar las zonas. Revise la conexión e intente de nuevo.';};
+  x.send();
+}
+
+// Fondos y lluvia en vivo
+var fondoBtns=[];
+each([['mapa','Mapa'],['satelite','Satélite'],['oscuro','Oscuro']],function(f){
+  var k=f[0],b=document.createElement('button');b.className='chip';b.type='button';b.textContent=f[1];
+  b.setAttribute('aria-pressed',k===fondoActual?'true':'false');
+  b.onclick=function(){map.removeLayer(FONDOS[fondoActual]);fondoActual=k;FONDOS[k].addTo(map);
+    each(fondoBtns,function(x){x.b.setAttribute('aria-pressed',x.k===k?'true':'false');});};
+  fondoBtns.push({k:k,b:b});$('fondos').appendChild(b);
+});
+var wxActual='rain',wxBtns=[];
+function windyUrl(ov){return 'https://embed.windy.com/embed2.html?lat=-2.15&lon=-79.89&detailLat=-2.17&detailLon=-79.90&zoom=10&level=surface&overlay='+ov+
+  '&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1';}
+each([['rain','Lluvia'],['thunder','Tormentas'],['clouds','Nubes']],function(w){
+  var k=w[0],b=document.createElement('button');b.className='chip';b.type='button';b.textContent=w[1];
+  b.setAttribute('aria-pressed',k===wxActual?'true':'false');
+  b.onclick=function(){wxActual=k;$('windy').src=windyUrl(k);each(wxBtns,function(x){x.b.setAttribute('aria-pressed',x.k===k?'true':'false');});};
+  wxBtns.push({k:k,b:b});$('wxCapas').appendChild(b);
+});
+$('btnLluvia').onclick=function(){
+  var activo=this.getAttribute('aria-pressed')==='true';
+  if(activo){vistaMapa();return;}
+  this.setAttribute('aria-pressed','true');
+  $('map').style.display='none';$('windyView').style.display='block';$('leyenda').style.display='none';
+  $('fondos').className='group hide';$('wxCapas').className='group';
+  if($('windy').src.indexOf('windy')<0)$('windy').src=windyUrl(wxActual);
+};
+
+// Datos
+var cantonActual='todos',puntosData=[],markers=[];
+function pintarLista(){
+  var ul=$('puntos');ul.innerHTML='';
+  var lista=[];each(puntosData,function(p,i){if(cantonActual==='todos'||p.canton===cantonActual)lista.push(i);});
+  if(!lista.length){var li=document.createElement('li');li.className='vacio';li.textContent='Sin reportes recientes en '+cantonActual+'. Revise las zonas inundables y los puntos críticos recurrentes.';ul.appendChild(li);return;}
+  each(lista,function(i){
+    var p=puntosData[i],n=NIVEL[p.nivel]||NIVEL.acumulacion;
+    var li=document.createElement('li'),b=document.createElement('button');
+    b.type='button';b.className='tramo';b.style.borderLeft='5px solid '+n.c;
+    b.innerHTML='<span class="top"><span><span class="name">'+esc(p.lugar)+'</span><br><span class="cli">'+esc(p.canton)+' · '+esc(p.fecha)+'</span></span><span class="lvl" style="background:'+n.c+';color:#FFFFFF">'+esc(n.t.split(' /')[0])+'</span></span><p>'+esc(p.detalle)+'</p>';
+    b.onclick=function(){
+      vistaMapa();if(!on.real){on.real=true;map.addLayer(G.real);pintarModos();}
+      map.flyTo([p.lat,p.lon],16,{duration:0.6});setTimeout(function(){markers[i].openPopup();},650);
+      if(window.innerWidth<=820){var mw=document.querySelector('.mapwrap');if(mw&&mw.scrollIntoView)mw.scrollIntoView(true);}
+    };
+    li.appendChild(b);ul.appendChild(li);
+  });
+}
+each(document.querySelectorAll('#filtroCanton .chip'),function(b){b.onclick=function(){
+  cantonActual=b.getAttribute('data-canton');
+  each(document.querySelectorAll('#filtroCanton .chip'),function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+  pintarLista();
+};});
+
+var ALERTA_COL={inundacion:'#2F7FD6',intransitable:'#C2412D',via:'#6B7787',aviso:'#F2B63D',marea:'#0E9AA7'};
+function render(d){
+  var corte=$('corte'),viejo=false;
+  try{viejo=(new Date().getTime()-new Date(d.actualizado).getTime())>14*3600000;}catch(e){}
+  corte.className=viejo?'small corte-viejo':'small';
+  corte.innerHTML='Última actualización: '+esc(d.actualizado_texto)+(viejo?' · puede no estar al día':'')+'.';
+
+  puntosData=d.puntos||[];
+  var cuenta={intransitable:0,alto:0,acumulacion:0,cerrado:0};
+  each(puntosData,function(p){if(cuenta[p.nivel]!=null)cuenta[p.nivel]++;else cuenta.acumulacion++;});
+  var rs=$('resumen');rs.innerHTML='';
+  each(['intransitable','alto','acumulacion','cerrado'],function(k){
+    var div=document.createElement('div');div.className='res';div.style.borderTopColor=NIVEL[k].c;
+    div.innerHTML='<b>'+cuenta[k]+'</b><span>'+esc(NIVEL[k].t)+'</span>';rs.appendChild(div);});
+
+  var al=$('alertas');al.innerHTML='';
+  each(d.alertas,function(a){var p=document.createElement('p');p.className='alerta';
+    p.innerHTML='<i style="background:'+(ALERTA_COL[a.tipo]||'#F2B63D')+'"></i>'+esc(a.texto);al.appendChild(p);});
+
+  var m=d.marea||{};
+  $('mareaTitulo').textContent=m.titulo||'';$('mareaAltura').textContent=m.altura||'';
+  $('mareaTexto').textContent=m.texto||'';$('mareaNota').textContent=m.nota||'';
+  var mh=$('mareaHoras');mh.innerHTML='';
+  each(m.horas,function(h){var div=document.createElement('div');div.innerHTML=esc(h.dia)+'<b>'+esc(h.hora)+'</b>';mh.appendChild(div);});
+  $('fuentesDatos').textContent='Reportes: '+(d.fuentes||'');
+
+  G.real.clearLayers();markers=[];
+  each(puntosData,function(p,i){
+    var n=NIVEL[p.nivel]||NIVEL.acumulacion;
+    var mk=L.marker([p.lat,p.lon],{icon:iconoNivel(p.nivel),zIndexOffset:p.nivel==='intransitable'?800:400})
+      .bindPopup('<b>'+esc(p.lugar)+'</b><br><b style="color:'+n.c+'">'+esc(n.t)+'</b> · '+esc(p.canton)+'<br>'+esc(p.detalle)+'<span class="pop-src">Fuente: '+esc(p.fuente)+' · '+esc(p.fecha)+'</span>');
+    G.real.addLayer(mk);markers[i]=mk;
+  });
+  G.recurrentes.clearLayers();
+  each(d.recurrentes,function(p){G.recurrentes.addLayer(L.marker([p.lat,p.lon],{icon:divIcon(RECURRENTE,24),zIndexOffset:200})
+    .bindPopup('<b>Punto crítico recurrente · '+esc(p.lugar)+'</b><br>'+esc(p.detalle)+'<br><i>No significa que esté inundado en este momento.</i><span class="pop-src">Fuente: '+esc(p.fuente)+'</span>'));});
+  pintarLista();
+}
+
+var ultimo=null;
+function cargar(primera){
+  var x=new XMLHttpRequest();
+  try{x.open('GET','datos.json?t='+new Date().getTime(),true);}catch(e){if(primera)render(EMBED);return;}
+  x.timeout=15000;
+  x.onload=function(){
+    try{if(x.status&&(x.status<200||x.status>=300))throw 0;
+      var d=JSON.parse(x.responseText);
+      if(primera||d.actualizado!==ultimo){ultimo=d.actualizado;render(d);}
+    }catch(e){if(primera)render(EMBED);}
+  };
+  x.onerror=x.ontimeout=function(){if(primera)render(EMBED);};
+  x.send();
+}
+cargar(true);
+setInterval(function(){cargar(false);},30*60000);
+pintarModos();
+
+$('toggleSide').onclick=function(){
+  var a=$('app'),col=a.className.indexOf('collapsed')>-1;
+  a.className=col?'app':'app collapsed';this.innerHTML=col?'&#8249;':'&#8250;';
+  setTimeout(function(){map.invalidateSize();},300);
+};
+window.addEventListener('resize',function(){map.invalidateSize();});
+
+// Ventana de recomendaciones
+var reco=$('reco'),lastFocus=null;
+function openReco(){lastFocus=document.activeElement;reco.className='modal open';$('recoClose').focus();}
+function closeReco(){reco.className='modal';if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+each(document.querySelectorAll('[data-open-reco]'),function(b){b.onclick=openReco;});
+$('recoClose').onclick=closeReco;
+reco.onclick=function(e){if(e.target===reco)closeReco();};
+document.addEventListener('keydown',function(e){if((e.key==='Escape'||e.keyCode===27)&&reco.className.indexOf('open')>-1)closeReco();});
+var recoTabs=document.querySelectorAll('#recoTabs .m-tab'),recoCards=document.querySelectorAll('#recoGrid .m-card');
+each(recoTabs,function(t){t.onclick=function(){
+  var cat=t.getAttribute('data-cat');
+  each(recoTabs,function(x){x.setAttribute('aria-selected',x===t?'true':'false');});
+  each(recoCards,function(c){c.style.display=(cat==='todas'||c.getAttribute('data-cat')===cat)?'':'none';});
+};});
+})();
+
+</script>
+</body>
+</html>
