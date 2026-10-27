@@ -283,6 +283,86 @@
       "detalle": "El agua entró en algunos locales comerciales.",
       "fuente": "Diario Extra",
       "fecha": "26 oct, tarde"
+    },
+    {
+      "lat": -2.115,
+      "lon": -79.902,
+      "lugar": "Samanes 1: Av. Francisco Rizzo y Elina Manzano",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1235,
+      "lon": -79.8935,
+      "lugar": "Sauces 8: Av. Isidro Ayora y José Santos Rodríguez",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1835,
+      "lon": -79.8805,
+      "lugar": "Malecón y Juan Montalvo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1615,
+      "lon": -79.9025,
+      "lugar": "Kennedy: Av. Francisco Urbina (EAS Kennedy)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.082,
+      "lon": -79.911,
+      "lugar": "Av. Narcisa de Jesús (ingreso a Mucho Lote 2)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.206,
+      "lon": -79.905,
+      "lugar": "Calle 39 y Vacas Galindo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1815,
+      "lon": -79.8855,
+      "lugar": "La Atarazana: Av. La Democracia y Sufragio Libre",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
+    },
+    {
+      "lat": -2.1675,
+      "lon": -79.91,
+      "lugar": "Urdesa: calles Ficus y Cuarta",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada por Segura EP.",
+      "fuente": "Segura EP (Diario Extra)",
+      "fecha": "26 oct"
     }
   ],
   "recurrentes": [

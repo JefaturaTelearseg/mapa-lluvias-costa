@@ -90,7 +90,7 @@
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "57 zonas afectadas el lunes; esta mañana la marea alta dejó agua en Cristo del Consuelo, Urdesa, el centro y el suburbio. INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00.",
+      "situacion": "57 zonas afectadas el lunes; esta mañana la marea alta dejó agua en Cristo del Consuelo, Urdesa, el centro y el suburbio. INAMHI prevé otro pico de lluvia hoy entre las 15:00 y las 17:00. En Samborondón hubo agua en la Av. Samborondón y La Puntilla; en Durán hay clases no presenciales y El Recreo, Primavera y Panorama se inundan con frecuencia.",
       "recomendacion": "Salir y circular con precaución; evitar zonas bajas, Estero Salado y riberas entre las 15:00 y las 22:00, cuando coinciden el pico de lluvia y la pleamar de las 20:16."
     },
     {
@@ -309,6 +309,41 @@
       "lugar": "Tenguel",
       "detalle": "Calles y viviendas inundadas por los ríos Pilco y Tenguel.",
       "fuente": "Prefectura del Guayas y SNGR, 26 oct 2026"
+    },
+    {
+      "lat": -2.135,
+      "lon": -79.87,
+      "lugar": "Av. Samborondón (Samborondón)",
+      "detalle": "Agua sobre la calzada y la acera en varios tramos el lunes 26; cortes de luz en el sector.",
+      "fuente": "Diario Extra, 26 oct 2026"
+    },
+    {
+      "lat": -2.15,
+      "lon": -79.862,
+      "lugar": "La Puntilla, plazas comerciales (Samborondón)",
+      "detalle": "El agua entró en algunos locales el lunes 26. Puntos que se anegan con frecuencia: Los Arcos, Entre Ríos, Parque Histórico, Diana Quintana, Ciudad Celeste y Biblos.",
+      "fuente": "Diario Extra, 26 oct; Municipio de Samborondón (El Universo, 21 oct)"
+    },
+    {
+      "lat": -2.165,
+      "lon": -79.828,
+      "lugar": "El Recreo (Durán)",
+      "detalle": "Etapas 1 a 4 con agua por encima de las aceras en la última lluvia fuerte reportada (19 oct). Sector que se inunda con frecuencia. Hoy hay clases no presenciales en zonas afectadas de Durán.",
+      "fuente": "El Universo y Expreso, 19 oct; Ministerio de Educación, 27 oct"
+    },
+    {
+      "lat": -2.178,
+      "lon": -79.84,
+      "lugar": "Primavera 1 y Panorama (Durán)",
+      "detalle": "Vías anegadas en la última lluvia fuerte reportada (19 oct), cerca del Puente de la Unidad Nacional; congestión hacia Guayaquil.",
+      "fuente": "Expreso y El Universo, 19 oct 2026"
+    },
+    {
+      "lat": -2.172,
+      "lon": -79.823,
+      "lugar": "Centro y Abel Gilbert (Durán)",
+      "detalle": "Acumulación de agua en la última lluvia fuerte reportada (19 oct).",
+      "fuente": "El Universo, 19 oct 2026"
     }
   ],
   "vias": [
