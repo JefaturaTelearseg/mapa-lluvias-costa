@@ -1,36 +1,36 @@
 {
-  "actualizado": "2026-10-28T06:15:00-05:00",
-  "actualizado_texto": "miércoles 28 oct 2026, 06:15",
+  "actualizado": "2026-10-28T18:10:00-05:00",
+  "actualizado_texto": "miércoles 28 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "desborde",
-      "texto": "15 ríos y canales desbordados en Guayas, El Oro, Santa Elena, Esmeraldas y Los Ríos (SNGR, último corte publicado: 07:00 del 27 oct)."
+      "texto": "12 ríos, esteros y canales siguen desbordados en Guayas, El Oro, Santa Elena y Santo Domingo (SNGR, corte 07:00 del 28 oct); 8 de ellos en Guayas."
     },
     {
       "tipo": "desborde",
-      "texto": "Troncal Sur: ríos Jaguas (Taura), Balao, Tenguel y Pilco desbordados; norte de Machala inundado por el canal El Macho (876 afectados)."
+      "texto": "Troncal Sur: ríos Jaguas (Taura), Balao, Tenguel y Pilco desbordados; norte de Machala afectado por el canal El Macho y río Chaguana en El Guabo."
     },
     {
       "tipo": "aviso",
-      "texto": "Advertencia INAMHI N.° 83 vigente hasta hoy miércoles 28 a las 23:00: lluvias aisladas en la madrugada y nuevas lluvias en la tarde y noche en Guayaquil."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Anoche la marea alta inundó calles del centro y suburbio de Guayaquil (Benjamín Rosales, Malecón y Roca, la 18 y Alcedo, calle 19 entre Q y P); en Samborondón hubo calles anegadas en La Puntilla y la cabecera."
+      "texto": "INAMHI (Advertencia N.° 83): lluvias más fuertes con tormentas esta tarde y noche en el Litoral, hasta la madrugada del jueves 29; Google Flood Hub advierte posibles inundaciones en Guayaquil y Samborondón."
     },
     {
       "tipo": "marea",
-      "texto": "Último día de aguaje: pleamar estimada ~21:00 en Guayaquil-río; evitar zonas bajas y esteros entre las 19:00 y las 23:00."
+      "texto": "Último día de aguaje: pleamar de 4,39 m a las 21:01 en Guayaquil-río; evitar zonas bajas y esteros entre las 19:00 y las 23:00."
+    },
+    {
+      "tipo": "via",
+      "texto": "Vía Alóag–Santo Domingo cerrada en ambos sentidos por deslizamiento en Tandapi (km 60); usar otra ruta hacia la Sierra."
     }
   ],
   "marea": {
     "titulo": "Aguaje hasta hoy 28 oct · INOCAR",
-    "altura": "~4,40 m",
-    "texto": "pleamar estimada hoy en Guayaquil-río (~08:20 y ~21:00); último dato oficial: 4,48 m el 27 oct a las 20:16",
+    "altura": "4,39 m",
+    "texto": "pleamar de hoy en Guayaquil-río a las 21:01 (bajamar 0,55 m a las 15:44)",
     "horas": [
       {
         "dia": "Mié 28",
-        "hora": "~21:00"
+        "hora": "21:01"
       },
       {
         "dia": "Jue 29",
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. Hoy 28 es el último día de aguaje: riesgo de inundación en la pleamar de la noche, sobre todo si coincide con lluvia."
+    "zonas_texto": "Zona baja o cercana a esteros. Hoy 28 es el último día de aguaje: riesgo de inundación en la pleamar de las 21:01, sobre todo si coincide con la lluvia prevista esta noche."
   },
   "tramos": [
     {
@@ -82,7 +82,7 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Ríos Jaguas (Taura), Balao, Tenguel y Pilco siguen desbordados junto a la vía (SNGR, 27 oct); el norte de Machala sigue inundado por el canal El Macho, con 876 afectados y albergues habilitados; río Chaguana desbordado en El Guabo. La advertencia de lluvias del INAMHI sigue vigente hasta esta noche.",
+      "situacion": "Ríos Jaguas (Taura), Balao, Tenguel y Pilco siguen desbordados junto a la vía (SNGR, 28 oct 07:00); canal El Macho desbordado en el norte de Machala, con familias evacuadas, y río Chaguana en Tendales (El Guabo). Lluvias y tormentas previstas esta noche en Santa Rosa y el interior de El Oro.",
       "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua, sobre todo en Taura, Balao–Tenguel y los accesos a Machala y El Guabo."
     },
     {
@@ -90,7 +90,7 @@
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Anoche la pleamar del aguaje dejó agua en Guayaquil: Av. Benjamín Rosales, Malecón y Roca, Santa Elena y 10 de Agosto, la 18 y Alcedo, V. E. Estrada, coop. Héroes del 41 y calle 19 entre Q y P (vehículo detenido por la profundidad). En Samborondón se reportaron calles anegadas en La Puntilla (Entre Ríos, Village Plaza, Diana Quintana, UEES, Ciudad Celeste) y en la cabecera cantonal. En Durán no hay reportes nuevos por calle; El Recreo, Primavera y Panorama se inundan con frecuencia. Hoy hay lluvias previstas en la tarde y noche y la pleamar ~21:00.",
+      "situacion": "Anoche la pleamar dejó agua en Guayaquil (Benjamín Rosales, Malecón, Santa Elena y 10 de Agosto, la 18 y Alcedo, V. E. Estrada, Héroes del 41, calle 19 entre Q y P). Hoy en la mañana las vías del norte solo amanecieron mojadas. En Samborondón siguen frescos los anegamientos del 27 en La Puntilla y la cabecera; en Durán no hay reportes nuevos por calle (El Recreo, Primavera y Panorama se inundan seguido). Esta noche se esperan lluvias fuertes con tormenta y pleamar de 4,39 m a las 21:01; Google Flood Hub advierte posibles inundaciones en Guayaquil y Samborondón.",
       "recomendacion": "Salir y circular con precaución; evitar zonas bajas, Estero Salado, el Malecón y las riberas de Samborondón y Durán entre las 19:00 y las 23:00, cuando coinciden la lluvia y la pleamar."
     },
     {
@@ -98,7 +98,7 @@
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "Río Arenas desbordado en General Villamil (Playas) y río California en La Ponga (Colonche) según el último corte de la SNGR. Hoy termina el aguaje.",
+      "situacion": "Río California sigue desbordado en La Ponga (Colonche); el río Arenas (Playas) ya no figura en el reporte de la SNGR del 28. Lluvias previstas en Salinas en la madrugada y la noche. Hoy termina el aguaje.",
       "recomendacion": "Circular con precaución en puentes y pasos de esteros; no detenerse junto a la playa durante la pleamar de la noche."
     },
     {
@@ -106,7 +106,7 @@
       "riesgo": "medio",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Sin cierres de vía reportados en las últimas 24 h; lluvias aún previstas en el Litoral hasta esta noche.",
+      "situacion": "Desbordes en la parroquia Laurel (Daule), cerca de la salida norte. Sin cierres de vía reportados en Manabí en las últimas 24 h; lluvias previstas en Manta en la madrugada y la noche.",
       "recomendacion": "Salir y circular con precaución, revisar el estado de vías del ECU 911 y evitar viajar de noche."
     },
     {
@@ -114,8 +114,8 @@
       "riesgo": "medio",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "Estero Perinao desbordado en Balzar y desbordes en Laurel (Daule), cerca de la salida norte de Guayaquil; río Las Lolas desbordado en La Unión (Babahoyo). Lluvias previstas en Los Ríos y Santo Domingo.",
-      "recomendacion": "Salir y circular con precaución y no seguir desvíos por vías secundarias."
+      "situacion": "Estero Perinao desbordado en Balzar y desbordes en Laurel (Daule); río Toachi desbordado en Santa María del Toachi (Santo Domingo). Vía Alóag–Santo Domingo cerrada por deslizamiento en Tandapi. Tormentas previstas hoy en Quevedo y Santo Domingo.",
+      "recomendacion": "Salir y circular con precaución, no seguir desvíos por vías secundarias y no tomar la vía Alóag–Santo Domingo mientras siga cerrada."
     }
   ],
   "desbordes": [
@@ -124,77 +124,56 @@
       "lon": -79.95,
       "lugar": "Machala (Machala)",
       "detalle": "Canal El Macho (sector Las Kathyas) y sector La Puentecita, parroquia La Providencia",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -3.15,
       "lon": -79.77,
       "lugar": "Tendales (El Guabo)",
       "detalle": "Río Chaguana (barrio 10 de Octubre, parroquia Tendales)",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -1.72,
       "lon": -79.96,
       "lugar": "Laurel (Daule)",
       "detalle": "Estero El Cañal y ríos Pula y Jaboncillo (sector Laurel)",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.99,
       "lon": -79.79,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Ríos Pilco y Tenguel",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.91,
       "lon": -79.81,
       "lugar": "Balao (Balao)",
       "detalle": "Río Balao",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.33,
       "lon": -79.68,
       "lugar": "Taura (Naranjal)",
       "detalle": "Río Jaguas, recinto Jaime Roldós, parroquia Taura",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -1.366,
       "lon": -79.906,
       "lugar": "Balzar (Balzar)",
       "detalle": "Estero Perinao, varios sectores de la cabecera cantonal",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
-    },
-    {
-      "lat": -2.632,
-      "lon": -80.389,
-      "lugar": "General Villamil (Playas)",
-      "detalle": "Río Arenas, cabecera cantonal",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -1.96,
       "lon": -80.62,
       "lugar": "Colonche (Santa Elena)",
       "detalle": "Río California (sector La Ponga)",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
-    },
-    {
-      "lat": -1.93,
-      "lon": -79.47,
-      "lugar": "La Unión (Babahoyo)",
-      "detalle": "Río Las Lolas, recintos San Rafael y San Clemente",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
-    },
-    {
-      "lat": 1.08,
-      "lon": -78.7,
-      "lugar": "Santa Rita (San Lorenzo)",
-      "detalle": "Río Bogotá, cabecera parroquial",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     }
   ],
   "inundaciones": [
@@ -248,20 +227,6 @@
       "fuente": "Segura EP (El Comercio), 27 oct 2026"
     },
     {
-      "lat": -2.105,
-      "lon": -79.905,
-      "lugar": "Samanes 2 (Guayaquil)",
-      "detalle": "Calles aún inundadas en la noche del 26, agua a la rodilla.",
-      "fuente": "Primicias, 26 oct 2026 22:05"
-    },
-    {
-      "lat": -2.125,
-      "lon": -79.9,
-      "lugar": "La Alborada etapa 13 (Guayaquil)",
-      "detalle": "Calles aún inundadas en la noche del 26.",
-      "fuente": "Primicias, 26 oct 2026 22:05"
-    },
-    {
       "lat": -2.155,
       "lon": -79.89,
       "lugar": "Mall del Sol (Guayaquil)",
@@ -280,21 +245,21 @@
       "lon": -79.78,
       "lugar": "Tendales (El Guabo)",
       "detalle": "Barrio 10 de Octubre afectado por el desborde del río Chaguana.",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.905,
       "lon": -79.815,
       "lugar": "Balao (Balao)",
       "detalle": "Sectores afectados por el desborde del río Balao.",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.995,
       "lon": -79.785,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Sectores afectados por los ríos Pilco y Tenguel.",
-      "fuente": "SNGR, corte 07:00 del 27 oct 2026"
+      "fuente": "SNGR, corte 07:00 del 28 oct 2026"
     },
     {
       "lat": -2.14,
@@ -334,12 +299,12 @@
   ],
   "vias": [
     {
-      "lat": -2.155,
-      "lon": -79.94,
-      "lugar": "Vía Perimetral, Mapasingue Este (Guayaquil)",
-      "detalle": "Deslizamientos de tierra durante la lluvia del 26; también en la coop. El Cóndor y Vista Alegre.",
-      "fuente": "Segura EP (El Comercio), 27 oct 2026"
+      "lat": -0.416,
+      "lon": -78.8,
+      "lugar": "Tandapi, vía Alóag–Santo Domingo (Mejía)",
+      "detalle": "Deslizamiento atrapó dos vehículos; vía cerrada en ambos sentidos en el km 60 y en el peaje de Alóag.",
+      "fuente": "Primicias, 28 oct 2026 09:25"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 27 oct), INAMHI (Advertencia N.° 83), INOCAR, Segura EP, ATM, Municipio de Samborondón, El Universo, Primicias, El Comercio, Metro Ecuador, Diario Extra, El Mercurio, Expreso"
+  "fuentes": "SNGR (corte 07:00 del 28 oct), INAMHI (Advertencia N.° 83), INOCAR (vía El Comercio), Segura EP, ATM, Municipio de Samborondón, Primicias, El Universo, El Comercio, Metro Ecuador, Diario Extra, El Diario, El Mercurio, Expreso"
 }

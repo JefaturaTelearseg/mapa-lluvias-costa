@@ -1,14 +1,14 @@
 {
-  "actualizado": "2026-10-28T06:15:00-05:00",
-  "actualizado_texto": "miércoles 28 oct 2026, 06:15",
+  "actualizado": "2026-10-28T18:10:00-05:00",
+  "actualizado_texto": "miércoles 28 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "Advertencia INAMHI N.° 83 vigente hasta hoy 28 a las 23:00: lluvias aisladas en la madrugada y nuevas lluvias en la tarde y noche."
+      "texto": "INAMHI (Advertencia N.° 83): lluvias fuertes con tormenta esta noche, hasta la madrugada del jueves 29. Google Flood Hub advierte posibles inundaciones en Guayaquil y Samborondón."
     },
     {
       "tipo": "marea",
-      "texto": "Último día de aguaje: pleamar estimada ~21:00. Anoche la marea alta inundó calles del centro y suburbio."
+      "texto": "Último día de aguaje: pleamar de 4,39 m a las 21:01. Anoche la marea alta inundó calles del centro y suburbio."
     },
     {
       "tipo": "intransitable",
@@ -16,7 +16,7 @@
     },
     {
       "tipo": "inundacion",
-      "texto": "Samborondón: calles anegadas en La Puntilla (Entre Ríos, Village Plaza, Diana Quintana, UEES, Ciudad Celeste) y en la cabecera cantonal (Municipio, vía Extra)."
+      "texto": "Samborondón: calles anegadas el 27 en La Puntilla (Entre Ríos, Village Plaza, Diana Quintana, UEES, Ciudad Celeste) y la cabecera; hoy en la mañana sin reportes nuevos."
     },
     {
       "tipo": "aviso",
@@ -25,12 +25,12 @@
   ],
   "marea": {
     "titulo": "Aguaje hasta hoy 28 oct · INOCAR",
-    "altura": "~4,40 m",
-    "texto": "pleamar estimada hoy en Guayaquil-río (~08:20 y ~21:00); último dato oficial: 4,48 m el 27 a las 20:16",
+    "altura": "4,39 m",
+    "texto": "pleamar de hoy en Guayaquil-río a las 21:01 (bajamar 0,55 m a las 15:44)",
     "horas": [
       {
         "dia": "Mié 28",
-        "hora": "~21:00"
+        "hora": "21:01"
       },
       {
         "dia": "Jue 29",
@@ -153,26 +153,6 @@
       "detalle": "Calles con agua en el tramo del malecón por marea alta.",
       "fuente": "Segura EP / Metro Ecuador",
       "fecha": "27 oct, mañana"
-    },
-    {
-      "lat": -2.1255,
-      "lon": -79.899,
-      "lugar": "Alborada etapa 13",
-      "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Calles y avenidas anegadas; los moradores caminaban con el agua hasta las rodillas.",
-      "fuente": "Primicias",
-      "fecha": "26 oct, 21:00"
-    },
-    {
-      "lat": -2.1045,
-      "lon": -79.906,
-      "lugar": "Samanes 2",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Calles aún inundadas en la noche.",
-      "fuente": "Primicias",
-      "fecha": "26 oct, 21:00"
     },
     {
       "lat": -2.1555,
@@ -389,5 +369,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, INAMHI (Advertencia N.° 83), INOCAR, Municipio de Samborondón, Primicias, El Universo, El Comercio, Metro Ecuador, Diario Extra, El Mercurio, Expreso"
+  "fuentes": "Segura EP (C5GYE), ATM, INAMHI (Advertencia N.° 83), INOCAR (vía El Comercio), Municipio de Samborondón, Primicias, El Universo, El Comercio, Metro Ecuador, Diario Extra, El Mercurio"
 }
