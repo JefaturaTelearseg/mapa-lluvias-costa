@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-10-29T06:15:00-05:00",
-  "actualizado_texto": "jueves 29 oct 2026, 06:15",
+  "actualizado": "2026-10-29T18:10:00-05:00",
+  "actualizado_texto": "jueves 29 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84): lluvias intensas hasta el 1 nov, más fuertes el viernes 30 y sábado 31. Hoy: lluvia en la madrugada, aislada en la tarde y otra vez en la noche."
-    },
-    {
-      "tipo": "marea",
-      "texto": "Terminó el aguaje: pleamar de 4,27 m a las 21:46 (4,21 m a las 09:04). Menos riesgo por marea, pero con lluvia el agua drena lento."
+      "texto": "Llueve con truenos desde el mediodía en el norte y noroeste de Guayaquil; INAMHI prevé lluvia hasta la madrugada del 30 y lo más fuerte el viernes 30 y sábado 31 (Advertencia N.° 84)."
     },
     {
       "tipo": "inundacion",
-      "texto": "El 28 en la mañana hubo agua por marea en Urdesa, Cisne 2, la 18 y Alcedo, Benjamín Rosales y el Malecón (cierre parcial en Malecón y Sucre). Sin reportes nuevos anoche."
+      "texto": "Acumulación de agua en la Vía Perimetral y Honorato Vásquez (ATM, 29 oct tarde); calzada mojada en la Av. Francisco de Orellana y la Vía a la Costa."
+    },
+    {
+      "tipo": "marea",
+      "texto": "Sin aguaje: pleamar de 4,27 m a las 21:46. Si llueve fuerte cerca de esa hora el agua drena lento en zonas bajas y el Estero Salado."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón y Durán: sin reportes nuevos por calle; se muestran los puntos que se inundan seguido (La Puntilla, cabecera, El Recreo, Primavera, Panorama)."
+      "texto": "Samborondón: solo lluvia leve y calzada mojada hoy según cámaras del ECU 911; Durán sin reportes nuevos por calle. Se muestran los puntos que se inundan seguido."
     }
   ],
   "marea": {
@@ -40,6 +40,16 @@
     "nota": "Las horas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.158,
+      "lon": -79.938,
+      "lugar": "Vía Perimetral y Av. Honorato Vásquez",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica de la tarde; precaución en la Perimetral.",
+      "fuente": "ATM (Primicias)",
+      "fecha": "29 oct, tarde"
+    },
     {
       "lat": -2.1965,
       "lon": -79.8835,
@@ -119,36 +129,6 @@
       "detalle": "Acumulación de agua por marea alta.",
       "fuente": "Segura EP / ATM (El Universo)",
       "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.2085,
-      "lon": -79.9125,
-      "lugar": "Calle 19 entre Q y P (escuela Alicia Riofrío)",
-      "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "El agua entró a viviendas y un conductor quedó detenido por la profundidad; sube con el Estero Salado.",
-      "fuente": "El Universo",
-      "fecha": "27 oct, noche"
-    },
-    {
-      "lat": -2.215,
-      "lon": -79.915,
-      "lugar": "Coop. Héroes del 41",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP (Primicias)",
-      "fecha": "27 oct, noche"
-    },
-    {
-      "lat": -2.1955,
-      "lon": -79.8925,
-      "lugar": "Santa Elena y 10 de Agosto",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP (Primicias)",
-      "fecha": "27 oct, noche"
     }
   ],
   "recurrentes": [
@@ -265,5 +245,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Primicias, Diario Extra, Expreso"
+  "fuentes": "ATM, Segura EP (C5GYE), ECU 911, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Primicias, Diario Extra, Expreso"
 }

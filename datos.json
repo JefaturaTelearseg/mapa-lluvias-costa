@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-29T06:15:00-05:00",
-  "actualizado_texto": "jueves 29 oct 2026, 06:15",
+  "actualizado": "2026-10-29T18:10:00-05:00",
+  "actualizado_texto": "jueves 29 oct 2026, 18:10",
   "alertas": [
     {
       "tipo": "desborde",
@@ -8,7 +8,7 @@
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84): lluvias intensas y tormentas del 29 oct al 1 nov en Esmeraldas, Santo Domingo, Los Ríos, Guayas, El Oro e interior de Manabí y Santa Elena; lo más fuerte el viernes 30 y sábado 31."
+      "texto": "INAMHI (Advertencia N.° 84, vigente desde hoy 13:00 hasta el 1 nov 23:00): lluvias intensas y tormentas en Esmeraldas, Santo Domingo, Los Ríos, Guayas y El Oro; lo más fuerte el viernes 30 y sábado 31. Esta noche (17:00–22:00) lluvia fuerte en Balzar, Colimes, El Empalme, Quinindé, Los Ríos, Manabí y Santo Domingo."
     },
     {
       "tipo": "inundacion",
@@ -16,7 +16,7 @@
     },
     {
       "tipo": "marea",
-      "texto": "Terminó el aguaje: pleamar de 4,27 m a las 21:46 (y 4,21 m a las 09:04) en Guayaquil-río; puede acumularse agua si coincide con lluvia."
+      "texto": "Pleamar de 4,27 m a las 21:46 de hoy en Guayaquil-río (sin aguaje); con la lluvia de esta noche puede acumularse agua en zonas bajas."
     },
     {
       "tipo": "via",
@@ -90,15 +90,15 @@
       "riesgo": "medio",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Anoche terminó el aguaje y no hay reportes nuevos de calles inundadas en Guayaquil. El 28 en la mañana hubo agua por marea en Cisne 2, Urdesa (V. E. Estrada y Jorge Pérez Concha), la 18 y Alcedo, Maulme y 10 de Agosto, Benjamín Rosales y el Malecón (cierre parcial en Malecón y Sucre). En Samborondón el último reporte es del 27 (La Puntilla y la cabecera) y en Durán del 19 oct (El Recreo, Primavera, Panorama). Hoy se esperan lluvias en la madrugada, aisladas en la tarde y en la noche; clases presenciales retoman hoy en los tres cantones.",
-      "recomendacion": "Salir y circular con precaución; evitar zonas bajas, Estero Salado, el Malecón y las riberas de Samborondón y Durán si llueve cerca de la pleamar (09:04 y 21:46)."
+      "situacion": "Desde el mediodía de hoy llueve con truenos en el norte y noroeste de Guayaquil; acumulación de agua en la Vía Perimetral y Honorato Vásquez y calzada mojada en la Av. Francisco de Orellana y la Vía a la Costa (ATM y Segura EP). INAMHI prevé lluvia hasta la madrugada del 30. El 28 en la mañana hubo agua por marea en Urdesa, Cisne 2, la 18 y Alcedo, Benjamín Rosales y el Malecón. En Samborondón el último reporte por calle es del 27 (La Puntilla y la cabecera; hoy solo lluvia leve según ECU 911) y en Durán del 19 oct (El Recreo, Primavera, Panorama).",
+      "recomendacion": "Salir y circular con precaución, con luces encendidas y distancia; evitar zonas bajas, Estero Salado, el Malecón y las riberas de Samborondón y Durán si llueve cerca de la pleamar (21:46)."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "El río California (Colonche) ya no figura desbordado en el reporte de la SNGR de las 19:00 del 28. Sin cierres de vía reportados. El INAMHI prevé lluvias intensas en el interior de Santa Elena del 29 oct al 1 nov, con más fuerza el viernes 30 y sábado 31. Terminó el aguaje.",
+      "situacion": "Sin desbordes ni cierres de vía reportados (el río California ya no figura en el reporte de la SNGR de las 19:00 del 28). Hoy en la tarde calzada mojada y tráfico fluido en la Vía a la Costa a la altura de Casuarina (Segura EP). INAMHI prevé lluvias en el interior de Santa Elena hasta el 1 nov, con más fuerza el viernes 30 y sábado 31.",
       "recomendacion": "Circular con precaución en puentes y pasos de esteros, sobre todo con lluvia el viernes y el sábado."
     },
     {
@@ -106,15 +106,15 @@
       "riesgo": "medio",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Ríos Pula, Jaboncillo y estero El Cañal siguen desbordados en Laurel (Daule), cerca de la salida norte. En Manabí, un desborde complicó el paso entre Rocafuerte y Tosagua (El Universo, 28 oct). INAMHI prevé lluvias intensas en el interior de Manabí hasta el 1 nov.",
+      "situacion": "Ríos Pula, Jaboncillo y estero El Cañal siguen desbordados en Laurel (Daule), cerca de la salida norte. En Manabí, un desborde complicó el paso entre Rocafuerte y Tosagua (El Universo, 28 oct). Esta noche INAMHI prevé lluvia fuerte en varios cantones de Manabí; lluvias intensas hasta el 1 nov.",
       "recomendacion": "Salir y circular con precaución, revisar el estado de vías del ECU 911 y evitar viajar de noche."
     },
     {
       "id": "quevedo",
-      "riesgo": "medio",
+      "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "Estero Perinao desbordado en Balzar y desbordes en Laurel (Daule) (SNGR, 19:00 del 28 oct); el río Toachi ya no figura desbordado. Vía Alóag–Santo Domingo con paso controlado por deslaves en Tandapi (km 57, 60 y 68). INAMHI prevé lluvias intensas en Los Ríos y Santo Domingo, con más fuerza el viernes 30 y sábado 31.",
+      "situacion": "Estero Perinao desbordado en Balzar y desbordes en Laurel (Daule) (SNGR, 19:00 del 28 oct). Esta noche INAMHI prevé lluvia fuerte en Balzar, Colimes, El Empalme, varios cantones de Los Ríos y todo Santo Domingo (boletín N.° 57, 17:00–22:00). Vía Alóag–Santo Domingo con paso controlado por deslaves en Tandapi (km 57, 60 y 68). Lo más fuerte del temporal se espera el viernes 30 y sábado 31.",
       "recomendacion": "Salir y circular con precaución, no seguir desvíos por vías secundarias y prever demoras en la vía Alóag–Santo Domingo."
     }
   ],
@@ -185,13 +185,6 @@
       "fuente": "Segura EP (El Universo), 28 oct 2026 09:07"
     },
     {
-      "lat": -2.208,
-      "lon": -79.912,
-      "lugar": "Calle 19 entre Q y P y coop. Héroes del 41 (Guayaquil)",
-      "detalle": "Agua ingresó a viviendas y un conductor quedó detenido por la profundidad con la marea alta de la noche del 27.",
-      "fuente": "El Universo y Segura EP, 27 oct 2026 noche"
-    },
-    {
       "lat": -3.26,
       "lon": -79.96,
       "lugar": "Norte de Machala: Las Katias, Los Vergeles (Machala)",
@@ -223,7 +216,7 @@
       "lat": -2.14,
       "lon": -79.866,
       "lugar": "La Puntilla: Entre Ríos, Village Plaza y Av. Diana Quintana (Samborondón)",
-      "detalle": "Última lluvia fuerte reportada (27 oct): calles anegadas hasta no distinguir veredas ni calzadas y tránsito colapsado; también UEES, Av. León Febres-Cordero e ingreso a Ciudad Celeste. Sin reportes nuevos el 28.",
+      "detalle": "Última lluvia fuerte reportada (27 oct): calles anegadas hasta no distinguir veredas ni calzadas y tránsito colapsado; también UEES, Av. León Febres-Cordero e ingreso a Ciudad Celeste. Sin reportes nuevos el 28 ni el 29.",
       "fuente": "Municipio de Samborondón (Diario Extra), 27 oct 2026"
     },
     {
@@ -237,7 +230,7 @@
       "lat": -2.165,
       "lon": -79.828,
       "lugar": "El Recreo (Durán)",
-      "detalle": "Etapas 1 a 4 con agua por encima de las aceras en la última lluvia fuerte con reporte por calle (19 oct). Sector que se inunda con frecuencia; sin reportes nuevos el 28.",
+      "detalle": "Etapas 1 a 4 con agua por encima de las aceras en la última lluvia fuerte con reporte por calle (19 oct). Sector que se inunda con frecuencia; sin reportes nuevos el 28 ni el 29.",
       "fuente": "El Universo y Expreso, 19 oct; Ministerio de Educación, 27 oct"
     },
     {
@@ -278,5 +271,5 @@
       "fuente": "El Universo, 28 oct 2026"
     }
   ],
-  "fuentes": "SNGR (cortes 07:00 y 19:00 del 28 oct), INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Segura EP, ATM, Prefectura de Pichincha, Gestión de Riesgos El Oro, Municipio de Samborondón, El Universo, Primicias, Diario Extra, Metro Ecuador, Expreso"
+  "fuentes": "SNGR (corte 19:00 del 28 oct), INAMHI (Advertencia N.° 84 y boletín N.° 57 del 29 oct), INOCAR (tabla de mareas Guayaquil-río), Segura EP, ATM, ECU 911, Prefectura de Pichincha, Gestión de Riesgos El Oro, Municipio de Samborondón, El Universo, Primicias, Diario Extra, Metro Ecuador, Expreso, Teleamazonas"
 }
