@@ -1,44 +1,44 @@
 {
-  "actualizado": "2026-10-30T06:10:00-05:00",
-  "actualizado_texto": "viernes 30 oct 2026, 06:10",
+  "actualizado": "2026-10-30T18:15:00-05:00",
+  "actualizado_texto": "viernes 30 oct 2026, 18:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): hoy viernes y el sábado lo más fuerte de las lluvias en Guayas. Clases presenciales suspendidas hoy en Guayaquil, Samborondón y Durán."
+      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): esta noche y madrugada lluvia con tormenta en Guayaquil; el sábado 31 sigue fuerte en el centro-sur de la Costa."
     },
     {
       "tipo": "inundacion",
-      "texto": "Anoche (19:50) agua acumulada en la Av. Narcisa de Jesús (Los Vergeles y Sebastián Piñera), Sauces 6 y la Av. Pedro Menéndez Gilbert; en la tarde, en la Perimetral y Honorato Vásquez."
+      "texto": "Noche del 29: agua acumulada en Sauces 6, Los Vergeles, Narcisa de Jesús y Pedro Menéndez Gilbert (Guayaquil). A las 07:00 de hoy las calles estaban libres."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Durán: agua acumulada en las calles Loja y Esmeraldas (centro) en la noche del 29; circulación normalizada en la mañana. Samborondón: sin calles anegadas reportadas desde el 27 oct."
     },
     {
       "tipo": "via",
-      "texto": "Tráfico muy congestionado anoche en la Av. de las Américas, Francisco de Orellana, Narcisa de Jesús y el Puente de la Unidad Nacional hacia Durán y Samborondón."
+      "texto": "Hoy solo calzada mojada en la Perimetral, vía a Daule, Narcisa de Jesús y Francisco de Orellana (Segura EP). Precaución por lluvia en la noche."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de anoche 4,27 m (21:46); hoy se estima cerca de las 22:30. Con lluvia a esa hora el agua drena lento en zonas bajas."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Samborondón: anoche llovió en La Puntilla sin reportes de calles anegadas. Durán: sin reportes nuevos por calle. Se muestran los puntos que se inundan seguido."
+      "texto": "Sin aguaje: pleamar de hoy 4,03 m (09:50); la de esta noche se estima cerca de las 22:20. Con lluvia a esa hora el agua drena lento en zonas bajas."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
-    "altura": "4,27 m",
-    "texto": "última pleamar publicada en Guayaquil-río: anoche a las 21:46; hoy se estima cerca de las 22:30, con altura similar o algo menor",
+    "altura": "4,03 m",
+    "texto": "pleamar de hoy en Guayaquil: 4,03 m a las 09:50 (bajamar 0,72 m a las 17:13); la de esta noche se estima cerca de las 22:20, con altura similar",
     "horas": [
       {
         "dia": "Vie 30",
-        "hora": "~22:30"
+        "hora": "09:50"
+      },
+      {
+        "dia": "Vie 30",
+        "hora": "~22:20"
       },
       {
         "dia": "Sáb 31",
-        "hora": "~23:15"
-      },
-      {
-        "dia": "Dom 1",
-        "hora": "~23:55"
+        "hora": "~23:00"
       }
     ],
     "nota": "Las horas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
@@ -50,8 +50,8 @@
       "lugar": "Av. Narcisa de Jesús, a la altura de Los Vergeles",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica.",
-      "fuente": "Segura EP (Vistazo)",
+      "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica. Libre de agua a las 07:00 del 30.",
+      "fuente": "Segura EP (Vistazo); SNGR (El Universo, 30 oct)",
       "fecha": "29 oct, noche (19:50)"
     },
     {
@@ -60,8 +60,8 @@
       "lugar": "Av. Narcisa de Jesús y Sebastián Piñera",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la lluvia (ubicación aproximada sobre la Narcisa de Jesús).",
-      "fuente": "Segura EP (Vistazo)",
+      "detalle": "Acumulación de agua por la lluvia (ubicación aproximada sobre la Narcisa de Jesús). Libre de agua a las 07:00 del 30.",
+      "fuente": "Segura EP (Vistazo); SNGR (El Universo, 30 oct)",
       "fecha": "29 oct, noche (19:50)"
     },
     {
@@ -70,8 +70,8 @@
       "lugar": "Sauces 6, calle Gabriel Roldós (frente a Farmacias Cruz Azul)",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la lluvia.",
-      "fuente": "Segura EP (Vistazo)",
+      "detalle": "Acumulación de agua por la lluvia. Libre de agua a las 07:00 del 30.",
+      "fuente": "Segura EP (Vistazo); SNGR (El Universo, 30 oct)",
       "fecha": "29 oct, noche (19:50)"
     },
     {
@@ -93,6 +93,16 @@
       "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica de la tarde; precaución en la Perimetral.",
       "fuente": "ATM (Primicias)",
       "fecha": "29 oct, tarde"
+    },
+    {
+      "lat": -2.17,
+      "lon": -79.832,
+      "lugar": "Calles Loja y Esmeraldas (centro, parroquia Eloy Alfaro)",
+      "canton": "Durán",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia de la noche; a las 07:00 del 30 la circulación estaba normalizada.",
+      "fuente": "SNGR (El Universo, 30 oct)",
+      "fecha": "29 oct, noche"
     }
   ],
   "recurrentes": [
@@ -197,8 +207,8 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Acumulación de agua en la última lluvia fuerte reportada (19 oct).",
-      "fuente": "El Universo, 19 oct"
+      "detalle": "Último reporte: acumulación de agua en las calles Loja y Esmeraldas en la noche del 29 oct; normalizado en la mañana del 30.",
+      "fuente": "SNGR (El Universo, 30 oct)"
     },
     {
       "lat": -2.19,
@@ -209,5 +219,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, COE Nacional, ECU 911, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Ministerio de Educación, Municipio de Samborondón, Vistazo, Primicias, Diario Extra, El Universo, Expreso"
+  "fuentes": "Segura EP (C5GYE), ATM, SNGR (informe madrugada 30 oct), INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil), Municipio de Samborondón, Vistazo, Primicias, El Universo, Diario Extra, Expreso"
 }
