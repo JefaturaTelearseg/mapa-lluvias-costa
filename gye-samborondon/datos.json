@@ -1,33 +1,33 @@
 {
-  "actualizado": "2026-10-29T18:10:00-05:00",
-  "actualizado_texto": "jueves 29 oct 2026, 18:10",
+  "actualizado": "2026-10-30T06:10:00-05:00",
+  "actualizado_texto": "viernes 30 oct 2026, 06:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "Llueve con truenos desde el mediodía en el norte y noroeste de Guayaquil; INAMHI prevé lluvia hasta la madrugada del 30 y lo más fuerte el viernes 30 y sábado 31 (Advertencia N.° 84)."
+      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): hoy viernes y el sábado lo más fuerte de las lluvias en Guayas. Clases presenciales suspendidas hoy en Guayaquil, Samborondón y Durán."
     },
     {
       "tipo": "inundacion",
-      "texto": "Acumulación de agua en la Vía Perimetral y Honorato Vásquez (ATM, 29 oct tarde); calzada mojada en la Av. Francisco de Orellana y la Vía a la Costa."
+      "texto": "Anoche (19:50) agua acumulada en la Av. Narcisa de Jesús (Los Vergeles y Sebastián Piñera), Sauces 6 y la Av. Pedro Menéndez Gilbert; en la tarde, en la Perimetral y Honorato Vásquez."
+    },
+    {
+      "tipo": "via",
+      "texto": "Tráfico muy congestionado anoche en la Av. de las Américas, Francisco de Orellana, Narcisa de Jesús y el Puente de la Unidad Nacional hacia Durán y Samborondón."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de 4,27 m a las 21:46. Si llueve fuerte cerca de esa hora el agua drena lento en zonas bajas y el Estero Salado."
+      "texto": "Sin aguaje: pleamar de anoche 4,27 m (21:46); hoy se estima cerca de las 22:30. Con lluvia a esa hora el agua drena lento en zonas bajas."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: solo lluvia leve y calzada mojada hoy según cámaras del ECU 911; Durán sin reportes nuevos por calle. Se muestran los puntos que se inundan seguido."
+      "texto": "Samborondón: anoche llovió en La Puntilla sin reportes de calles anegadas. Durán: sin reportes nuevos por calle. Se muestran los puntos que se inundan seguido."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
     "altura": "4,27 m",
-    "texto": "pleamar de hoy en Guayaquil-río a las 21:46 (en la mañana 4,21 m a las 09:04)",
+    "texto": "última pleamar publicada en Guayaquil-río: anoche a las 21:46; hoy se estima cerca de las 22:30, con altura similar o algo menor",
     "horas": [
-      {
-        "dia": "Jue 29",
-        "hora": "21:46"
-      },
       {
         "dia": "Vie 30",
         "hora": "~22:30"
@@ -35,11 +35,55 @@
       {
         "dia": "Sáb 31",
         "hora": "~23:15"
+      },
+      {
+        "dia": "Dom 1",
+        "hora": "~23:55"
       }
     ],
     "nota": "Las horas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.103,
+      "lon": -79.897,
+      "lugar": "Av. Narcisa de Jesús, a la altura de Los Vergeles",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica.",
+      "fuente": "Segura EP (Vistazo)",
+      "fecha": "29 oct, noche (19:50)"
+    },
+    {
+      "lat": -2.112,
+      "lon": -79.895,
+      "lugar": "Av. Narcisa de Jesús y Sebastián Piñera",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia (ubicación aproximada sobre la Narcisa de Jesús).",
+      "fuente": "Segura EP (Vistazo)",
+      "fecha": "29 oct, noche (19:50)"
+    },
+    {
+      "lat": -2.118,
+      "lon": -79.901,
+      "lugar": "Sauces 6, calle Gabriel Roldós (frente a Farmacias Cruz Azul)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia.",
+      "fuente": "Segura EP (Vistazo)",
+      "fecha": "29 oct, noche (19:50)"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.884,
+      "lugar": "Av. Pedro Menéndez Gilbert, Hospital de Neurociencias",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la lluvia.",
+      "fuente": "Segura EP (Vistazo)",
+      "fecha": "29 oct, noche (19:50)"
+    },
     {
       "lat": -2.158,
       "lon": -79.938,
@@ -49,86 +93,6 @@
       "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica de la tarde; precaución en la Perimetral.",
       "fuente": "ATM (Primicias)",
       "fecha": "29 oct, tarde"
-    },
-    {
-      "lat": -2.1965,
-      "lon": -79.8835,
-      "lugar": "Av. Benjamín Rosales (sentido Narcisa de Jesús)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.1915,
-      "lon": -79.8785,
-      "lugar": "Malecón Simón Bolívar y Sucre",
-      "canton": "Guayaquil",
-      "nivel": "cerrado",
-      "detalle": "Cierre parcial de la ATM por agua de la marea alta.",
-      "fuente": "ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.198,
-      "lon": -79.8795,
-      "lugar": "Malecón Simón Bolívar hacia calle Loja",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.2003,
-      "lon": -79.9025,
-      "lugar": "Calle 18 y Alcedo (cerca del EAS Urdesa)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta, otra vez tras los reportes del 27.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.1932,
-      "lon": -79.8985,
-      "lugar": "Enrique Maulme y 10 de Agosto",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.206,
-      "lon": -79.906,
-      "lugar": "Cisne 2",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles con agua por marea alta, cerca del Estero Salado.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.174,
-      "lon": -79.912,
-      "lugar": "Urdesa: Av. Víctor Emilio Estrada",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
-    },
-    {
-      "lat": -2.1695,
-      "lon": -79.9058,
-      "lugar": "Av. Jorge Pérez Concha (Urdesa)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por marea alta.",
-      "fuente": "Segura EP / ATM (El Universo)",
-      "fecha": "28 oct, mañana"
     }
   ],
   "recurrentes": [
@@ -245,5 +209,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "ATM, Segura EP (C5GYE), ECU 911, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Primicias, Diario Extra, Expreso"
+  "fuentes": "Segura EP (C5GYE), ATM, COE Nacional, ECU 911, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Ministerio de Educación, Municipio de Samborondón, Vistazo, Primicias, Diario Extra, El Universo, Expreso"
 }
