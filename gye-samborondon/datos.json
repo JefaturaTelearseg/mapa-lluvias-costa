@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-10-30T18:15:00-05:00",
-  "actualizado_texto": "viernes 30 oct 2026, 18:15",
+  "actualizado": "2026-10-31T06:15:00-05:00",
+  "actualizado_texto": "sábado 31 oct 2026, 06:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): esta noche y madrugada lluvia con tormenta en Guayaquil; el sábado 31 sigue fuerte en el centro-sur de la Costa."
+      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): hoy sábado 31 siguen las lluvias fuertes en el centro-sur de la Costa; Guayaquil, Durán y Samborondón estaban entre las zonas con lluvia fuerte prevista."
     },
     {
       "tipo": "inundacion",
-      "texto": "Noche del 29: agua acumulada en Sauces 6, Los Vergeles, Narcisa de Jesús y Pedro Menéndez Gilbert (Guayaquil). A las 07:00 de hoy las calles estaban libres."
+      "texto": "No hay reportes nuevos de calles anegadas desde la noche del 29 oct. Los últimos puntos (Sauces 6, Los Vergeles, Narcisa de Jesús y Pedro Menéndez Gilbert) se normalizaron el 30 en la mañana."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: agua acumulada en las calles Loja y Esmeraldas (centro) en la noche del 29; circulación normalizada en la mañana. Samborondón: sin calles anegadas reportadas desde el 27 oct."
-    },
-    {
-      "tipo": "via",
-      "texto": "Hoy solo calzada mojada en la Perimetral, vía a Daule, Narcisa de Jesús y Francisco de Orellana (Segura EP). Precaución por lluvia en la noche."
+      "texto": "Durán: último reporte, agua en las calles Loja y Esmeraldas (centro) la noche del 29, ya normalizada. Samborondón: sin calles anegadas reportadas desde el 27 oct; La Puntilla se anega con lluvia fuerte y marea alta."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de hoy 4,03 m (09:50); la de esta noche se estima cerca de las 22:20. Con lluvia a esa hora el agua drena lento en zonas bajas."
+      "texto": "Sin aguaje: pleamares de hoy de 3,85 m (10:43) y 4,01 m (23:28), según INOCAR. Con lluvia cerca de esa hora el agua drena lento."
+    },
+    {
+      "tipo": "via",
+      "texto": "Feriado del 31 oct al 3 nov: más tránsito en salidas de la ciudad. Precaución si llueve."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
-    "altura": "4,03 m",
-    "texto": "pleamar de hoy en Guayaquil: 4,03 m a las 09:50 (bajamar 0,72 m a las 17:13); la de esta noche se estima cerca de las 22:20, con altura similar",
+    "altura": "4,01 m",
+    "texto": "pleamares de hoy en Guayaquil-río: 3,85 m a las 10:43 y 4,01 m a las 23:28 (bajamar 0,81 m a las 18:01); mañana domingo pleamar de 3,71 m a las 11:44",
     "horas": [
       {
-        "dia": "Vie 30",
-        "hora": "09:50"
-      },
-      {
-        "dia": "Vie 30",
-        "hora": "~22:20"
+        "dia": "Sáb 31",
+        "hora": "10:43"
       },
       {
         "dia": "Sáb 31",
-        "hora": "~23:00"
+        "hora": "23:28"
+      },
+      {
+        "dia": "Dom 1",
+        "hora": "11:44"
       }
     ],
-    "nota": "Las horas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Horas según la tabla de INOCAR. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
@@ -83,16 +83,6 @@
       "detalle": "Acumulación de agua por la lluvia.",
       "fuente": "Segura EP (Vistazo)",
       "fecha": "29 oct, noche (19:50)"
-    },
-    {
-      "lat": -2.158,
-      "lon": -79.938,
-      "lugar": "Vía Perimetral y Av. Honorato Vásquez",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la lluvia con tormenta eléctrica de la tarde; precaución en la Perimetral.",
-      "fuente": "ATM (Primicias)",
-      "fecha": "29 oct, tarde"
     },
     {
       "lat": -2.17,
@@ -219,5 +209,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, SNGR (informe madrugada 30 oct), INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil), Municipio de Samborondón, Vistazo, Primicias, El Universo, Diario Extra, Expreso"
+  "fuentes": "Segura EP (C5GYE), SNGR, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, Vistazo, El Universo, Metro Ecuador, El Comercio, Diario Extra, Expreso"
 }
