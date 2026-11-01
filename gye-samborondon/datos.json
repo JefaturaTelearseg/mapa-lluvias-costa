@@ -1,49 +1,59 @@
 {
-  "actualizado": "2026-11-01T06:15:00-05:00",
-  "actualizado_texto": "domingo 1 nov 2026, 06:15",
+  "actualizado": "2026-11-01T18:10:00-05:00",
+  "actualizado_texto": "domingo 1 nov 2026, 18:10",
   "alertas": [
     {
-      "tipo": "inundacion",
-      "texto": "Sábado 31 oct, tarde y noche: acumulación de agua en la Vía Perimetral (La Florida–Honorato Vásquez, sentido norte), Av. Barcelona, Modesto Apolo, Carlos Julio Arosemena, Juan de Dios Martínez y Urdesa central (Segura EP y ATM)."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Durán y Samborondón: sin reportes nuevos de calles anegadas del 30 oct a esta mañana. Último en Durán: calles Loja y Esmeraldas (29 oct); en Samborondón, La Puntilla y la cabecera (27 oct)."
-    },
-    {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84, hasta hoy 1 nov 23:00; anunció la N.° 85): hoy sigue la probabilidad de lluvia en Guayaquil, Samborondón y Durán."
+      "texto": "INAMHI (Advertencia N.° 85, del 1 al 4 nov): esta noche y la madrugada del lunes, tormentas con rayos, truenos y viento en Guayaquil, Durán y Samborondón; lluvias intermitentes hasta el miércoles."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Hoy al mediodía solo calzada mojada en el centro y sur de Guayaquil (9 de Octubre, Malecón, 25 de Julio, Perimetral en Isla Trinitaria, Barcelona, Francisco de Orellana). SNGR: Estero Salado desbordado en la calle 32 y Capitán Nájera (31 oct)."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Durán y Samborondón: sin reportes nuevos de calles anegadas del 30 oct a hoy. Último en Durán: calles Loja y Esmeraldas (29 oct); en Samborondón, La Puntilla y la cabecera (27 oct)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de hoy de 3,71 m a las 11:44 y la próxima cerca de las 00:10 del lunes (INOCAR). Con lluvia cerca de esa hora el agua drena lento."
+      "texto": "Sin aguaje: la pleamar de hoy fue de 3,71 m a las 11:44; la próxima, cerca de las 00:30 del lunes (INOCAR). Si la tormenta coincide con esa hora, el agua drena lento."
     },
     {
       "tipo": "via",
-      "texto": "Feriado hasta el 3 nov: más tránsito en las salidas de la ciudad. Precaución si llueve."
+      "texto": "Feriado hasta el 3 nov: más tránsito en las salidas de la ciudad. Precaución con la tormenta de esta noche."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
     "altura": "3,71 m",
-    "texto": "pleamar de hoy domingo en Guayaquil-río: 3,71 m a las 11:44 (la de anoche fue de 4,01 m a las 23:28); la próxima, cerca de las 00:10 del lunes 2",
+    "texto": "pleamar de hoy domingo en Guayaquil-río: 3,71 m a las 11:44; las próximas, cerca de las 00:30 y las 12:55 del lunes 2 (horas estimadas)",
     "horas": [
       {
-        "dia": "Dom 1",
-        "hora": "11:44"
+        "dia": "Lun 2",
+        "hora": "~00:30"
       },
       {
         "dia": "Lun 2",
-        "hora": "~00:10"
+        "hora": "~12:55"
       },
       {
-        "dia": "Lun 2",
-        "hora": "~12:35"
+        "dia": "Mar 3",
+        "hora": "~01:40"
       }
     ],
-    "nota": "Horas según la tabla de INOCAR. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Hora de hoy según la tabla de INOCAR; las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.198,
+      "lon": -79.92,
+      "lugar": "Calle 32 y Capitán Nájera, Febres Cordero",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Desborde del Estero Salado en el sector según el monitoreo de la SNGR (ubicación aproximada).",
+      "fuente": "SNGR (El Comercio)",
+      "fecha": "31 oct, corte 19:00"
+    },
     {
       "lat": -2.141,
       "lon": -79.904,
@@ -199,5 +209,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, SNGR, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Primicias, Diario Extra, Expreso"
+  "fuentes": "SNGR (corte 19:00 del 31 oct), INAMHI (Advertencia N.° 85), INOCAR (tabla de mareas Guayaquil-río), Segura EP (C5GYE), ATM, Municipio de Samborondón, El Universo, Teleamazonas, El Comercio, Vistazo, Primicias, Diario Extra, Expreso"
 }

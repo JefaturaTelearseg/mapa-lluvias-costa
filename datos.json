@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-01T06:15:00-05:00",
-  "actualizado_texto": "domingo 1 nov 2026, 06:15",
+  "actualizado": "2026-11-01T18:10:00-05:00",
+  "actualizado_texto": "domingo 1 nov 2026, 18:10",
   "alertas": [
     {
-      "tipo": "desborde",
-      "texto": "Al último corte SNGR (07:00 del 31 oct) seguían desbordados 11 ríos y esteros en la Costa: Laurel (Daule), Tenguel, Taura, Balzar y Santa Lucía en Guayas; Chaguana en Tendales (El Guabo); Pacoche (Manta) y California en Colonche (Santa Elena)."
+      "tipo": "aviso",
+      "texto": "INAMHI (Advertencia N.° 85, del 1 al 4 nov): esta noche y la madrugada del lunes, tormentas en Guayaquil, Durán, Samborondón, Daule, Naranjal, Balao, El Triunfo, Babahoyo, Quevedo, Vinces y Valencia; lluvias fuertes en el resto de la Costa. Riesgo de crecidas de ríos."
     },
     {
-      "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84, vigente hasta hoy 1 nov 23:00; anunció la N.° 85 por la continuidad de las lluvias): anoche y esta madrugada, lluvia fuerte en Balzar, El Empalme, Babahoyo, Quevedo, Buena Fe, Santo Domingo, Chone y Portovelo."
+      "tipo": "desborde",
+      "texto": "SNGR (corte 19:00 del 31 oct): 15 cuerpos de agua desbordados. En la Costa: Laurel (Daule), Tenguel, Taura, Balzar, Santa Lucía, Estero Salado en el suroeste de Guayaquil, canal El Burro en Pasaje, Portovelo, río Pacoche (Manta) y río Dos Mangas (Manglaralto)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Sábado 31 oct, tarde y noche: acumulación de agua en Guayaquil en la Vía Perimetral (La Florida–Honorato Vásquez), Av. Barcelona, Carlos Julio Arosemena y Urdesa central (Segura EP y ATM). Sin reportes nuevos en Durán ni Samborondón."
+      "texto": "Hoy al mediodía, calles mojadas en el centro y sur de Guayaquil y anegamiento en una urbanización de la vía a Salitre (ATM, Segura EP). Sin reportes nuevos en Durán ni Samborondón."
     },
     {
       "tipo": "via",
-      "texto": "Cerrada la vía Pujilí–La Maná (deslizamiento). Paso parcial en Rocafuerte–Río Verde (puente Tapaila), San Mateo–Viche, Rocafuerte–Tosagua, Tosagua–Bahía, Jipijapa–La Cadena y Chamanga–Pedernales (ECU 911, 31 oct). Feriado: más tránsito en las salidas."
+      "texto": "ECU 911 (1 nov, 12:29): paso parcial en Pujilí–La Maná (curva de Maca), Jipijapa–La Cadena, Rocafuerte–Tosagua, Tosagua–Bahía, Chamanga–Pedernales, San Mateo–Viche y Palestina–Rioverde. Feriado: más tránsito."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de hoy de 3,71 m a las 11:44 y la próxima cerca de las 00:10 del lunes (INOCAR). Si llueve cerca de esa hora, el agua drena lento en zonas bajas."
+      "texto": "Sin aguaje: la pleamar de hoy fue de 3,71 m a las 11:44; las próximas, cerca de las 00:30 y 12:55 del lunes (INOCAR). Con tormenta cerca de esas horas, el agua drena lento en zonas bajas."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
     "altura": "3,71 m",
-    "texto": "pleamar de hoy domingo en Guayaquil-río: 3,71 m a las 11:44 (la de anoche fue de 4,01 m a las 23:28); la próxima, cerca de las 00:10 del lunes 2",
+    "texto": "pleamar de hoy domingo en Guayaquil-río: 3,71 m a las 11:44; las próximas, cerca de las 00:30 y las 12:55 del lunes 2 (horas estimadas)",
     "horas": [
       {
-        "dia": "Dom 1",
-        "hora": "11:44"
+        "dia": "Lun 2",
+        "hora": "~00:30"
       },
       {
         "dia": "Lun 2",
-        "hora": "~00:10"
+        "hora": "~12:55"
       },
       {
-        "dia": "Lun 2",
-        "hora": "~12:35"
+        "dia": "Mar 3",
+        "hora": "~01:40"
       }
     ],
-    "nota": "Horas según la tabla de INOCAR. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve.",
+    "nota": "Hora de hoy según la tabla de INOCAR; las marcadas con ~ son estimadas. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje, pero puede acumularse agua si llueve cerca de la pleamar de hoy (11:44)."
+    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje, pero puede acumularse agua si la tormenta de esta noche coincide con la pleamar de la madrugada (~00:30)."
   },
   "tramos": [
     {
@@ -82,23 +82,23 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Al último corte SNGR (07:00 del 31 oct) seguían desbordados los ríos Jaguas (Taura), Pilco y Tenguel junto a la vía y el río Chaguana en Tendales (El Guabo). INAMHI mantiene lluvias en Guayas y El Oro hasta esta noche (Advertencia N.° 84); anoche hubo lluvia fuerte en Portovelo y moderada en Machala y Pasaje.",
-      "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua, sobre todo en Taura, Tenguel, El Guabo y Machala."
+      "situacion": "SNGR (corte 19:00 del 31 oct): siguen desbordados el río Jaguas en Taura, los ríos Pilco y Tenguel junto a la vía, el canal El Burro en Pasaje (Loma de Franco y Perimetral Sur) y una quebrada en Portovelo. INAMHI (Advertencia N.° 85) prevé tormentas esta noche y madrugada en Durán, Naranjal y Balao, y lluvias fuertes en El Oro hasta el 4 nov.",
+      "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno y no cruzar tramos con agua, sobre todo en Taura, Tenguel, Balao y Pasaje."
     },
     {
       "id": "urb",
       "riesgo": "medio",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: la tarde y noche del 31 oct hubo acumulación de agua en la Vía Perimetral (La Florida hasta Honorato Vásquez, sentido norte; ATM), Av. Barcelona y Modesto Apolo, Carlos Julio Arosemena y Juan de Dios Martínez, y Urdesa central (Segura EP). Durán: último reporte, calles Loja y Esmeraldas (29 oct). Samborondón: último reporte de calles anegadas el 27 oct. INAMHI preveía lluvia moderada en Guayaquil y Samborondón y llovizna en Durán hasta las 07:00 de hoy; hoy sigue la probabilidad de lluvia y hay más tránsito por el feriado.",
-      "recomendacion": "Salir y circular con precaución, con luces encendidas y distancia; evitar zonas bajas, Estero Salado y las riberas de Samborondón y Durán si llueve cerca de la pleamar de hoy (11:44)."
+      "situacion": "Guayaquil: hoy al mediodía calles mojadas en el centro y sur (9 de Octubre, Malecón, 25 de Julio, Perimetral en Isla Trinitaria; ATM y Segura EP); SNGR reportó el Estero Salado desbordado en la calle 32 y Capitán Nájera (31 oct). Durán: último reporte, calles Loja y Esmeraldas (29 oct). Samborondón: último reporte de calles anegadas el 27 oct. INAMHI anuncia tormentas con rayos y viento esta noche y madrugada en Guayaquil, Samborondón y Durán (Advertencia N.° 85).",
+      "recomendacion": "Salir y circular con precaución, con luces encendidas y distancia; evitar zonas bajas, Estero Salado y las riberas de Samborondón y Durán durante la tormenta de esta noche y cerca de la pleamar de la madrugada (~00:30)."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "Al último corte SNGR (07:00 del 31 oct) seguía desbordado el río California en la comuna La Ponga (Colonche). Anoche INAMHI preveía lluvia fuerte en el cantón Santa Elena y lloviznas en Playas, La Libertad y Salinas. Sin cierres reportados en la Vía a la Costa ni en Playas; Segura EP vigilaba lluvias en la Vía a la Costa a la altura del peaje de Chongón (31 oct).",
+      "situacion": "SNGR (corte 19:00 del 31 oct): río Dos Mangas desbordado en la comuna Dos Mangas (Manglaralto), al este de la Ruta del Spondylus; ya no figura el río California en Colonche. INAMHI prevé lluvias fuertes en Playas y Santa Elena hasta el 4 nov. Sin cierres reportados en la Vía a la Costa ni en Playas; hoy calzada mojada en la Vía a la Costa (ATM).",
       "recomendacion": "Circular con precaución por la Ruta del Spondylus al norte de Santa Elena, en puentes y pasos de esteros, y evitar viajar de noche con lluvia."
     },
     {
@@ -106,7 +106,7 @@
       "riesgo": "medio",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Al último corte SNGR (07:00 del 31 oct) seguían desbordados el estero El Cañal y los ríos Pula y Jaboncillo en Laurel (Daule), cerca de la salida norte, y el río Pacoche en Boca de Pacoche (Manta). ECU 911 (31 oct): paso parcial en Jipijapa–La Cadena (km 75, Cañita), Rocafuerte–Tosagua, Tosagua–Bahía y San José de Chamanga–Pedernales. Anoche hubo lluvia fuerte prevista en Chone, Flavio Alfaro y Santa Ana.",
+      "situacion": "SNGR (corte 19:00 del 31 oct): siguen desbordados el estero El Cañal y los ríos Pula y Jaboncillo en Laurel (Daule), cerca de la salida norte, y el río Pacoche en Boca de Pacoche (Manta). ECU 911 (1 nov, 12:29): paso parcial en Jipijapa–La Cadena (km 75, Cañita), Rocafuerte–Tosagua (km 187), Tosagua–Bahía (km 5), Canuto–Calceta y San José de Chamanga–Pedernales. INAMHI prevé lluvias fuertes en El Carmen, Paján, Pichincha y Santa Ana.",
       "recomendacion": "Salir y circular con precaución, revisar el estado de vías del ECU 911 y evitar viajar de noche."
     },
     {
@@ -114,66 +114,80 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "Al último corte SNGR (07:00 del 31 oct): estero Perinao desbordado en Balzar, río Pula en Santa Lucía (recinto La Judith) y desbordes en Laurel (Daule), todos junto al corredor. Para anoche y esta madrugada INAMHI preveía lluvia fuerte en Balzar, El Empalme, Babahoyo, Quevedo, Buena Fe, Valencia y Santo Domingo. Sigue cerrada la Pujilí–La Maná por un deslizamiento; la Alóag–Santo Domingo está habilitada (ECU 911, 31 oct).",
+      "situacion": "SNGR (corte 19:00 del 31 oct): estero Perinao desbordado en Balzar, río Pula en Santa Lucía (recinto La Judith) y desbordes en Laurel (Daule), junto al corredor. INAMHI (Advertencia N.° 85) prevé tormentas esta noche y madrugada en Daule, Babahoyo, Quevedo, Valencia y Vinces, y lluvias fuertes en Balzar, Colimes y Santo Domingo. La Pujilí–La Maná pasó a paso parcial (deslizamiento en la curva de Maca); la Alóag–Santo Domingo, sin novedades (ECU 911, 1 nov).",
       "recomendacion": "Salir y circular con precaución, no seguir desvíos por vías secundarias y prever demoras hacia Santo Domingo."
     }
   ],
   "desbordes": [
     {
-      "lat": -3.15,
-      "lon": -79.77,
-      "lugar": "Tendales (El Guabo)",
-      "detalle": "Río Chaguana (barrio 10 de Octubre, parroquia Tendales)",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
-    },
-    {
       "lat": -1.72,
       "lon": -79.96,
       "lugar": "Laurel (Daule)",
       "detalle": "Estero El Cañal y ríos Pula y Jaboncillo (parroquia Laurel)",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -2.99,
       "lon": -79.79,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Ríos Pilco y Tenguel",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -2.33,
       "lon": -79.68,
       "lugar": "Taura (Naranjal)",
       "detalle": "Río Jaguas, recinto Jaime Roldós, parroquia Taura",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -1.366,
       "lon": -79.906,
       "lugar": "Balzar (Balzar)",
-      "detalle": "Estero Perinao, cabecera cantonal",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "detalle": "Estero Perinao, varios sectores de la cabecera cantonal",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -1.7,
       "lon": -79.98,
       "lugar": "Santa Lucía (Santa Lucía)",
-      "detalle": "Río Pula, en la cabecera cantonal y el recinto La Judith",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "detalle": "Río Pula, recinto La Judith",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
+    },
+    {
+      "lat": -2.198,
+      "lon": -79.92,
+      "lugar": "Febres Cordero (Guayaquil)",
+      "detalle": "Estero Salado, en la calle 32 y Capitán Nájera (ubicación aproximada)",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
+    },
+    {
+      "lat": -3.325,
+      "lon": -79.805,
+      "lugar": "Loma de Franco y Perimetral Sur (Pasaje)",
+      "detalle": "Canal El Burro",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
+    },
+    {
+      "lat": -3.71,
+      "lon": -79.62,
+      "lugar": "La Chorrera, Lourdes y Morales (Portovelo)",
+      "detalle": "Quebrada desbordada (ubicación aproximada en la cabecera cantonal)",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -1.07,
       "lon": -80.88,
       "lugar": "Boca de Pacoche, Santa Marianita (Manta)",
       "detalle": "Río Pacoche",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
-      "lat": -1.96,
-      "lon": -80.66,
-      "lugar": "Comuna La Ponga, Colonche (Santa Elena)",
-      "detalle": "Río California",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "lat": -1.8,
+      "lon": -80.71,
+      "lugar": "Comuna Dos Mangas, Manglaralto (Santa Elena)",
+      "detalle": "Río Dos Mangas (ubicación aproximada)",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     }
   ],
   "inundaciones": [
@@ -199,31 +213,31 @@
       "fuente": "ATM (Primicias), 31 oct 2026, noche"
     },
     {
+      "lat": -2.198,
+      "lon": -79.92,
+      "lugar": "Calle 32 y Capitán Nájera, Febres Cordero (Guayaquil)",
+      "detalle": "Desborde del Estero Salado en el sector (ubicación aproximada).",
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
+    },
+    {
       "lat": -2.17,
       "lon": -79.832,
       "lugar": "Calles Loja y Esmeraldas, centro (Durán)",
-      "detalle": "Último reporte en Durán: acumulación de agua por la lluvia de la noche del 29 oct (parroquia Eloy Alfaro); normalizado el 30. Sin reportes nuevos el 30 y 31 oct.",
+      "detalle": "Último reporte en Durán: acumulación de agua por la lluvia de la noche del 29 oct (parroquia Eloy Alfaro); normalizado el 30. Sin reportes nuevos del 30 oct al 1 nov.",
       "fuente": "SNGR (El Universo), 30 oct 2026"
-    },
-    {
-      "lat": -3.16,
-      "lon": -79.78,
-      "lugar": "Tendales (El Guabo)",
-      "detalle": "Barrio 10 de Octubre afectado por el desborde del río Chaguana.",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
     },
     {
       "lat": -2.995,
       "lon": -79.785,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Varios sectores afectados por los ríos Pilco y Tenguel.",
-      "fuente": "SNGR, corte 07:00 del 31 oct 2026 (El Universo y Metro Ecuador, 31 oct)"
+      "fuente": "SNGR, corte 19:00 del 31 oct 2026 (El Comercio, 1 nov)"
     },
     {
       "lat": -2.14,
       "lon": -79.866,
       "lugar": "La Puntilla: Entre Ríos, Village Plaza y Av. Diana Quintana (Samborondón)",
-      "detalle": "Última lluvia fuerte reportada (27 oct): calles anegadas hasta no distinguir veredas ni calzadas y tránsito colapsado; también UEES, Av. León Febres-Cordero e ingreso a Ciudad Celeste. Sin reportes nuevos de calles anegadas del 28 al 31 oct.",
+      "detalle": "Última lluvia fuerte reportada (27 oct): calles anegadas hasta no distinguir veredas ni calzadas y tránsito colapsado; también UEES, Av. León Febres-Cordero e ingreso a Ciudad Celeste. Sin reportes nuevos de calles anegadas del 28 oct al 1 nov.",
       "fuente": "Municipio de Samborondón (Diario Extra), 27 oct 2026"
     },
     {
@@ -252,31 +266,45 @@
     {
       "lat": -0.95,
       "lon": -78.95,
-      "lugar": "Vía Pujilí–La Maná, cerca de la curva de Maca (Cotopaxi)",
-      "detalle": "Vía cerrada por deslizamiento (ubicación aproximada sobre el tramo). Ruta alterna: Alóag–Santo Domingo.",
-      "fuente": "ECU 911 (Teleamazonas), 31 oct 2026 07:38"
+      "lugar": "Vía Pujilí–La Maná, curva de Maca (Cotopaxi)",
+      "detalle": "Parcialmente habilitada por deslizamiento de tierra (ubicación aproximada). Ruta alterna: Alóag–Santo Domingo.",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
     },
     {
       "lat": 1.04,
       "lon": -79.33,
-      "lugar": "Puente Tapaila, vía E15 Rocafuerte–Río Verde (Rioverde)",
-      "detalle": "Erosión en el puente Tapaila, entre Rocafuerte y Montalvo; se habilitó un paso lateral de tierra con tránsito controlado.",
-      "fuente": "ECU 911 (Teleamazonas), 31 oct 2026"
+      "lugar": "Puente Tapaila, vía E15 Palestina–Rioverde (Rioverde)",
+      "detalle": "Erosión en el puente Tapaila, entre Rocafuerte y Montalvo; paso por vía de tierra paralela.",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
     },
     {
       "lat": -0.79,
       "lon": -80.23,
       "lugar": "Tosagua: vías Rocafuerte–Tosagua y Tosagua–Bahía (Tosagua)",
-      "detalle": "Rocafuerte–Tosagua: hundimiento en el km 187, carril y medio habilitado. Tosagua–Bahía: paso parcial en el km 5 (Verdún).",
-      "fuente": "ECU 911 (Teleamazonas), 31 oct 2026"
+      "detalle": "Rocafuerte–Tosagua: socavón en el km 187, carril y medio habilitado. Tosagua–Bahía: paso parcial en el km 5 (Verdún).",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
     },
     {
       "lat": 0.8,
       "lon": -79.6,
-      "lugar": "San Mateo–Viche, vía E20 Esmeraldas–Quinindé (Esmeraldas)",
-      "detalle": "Pérdida de la mesa vial y deslizamientos (Chinca, Chucaple); en algunos sectores solo un carril habilitado.",
-      "fuente": "ECU 911 (Teleamazonas), 31 oct 2026"
+      "lugar": "San Mateo–Viche (Esmeraldas)",
+      "detalle": "Pérdida de mesa vial en el km 32 (Chinca) y km 60 (Chucaple); deslizamiento en Cube con un carril.",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
+    },
+    {
+      "lat": -1.52,
+      "lon": -80.45,
+      "lugar": "Sitio Cañita, vía Jipijapa–La Cadena (Paján)",
+      "detalle": "Un carril afectado por hundimiento en el km 75 (ubicación aproximada).",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
+    },
+    {
+      "lat": 0.08,
+      "lon": -80.05,
+      "lugar": "Vía San José de Chamanga–Pedernales (Pedernales)",
+      "detalle": "Parcialmente habilitada por socavón señalizado (ubicación aproximada).",
+      "fuente": "ECU 911 (El Diario), corte 1 nov 2026 12:29"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 31 oct), INAMHI (Advertencia N.° 84 y pronóstico 31 oct 19:00–1 nov 07:00), INOCAR (tabla de mareas Guayaquil-río), Segura EP, ATM, ECU 911, Municipio de Samborondón, El Universo, Primicias, El Diario, Metro Ecuador, Teleamazonas, Expreso, Diario Extra"
+  "fuentes": "SNGR (corte 19:00 del 31 oct; balance 1 nov), INAMHI (Advertencia N.° 85), INOCAR (tabla de mareas Guayaquil-río), ECU 911 (corte 1 nov 12:29), ATM, Segura EP, El Comercio, El Universo, Teleamazonas, Vistazo, Diario Extra, El Diario, Primicias, Prensa Latina"
 }
