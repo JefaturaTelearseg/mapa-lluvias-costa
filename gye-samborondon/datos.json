@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-10-31T18:15:00-05:00",
-  "actualizado_texto": "sábado 31 oct 2026, 18:15",
+  "actualizado": "2026-11-01T06:15:00-05:00",
+  "actualizado_texto": "domingo 1 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "inundacion",
-      "texto": "Tarde del 31 oct: acumulación de agua en Guayaquil en la Av. Barcelona (frente al estadio), Modesto Apolo, Carlos Julio Arosemena, Juan de Dios Martínez y Urdesa central, con tránsito lento (Segura EP)."
+      "texto": "Sábado 31 oct, tarde y noche: acumulación de agua en la Vía Perimetral (La Florida–Honorato Vásquez, sentido norte), Av. Barcelona, Modesto Apolo, Carlos Julio Arosemena, Juan de Dios Martínez y Urdesa central (Segura EP y ATM)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán y Samborondón: sin reportes nuevos de calles anegadas el 30 y 31 oct. Último en Durán: calles Loja y Esmeraldas (29 oct); en Samborondón, La Puntilla y la cabecera (27 oct)."
+      "texto": "Durán y Samborondón: sin reportes nuevos de calles anegadas del 30 oct a esta mañana. Último en Durán: calles Loja y Esmeraldas (29 oct); en Samborondón, La Puntilla y la cabecera (27 oct)."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 84, hasta el 1 nov 23:00): lluvias y tormentas en Guayas. Para esta noche prevé lluvia moderada en Guayaquil y Samborondón y llovizna en Durán."
+      "texto": "INAMHI (Advertencia N.° 84, hasta hoy 1 nov 23:00; anunció la N.° 85): hoy sigue la probabilidad de lluvia en Guayaquil, Samborondón y Durán."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de esta noche de 4,01 m (23:28) y mañana domingo 3,71 m (11:44), según INOCAR. Con lluvia cerca de esa hora el agua drena lento."
+      "texto": "Sin aguaje: pleamar de hoy de 3,71 m a las 11:44 y la próxima cerca de las 00:10 del lunes (INOCAR). Con lluvia cerca de esa hora el agua drena lento."
     },
     {
       "tipo": "via",
@@ -25,13 +25,9 @@
   ],
   "marea": {
     "titulo": "Sin aguaje · INOCAR",
-    "altura": "4,01 m",
-    "texto": "pleamar de esta noche en Guayaquil-río: 4,01 m a las 23:28 (la de la mañana fue de 3,85 m a las 10:43); mañana domingo pleamar de 3,71 m a las 11:44",
+    "altura": "3,71 m",
+    "texto": "pleamar de hoy domingo en Guayaquil-río: 3,71 m a las 11:44 (la de anoche fue de 4,01 m a las 23:28); la próxima, cerca de las 00:10 del lunes 2",
     "horas": [
-      {
-        "dia": "Sáb 31",
-        "hora": "23:28"
-      },
       {
         "dia": "Dom 1",
         "hora": "11:44"
@@ -39,11 +35,25 @@
       {
         "dia": "Lun 2",
         "hora": "~00:10"
+      },
+      {
+        "dia": "Lun 2",
+        "hora": "~12:35"
       }
     ],
     "nota": "Horas según la tabla de INOCAR. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.141,
+      "lon": -79.904,
+      "lugar": "Vía Perimetral, desde La Florida hasta la Av. Honorato Vásquez (sentido norte)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua con alto flujo vehicular; la ATM monitoreaba el cruce con la Av. Honorato Vásquez (ubicación aproximada).",
+      "fuente": "ATM (Primicias)",
+      "fecha": "31 oct, noche"
+    },
     {
       "lat": -2.1795,
       "lon": -79.9245,
@@ -189,5 +199,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), ATM, SNGR, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Teleamazonas, Metro Ecuador, Diario Extra, Expreso"
+  "fuentes": "Segura EP (C5GYE), ATM, SNGR, INAMHI (Advertencia N.° 84), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón, El Universo, Primicias, Diario Extra, Expreso"
 }
