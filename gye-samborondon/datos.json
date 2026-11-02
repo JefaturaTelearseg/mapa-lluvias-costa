@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-02T06:15:00-05:00",
-  "actualizado_texto": "lunes 2 nov 2026, 06:15",
+  "actualizado": "2026-11-02T18:10:00-05:00",
+  "actualizado_texto": "lunes 2 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "inundacion",
-      "texto": "Tormenta eléctrica de anoche (1 nov): al menos 83 sectores de Guayaquil con agua acumulada o inundados (Municipio). Lo más grave: Las Orquídeas (canal desbordado, rescates), Paraíso de la Flor, Pascuales y Guasmo Sur."
+      "texto": "Balance de Segura EP (07:00 del 2 nov): más de 90 puntos afectados en Guayaquil por la tormenta del 1 nov, al menos 21 inundados (Las Orquídeas, Sergio Toral, Monte Sinaí, Socio Vivienda 1, Floresta 3, Mi Lote 1). El agua bajaba en la mañana. Un fallecido por colapso de pared en Flor de Bastión."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: varias vías principales con acumulación de agua anoche (sin calles detalladas). Samborondón: complicaciones en La Puntilla; último reporte por calles, 27 oct."
+      "texto": "Durán: vías principales con agua la noche del 1 nov (sin calles detalladas). Samborondón: complicaciones en La Puntilla esa noche; sin reportes nuevos hoy."
     },
     {
       "tipo": "via",
-      "texto": "ATM: agua en la Vía Perimetral y Av. Honorato Vásquez (sentido sur); reducir la velocidad. Sin cierres de túneles ni pasos a desnivel reportados."
+      "texto": "Deslizamiento con cierre parcial en la Vía a la Costa, cerca de Puerto Azul (hacia el peaje). Avenidas Quito, De las Américas, Pedro Menéndez Gilbert, 25 de Julio, Francisco de Orellana y la Perimetral tuvieron agua anoche."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 85, hasta las 10:00 del miércoles 4 nov): más lluvias muy fuertes y tormentas en Guayaquil, Durán y Samborondón."
+      "texto": "INAMHI (Advertencia N.° 85, hasta las 10:00 del miércoles 4 nov): se espera lluvia esta noche en Guayaquil, Durán y Samborondón; ECU 911 pide no circular por calles inundadas."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje: pleamar de hoy 3,95 m a las 00:29 (INOCAR); la de la tarde, cerca de las 12:55; mañana 3,96 m a las 01:35."
+      "texto": "Sin aguaje, pero INOCAR advierte marea alta hasta el 4 nov: próxima pleamar mañana a las 01:35 (3,96 m); miércoles 4,05 m a las 02:42."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · INOCAR",
+    "titulo": "Sin aguaje · marea alta hasta el 4 nov · INOCAR",
     "altura": "3,95 m",
-    "texto": "pleamar de hoy lunes en Guayaquil-río: 3,95 m a las 00:29; la de la tarde, cerca de las 12:55 (hora estimada). Mañana martes 3,96 m a las 01:35 y el miércoles 4,05 m a las 02:42",
+    "texto": "pleamar de hoy lunes en Guayaquil-río: 3,95 m a las 00:29 y 3,64 m a las 12:53 (bajamar 19:56). Mañana martes 3,96 m a las 01:35 y el miércoles 4,05 m a las 02:42",
     "horas": [
-      {
-        "dia": "Lun 2",
-        "hora": "~12:55"
-      },
       {
         "dia": "Mar 3",
         "hora": "01:35"
+      },
+      {
+        "dia": "Mar 3",
+        "hora": "~13:50"
       },
       {
         "dia": "Mié 4",
         "hora": "02:42"
       }
     ],
-    "nota": "Horas de la madrugada según INOCAR (El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Horas según INOCAR (Segura EP, Metro Ecuador; El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
@@ -51,8 +51,38 @@
       "canton": "Guayaquil",
       "nivel": "intransitable",
       "detalle": "Canal desbordado después de las 21:00; agua dentro de viviendas (unos 40 cm, llegó a camas y carros) y personas rescatadas por Bomberos.",
-      "fuente": "Bomberos y vecinos (Primicias, El Universo, Diario Extra)",
+      "fuente": "Bomberos y vecinos (Primicias, El Universo, Diario Extra); balance Segura EP 2 nov",
       "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.125,
+      "lon": -80.0,
+      "lugar": "Monte Sinaí",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov, noche y madrugada"
+    },
+    {
+      "lat": -2.118,
+      "lon": -79.99,
+      "lugar": "Socio Vivienda 1",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov, noche y madrugada"
+    },
+    {
+      "lat": -2.1,
+      "lon": -79.962,
+      "lugar": "Mi Lote 1",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov, noche y madrugada"
     },
     {
       "lat": -2.105,
@@ -109,9 +139,9 @@
       "lon": -79.985,
       "lugar": "Sergio Toral: calle México y calle Séptima",
       "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada en el sector).",
-      "fuente": "Segura EP (El Universo, Primicias)",
+      "nivel": "alto",
+      "detalle": "Acumulación de agua; Sergio Toral figura entre los sectores inundados del balance de Segura EP (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, Primicias, Metro Ecuador)",
       "fecha": "1 nov, hasta 20:30"
     },
     {
@@ -127,11 +157,11 @@
     {
       "lat": -2.268,
       "lon": -79.884,
-      "lugar": "Guasmo Sur y Floresta",
+      "lugar": "Guasmo Sur y Floresta 3",
       "canton": "Guayaquil",
       "nivel": "alto",
       "detalle": "Calles con agua en aumento y agua entrando a viviendas, según vecinos (ubicación aproximada).",
-      "fuente": "Vecinos (El Universo); Segura EP (La República)",
+      "fuente": "Vecinos (El Universo); Segura EP (La República, Metro Ecuador)",
       "fecha": "1 nov, noche"
     },
     {
@@ -157,11 +187,11 @@
     {
       "lat": -2.229,
       "lon": -79.893,
-      "lugar": "Av. Don Bosco y Av. 25 de Julio",
+      "lugar": "Av. 25 de Julio (a la altura de la Av. Don Bosco)",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo, Primicias)",
+      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, Primicias, Metro Ecuador)",
       "fecha": "1 nov, hasta 20:30"
     },
     {
@@ -215,16 +245,6 @@
       "fecha": "1 nov, noche"
     },
     {
-      "lat": -2.198,
-      "lon": -79.92,
-      "lugar": "Calle 32 y Capitán Nájera, Febres Cordero",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Desborde del Estero Salado en el sector según el monitoreo de la SNGR (ubicación aproximada).",
-      "fuente": "SNGR (El Comercio)",
-      "fecha": "31 oct, corte 19:00"
-    },
-    {
       "lat": -2.1735,
       "lon": -79.8225,
       "lugar": "Vías principales del centro de Durán",
@@ -232,6 +252,86 @@
       "nivel": "acumulacion",
       "detalle": "Varias vías principales con acumulación de agua, según reportes difundidos en redes (sin calles específicas; ubicación aproximada en el centro).",
       "fuente": "El Telégrafo",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.158,
+      "lon": -79.894,
+      "lugar": "Av. Francisco de Orellana (Kennedy Norte)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en la avenida; también reportes en Kennedy (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov, noche"
+    },
+    {
+      "lat": -2.155,
+      "lon": -79.887,
+      "lugar": "Av. De las Américas",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, El Comercio, La República)",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.892,
+      "lugar": "Av. Pedro Menéndez Gilbert (La Atarazana)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Avenida anegada; La Atarazana con acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, La República)",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.195,
+      "lon": -79.89,
+      "lugar": "Av. Quito (centro)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador, La República)",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.17,
+      "lon": -79.905,
+      "lugar": "Urdesa Central",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; también reportes en las avenidas Antonio Parra y José Tamayo (ubicación aproximada del sector).",
+      "fuente": "Segura EP (Metro Ecuador, La República)",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.105,
+      "lon": -79.905,
+      "lugar": "Mucho Lote",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "La República",
+      "fecha": "1 nov, noche"
+    },
+    {
+      "lat": -2.19,
+      "lon": -79.995,
+      "lugar": "Vía a la Costa, cerca de Puerto Azul",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Deslizamiento con cierre parcial en dirección al peaje (ubicación aproximada).",
+      "fuente": "El Comercio",
+      "fecha": "1–2 nov"
+    },
+    {
+      "lat": -2.14,
+      "lon": -79.866,
+      "lugar": "La Puntilla",
+      "canton": "Samborondón",
+      "nivel": "acumulacion",
+      "detalle": "Complicaciones por la lluvia en La Puntilla, sin calles detalladas (ubicación aproximada en la Av. Samborondón).",
+      "fuente": "La República, El Telégrafo",
       "fecha": "1 nov, noche"
     }
   ],
@@ -349,5 +449,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE), Municipio de Guayaquil, EP Emapag, ATM, Bomberos de Guayaquil, SNGR (corte 31 oct), INAMHI (Advertencia N.° 85), INOCAR (vía El Comercio), El Universo, Primicias, Diario Extra, El Telégrafo, Teleamazonas, La República, El Comercio"
+  "fuentes": "Segura EP (C5GYE, balance 07:00 del 2 nov), Municipio de Guayaquil, ATM, ECU 911, Bomberos de Guayaquil, INAMHI (Advertencia N.° 85), INOCAR (vía Segura EP, Metro Ecuador y El Comercio), Metro Ecuador, Diario Extra, El Comercio, El Universo, Primicias, El Telégrafo, La República, Vistazo"
 }
