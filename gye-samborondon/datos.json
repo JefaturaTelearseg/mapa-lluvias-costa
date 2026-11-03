@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-02T18:10:00-05:00",
-  "actualizado_texto": "lunes 2 nov 2026, 18:10",
+  "actualizado": "2026-11-03T06:15:00-05:00",
+  "actualizado_texto": "martes 3 nov 2026, 06:15",
   "alertas": [
     {
-      "tipo": "inundacion",
-      "texto": "Balance de Segura EP (07:00 del 2 nov): más de 90 puntos afectados en Guayaquil por la tormenta del 1 nov, al menos 21 inundados (Las Orquídeas, Sergio Toral, Monte Sinaí, Socio Vivienda 1, Floresta 3, Mi Lote 1). El agua bajaba en la mañana. Un fallecido por colapso de pared en Flor de Bastión."
+      "tipo": "aviso",
+      "texto": "INAMHI (Advertencia N.° 85, hasta las 10:00 del miércoles 4 nov): hoy martes, lluvia normal a moderada en Guayaquil, Durán y Samborondón, más probable en la tarde, con posibles tormentas eléctricas."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: vías principales con agua la noche del 1 nov (sin calles detalladas). Samborondón: complicaciones en La Puntilla esa noche; sin reportes nuevos hoy."
+      "texto": "Balance municipal de la tormenta del 1 nov: 95 reportes de acumulación de agua y 25 inundaciones en Guayaquil (Las Orquídeas, Monte Sinaí, Sergio Toral, Socio Vivienda 1, Floresta 3, Mi Lote 1). El agua bajó durante el 2 nov; sin reportes nuevos de calles inundadas esta madrugada."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Durán y Samborondón: el 2 nov el ECU 911 reportó lluvia fuerte en ambos cantones (y en el norte de Guayaquil y Pascuales), sin calles afectadas detalladas. Último reporte con agua: centro de Durán y La Puntilla, noche del 1 nov."
     },
     {
       "tipo": "via",
-      "texto": "Deslizamiento con cierre parcial en la Vía a la Costa, cerca de Puerto Azul (hacia el peaje). Avenidas Quito, De las Américas, Pedro Menéndez Gilbert, 25 de Julio, Francisco de Orellana y la Perimetral tuvieron agua anoche."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 85, hasta las 10:00 del miércoles 4 nov): se espera lluvia esta noche en Guayaquil, Durán y Samborondón; ECU 911 pide no circular por calles inundadas."
+      "texto": "Cierre parcial por deslizamiento en la Vía a la Costa, cerca de Puerto Azul (hacia el peaje)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje, pero INOCAR advierte marea alta hasta el 4 nov: próxima pleamar mañana a las 01:35 (3,96 m); miércoles 4,05 m a las 02:42."
+      "texto": "Sin aguaje, pero marea alta hasta el 4 nov (INOCAR): pleamar hoy cerca de las 13:50 (estimada) y miércoles 4,05 m a las 02:42."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · marea alta hasta el 4 nov · INOCAR",
-    "altura": "3,95 m",
-    "texto": "pleamar de hoy lunes en Guayaquil-río: 3,95 m a las 00:29 y 3,64 m a las 12:53 (bajamar 19:56). Mañana martes 3,96 m a las 01:35 y el miércoles 4,05 m a las 02:42",
+    "altura": "3,96 m",
+    "texto": "pleamar de hoy martes en Guayaquil-río: 3,96 m a las 01:35 y otra cerca de las 13:50 (estimada). Miércoles 4 nov: 4,05 m a las 02:42",
     "horas": [
-      {
-        "dia": "Mar 3",
-        "hora": "01:35"
-      },
       {
         "dia": "Mar 3",
         "hora": "~13:50"
@@ -39,9 +35,13 @@
       {
         "dia": "Mié 4",
         "hora": "02:42"
+      },
+      {
+        "dia": "Mié 4",
+        "hora": "~15:00"
       }
     ],
-    "nota": "Horas según INOCAR (Segura EP, Metro Ecuador; El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Horas según INOCAR (vía Segura EP, Metro Ecuador y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
@@ -83,16 +83,6 @@
       "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
       "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
       "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.105,
-      "lon": -79.955,
-      "lugar": "Paraíso de la Flor: Av. 57 NO y Callejón 24 NO",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Inundación registrada pasadas las 18:00 (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, desde 18:00"
     },
     {
       "lat": -2.066,
@@ -250,8 +240,8 @@
       "lugar": "Vías principales del centro de Durán",
       "canton": "Durán",
       "nivel": "acumulacion",
-      "detalle": "Varias vías principales con acumulación de agua, según reportes difundidos en redes (sin calles específicas; ubicación aproximada en el centro).",
-      "fuente": "El Telégrafo",
+      "detalle": "Varias vías principales con acumulación de agua, según reportes difundidos en redes (sin calles específicas; ubicación aproximada en el centro). El 2 nov el ECU 911 reportó lluvia fuerte en el cantón, sin calles detalladas.",
+      "fuente": "El Telégrafo; ECU 911 (Primicias, 2 nov)",
       "fecha": "1 nov, noche"
     },
     {
@@ -330,8 +320,8 @@
       "lugar": "La Puntilla",
       "canton": "Samborondón",
       "nivel": "acumulacion",
-      "detalle": "Complicaciones por la lluvia en La Puntilla, sin calles detalladas (ubicación aproximada en la Av. Samborondón).",
-      "fuente": "La República, El Telégrafo",
+      "detalle": "Complicaciones por la lluvia en La Puntilla, sin calles detalladas (ubicación aproximada en la Av. Samborondón). El 2 nov el ECU 911 reportó lluvia fuerte en el cantón, sin calles detalladas.",
+      "fuente": "La República, El Telégrafo; ECU 911 (Primicias, 2 nov)",
       "fecha": "1 nov, noche"
     }
   ],
@@ -449,5 +439,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE, balance 07:00 del 2 nov), Municipio de Guayaquil, ATM, ECU 911, Bomberos de Guayaquil, INAMHI (Advertencia N.° 85), INOCAR (vía Segura EP, Metro Ecuador y El Comercio), Metro Ecuador, Diario Extra, El Comercio, El Universo, Primicias, El Telégrafo, La República, Vistazo"
+  "fuentes": "Municipio de Guayaquil (balance del 2 nov), Segura EP (C5GYE), ATM, ECU 911, Bomberos de Guayaquil, INAMHI (Advertencia N.° 85 y pronóstico del 3 nov), INOCAR (vía Segura EP, Metro Ecuador y El Comercio), Primicias, Vistazo, Teleamazonas, El Universo, Diario Extra, Metro Ecuador, El Comercio, El Telégrafo, La República"
 }
