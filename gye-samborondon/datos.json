@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-03T06:15:00-05:00",
-  "actualizado_texto": "martes 3 nov 2026, 06:15",
+  "actualizado": "2026-11-03T18:20:00-05:00",
+  "actualizado_texto": "martes 3 nov 2026, 18:20",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.° 85, hasta las 10:00 del miércoles 4 nov): hoy martes, lluvia normal a moderada en Guayaquil, Durán y Samborondón, más probable en la tarde, con posibles tormentas eléctricas."
+      "texto": "INAMHI: esta noche y madrugada, lluvia fuerte en Guayaquil y normal a moderada en Durán y Samborondón. Desde las 10:00 del miércoles 4 rige la Advertencia N.° 86 (hasta el sábado 7) con lluvias fuertes en Guayas. Miércoles: clases no presenciales en los tres cantones."
     },
     {
       "tipo": "inundacion",
-      "texto": "Balance municipal de la tormenta del 1 nov: 95 reportes de acumulación de agua y 25 inundaciones en Guayaquil (Las Orquídeas, Monte Sinaí, Sergio Toral, Socio Vivienda 1, Floresta 3, Mi Lote 1). El agua bajó durante el 2 nov; sin reportes nuevos de calles inundadas esta madrugada."
+      "texto": "Las Orquídeas sigue en limpieza (ocho unidades de bombeo) tras más de 1 m de agua el 1 nov. Hoy martes Segura EP solo reportó calzada mojada en vía a Daule y avenidas del norte, sin calles inundadas nuevas."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán y Samborondón: el 2 nov el ECU 911 reportó lluvia fuerte en ambos cantones (y en el norte de Guayaquil y Pascuales), sin calles afectadas detalladas. Último reporte con agua: centro de Durán y La Puntilla, noche del 1 nov."
+      "texto": "Samborondón: el Municipio reportó acumulación de agua en zonas urbanas, drenaje saturado y caminos anegados en recintos (sin sectores detallados). Durán: sin reportes nuevos de calles; último con agua, centro del cantón la noche del 1 nov."
     },
     {
       "tipo": "via",
@@ -20,18 +20,14 @@
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje, pero marea alta hasta el 4 nov (INOCAR): pleamar hoy cerca de las 13:50 (estimada) y miércoles 4,05 m a las 02:42."
+      "texto": "Sin aguaje, pero marea alta (INOCAR): pleamar de hoy 3,70 m a las 14:07; miércoles 4,05 m a las 02:42. Segura EP desmiente que el río Guayas se vaya a desbordar."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · marea alta hasta el 4 nov · INOCAR",
     "altura": "3,96 m",
-    "texto": "pleamar de hoy martes en Guayaquil-río: 3,96 m a las 01:35 y otra cerca de las 13:50 (estimada). Miércoles 4 nov: 4,05 m a las 02:42",
+    "texto": "pleamar de hoy martes en Guayaquil-río: 3,96 m a las 01:35 y 3,70 m a las 14:07. Miércoles 4 nov: 4,05 m a las 02:42",
     "horas": [
-      {
-        "dia": "Mar 3",
-        "hora": "~13:50"
-      },
       {
         "dia": "Mié 4",
         "hora": "02:42"
@@ -39,9 +35,13 @@
       {
         "dia": "Mié 4",
         "hora": "~15:00"
+      },
+      {
+        "dia": "Jue 5",
+        "hora": "~03:40"
       }
     ],
-    "nota": "Horas según INOCAR (vía Segura EP, Metro Ecuador y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Horas según INOCAR (vía Segura EP, El Universo y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
@@ -49,10 +49,10 @@
       "lon": -79.912,
       "lugar": "Las Orquídeas",
       "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Canal desbordado después de las 21:00; agua dentro de viviendas (unos 40 cm, llegó a camas y carros) y personas rescatadas por Bomberos.",
-      "fuente": "Bomberos y vecinos (Primicias, El Universo, Diario Extra); balance Segura EP 2 nov",
-      "fecha": "1 nov, noche"
+      "nivel": "alto",
+      "detalle": "El agua superó 1 m en varios puntos tras el desborde del canal; el 3 nov seguía la limpieza de lodo con ocho unidades de bombeo y los evacuados dejaban los albergues.",
+      "fuente": "La República (3 nov); Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov; limpieza 3 nov"
     },
     {
       "lat": -2.125,
@@ -61,7 +61,7 @@
       "canton": "Guayaquil",
       "nivel": "alto",
       "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
       "fecha": "1–2 nov, noche y madrugada"
     },
     {
@@ -71,7 +71,7 @@
       "canton": "Guayaquil",
       "nivel": "alto",
       "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
       "fecha": "1–2 nov, noche y madrugada"
     },
     {
@@ -81,68 +81,18 @@
       "canton": "Guayaquil",
       "nivel": "alto",
       "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
+      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
       "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.066,
-      "lon": -79.946,
-      "lugar": "Pascuales: Shushufindi y Pedro Carbo Noboa",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada en Pascuales).",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, tarde-noche"
-    },
-    {
-      "lat": -2.07,
-      "lon": -79.949,
-      "lugar": "Pascuales: calle Chunchi y La Joya de los Sachas",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada en Pascuales).",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, tarde-noche"
-    },
-    {
-      "lat": -2.1795,
-      "lon": -79.9245,
-      "lugar": "Av. Barcelona y Av. Modesto Apolo Ramírez",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; también en la Av. Barcelona a la altura de la capilla Nuestra Señora de la Divina Providencia.",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, tarde-noche"
-    },
-    {
-      "lat": -2.141,
-      "lon": -79.904,
-      "lugar": "Vía Perimetral y Av. Honorato Vásquez (sentido sur)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en la vía; la ATM pidió reducir la velocidad (ubicación aproximada).",
-      "fuente": "ATM (El Universo, Primicias)",
-      "fecha": "1 nov, noche"
     },
     {
       "lat": -2.115,
       "lon": -79.985,
-      "lugar": "Sergio Toral: calle México y calle Séptima",
+      "lugar": "Sergio Toral",
       "canton": "Guayaquil",
       "nivel": "alto",
-      "detalle": "Acumulación de agua; Sergio Toral figura entre los sectores inundados del balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo, Primicias, Metro Ecuador)",
-      "fecha": "1 nov, hasta 20:30"
-    },
-    {
-      "lat": -2.264,
-      "lon": -79.892,
-      "lugar": "Unión de Bananeros, bloques 5 y 6 (Av. Abdón Calderón y calle 54 C; Av. Isabel Beltrán y calle 55)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada del sector).",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, hasta 20:30"
+      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
+      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
+      "fecha": "1–2 nov, noche y madrugada"
     },
     {
       "lat": -2.268,
@@ -150,159 +100,9 @@
       "lugar": "Guasmo Sur y Floresta 3",
       "canton": "Guayaquil",
       "nivel": "alto",
-      "detalle": "Calles con agua en aumento y agua entrando a viviendas, según vecinos (ubicación aproximada).",
-      "fuente": "Vecinos (El Universo); Segura EP (La República, Metro Ecuador)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.2035,
-      "lon": -79.8995,
-      "lugar": "Calle Cuenca y Guerrero Martínez",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, hasta 20:30"
-    },
-    {
-      "lat": -2.165,
-      "lon": -79.902,
-      "lugar": "Kennedy Vieja: Francisco Urbina Jado y César Andrade López",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua.",
-      "fuente": "Segura EP (El Universo, Primicias)",
-      "fecha": "1 nov, hasta 20:30"
-    },
-    {
-      "lat": -2.229,
-      "lon": -79.893,
-      "lugar": "Av. 25 de Julio (a la altura de la Av. Don Bosco)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo, Primicias, Metro Ecuador)",
-      "fecha": "1 nov, hasta 20:30"
-    },
-    {
-      "lat": -2.138,
-      "lon": -79.903,
-      "lugar": "La Alborada",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles inundadas durante la tormenta (sin intersecciones detalladas; ubicación aproximada).",
-      "fuente": "Segura EP (La República); Primicias",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.124,
-      "lon": -79.895,
-      "lugar": "Sauces",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles inundadas y árboles caídos en Sauces 2 y 6 (ubicación aproximada).",
-      "fuente": "Segura EP (La República); El Universo",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.155,
-      "lon": -79.945,
-      "lugar": "Mapasingue",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles inundadas durante la tormenta (ubicación aproximada).",
-      "fuente": "Segura EP (La República); Teleamazonas",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.17,
-      "lon": -79.95,
-      "lugar": "Los Ceibos",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles inundadas durante la tormenta (ubicación aproximada).",
-      "fuente": "Segura EP (La República); Primicias",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.092,
-      "lon": -79.94,
-      "lugar": "Bastión Popular",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Agua inundando algunas calles, según reportes ciudadanos (ubicación aproximada).",
-      "fuente": "El Universo y Teleamazonas",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.1735,
-      "lon": -79.8225,
-      "lugar": "Vías principales del centro de Durán",
-      "canton": "Durán",
-      "nivel": "acumulacion",
-      "detalle": "Varias vías principales con acumulación de agua, según reportes difundidos en redes (sin calles específicas; ubicación aproximada en el centro). El 2 nov el ECU 911 reportó lluvia fuerte en el cantón, sin calles detalladas.",
-      "fuente": "El Telégrafo; ECU 911 (Primicias, 2 nov)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.158,
-      "lon": -79.894,
-      "lugar": "Av. Francisco de Orellana (Kennedy Norte)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en la avenida; también reportes en Kennedy (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov, noche"
-    },
-    {
-      "lat": -2.155,
-      "lon": -79.887,
-      "lugar": "Av. De las Américas",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, El Comercio, La República)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.168,
-      "lon": -79.892,
-      "lugar": "Av. Pedro Menéndez Gilbert (La Atarazana)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Avenida anegada; La Atarazana con acumulación de agua (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, La República)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.195,
-      "lon": -79.89,
-      "lugar": "Av. Quito (centro)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Avenida anegada durante la tormenta (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, La República)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.17,
-      "lon": -79.905,
-      "lugar": "Urdesa Central",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; también reportes en las avenidas Antonio Parra y José Tamayo (ubicación aproximada del sector).",
-      "fuente": "Segura EP (Metro Ecuador, La República)",
-      "fecha": "1 nov, noche"
-    },
-    {
-      "lat": -2.105,
-      "lon": -79.905,
-      "lugar": "Mucho Lote",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua (ubicación aproximada).",
-      "fuente": "La República",
-      "fecha": "1 nov, noche"
+      "detalle": "Sector inundado según el balance de Segura EP; agua entrando a viviendas según vecinos (ubicación aproximada).",
+      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra); El Universo",
+      "fecha": "1–2 nov, noche y madrugada"
     },
     {
       "lat": -2.19,
@@ -312,17 +112,7 @@
       "nivel": "alto",
       "detalle": "Deslizamiento con cierre parcial en dirección al peaje (ubicación aproximada).",
       "fuente": "El Comercio",
-      "fecha": "1–2 nov"
-    },
-    {
-      "lat": -2.14,
-      "lon": -79.866,
-      "lugar": "La Puntilla",
-      "canton": "Samborondón",
-      "nivel": "acumulacion",
-      "detalle": "Complicaciones por la lluvia en La Puntilla, sin calles detalladas (ubicación aproximada en la Av. Samborondón). El 2 nov el ECU 911 reportó lluvia fuerte en el cantón, sin calles detalladas.",
-      "fuente": "La República, El Telégrafo; ECU 911 (Primicias, 2 nov)",
-      "fecha": "1 nov, noche"
+      "fecha": "2 nov"
     }
   ],
   "recurrentes": [
@@ -439,5 +229,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Municipio de Guayaquil (balance del 2 nov), Segura EP (C5GYE), ATM, ECU 911, Bomberos de Guayaquil, INAMHI (Advertencia N.° 85 y pronóstico del 3 nov), INOCAR (vía Segura EP, Metro Ecuador y El Comercio), Primicias, Vistazo, Teleamazonas, El Universo, Diario Extra, Metro Ecuador, El Comercio, El Telégrafo, La República"
+  "fuentes": "Segura EP (C5GYE, balance del 2 nov y reporte del 3 nov), Municipio de Samborondón, ECU 911, INAMHI (Advertencias N.° 85 y 86), INOCAR (vía Segura EP, El Universo y El Comercio), SNGR, Ministerio de Educación, La República, El Universo, Vistazo, Metro Ecuador, Diario Extra, El Comercio, El Telégrafo, Primicias"
 }
