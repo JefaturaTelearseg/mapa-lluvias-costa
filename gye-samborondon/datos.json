@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-03T18:20:00-05:00",
-  "actualizado_texto": "martes 3 nov 2026, 18:20",
+  "actualizado": "2026-11-04T06:15:00-05:00",
+  "actualizado_texto": "miércoles 4 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI: esta noche y madrugada, lluvia fuerte en Guayaquil y normal a moderada en Durán y Samborondón. Desde las 10:00 del miércoles 4 rige la Advertencia N.° 86 (hasta el sábado 7) con lluvias fuertes en Guayas. Miércoles: clases no presenciales en los tres cantones."
+      "texto": "INAMHI: desde las 10:00 de hoy rige la Advertencia N.° 86 (hasta las 10:00 del sábado 7) con lluvias fuertes, tormentas y ráfagas. Hoy, lluvias fuertes previstas en Guayaquil, Durán y Samborondón, con más intensidad hacia el final de la tarde. Clases no presenciales en los tres cantones."
     },
     {
       "tipo": "inundacion",
-      "texto": "Las Orquídeas sigue en limpieza (ocho unidades de bombeo) tras más de 1 m de agua el 1 nov. Hoy martes Segura EP solo reportó calzada mojada en vía a Daule y avenidas del norte, sin calles inundadas nuevas."
+      "texto": "Madrugada del 4 nov: lluvia leve en Guayaquil; la ATM solo reportó calzadas mojadas en la Vía a la Costa (primer retorno), Av. Narcisa de Jesús (Limonal), Pedro Menéndez Gilbert (salida del túnel) y Perimetral y Honorato Vásquez. Sin calles inundadas nuevas."
     },
     {
       "tipo": "inundacion",
-      "texto": "Samborondón: el Municipio reportó acumulación de agua en zonas urbanas, drenaje saturado y caminos anegados en recintos (sin sectores detallados). Durán: sin reportes nuevos de calles; último con agua, centro del cantón la noche del 1 nov."
+      "texto": "Samborondón y Durán: sin reportes nuevos de calles con agua. Último del Municipio de Samborondón (3 nov): acumulación en zonas urbanas y caminos anegados en recintos. Durán: último con agua, centro del cantón la noche del 1 nov."
     },
     {
-      "tipo": "via",
-      "texto": "Cierre parcial por deslizamiento en la Vía a la Costa, cerca de Puerto Azul (hacia el peaje)."
+      "tipo": "aviso",
+      "texto": "Las Orquídeas seguía en limpieza el 3 nov tras más de 1 m de agua del 1 nov; evitar el sector si vuelve a llover fuerte."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje, pero marea alta (INOCAR): pleamar de hoy 3,70 m a las 14:07; miércoles 4,05 m a las 02:42. Segura EP desmiente que el río Guayas se vaya a desbordar."
+      "texto": "Sin aguaje. Pleamar de hoy 4,05 m a las 02:42 (INOCAR) y otra estimada hacia las 15:00. Con lluvia fuerte cerca de esa hora, el agua drena lento."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · marea alta hasta el 4 nov · INOCAR",
-    "altura": "3,96 m",
-    "texto": "pleamar de hoy martes en Guayaquil-río: 3,96 m a las 01:35 y 3,70 m a las 14:07. Miércoles 4 nov: 4,05 m a las 02:42",
+    "titulo": "Sin aguaje · pleamar 4,05 m hoy · INOCAR",
+    "altura": "4,05 m",
+    "texto": "pleamar de hoy miércoles en Guayaquil-río: 4,05 m a las 02:42 (INOCAR); la de la tarde, estimada hacia las 15:00",
     "horas": [
-      {
-        "dia": "Mié 4",
-        "hora": "02:42"
-      },
       {
         "dia": "Mié 4",
         "hora": "~15:00"
@@ -39,9 +35,13 @@
       {
         "dia": "Jue 5",
         "hora": "~03:40"
+      },
+      {
+        "dia": "Jue 5",
+        "hora": "~16:00"
       }
     ],
-    "nota": "Horas según INOCAR (vía Segura EP, El Universo y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Altura y hora de las 02:42 según INOCAR (vía Segura EP, El Universo y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
@@ -50,69 +50,9 @@
       "lugar": "Las Orquídeas",
       "canton": "Guayaquil",
       "nivel": "alto",
-      "detalle": "El agua superó 1 m en varios puntos tras el desborde del canal; el 3 nov seguía la limpieza de lodo con ocho unidades de bombeo y los evacuados dejaban los albergues.",
-      "fuente": "La República (3 nov); Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov; limpieza 3 nov"
-    },
-    {
-      "lat": -2.125,
-      "lon": -80.0,
-      "lugar": "Monte Sinaí",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.118,
-      "lon": -79.99,
-      "lugar": "Socio Vivienda 1",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.1,
-      "lon": -79.962,
-      "lugar": "Mi Lote 1",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.115,
-      "lon": -79.985,
-      "lugar": "Sergio Toral",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Sector inundado según el balance de Segura EP (ubicación aproximada).",
-      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra)",
-      "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.268,
-      "lon": -79.884,
-      "lugar": "Guasmo Sur y Floresta 3",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Sector inundado según el balance de Segura EP; agua entrando a viviendas según vecinos (ubicación aproximada).",
-      "fuente": "Segura EP, balance 07:00 del 2 nov (Metro Ecuador, Diario Extra); El Universo",
-      "fecha": "1–2 nov, noche y madrugada"
-    },
-    {
-      "lat": -2.19,
-      "lon": -79.995,
-      "lugar": "Vía a la Costa, cerca de Puerto Azul",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Deslizamiento con cierre parcial en dirección al peaje (ubicación aproximada).",
-      "fuente": "El Comercio",
-      "fecha": "2 nov"
+      "detalle": "El agua superó 1 m en varios puntos tras el desborde del canal (1 nov); el 3 nov seguía la limpieza de lodo con ocho unidades de bombeo y los evacuados dejaban los albergues.",
+      "fuente": "La República (3 nov)",
+      "fecha": "limpieza 3 nov"
     }
   ],
   "recurrentes": [
@@ -229,5 +169,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "Segura EP (C5GYE, balance del 2 nov y reporte del 3 nov), Municipio de Samborondón, ECU 911, INAMHI (Advertencias N.° 85 y 86), INOCAR (vía Segura EP, El Universo y El Comercio), SNGR, Ministerio de Educación, La República, El Universo, Vistazo, Metro Ecuador, Diario Extra, El Comercio, El Telégrafo, Primicias"
+  "fuentes": "INAMHI (Advertencia N.° 86, pronóstico del 4 nov), ATM (4 nov, vía El Universo), Segura EP, Municipio de Samborondón (Vistazo, 3 nov), INOCAR (vía Segura EP, El Universo y El Comercio), La República, El Universo, Teleamazonas, Metro Ecuador, El Telégrafo"
 }
