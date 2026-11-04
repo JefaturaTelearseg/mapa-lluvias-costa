@@ -1,58 +1,68 @@
 {
-  "actualizado": "2026-11-04T06:15:00-05:00",
-  "actualizado_texto": "miércoles 4 nov 2026, 06:15",
+  "actualizado": "2026-11-04T18:10:00-05:00",
+  "actualizado_texto": "miércoles 4 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI: desde las 10:00 de hoy rige la Advertencia N.° 86 (hasta las 10:00 del sábado 7) con lluvias fuertes, tormentas y ráfagas. Hoy, lluvias fuertes previstas en Guayaquil, Durán y Samborondón, con más intensidad hacia el final de la tarde. Clases no presenciales en los tres cantones."
+      "texto": "INAMHI: advertencia de lluvias fuertes a muy fuertes y tormentas desde las 10:00 de hoy hasta las 10:00 del sábado 7. Hoy, más intensidad desde el final de la tarde y tormenta eléctrica esta noche y la madrugada del jueves en Guayaquil, Durán y Samborondón."
     },
     {
       "tipo": "inundacion",
-      "texto": "Madrugada del 4 nov: lluvia leve en Guayaquil; la ATM solo reportó calzadas mojadas en la Vía a la Costa (primer retorno), Av. Narcisa de Jesús (Limonal), Pedro Menéndez Gilbert (salida del túnel) y Perimetral y Honorato Vásquez. Sin calles inundadas nuevas."
+      "texto": "Madrugada del 4 nov (Segura EP): acumulación de agua en el Parque Industrial El Sauce (Gastón Thoret Jager y Luis Eduardo Robles) y en la Av. Barcelona, bajada del paso vehicular hacia la Ferroviaria (07:10). Calzada mojada en Gómez Rendón, Antonio Flores, Vía a la Costa, Perimetral, Av. Machala y Av. Simón Bolívar."
     },
     {
       "tipo": "inundacion",
-      "texto": "Samborondón y Durán: sin reportes nuevos de calles con agua. Último del Municipio de Samborondón (3 nov): acumulación en zonas urbanas y caminos anegados en recintos. Durán: último con agua, centro del cantón la noche del 1 nov."
+      "texto": "Durán y Samborondón: lluvias dispersas y moderadas el 4 nov (ECU 911), sin calles con agua reportadas. Con lluvia fuerte esta noche, atención a La Puntilla y a El Recreo y Primavera (Durán)."
     },
     {
       "tipo": "aviso",
-      "texto": "Las Orquídeas seguía en limpieza el 3 nov tras más de 1 m de agua del 1 nov; evitar el sector si vuelve a llover fuerte."
+      "texto": "Segura EP contabilizó más de 160 emergencias en Guayaquil del 1 al 3 nov; Las Orquídeas tuvo hasta 40 cm de agua dentro de viviendas. Evitar el sector si vuelve a llover fuerte."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy 4,05 m a las 02:42 (INOCAR) y otra estimada hacia las 15:00. Con lluvia fuerte cerca de esa hora, el agua drena lento."
+      "texto": "Sin aguaje. Pleamar de hoy 3,86 m a las 15:19 (INOCAR); la próxima, estimada hacia las 03:50 del jueves. Con lluvia fuerte cerca de esa hora, el agua drena lento."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar 4,05 m hoy · INOCAR",
-    "altura": "4,05 m",
-    "texto": "pleamar de hoy miércoles en Guayaquil-río: 4,05 m a las 02:42 (INOCAR); la de la tarde, estimada hacia las 15:00",
+    "titulo": "Sin aguaje · pleamar 3,86 m hoy 15:19 · INOCAR",
+    "altura": "3,86 m",
+    "texto": "pleamar de hoy miércoles en Guayaquil-río: 4,05 m a las 02:42 y 3,86 m a las 15:19 (INOCAR)",
     "horas": [
       {
-        "dia": "Mié 4",
-        "hora": "~15:00"
+        "dia": "Jue 5",
+        "hora": "~03:50"
       },
       {
         "dia": "Jue 5",
-        "hora": "~03:40"
+        "hora": "~16:20"
       },
       {
-        "dia": "Jue 5",
-        "hora": "~16:00"
+        "dia": "Vie 6",
+        "hora": "~04:50"
       }
     ],
-    "nota": "Altura y hora de las 02:42 según INOCAR (vía Segura EP, El Universo y El Comercio); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "Alturas y horas del 4 nov según INOCAR (vía Segura EP, El Comercio y Diario Extra); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
   },
   "puntos": [
     {
-      "lat": -2.088,
-      "lon": -79.912,
-      "lugar": "Las Orquídeas",
+      "lat": -2.095,
+      "lon": -79.94,
+      "lugar": "Parque Industrial El Sauce: Av. Gastón Thoret Jager y Av. Luis Eduardo Robles",
       "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "El agua superó 1 m en varios puntos tras el desborde del canal (1 nov); el 3 nov seguía la limpieza de lodo con ocho unidades de bombeo y los evacuados dejaban los albergues.",
-      "fuente": "La República (3 nov)",
-      "fecha": "limpieza 3 nov"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; Interagua envió equipos para evacuarla (ubicación aproximada).",
+      "fuente": "Segura EP (El Comercio y Diario Extra)",
+      "fecha": "4 nov, madrugada"
+    },
+    {
+      "lat": -2.178,
+      "lon": -79.923,
+      "lugar": "Av. Barcelona, bajada del paso vehicular hacia la Ferroviaria",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua reportada a las 07:10 (ubicación aproximada).",
+      "fuente": "Segura EP (El Comercio)",
+      "fecha": "4 nov, 07:10"
     }
   ],
   "recurrentes": [
@@ -169,5 +179,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (Advertencia N.° 86, pronóstico del 4 nov), ATM (4 nov, vía El Universo), Segura EP, Municipio de Samborondón (Vistazo, 3 nov), INOCAR (vía Segura EP, El Universo y El Comercio), La República, El Universo, Teleamazonas, Metro Ecuador, El Telégrafo"
+  "fuentes": "INAMHI (advertencia del 4 al 7 nov, pronóstico del 4–5 nov), Segura EP (4 nov, vía El Comercio y Diario Extra), ECU 911 (4 nov), INOCAR (vía Segura EP y El Comercio), Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Primicias, Vistazo, Expreso"
 }
