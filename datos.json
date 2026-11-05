@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-05T06:15:00-05:00",
-  "actualizado_texto": "jueves 5 nov 2026, 06:15",
+  "actualizado": "2026-11-05T18:15:00-05:00",
+  "actualizado_texto": "jueves 5 nov 2026, 18:15",
   "alertas": [
     {
-      "tipo": "aviso",
-      "texto": "INAMHI (advertencia N.º 86): lluvias fuertes a muy fuertes y tormentas en la Costa hasta las 10:00 del sábado 7 nov, sobre todo en Guayas, Los Ríos y El Oro. Hoy jueves: tormentas de madrugada y noche; de día, lluvia moderada en la mañana en Durán, Samborondón, Milagro, Naranjal y Balzar, fuerte en Santa Elena (mañana y tarde) y moderada al final de la tarde en Machala, Pasaje, El Guabo y Huaquillas."
+      "tipo": "desborde",
+      "texto": "SNGR (corte 07:00 del 5 nov): 30 ríos y esteros desbordados (6 más que ayer) en Guayas (14), Manabí (6), Santa Elena (5), Los Ríos (4) y Esmeraldas (1); otros 35 con tendencia a subir, entre ellos el Daule en Pascuales, el Guayas en Ximena, el Bulu Bulu (Taura) y el Balao."
     },
     {
-      "tipo": "desborde",
-      "texto": "SNGR (corte 11:00 del 4 nov): 24 ríos y esteros desbordados en Guayas (10), Manabí (6), Los Ríos (4), Santa Elena (3) y El Oro (1). La noche del 4 nov volvieron a desbordarse los ríos Ayampe y Buena Vista en Puerto López: inundados Las Cabañas, Los Platanales y San Isidro (Machalilla)."
+      "tipo": "aviso",
+      "texto": "INAMHI (advertencia N.º 86): lluvias fuertes y tormentas en la Costa hasta las 10:00 del sábado 7 nov. Esta noche: lluvia moderada en Guayaquil, Balao, Naranjal y Playas; llovizna en Durán y Samborondón. Fuertes vientos en La Libertad y Santa Elena desde la madrugada."
     },
     {
       "tipo": "inundacion",
-      "texto": "4 nov: calles inundadas en Milagro (cámaras del ECU 911); en Guayaquil, acumulación en el Parque Industrial El Sauce y la Av. Barcelona (Segura EP). Durán y Samborondón: lluvia moderada, sin calles con agua reportadas. Hoy, clases no presenciales en Guayaquil, Durán, Samborondón y Daule por lluvias y marea alta."
+      "texto": "5 nov: calles inundadas en Milagro por el desborde de los ríos Milagro y Naranjito (ECU 911); calles anegadas en Portoviejo, Rocafuerte, Bahía (Sucre), Junín y Machalilla (ECU 911 Portoviejo) y en La Libertad. Guayaquil, Durán y Samborondón: lluvia moderada en la mañana, solo calzadas mojadas reportadas (Segura EP)."
     },
     {
       "tipo": "via",
-      "texto": "Sin reporte nuevo de vías del ECU 911 desde el 3 nov (entonces: cerrada Cerro Azul–Paccha; socavones en Rocafuerte–Tosagua, Tosagua–Bahía, Canuto–Calceta, Chamanga–Pedernales; deslizamiento en Pujilí–La Maná). Revisar el estado de vías del ECU 911 antes de salir."
+      "texto": "Cerradas: Cuenca–Molleturo–El Empalme (km 90, deslizamiento), Machala–El Cambio–La Iberia (inundación) y Paccha–Cerro Azul (km 18). Acumulación de agua en la E-25 Babahoyo–Juján; vía inhabilitada en Cañitas (Charapotó, Sucre); erosión en el puente San José (Ruta del Spondylus)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje anunciado, pero el Ministerio de Educación cita un incremento de la marea (INOCAR). Pleamares estimadas hoy en Guayaquil-río hacia las 03:50 y las 16:20: con lluvia cerca de esas horas el agua drena lento en zonas bajas."
+      "texto": "Sin aguaje anunciado. Pleamar de hoy en Guayaquil-río: 4,09 m a las 16:26 (INOCAR). Próximas, estimadas: ~05:05 y ~17:30 del viernes 6; con lluvia cerca de esas horas el agua drena lento en zonas bajas."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar estimada ~16:20 hoy · marea en aumento",
-    "altura": "~4,00 m",
-    "texto": "pleamar estimada de hoy jueves en Guayaquil-río: ~03:50 y ~16:20, alrededor de 4,0 m (estimado a partir de INOCAR del 4 nov: 4,05 m a las 02:42 y 3,86 m a las 15:19)",
+    "titulo": "Sin aguaje · pleamar 4,09 m a las 16:26 hoy · próxima ~05:05 vie",
+    "altura": "4,09 m",
+    "texto": "pleamar de hoy jueves en Guayaquil-río: 4,09 m a las 16:26; bajamar 0,66 m a las 23:09 (INOCAR, vía El Universo)",
     "horas": [
       {
-        "dia": "Jue 5",
-        "hora": "~16:20"
+        "dia": "Vie 6",
+        "hora": "~05:05"
       },
       {
         "dia": "Vie 6",
-        "hora": "~04:50"
+        "hora": "~17:30"
       },
       {
-        "dia": "Vie 6",
-        "hora": "~17:20"
+        "dia": "Sáb 7",
+        "hora": "~06:10"
       }
     ],
-    "nota": "No se encontró la tabla del INOCAR para el 5 nov: horas y altura estimadas (~) a partir de la del 4 nov. El Ministerio de Educación citó informes del INOCAR sobre incremento de la marea. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve.",
+    "nota": "Horas del 6 y 7 nov estimadas (~) a partir de la tabla del INOCAR del 5 nov. INOCAR mantiene aviso de oleaje (0,50 a 1,90 m en Guayas y Santa Elena) hasta el 6 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje anunciado, pero la marea sigue alta (alrededor de 4 m) y el INAMHI mantiene la advertencia de lluvias hasta el sábado 7: con lluvia cerca de la pleamar el agua se acumula y drena lento."
+    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje anunciado, pero la marea sigue alta (alrededor de 4,1 m) y el INAMHI mantiene la advertencia de lluvias hasta el sábado 7: con lluvia cerca de la pleamar el agua se acumula y drena lento."
   },
   "tramos": [
     {
@@ -82,31 +82,31 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (4 nov, 11:00): desbordados el río Jaguas (Taura, recinto Jaime Roldós), los ríos Pilco y Tenguel junto a la vía y una quebrada en Salatí (Portovelo); en crecida Bulu Bulu (Taura), Balao, Chaguana (El Guabo) y Buenavista (Pasaje). INAMHI: hoy lluvia moderada en Naranjal en la mañana y en Machala, Pasaje, El Guabo y Huaquillas al final de la tarde; tormentas de noche en Guayas y El Oro; advertencia hasta el sábado 7. Último reporte de vías del ECU 911 (3 nov): Cerro Azul–Paccha cerrada y deslizamientos en la parte alta de El Oro.",
-      "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno con lluvia y no cruzar tramos con agua, sobre todo en Durán, Taura, Naranjal, Balao, Tenguel, El Guabo, Pasaje, Santa Rosa, Arenillas y la parte alta de El Oro."
+      "situacion": "SNGR (5 nov, 07:00): desbordados el río Jaguas (Taura, recinto Jaime Roldós), los ríos Pilco y Tenguel, el río Milagro y el Naranjito (recintos Venecia Central y Córdova, Roberto Astudillo); con tendencia a subir el Bulu Bulu (Taura, bypass km 11) y el Balao. ECU 911 (06:30): cerrada Machala–El Cambio–La Iberia por inundación (tres días) y Paccha–Cerro Azul (km 18); paso parcial en Santa Rosa–Arenillas por árbol caído (Santa Marianita) y deslizamientos en Piñas–Portovelo, Saracay–Balsas, Atahualpa–Zaruma y Portovelo–Salatí. INAMHI: lluvia moderada esta noche en Balao y Naranjal; advertencia hasta el sábado 7.",
+      "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno con lluvia y no cruzar tramos con agua, sobre todo en Durán, Taura, Naranjal, Balao, Tenguel, El Cambio (Machala), Santa Rosa, Arenillas y la parte alta de El Oro."
     },
     {
       "id": "urb",
       "riesgo": "medio",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: el 4 nov Segura EP reportó acumulación en el Parque Industrial El Sauce (Gastón Thoret y Luis Eduardo Robles) y en la Av. Barcelona hacia la Ferroviaria; la noche del 4 hubo lluvia en Guayaquil, Durán y Samborondón (ECU 911) sin nuevas calles con agua reportadas. Hoy, INAMHI prevé lloviznas en la mañana en Guayaquil y lluvia moderada en Durán y Samborondón, con tormentas posibles de noche. Clases no presenciales en los tres cantones por lluvias y marea alta.",
-      "recomendacion": "Salir y circular con precaución, con luces y distancia; con lluvia fuerte o cerca de la pleamar (~16:20) evitar la Av. Barcelona, El Sauce, Las Orquídeas y las zonas bajas de Samborondón (La Puntilla) y Durán (El Recreo, Primavera)."
+      "situacion": "Guayaquil: hoy en la mañana Segura EP reportó calzada mojada en la Av. de las Américas, la 9 de Octubre y la Pedro Menéndez, sin calles inundadas; el 4 nov hubo acumulación en El Sauce y la Av. Barcelona. Samborondón: lluvia moderada en la mañana, sin calles con agua reportadas. Durán: lluvia moderada en la mañana, sin reportes de calles con agua. SNGR: río Daule en Pascuales y río Guayas en Ximena con tendencia a subir. Esta noche, INAMHI prevé lluvia moderada en Guayaquil y llovizna en Durán y Samborondón. Clases no presenciales hoy en los tres cantones.",
+      "recomendacion": "Salir y circular con precaución, con luces y distancia; con lluvia fuerte o cerca de la pleamar (~05:05 y ~17:30 del viernes) evitar la Av. Barcelona, El Sauce, Pascuales y las zonas bajas de Samborondón (La Puntilla) y Durán (El Recreo, Primavera)."
     },
     {
       "id": "costa",
-      "riesgo": "medio",
+      "riesgo": "alto",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "SNGR (4 nov, 11:00): desbordados los ríos California y Salanguillo (Colonche), Tinto (Chanduy) y Ayampe; la noche del 4 nov volvieron a desbordarse el Ayampe y el Buena Vista en Puerto López, con Las Cabañas, Los Platanales y San Isidro (Machalilla) inundados. INAMHI: hoy lluvias fuertes en Santa Elena en la mañana y la tarde; lluvia en Playas el 4 nov sin cierres reportados en la Vía a la Costa.",
-      "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo en Colonche, Ayampe y Machalilla, en puentes y pasos de esteros; evitar viajar de noche con lluvia."
+      "situacion": "SNGR (5 nov, 07:00): cinco ríos desbordados en Santa Elena: California, Salanguillo y Javita (Colonche) y Dos Mangas y Valdivia (Manglaralto), con viviendas inundadas en Valdivia, San Pedro, Barcona y Sinchal; río Ayampe desbordado en Puerto López. MTI: erosión en el estribo sur del puente San José (Ruta del Spondylus). Fuertes vientos desde la madrugada con techos volados en La Libertad y Santa Elena, y calles inundadas en La Libertad. INOCAR: oleaje de hasta 1,90 m hasta el 6 nov. INAMHI: lluvias fuertes en Santa Elena en la tarde y lluvia moderada en Playas esta noche.",
+      "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo entre Valdivia, Manglaralto, Colonche y Ayampe, en el puente San José y en pasos de esteros; reducir velocidad con viento fuerte y evitar viajar de noche con lluvia."
     },
     {
       "id": "manabi",
       "riesgo": "medio",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (4 nov, 11:00): desbordados el estero El Cañal y los ríos Pula y Jaboncillo (Laurel, Daule), Canaán (Pedro Carbo), Casas Viejas, La Vaca y Julcuy (Jipijapa), Guineal (24 de Mayo) y Garrapata (Chone); noche del 4 nov, nuevos desbordes del Ayampe y Buena Vista en Puerto López. Chone con emergencia de agua potable por rotura de tubería. INAMHI: hoy lluvia moderada en Portoviejo, Chone, Paján, Santa Ana y El Carmen; tormentas de noche. Último reporte del ECU 911 (3 nov): socavones en Jipijapa–La Cadena, Rocafuerte–Tosagua, Tosagua–Bahía, Canuto–Calceta, Santa Ana–Olmedo y Chamanga–Pedernales.",
+      "situacion": "SNGR (5 nov, 07:00): desbordados los ríos Casas Viejas, La Vaca y Julcuy (Jipijapa), Guineal (24 de Mayo), Garrapata (Chone) y Ayampe (Puerto López); con tendencia a subir el Chone, el Canuto, el Buena Vista y el Daule en Pichincha. En Guayas, desbordados el estero El Cañal y los ríos Pula y Jaboncillo (Laurel, Daule), el Canaán (Pedro Carbo) y el estero Loco (Lomas de Sargentillo). ECU 911 Portoviejo (5 nov): calles anegadas en Portoviejo, Rocafuerte, Bahía (Sucre), Junín y Machalilla; vía inhabilitada en Cañitas (Charapotó). Socavones con paso parcial en Rocafuerte–Tosagua, Tosagua–Bahía, Canuto–Calceta y Chamanga–Pedernales (último reporte del 1 nov).",
       "recomendacion": "Salir y circular con precaución, revisar el estado de vías del ECU 911, prever pasos a un carril y evitar viajar de noche."
     },
     {
@@ -114,8 +114,8 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "SNGR (4 nov, 11:00): desbordados el estero Perinao (Balzar), el río Pula (Santa Lucía), ríos y esteros en Laurel (Daule), El Atascoso (Quevedo) y los ríos Oncebi, Bobo y Las Trancas en Chacarita (Ventanas); en crecida el río Daule en Pascuales y los ríos Colimes, Salitre, Vinces, Catarama y Quevedo. INAMHI: hoy lluvia moderada en Balzar y El Empalme en la mañana y en Buena Fe y Valencia al final de la tarde; tormentas de noche en Guayas y Los Ríos. Último reporte del ECU 911 (3 nov): Pujilí–La Maná con deslizamiento; puente Los Gemelos solo livianos y buses.",
-      "recomendacion": "Salir y circular con precaución, no seguir desvíos por vías secundarias y prever demoras hacia Quevedo y Santo Domingo, sobre todo de noche."
+      "situacion": "SNGR (5 nov, 07:00): desbordados el estero Perinao (Balzar), el río Pula (Santa Lucía y Laurel), el río Amarillo junto a la vía Juján–Simón Bolívar, el río Caracol (Babahoyo) y los ríos Oncebi, Bobo y Las Trancas (Chacarita, Ventanas); con tendencia a subir el Daule, el Colimes, el Salitre, el Vinces, el Catarama y el Quevedo. ECU 911: acumulación de agua en varios tramos de la E-25 Babahoyo–Juján; MTI: Paso Lateral de Babahoyo cerrado sentido La Chorrera–Juján por hundimiento del puente Gemelo 2 y Cuenca–Molleturo–El Empalme cerrada en el km 90 por deslizamiento.",
+      "recomendacion": "Salir y circular con precaución, usar las vías alternas indicadas por el ECU 911, no seguir desvíos por vías secundarias y prever demoras hacia Quevedo y Santo Domingo, sobre todo de noche."
     }
   ],
   "desbordes": [
@@ -124,126 +124,161 @@
       "lon": -79.96,
       "lugar": "Laurel (Daule)",
       "detalle": "Estero El Cañal y ríos Pula y Jaboncillo",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -2.99,
       "lon": -79.79,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Ríos Pilco y Tenguel, varios sectores",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -2.33,
       "lon": -79.68,
       "lugar": "Taura (Naranjal)",
       "detalle": "Río Jaguas, recinto Jaime Roldós, sector El Playón (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -2.22,
       "lon": -79.465,
       "lugar": "Naranjito (Naranjito)",
       "detalle": "Estero El Chorrón: Las Cañitas, Jaime Roldós, cdla. Xavier Marcos, Santa Margarita y San Enrique",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
+    },
+    {
+      "lat": -2.134,
+      "lon": -79.594,
+      "lugar": "Milagro (Milagro)",
+      "detalle": "Río Milagro, varios sectores de la cabecera",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
+    },
+    {
+      "lat": -2.1,
+      "lon": -79.45,
+      "lugar": "Venecia Central y Córdova, Roberto Astudillo (Milagro)",
+      "detalle": "Río Naranjito (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026; COE Nacional (Diario Extra), 5 nov"
+    },
+    {
+      "lat": -1.95,
+      "lon": -79.52,
+      "lugar": "Vía Juján–Simón Bolívar (Alfredo Baquerizo Moreno)",
+      "detalle": "Río Amarillo (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
+    },
+    {
+      "lat": -1.88,
+      "lon": -80.08,
+      "lugar": "Lomas de Sargentillo (Lomas de Sargentillo)",
+      "detalle": "Estero Loco, varios recintos (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.82,
       "lon": -80.24,
       "lugar": "Recinto Pasaje (Pedro Carbo)",
       "detalle": "Río Canaán (ubicación aproximada en la cabecera cantonal)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.366,
       "lon": -79.906,
       "lugar": "Balzar (Balzar)",
       "detalle": "Estero Perinao",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.7,
       "lon": -79.98,
       "lugar": "Recinto La Judith (Santa Lucía)",
       "detalle": "Río Pula (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
-    },
-    {
-      "lat": -1.03,
-      "lon": -79.46,
-      "lugar": "La Loreto, parroquia 24 de Mayo (Quevedo)",
-      "detalle": "El Atascoso (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.4,
       "lon": -79.5,
       "lugar": "Chacarita (Ventanas)",
       "detalle": "Ríos Oncebi, Bobo (Pailón) y Las Trancas (Los Milán) (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
+    },
+    {
+      "lat": -1.71,
+      "lon": -79.49,
+      "lugar": "Caracol (Babahoyo)",
+      "detalle": "Río Caracol, sector de la Unidad Educativa Caracol (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -0.7,
       "lon": -80.1,
       "lugar": "Chone (Chone)",
-      "detalle": "Río Garrapata, varios sectores; río Chone en crecida",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "detalle": "Río Garrapata, varios sectores; río Chone con tendencia a subir",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.67,
       "lon": -80.8,
       "lugar": "Ayampe (Puerto López)",
-      "detalle": "Río Ayampe, volvió a desbordarse la noche del 4 nov (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026; SNGR (Prensa Latina), 5 nov"
+      "detalle": "Río Ayampe (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
+    },
+    {
+      "lat": -1.49,
+      "lon": -80.765,
+      "lugar": "Machalilla (Puerto López)",
+      "detalle": "Río Buena Vista: desbordado la noche del 4 nov; al corte del 5 nov, con tendencia a subir (ubicación aproximada)",
+      "fuente": "SNGR (Prensa Latina) y SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.56,
       "lon": -80.62,
       "lugar": "Pedro Pablo Gómez (Jipijapa)",
       "detalle": "Ríos Casas Viejas y La Vaca (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.47,
       "lon": -80.62,
       "lugar": "Guale, Julcuy (Jipijapa)",
       "detalle": "Río Julcuy (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.39,
       "lon": -80.38,
       "lugar": "Noboa (24 de Mayo)",
       "detalle": "Río Guineal (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -1.95,
       "lon": -80.66,
       "lugar": "Colonche (Santa Elena)",
-      "detalle": "Ríos California (comuna La Ponga) y Salanguillo (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "detalle": "Ríos California (La Ponga, Febres Cordero, Loma Alta), Salanguillo y Javita (Ceibitos, San Marcos) (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
-      "lat": -2.4,
-      "lon": -80.68,
-      "lugar": "Comuna Sucre, Chanduy (Santa Elena)",
-      "detalle": "Río Tinto (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "lat": -1.81,
+      "lon": -80.7,
+      "lugar": "Dos Mangas, Manglaralto (Santa Elena)",
+      "detalle": "Río Dos Mangas: comunas Dos Mangas y Sitio Nuevo (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
-      "lat": -3.72,
-      "lon": -79.6,
-      "lugar": "Porotillo, Salatí (Portovelo)",
-      "detalle": "Quebrada sin nombre (ubicación aproximada)",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "lat": -1.93,
+      "lon": -80.72,
+      "lugar": "Valdivia, Manglaralto (Santa Elena)",
+      "detalle": "Río Valdivia (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
-      "lat": -1.49,
-      "lon": -80.765,
-      "lugar": "Machalilla (Puerto López)",
-      "detalle": "Río Buena Vista, desbordado la noche del 4 nov (ubicación aproximada)",
-      "fuente": "SNGR (Prensa Latina), 5 nov 2026"
+      "lat": 0.78,
+      "lon": -78.93,
+      "lugar": "Zapallo Grande, Telembí (Eloy Alfaro)",
+      "detalle": "Río Cayapas (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     }
   ],
   "inundaciones": [
@@ -251,15 +286,15 @@
       "lat": -2.134,
       "lon": -79.594,
       "lugar": "Varios sectores (Milagro)",
-      "detalle": "Zonas urbanas amanecieron anegadas tras la lluvia de la noche del 3 y la madrugada del 4 nov; río Milagro en crecida (Av. 24 de Mayo y Rocafuerte, Av. Paquicha, Calderón y Miguel Valverde, calle Manabí).",
-      "fuente": "ECU 911 (Diario Extra, Primicias y Teleamazonas), 4 nov 2026; SNGR, corte 11:00 del 4 nov"
+      "detalle": "Calles y avenidas con acumulación de agua por el desborde de los ríos Milagro y Naranjito; 97 reportes de calles anegadas en la app Amaru el 4 nov; clases presenciales suspendidas y alojamientos temporales.",
+      "fuente": "ECU 911 (Primicias y Diario Extra), 5 nov 2026"
     },
     {
       "lat": -2.095,
       "lon": -79.94,
       "lugar": "Parque Industrial El Sauce (Guayaquil)",
       "detalle": "Acumulación de agua en las avenidas Gastón Thoret Jager y Luis Eduardo Robles; Interagua envió equipos (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio y Diario Extra), 4 nov 2026, mañana"
+      "fuente": "Segura EP (El Comercio, Diario Extra y Teleamazonas), 4 nov 2026"
     },
     {
       "lat": -2.178,
@@ -273,7 +308,7 @@
       "lon": -79.785,
       "lugar": "Tenguel (Guayaquil)",
       "detalle": "Sectores afectados por el desborde de los ríos Pilco y Tenguel.",
-      "fuente": "SNGR, corte 11:00 del 4 nov 2026"
+      "fuente": "SNGR, corte 07:00 del 5 nov 2026"
     },
     {
       "lat": -2.14,
@@ -286,15 +321,15 @@
       "lat": -1.962,
       "lon": -79.725,
       "lugar": "Cabecera cantonal y recintos (Samborondón)",
-      "detalle": "Noche del 4 nov: lluvia en Samborondón según ECU 911, sin calles con agua reportadas; hoy, lluvia moderada en la mañana (INAMHI). Último reporte con agua (Municipio, 3 nov): acumulación en zonas urbanas y caminos anegados en recintos; última lluvia con calles detalladas (27 oct): avenidas San Miguel, Sucre y Santa Ana, 31 de Octubre y La Paz.",
-      "fuente": "ECU 911 (Teleamazonas), 4 nov 2026; Municipio de Samborondón (Vistazo), 3 nov; Diario Extra, 27 oct"
+      "detalle": "5 nov: lluvia moderada en la mañana (Segura EP), sin calles con agua reportadas; esta noche, llovizna (INAMHI). Último reporte con agua (Municipio, 3 nov): acumulación en zonas urbanas y caminos anegados en recintos; última lluvia con calles detalladas (27 oct): avenidas San Miguel, Sucre y Santa Ana, 31 de Octubre y La Paz.",
+      "fuente": "Segura EP (Vistazo), 5 nov 2026; INAMHI (El Universo), 5 nov; Municipio de Samborondón (Vistazo), 3 nov; Diario Extra, 27 oct"
     },
     {
       "lat": -2.1735,
       "lon": -79.8225,
       "lugar": "Vías principales del centro (Durán)",
-      "detalle": "Noche del 4 nov: lluvia en Durán según ECU 911, sin calles con agua reportadas; hoy, lluvia moderada en la mañana (INAMHI). Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles específicas).",
-      "fuente": "ECU 911 (Teleamazonas), 4 nov 2026; El Telégrafo, 1 nov"
+      "detalle": "5 nov: lluvia moderada en la mañana, sin calles con agua reportadas; esta noche, llovizna (INAMHI). Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles específicas).",
+      "fuente": "INAMHI (Metro Ecuador y El Universo), 5 nov 2026; El Telégrafo, 1 nov"
     },
     {
       "lat": -2.165,
@@ -311,13 +346,133 @@
       "fuente": "Expreso y El Universo, 19 oct 2026"
     },
     {
+      "lat": -1.055,
+      "lon": -80.455,
+      "lugar": "Calles Cristo Rey y Mariscal Ayacucho (Portoviejo)",
+      "detalle": "Tramos anegados (ubicación aproximada).",
+      "fuente": "ECU 911 Portoviejo (El Diario), 5 nov 2026"
+    },
+    {
+      "lat": -0.92,
+      "lon": -80.45,
+      "lugar": "Av. Sucre y Don Bosco, sector Atahualpa (Rocafuerte)",
+      "detalle": "Cruces anegados; también el acceso a Puerto Loor (ubicación aproximada).",
+      "fuente": "ECU 911 Portoviejo (El Diario), 5 nov 2026"
+    },
+    {
+      "lat": -0.605,
+      "lon": -80.42,
+      "lugar": "Santa Gema y Secundino, redondel a Bahía, La Y (Sucre)",
+      "detalle": "Intersecciones anegadas (ubicación aproximada).",
+      "fuente": "ECU 911 Portoviejo (El Diario), 5 nov 2026"
+    },
+    {
+      "lat": -0.93,
+      "lon": -80.21,
+      "lugar": "Vía Balsa Tumbada, U. E. del Milenio (Junín)",
+      "detalle": "Tramos anegados (ubicación aproximada).",
+      "fuente": "ECU 911 Portoviejo (El Diario), 5 nov 2026"
+    },
+    {
       "lat": -1.48,
       "lon": -80.77,
-      "lugar": "Las Cabañas, Los Platanales y San Isidro (Puerto López)",
-      "detalle": "Sectores de Machalilla inundados por el nuevo desborde de los ríos Ayampe y Buena Vista la noche del 4 nov; otros sectores siguen aislados (ubicación aproximada).",
-      "fuente": "SNGR (Prensa Latina), 5 nov 2026"
+      "lugar": "Machalilla y General Córdova (Puerto López)",
+      "detalle": "Pasos peatonales y vehiculares anegados; sectores afectados por los ríos Ayampe y Buena Vista (ubicación aproximada).",
+      "fuente": "ECU 911 Portoviejo (El Diario), 5 nov 2026; SNGR (Prensa Latina), 5 nov"
+    },
+    {
+      "lat": -2.225,
+      "lon": -80.905,
+      "lugar": "Calles de La Libertad (La Libertad)",
+      "detalle": "Calles inundadas y daños por vientos fuertes en los barrios 12 de Octubre y Kennedy (ubicación aproximada).",
+      "fuente": "Primicias, 5 nov 2026"
+    },
+    {
+      "lat": -1.92,
+      "lon": -80.72,
+      "lugar": "Valdivia, San Pedro, Barcona y Sinchal (Santa Elena)",
+      "detalle": "Viviendas inundadas por la crecida de los ríos de Manglaralto (ubicación aproximada).",
+      "fuente": "Primicias, 5 nov 2026"
+    },
+    {
+      "lat": -3.29,
+      "lon": -79.93,
+      "lugar": "El Cambio (Machala)",
+      "detalle": "Tres días de inundación en la zona Machala–El Cambio–La Iberia; vía cerrada (ubicación aproximada).",
+      "fuente": "ECU 911, corte 06:30 (Diario Correo), 5 nov 2026"
     }
   ],
-  "vias": [],
-  "fuentes": "INAMHI (advertencia N.º 86, 4 al 7 nov; pronóstico del 5 nov), SNGR (corte 11:00 del 4 nov y boletín del 5 nov vía Prensa Latina), INOCAR (tabla del 4 nov vía El Comercio; estimación propia para el 5 nov), ECU 911 (4 nov), Segura EP, Ministerio de Educación, Teleamazonas, El Universo, El Comercio, Diario Extra, Primicias, Vistazo, Metro Ecuador, Prensa Latina, El Telégrafo"
+  "vias": [
+    {
+      "lat": -2.68,
+      "lon": -79.48,
+      "lugar": "Vía Cuenca–Molleturo–El Empalme, km 90 (Cuenca)",
+      "detalle": "Cerrada por deslizamiento de talud. Alterna: Biblián–Zhud–Cochancay (ubicación aproximada).",
+      "fuente": "MTI (Vistazo y Primicias), 5 nov 2026"
+    },
+    {
+      "lat": -3.29,
+      "lon": -79.93,
+      "lugar": "Vía Machala–El Cambio–La Iberia (Machala)",
+      "detalle": "Cerrada a la altura del colegio Alejandro Castro por inundación; sin paso de El Cambio a La Iberia (ubicación aproximada).",
+      "fuente": "ECU 911, corte 06:30 (Diario Correo), 5 nov 2026"
+    },
+    {
+      "lat": -3.58,
+      "lon": -79.7,
+      "lugar": "Vía Paccha–Cerro Azul, km 18 (Atahualpa)",
+      "detalle": "Cerrada por pérdida de mesa vial; MTI construye variante para livianos. Alterna: La Avanzada–Saracay–Piñas–Portovelo–Zaruma (ubicación aproximada).",
+      "fuente": "ECU 911 (Diario Correo) y MTI (Vistazo), 5 nov 2026"
+    },
+    {
+      "lat": -3.5,
+      "lon": -80.02,
+      "lugar": "Vía Santa Rosa–Arenillas, sector Santa Marianita (Santa Rosa)",
+      "detalle": "Paso parcial por árbol caído (ubicación aproximada).",
+      "fuente": "ECU 911, corte 06:30 (Diario Correo), 5 nov 2026"
+    },
+    {
+      "lat": -3.7,
+      "lon": -79.68,
+      "lugar": "Vía Piñas–Portovelo, Nariz del Diablo (Piñas)",
+      "detalle": "Paso parcial por deslizamiento; también deslizamientos en Saracay–Balsas, Atahualpa–Zaruma y Portovelo–Salatí (ubicación aproximada).",
+      "fuente": "ECU 911, corte 06:30 (Diario Correo), 5 nov 2026"
+    },
+    {
+      "lat": -1.8,
+      "lon": -79.52,
+      "lugar": "Paso Lateral de Babahoyo, puentes Gemelos (Babahoyo)",
+      "detalle": "Cerrado sentido La Chorrera–Juján por hundimiento del puente Gemelo 2; hay alternas (ubicación aproximada).",
+      "fuente": "MTI (Vistazo), 5 nov 2026"
+    },
+    {
+      "lat": -1.9,
+      "lon": -79.54,
+      "lugar": "E-25 Babahoyo–Juján (Alfredo Baquerizo Moreno)",
+      "detalle": "Acumulación de agua en varios tramos; ECU 911 recomienda vías alternas (ubicación aproximada).",
+      "fuente": "ECU 911 (Primicias), 5 nov 2026"
+    },
+    {
+      "lat": -0.83,
+      "lon": -80.48,
+      "lugar": "Sector Cañitas, Charapotó (Sucre)",
+      "detalle": "Vía inhabilitada por acumulación de agua (ubicación aproximada).",
+      "fuente": "ECU 911 (Primicias), 5 nov 2026"
+    },
+    {
+      "lat": -1.77,
+      "lon": -80.73,
+      "lugar": "Puente San José, Ruta del Spondylus (Santa Elena)",
+      "detalle": "Erosión en el estribo sur del puente (ubicación aproximada).",
+      "fuente": "MTI (Primicias), 5 nov 2026"
+    },
+    {
+      "lat": 0.97,
+      "lon": -79.33,
+      "lugar": "Puente Tapaila, Montalvo, km 112 (Rioverde)",
+      "detalle": "E15 cerrada por colapso del puente; alternas por Esmeraldas–Quinindé (ubicación aproximada).",
+      "fuente": "MTI (Vistazo), 5 nov 2026"
+    }
+  ],
+  "fuentes": "SNGR (corte 07:00 del 5 nov), INAMHI (advertencia N.º 86; pronóstico del 5 nov), INOCAR (tabla del 5 nov vía El Universo; aviso de oleaje), ECU 911 (5 nov, Portoviejo y El Oro), MTI, COE Nacional, Segura EP, El Universo, El Comercio, Diario Extra, Primicias, El Diario, Diario Correo, Vistazo, Metro Ecuador, Teleamazonas, Prensa Latina"
 }
