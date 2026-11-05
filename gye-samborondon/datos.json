@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-04T18:10:00-05:00",
-  "actualizado_texto": "miércoles 4 nov 2026, 18:10",
+  "actualizado": "2026-11-05T06:15:00-05:00",
+  "actualizado_texto": "jueves 5 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI: advertencia de lluvias fuertes a muy fuertes y tormentas desde las 10:00 de hoy hasta las 10:00 del sábado 7. Hoy, más intensidad desde el final de la tarde y tormenta eléctrica esta noche y la madrugada del jueves en Guayaquil, Durán y Samborondón."
+      "texto": "INAMHI (advertencia N.º 86): lluvias fuertes a muy fuertes y tormentas hasta las 10:00 del sábado 7. Hoy jueves: lloviznas en la mañana en Guayaquil y lluvia moderada en Durán y Samborondón; tormentas posibles de madrugada y noche."
     },
     {
       "tipo": "inundacion",
-      "texto": "Madrugada del 4 nov (Segura EP): acumulación de agua en el Parque Industrial El Sauce (Gastón Thoret Jager y Luis Eduardo Robles) y en la Av. Barcelona, bajada del paso vehicular hacia la Ferroviaria (07:10). Calzada mojada en Gómez Rendón, Antonio Flores, Vía a la Costa, Perimetral, Av. Machala y Av. Simón Bolívar."
+      "texto": "4 nov (Segura EP): acumulación de agua en el Parque Industrial El Sauce (Gastón Thoret Jager y Luis Eduardo Robles) y en la Av. Barcelona, bajada del paso vehicular hacia la Ferroviaria. Sin nuevas calles con agua reportadas en la noche del 4 ni esta madrugada."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán y Samborondón: lluvias dispersas y moderadas el 4 nov (ECU 911), sin calles con agua reportadas. Con lluvia fuerte esta noche, atención a La Puntilla y a El Recreo y Primavera (Durán)."
+      "texto": "Durán y Samborondón: lluvia la noche del 4 nov (ECU 911), sin calles con agua reportadas. Con lluvia fuerte o marea alta, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
     },
     {
       "tipo": "aviso",
-      "texto": "Segura EP contabilizó más de 160 emergencias en Guayaquil del 1 al 3 nov; Las Orquídeas tuvo hasta 40 cm de agua dentro de viviendas. Evitar el sector si vuelve a llover fuerte."
+      "texto": "Hoy, clases no presenciales en escuelas públicas de Guayaquil, Durán, Samborondón y Daule por lluvias intensas e incremento de la marea (Ministerio de Educación, con informes de INAMHI e INOCAR)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy 3,86 m a las 15:19 (INOCAR); la próxima, estimada hacia las 03:50 del jueves. Con lluvia fuerte cerca de esa hora, el agua drena lento."
+      "texto": "Sin aguaje anunciado, pero con marea en aumento. Pleamar estimada hoy hacia las 16:20 (~4,0 m): con lluvia cerca de esa hora, el agua drena lento."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar 3,86 m hoy 15:19 · INOCAR",
-    "altura": "3,86 m",
-    "texto": "pleamar de hoy miércoles en Guayaquil-río: 4,05 m a las 02:42 y 3,86 m a las 15:19 (INOCAR)",
+    "titulo": "Sin aguaje · pleamar estimada ~16:20 hoy · marea en aumento",
+    "altura": "~4,00 m",
+    "texto": "pleamar estimada de hoy jueves en Guayaquil-río: ~03:50 y ~16:20, alrededor de 4,0 m (estimado a partir de INOCAR del 4 nov: 4,05 m a las 02:42 y 3,86 m a las 15:19)",
     "horas": [
-      {
-        "dia": "Jue 5",
-        "hora": "~03:50"
-      },
       {
         "dia": "Jue 5",
         "hora": "~16:20"
@@ -39,9 +35,13 @@
       {
         "dia": "Vie 6",
         "hora": "~04:50"
+      },
+      {
+        "dia": "Vie 6",
+        "hora": "~17:20"
       }
     ],
-    "nota": "Alturas y horas del 4 nov según INOCAR (vía Segura EP, El Comercio y Diario Extra); las marcadas con ~ son estimadas. Con marea alta el agua de lluvia no drena: evitar zonas bajas unas 2 h antes y después si llueve."
+    "nota": "No se encontró la tabla del INOCAR para el 5 nov: horas y altura estimadas (~) a partir de la del 4 nov. El Ministerio de Educación citó informes del INOCAR sobre incremento de la marea. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve."
   },
   "puntos": [
     {
@@ -179,5 +179,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (advertencia del 4 al 7 nov, pronóstico del 4–5 nov), Segura EP (4 nov, vía El Comercio y Diario Extra), ECU 911 (4 nov), INOCAR (vía Segura EP y El Comercio), Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Primicias, Vistazo, Expreso"
+  "fuentes": "INAMHI (advertencia N.º 86, pronóstico del 5 nov), Segura EP (4 nov, vía El Comercio, Diario Extra y Teleamazonas), ECU 911 (4 nov), Ministerio de Educación, INOCAR (tabla del 4 nov; estimación para el 5 nov), Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Primicias, Vistazo, Expreso"
 }
