@@ -1,37 +1,29 @@
 {
-  "actualizado": "2026-11-06T06:20:00-05:00",
-  "actualizado_texto": "viernes 6 nov 2026, 06:20",
+  "actualizado": "2026-11-06T18:10:00-05:00",
+  "actualizado_texto": "viernes 6 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (advertencia N.º 86) vigente hasta las 10:00 del sábado 7. Hoy viernes: lloviznas leves en Guayaquil, Durán y Samborondón, sobre todo en la mañana; no se prevén tormentas en la ciudad."
+      "texto": "INAMHI (advertencia N.º 86, vigente hasta las 10:00 del sábado 7): lluvias moderadas a fuertes desde esta noche hasta la madrugada del sábado en Guayas."
     },
     {
       "tipo": "inundacion",
-      "texto": "Sin calles con agua reportadas por Segura EP desde el 4 nov. Sigue en el mapa El Sauce (noche del 4 nov); se retiró la Av. Barcelona (reporte de hace más de 36 h)."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Durán y Samborondón: sin reportes de calles con agua desde el 3 nov. Con lluvia fuerte o marea alta, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
+      "texto": "Sin calles con agua reportadas en las últimas 36 h en Guayaquil, Samborondón ni Durán: el mapa no tiene puntos activos. Se retiró El Sauce (reporte del 4 nov)."
     },
     {
       "tipo": "aviso",
-      "texto": "Hoy vuelven las clases presenciales en Guayaquil, Durán, Samborondón y Daule, excepto en zonas afectadas: más tránsito en horas de entrada y salida."
+      "texto": "Samborondón: hoy en la mañana hubo lluvia fuerte con truenos en la vía a Samborondón y Ciudad Celeste, sin calles con agua reportadas. Con lluvia fuerte, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje anunciado. Pleamar de hoy, estimada: ~17:20 (en la madrugada fue ~04:50); con lluvia cerca de esa hora, el agua drena lento."
+      "texto": "Sin aguaje anunciado. Pleamar de hoy: 4,34 m (INOCAR). Mañana sábado, ~05:40 y ~18:10: si llueve fuerte en la madrugada, el agua drenará lento."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar estimada ~17:20 hoy · ~4,1 m",
-    "altura": "~4,1 m",
-    "texto": "pleamar estimada de hoy viernes en Guayaquil-río (~04:50 y ~17:20); referencia INOCAR de ayer: 4,09 m a las 16:26",
+    "titulo": "Sin aguaje · pleamar de hoy 4,34 m · próxima ~05:40 del sábado",
+    "altura": "4,34 m",
+    "texto": "pleamar de hoy viernes 6 nov en Guayaquil-río según INOCAR (horas estimadas ~04:50 y ~17:20); próximas pleamares el sábado ~05:40 y ~18:10",
     "horas": [
-      {
-        "dia": "Vie 6",
-        "hora": "~17:20"
-      },
       {
         "dia": "Sáb 7",
         "hora": "~05:40"
@@ -39,22 +31,15 @@
       {
         "dia": "Sáb 7",
         "hora": "~18:10"
+      },
+      {
+        "dia": "Dom 8",
+        "hora": "~06:30"
       }
     ],
-    "nota": "Horas estimadas (~) a partir de tablas de mareas públicas y de la tabla del INOCAR del 5 nov; la altura es aproximada. Evitar zonas bajas unas 2 h antes y después de la pleamar si llueve."
+    "nota": "Altura de hoy según INOCAR (citada por Primicias); horas estimadas (~) a partir de tablas de mareas públicas. Evitar zonas bajas unas 2 h antes y después de la pleamar si llueve."
   },
-  "puntos": [
-    {
-      "lat": -2.095,
-      "lon": -79.94,
-      "lugar": "Parque Industrial El Sauce: Av. Gastón Thoret Jager y Av. Luis Eduardo Robles",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; Interagua envió equipos para evacuarla (ubicación aproximada). Último reporte con agua en la ciudad.",
-      "fuente": "Segura EP (El Comercio, Diario Extra y Teleamazonas)",
-      "fecha": "4 nov, noche"
-    }
-  ],
+  "puntos": [],
   "recurrentes": [
     {
       "lat": -2.1405,
@@ -109,8 +94,8 @@
       "lon": -79.8585,
       "lugar": "Ciudad Celeste (ingreso)",
       "canton": "Samborondón",
-      "detalle": "Punto de anegación recurrente. Último reporte: Ingreso por Plaza Batán volvió a anegarse.",
-      "fuente": "Municipio de Samborondón (Diario Extra, 27 oct)"
+      "detalle": "Punto de anegación recurrente. Último reporte con agua: ingreso por Plaza Batán volvió a anegarse (27 oct). El 6 nov en la mañana hubo lluvia fuerte en el sector, sin agua reportada.",
+      "fuente": "Municipio de Samborondón (Diario Extra, 27 oct); Amarú Alertas (Metro Ecuador, 6 nov)"
     },
     {
       "lat": -2.105,
@@ -169,5 +154,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (advertencia N.º 86, pronóstico del 6 nov vía El Universo y Teleamazonas), Segura EP (4 y 5 nov), INOCAR (tabla del 5 nov), Ministerio de Educación (Vistazo), Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Vistazo, Expreso"
+  "fuentes": "INAMHI (advertencia N.º 86; pronóstico para la noche del 6 y el 7 nov vía Primicias y El Universo), INOCAR (pleamar del 6 nov vía Primicias), Segura EP, Amarú Alertas (Metro Ecuador, 6 nov), Municipio de Samborondón, El Universo, Expreso, Diario Extra, El Telégrafo"
 }
