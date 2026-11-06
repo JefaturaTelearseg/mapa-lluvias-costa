@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-05T18:15:00-05:00",
-  "actualizado_texto": "jueves 5 nov 2026, 18:15",
+  "actualizado": "2026-11-06T06:20:00-05:00",
+  "actualizado_texto": "viernes 6 nov 2026, 06:20",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (advertencia N.º 86): lluvias fuertes y tormentas en la Costa hasta las 10:00 del sábado 7. Esta noche y madrugada: lluvia moderada en Guayaquil; llovizna en Durán y Samborondón."
+      "texto": "INAMHI (advertencia N.º 86) vigente hasta las 10:00 del sábado 7. Hoy viernes: lloviznas leves en Guayaquil, Durán y Samborondón, sobre todo en la mañana; no se prevén tormentas en la ciudad."
     },
     {
       "tipo": "inundacion",
-      "texto": "Hoy jueves, lluvia moderada en la mañana: Segura EP solo reportó calzada mojada en la Av. de las Américas, la 9 de Octubre y la Pedro Menéndez, sin calles inundadas. Siguen en el mapa los puntos con agua del 4 nov (El Sauce y Av. Barcelona)."
+      "texto": "Sin calles con agua reportadas por Segura EP desde el 4 nov. Sigue en el mapa El Sauce (noche del 4 nov); se retiró la Av. Barcelona (reporte de hace más de 36 h)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán y Samborondón: lluvia moderada en la mañana, sin calles con agua reportadas hoy. Con lluvia fuerte o marea alta, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
+      "texto": "Durán y Samborondón: sin reportes de calles con agua desde el 3 nov. Con lluvia fuerte o marea alta, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
     },
     {
       "tipo": "aviso",
-      "texto": "SNGR (5 nov, 07:00): río Daule en Pascuales y río Guayas en Ximena con tendencia a subir. Hoy, clases no presenciales en Guayaquil, Durán, Samborondón y Daule."
+      "texto": "Hoy vuelven las clases presenciales en Guayaquil, Durán, Samborondón y Daule, excepto en zonas afectadas: más tránsito en horas de entrada y salida."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje anunciado. Pleamar de hoy: 4,09 m a las 16:26 (INOCAR). Próximas, estimadas: ~05:05 y ~17:30 del viernes; con lluvia cerca de esas horas, el agua drena lento."
+      "texto": "Sin aguaje anunciado. Pleamar de hoy, estimada: ~17:20 (en la madrugada fue ~04:50); con lluvia cerca de esa hora, el agua drena lento."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar 4,09 m a las 16:26 hoy · próxima ~05:05 vie",
-    "altura": "4,09 m",
-    "texto": "pleamar de hoy jueves en Guayaquil-río: 4,09 m a las 16:26; bajamar 0,66 m a las 23:09 (INOCAR, vía El Universo)",
+    "titulo": "Sin aguaje · pleamar estimada ~17:20 hoy · ~4,1 m",
+    "altura": "~4,1 m",
+    "texto": "pleamar estimada de hoy viernes en Guayaquil-río (~04:50 y ~17:20); referencia INOCAR de ayer: 4,09 m a las 16:26",
     "horas": [
       {
         "dia": "Vie 6",
-        "hora": "~05:05"
-      },
-      {
-        "dia": "Vie 6",
-        "hora": "~17:30"
+        "hora": "~17:20"
       },
       {
         "dia": "Sáb 7",
-        "hora": "~06:10"
+        "hora": "~05:40"
+      },
+      {
+        "dia": "Sáb 7",
+        "hora": "~18:10"
       }
     ],
-    "nota": "Horas del 6 y 7 nov estimadas (~) a partir de la tabla del INOCAR del 5 nov. INOCAR mantiene aviso de oleaje (0,50 a 1,90 m en Guayas y Santa Elena) hasta el 6 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar si llueve."
+    "nota": "Horas estimadas (~) a partir de tablas de mareas públicas y de la tabla del INOCAR del 5 nov; la altura es aproximada. Evitar zonas bajas unas 2 h antes y después de la pleamar si llueve."
   },
   "puntos": [
     {
@@ -50,19 +50,9 @@
       "lugar": "Parque Industrial El Sauce: Av. Gastón Thoret Jager y Av. Luis Eduardo Robles",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; Interagua envió equipos para evacuarla (ubicación aproximada).",
+      "detalle": "Acumulación de agua; Interagua envió equipos para evacuarla (ubicación aproximada). Último reporte con agua en la ciudad.",
       "fuente": "Segura EP (El Comercio, Diario Extra y Teleamazonas)",
-      "fecha": "4 nov, madrugada y noche"
-    },
-    {
-      "lat": -2.178,
-      "lon": -79.923,
-      "lugar": "Av. Barcelona, bajada del paso vehicular hacia la Ferroviaria",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua reportada a las 07:10 (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio)",
-      "fecha": "4 nov, 07:10"
+      "fecha": "4 nov, noche"
     }
   ],
   "recurrentes": [
@@ -179,5 +169,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (advertencia N.º 86, pronóstico del 5 nov), Segura EP (5 nov, vía Vistazo; 4 nov, vía El Comercio, Diario Extra y Teleamazonas), SNGR (corte 07:00 del 5 nov), INOCAR (tabla del 5 nov vía El Universo), Ministerio de Educación, Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Vistazo, Metro Ecuador, Expreso"
+  "fuentes": "INAMHI (advertencia N.º 86, pronóstico del 6 nov vía El Universo y Teleamazonas), Segura EP (4 y 5 nov), INOCAR (tabla del 5 nov), Ministerio de Educación (Vistazo), Municipio de Samborondón, El Universo, El Comercio, Diario Extra, Vistazo, Expreso"
 }
