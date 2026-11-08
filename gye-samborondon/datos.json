@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-11-08T06:08:00-05:00",
-  "actualizado_texto": "domingo 8 nov 2026, 06:08",
+  "actualizado": "2026-11-08T18:10:00-05:00",
+  "actualizado_texto": "domingo 8 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "inundacion",
@@ -8,7 +8,7 @@
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI preveía solo lloviznas entre la noche del sábado 7 y las 07:00 de hoy domingo en Guayaquil, Durán y Samborondón, sin lluvias fuertes. No hay advertencia vigente."
+      "texto": "INAMHI: domingo nublado con claros y solo llovizna aislada esta noche en Guayaquil y Samborondón, sin tormentas entre las 19:00 y las 07:00. No hay advertencia vigente."
     },
     {
       "tipo": "aviso",
@@ -20,28 +20,28 @@
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje anunciado. Pleamar de hoy estimada ~06:35 y ~19:00 (~4,50 m)."
+      "texto": "Sin aguaje anunciado. Pleamar de hoy: 4,55 m a las 19:03 (INOCAR)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy ~4,50 m (estimada) ~06:35 y ~19:00",
-    "altura": "~4,50 m",
-    "texto": "pleamar estimada de hoy domingo 8 nov en Guayaquil-río (ayer sábado 7, INOCAR: 4,47 m a las 18:18)",
+    "titulo": "Sin aguaje · pleamar de hoy 4,55 m a las 19:03",
+    "altura": "4,55 m",
+    "texto": "pleamar de hoy domingo 8 nov en Guayaquil-río (INOCAR); bajamar 0,21 m a las 13:25",
     "horas": [
       {
         "dia": "Dom 8",
-        "hora": "~06:35"
-      },
-      {
-        "dia": "Dom 8",
-        "hora": "~19:00"
+        "hora": "19:03"
       },
       {
         "dia": "Lun 9",
-        "hora": "~07:15"
+        "hora": "~07:30"
+      },
+      {
+        "dia": "Lun 9",
+        "hora": "~19:50"
       }
     ],
-    "nota": "Horas y altura de hoy estimadas (~) a partir de la pleamar del 7 nov publicada por INOCAR (vía El Universo) y de tablas de mareas públicas. Si llueve, evitar zonas bajas unas 2 h antes y después de la pleamar."
+    "nota": "Hora y altura de hoy según INOCAR (vía El Universo y Vistazo, 8 nov); las del lunes son estimadas (~) con tablas de mareas públicas. Si llueve, evitar zonas bajas unas 2 h antes y después de la pleamar."
   },
   "puntos": [],
   "recurrentes": [
@@ -147,7 +147,7 @@
       "lugar": "Centro de Durán",
       "canton": "Durán",
       "detalle": "Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles detalladas). Antes, calles Loja y Esmeraldas (29 oct). Del 6 al 8 nov, lloviznas sin novedades.",
-      "fuente": "El Telégrafo, 1 nov; SNGR (El Universo, 30 oct); INAMHI (El Universo, 7 nov)"
+      "fuente": "El Telégrafo, 1 nov; SNGR (El Universo, 30 oct); INAMHI (El Universo, 8 nov)"
     },
     {
       "lat": -2.19,
@@ -158,5 +158,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (pronóstico del 8 nov vía El Universo), INOCAR (pleamar del 7 nov vía El Universo), tablas de mareas públicas, Segura EP / C5GYE (El Universo, 6 nov), ECU 911 (Teleamazonas, 7 nov), Municipio de Samborondón, Expreso, Diario Extra, El Telégrafo"
+  "fuentes": "INAMHI (pronóstico del 8 nov y noche del 8–9 nov vía El Universo, Vistazo y KCH FM), INOCAR (pleamar del 8 nov vía El Universo y Vistazo), tablas de mareas públicas, Segura EP / C5GYE (El Universo, 6 nov), ECU 911 (Teleamazonas, 7 nov), Municipio de Samborondón, Expreso, Diario Extra, El Telégrafo"
 }
