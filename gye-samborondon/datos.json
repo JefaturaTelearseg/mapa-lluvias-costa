@@ -1,49 +1,86 @@
 {
-  "actualizado": "2026-11-08T18:10:00-05:00",
-  "actualizado_texto": "domingo 8 nov 2026, 18:10",
+  "actualizado": "2026-11-09T06:15:00-05:00",
+  "actualizado_texto": "lunes 9 nov 2026, 06:15",
   "alertas": [
     {
-      "tipo": "inundacion",
-      "texto": "Sin calles con agua reportadas en las últimas 36 h en Guayaquil, Samborondón ni Durán: el mapa no tiene puntos activos."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "INAMHI: domingo nublado con claros y solo llovizna aislada esta noche en Guayaquil y Samborondón, sin tormentas entre las 19:00 y las 07:00. No hay advertencia vigente."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Durán y Samborondón: sin novedades. Con lluvia fuerte, atención a La Puntilla (Los Arcos, Entre Ríos, Diana Quintana) y a El Recreo y Primavera (Durán)."
-    },
-    {
-      "tipo": "via",
-      "texto": "ECU 911 (7 nov): las vías de Guayas, incluidas las que unen Guayaquil con los cantones, están habilitadas."
-    },
-    {
       "tipo": "marea",
-      "texto": "Sin aguaje anunciado. Pleamar de hoy: 4,55 m a las 19:03 (INOCAR)."
+      "texto": "Aguaje del 9 al 12 nov (INOCAR). Pleamar de hoy: 4,45 m a las 07:09 y 4,55 m a las 19:42. Evitar zonas bajas entre las 17:30 y las 21:30."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Anoche (8 nov) la marea alta dejó agua en 4 puntos de Guayaquil: Malecón Simón Bolívar, 10 de Agosto y Santa Elena, callejón 21 de Cisne 2, y calles 19 y Alcedo (Segura EP)."
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Samborondón: el ECU 911 reportó anoche calles anegadas por la marea, con tránsito lento (sin detallar sectores). Atención a La Puntilla y Ciudad Celeste. Durán: sin novedades."
+    },
+    {
+      "tipo": "aviso",
+      "texto": "INAMHI: sin advertencia vigente; hoy lloviznas, sobre todo al final de la tarde, sin lluvias fuertes."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy 4,55 m a las 19:03",
+    "titulo": "Aguaje del 9 al 12 nov · pleamar de hoy 4,55 m a las 19:42",
     "altura": "4,55 m",
-    "texto": "pleamar de hoy domingo 8 nov en Guayaquil-río (INOCAR); bajamar 0,21 m a las 13:25",
+    "texto": "pleamar de hoy lunes 9 nov en Guayaquil-río (INOCAR); en la mañana, 4,45 m a las 07:09",
     "horas": [
       {
-        "dia": "Dom 8",
-        "hora": "19:03"
+        "dia": "Lun 9",
+        "hora": "19:42"
       },
       {
-        "dia": "Lun 9",
-        "hora": "~07:30"
+        "dia": "Mar 10",
+        "hora": "20:17"
       },
       {
-        "dia": "Lun 9",
-        "hora": "~19:50"
+        "dia": "Mié 11",
+        "hora": "20:49"
       }
     ],
-    "nota": "Hora y altura de hoy según INOCAR (vía El Universo y Vistazo, 8 nov); las del lunes son estimadas (~) con tablas de mareas públicas. Si llueve, evitar zonas bajas unas 2 h antes y después de la pleamar."
+    "nota": "Horas y alturas del INOCAR (vía Teleamazonas, 8 nov): mar 10 4,48 m (también 07:44, 4,36 m); mié 11 4,38 m (también 08:17, 4,25 m). Aguaje del 9 al 12 nov según el calendario del INOCAR (Diario Extra). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
-  "puntos": [],
+  "puntos": [
+    {
+      "lat": -2.193,
+      "lon": -79.8792,
+      "lugar": "Malecón Simón Bolívar",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Agua sobre parte de la calzada por la marea alta (aguaje).",
+      "fuente": "Segura EP / C5GYE (Diario Extra)",
+      "fecha": "8 nov, noche"
+    },
+    {
+      "lat": -2.1935,
+      "lon": -79.8935,
+      "lugar": "10 de Agosto y Santa Elena",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la marea alta (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (Diario Extra)",
+      "fecha": "8 nov, noche"
+    },
+    {
+      "lat": -2.208,
+      "lon": -79.918,
+      "lugar": "Cisne 2: callejón 21",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la marea alta (ubicación aproximada del sector).",
+      "fuente": "Segura EP / C5GYE (Diario Extra)",
+      "fecha": "8 nov, noche"
+    },
+    {
+      "lat": -2.2003,
+      "lon": -79.9035,
+      "lugar": "Calle 19 y Alcedo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua por la marea alta (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (Diario Extra)",
+      "fecha": "8 nov, noche"
+    }
+  ],
   "recurrentes": [
     {
       "lat": -2.1405,
@@ -146,7 +183,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles detalladas). Antes, calles Loja y Esmeraldas (29 oct). Del 6 al 8 nov, lloviznas sin novedades.",
+      "detalle": "Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles detalladas). Antes, calles Loja y Esmeraldas (29 oct). Del 6 al 8 nov, sin novedades.",
       "fuente": "El Telégrafo, 1 nov; SNGR (El Universo, 30 oct); INAMHI (El Universo, 8 nov)"
     },
     {
@@ -158,5 +195,5 @@
       "fuente": "El Universo, 19 oct"
     }
   ],
-  "fuentes": "INAMHI (pronóstico del 8 nov y noche del 8–9 nov vía El Universo, Vistazo y KCH FM), INOCAR (pleamar del 8 nov vía El Universo y Vistazo), tablas de mareas públicas, Segura EP / C5GYE (El Universo, 6 nov), ECU 911 (Teleamazonas, 7 nov), Municipio de Samborondón, Expreso, Diario Extra, El Telégrafo"
+  "fuentes": "Segura EP / C5GYE y ECU 911 (Diario Extra, 8 nov), INOCAR (pleamares del 9 al 11 nov vía Teleamazonas; calendario de aguajes vía Diario Extra), INAMHI (pronóstico del 9 nov vía El Comercio), Municipio de Samborondón, Expreso, El Universo, El Telégrafo"
 }
