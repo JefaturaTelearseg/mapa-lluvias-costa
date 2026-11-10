@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-09T18:15:00-05:00",
-  "actualizado_texto": "lunes 9 nov 2026, 18:15",
+  "actualizado": "2026-11-10T06:15:00-05:00",
+  "actualizado_texto": "martes 10 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "marea",
-      "texto": "Aguaje del 9 al 12 nov (INOCAR). Esta noche, pleamar de 4,55 m a las 19:42 en Guayaquil-río. Esta mañana la marea de 4,45 m dejó agua en 5 sectores del Suburbio, Isla Trinitaria y el Malecón (ECU 911 / Segura EP)."
+      "texto": "Aguaje hasta el 12 nov (INOCAR). Hoy, pleamares en Guayaquil-río de 4,36 m a las 07:44 y 4,48 m a las 20:17. El 9 nov la marea dejó agua en el Suburbio, el Malecón, Sauces e Isla Trinitaria. Bandera roja hoy en 8 playas de Esmeraldas, Manabí y Santa Elena."
     },
     {
       "tipo": "desborde",
-      "texto": "SNGR (corte 11:00 del 9 nov): 20 ríos y esteros desbordados en Guayas (9), Manabí (6), Santa Elena (3) y Los Ríos (2)."
+      "texto": "SNGR (último corte publicado, 11:00 del 9 nov): 20 ríos y esteros desbordados en Guayas (9), Manabí (6), Santa Elena (3) y Los Ríos (2)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Manta: el río Burro se desbordó la mañana del 9 nov y anegó Jocay, Miraflores y Tarqui; vía Cañitas–Charapotó cerrada por inundación y Babahoyo–Juján con agua sobre la calzada."
+      "texto": "9 nov: lluvia torrencial inundó calles, viviendas y negocios en Babahoyo; el río Burro anegó Jocay, Miraflores y Tarqui en Manta. Vía Babahoyo–Juján con 30 cm de agua en el km 55."
     },
     {
       "tipo": "via",
@@ -20,18 +20,14 @@
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI: sin advertencia vigente. Esta noche y madrugada, lluvia normal a moderada en Guayaquil, Samborondón, Daule, Manta, Quevedo y Santo Domingo; lloviznas en Durán, Naranjal y El Oro."
+      "texto": "INAMHI (martes 10 nov, sin advertencia vigente): lluvia normal a moderada en la mañana en Manta, Montecristi, Portoviejo, Santa Elena y Balao; en la tarde en Babahoyo, Buena Fe, Valencia, Quinindé y Santo Domingo. Lloviznas en Guayaquil, Durán, Samborondón y Machala."
     }
   ],
   "marea": {
-    "titulo": "Aguaje del 9 al 12 nov · pleamar de hoy 4,55 m a las 19:42",
-    "altura": "4,55 m",
-    "texto": "pleamar de esta noche, lunes 9 nov, en Guayaquil-río (INOCAR); en la mañana fue de 4,45 m a las 07:09 y dejó calles con agua",
+    "titulo": "Aguaje del 9 al 12 nov · pleamar de hoy 4,48 m a las 20:17",
+    "altura": "4,48 m",
+    "texto": "pleamar de esta noche, martes 10 nov, en Guayaquil-río (INOCAR); en la mañana, 4,36 m a las 07:44",
     "horas": [
-      {
-        "dia": "Lun 9",
-        "hora": "19:42"
-      },
       {
         "dia": "Mar 10",
         "hora": "20:17"
@@ -39,9 +35,13 @@
       {
         "dia": "Mié 11",
         "hora": "20:49"
+      },
+      {
+        "dia": "Jue 12",
+        "hora": "21:21"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (vía Teleamazonas, 8 y 9 nov): mar 10 4,48 m (también 07:44, 4,36 m); mié 11 4,38 m (también 08:17, 4,25 m). Aguaje del 9 al 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
+    "nota": "Horas y alturas del INOCAR (vía El Comercio, 9 nov): mié 11 4,38 m a las 20:49 (también 08:17, 4,25 m); jue 12 4,26 m a las 21:21 (también 08:49, 4,13 m). Aguaje del 9 al 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. Hay aguaje del 9 al 12 de noviembre: la marea alta ya dejó agua en calles de Guayaquil la noche del 8 y la mañana del 9, aun sin lluvia fuerte. Mayor riesgo en la pleamar de la noche."
+    "zonas_texto": "Zona baja o cercana a esteros. Hay aguaje del 9 al 12 de noviembre: la marea alta dejó agua en calles de Guayaquil la noche del 8 y la mañana del 9, aun sin lluvia fuerte. Mayor riesgo en la pleamar de la noche (20:17 hoy)."
   },
   "tramos": [
     {
@@ -82,7 +82,7 @@
       "riesgo": "medio",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (corte 11:00 del 9 nov): sigue desbordado el río Jaguas (Taura, recinto Jaime Roldós, Naranjal); no hay ríos desbordados en El Oro. Esta noche, lloviznas en Durán, Naranjal, Balao, Machala, El Guabo, Santa Rosa y Arenillas (INAMHI). Aguaje del 9 al 12 nov: atención a esteros de Taura y Puerto Bolívar. Durán: sin novedades viales.",
+      "situacion": "SNGR (corte 11:00 del 9 nov): sigue desbordado el río Jaguas (Taura, recinto Jaime Roldós, Naranjal); no hay ríos desbordados en El Oro. Hoy, lluvia normal a moderada en la mañana en Balao y lloviznas en Durán, Naranjal, Machala, El Guabo, Santa Rosa, Pasaje y Arenillas (INAMHI). Aguaje hasta el 12 nov: atención a esteros de Taura y Puerto Bolívar. Durán: sin novedades viales.",
       "recomendacion": "Salir y circular con precaución, evitar el tránsito nocturno con lluvia y no cruzar tramos con agua, sobre todo en Taura, Naranjal y Balao."
     },
     {
@@ -90,15 +90,15 @@
       "riesgo": "medio",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: esta mañana (9 nov) la pleamar de 4,45 m dejó agua en calle 11 y La D, Colón e Ismael Pérez Pazmiño, calle 32 y Capitán Nájera, Isla Trinitaria y Malecón y Loja; también hubo afectaciones en Sauces y la bajada del puente Velero (ECU 911, Segura EP, Teleamazonas). Esta noche, pleamar de 4,55 m a las 19:42 y lluvia moderada prevista en Guayaquil y Samborondón. Samborondón: calles anegadas por marea la noche del 8 (ECU 911). Durán: solo lloviznas, sin novedades viales.",
-      "recomendacion": "Salir y circular con precaución; entre las 17:30 y las 21:30 evitar el Malecón, el Suburbio, Isla Trinitaria, las zonas bajas de Samborondón (La Puntilla, Ciudad Celeste) y de Durán (El Recreo, Primavera), y no cruzar calles con agua."
+      "situacion": "Guayaquil: la mañana del 9 nov la pleamar de 4,45 m dejó agua en calle 11 y La D, Colón e Ismael Pérez Pazmiño, calle 32 y Capitán Nájera, Isla Trinitaria, Malecón y Loja, Sauces y la bajada del puente Velero; en la tarde el nivel bajó (ECU 911, Segura EP, Teleamazonas). No hay reportes publicados de la noche del 9 ni de esta madrugada. Hoy, pleamares de 4,36 m (07:44) y 4,48 m (20:17) y solo lloviznas previstas en Guayaquil, Samborondón y Durán (INAMHI). Samborondón: calles anegadas por marea la noche del 8 (ECU 911). Durán: sin novedades viales.",
+      "recomendacion": "Salir y circular con precaución; entre las 06:00 y las 09:30 y entre las 18:00 y las 22:00 evitar el Malecón, el Suburbio, Isla Trinitaria, las zonas bajas de Samborondón (La Puntilla, Ciudad Celeste) y de Durán (El Recreo, Primavera), y no cruzar calles con agua."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "SNGR (corte 11:00 del 9 nov): siguen desbordados los ríos California (La Ponga), Salanguillo y Javita (Ceibitos y San Marcos), en Colonche. INAMHI prevé lluvia normal a moderada en toda Santa Elena en la madrugada del 10 nov y lloviznas en Playas. Aguaje hasta el 12 nov.",
+      "situacion": "SNGR (corte 11:00 del 9 nov): siguen desbordados los ríos California (La Ponga), Salanguillo y Javita (Ceibitos y San Marcos), en Colonche. Hoy, lluvia normal a moderada en la mañana y tarde en Santa Elena y lloviznas en La Libertad, Salinas y Playas (INAMHI). Aguaje hasta el 12 nov: bandera roja en Salinas (San Lorenzo) y amarilla en Montañita, Playas y Engabao (INOCAR/SNGR).",
       "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo en Colonche y Manglaralto; evitar viajar de noche con lluvia y no detenerse junto a la playa durante la pleamar."
     },
     {
@@ -106,7 +106,7 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "9 nov: el río Burro se desbordó en Manta (Jocay, Miraflores, Tarqui), con unos 31,5 mm de lluvia. SNGR (corte 11:00): 6 desbordes en Manabí: río Viejo (Charapotó, Sucre), quebrada Pacoche (Santa Marianita, Manta), río Burro (Manta), río Muerto y quebradas Ahoga Vaca y Chorrillo (Montecristi). Vía Cañitas–Charapotó cerrada por inundación. Esta noche, lluvia moderada en Manta, Montecristi, Jipijapa, Chone, Sucre y San Vicente.",
+      "situacion": "9 nov: el río Burro se desbordó en Manta (Jocay, Miraflores, Tarqui; unos 20 barrios anegados). SNGR (corte 11:00): 6 desbordes en Manabí: río Viejo (Charapotó, Sucre), quebrada Pacoche (Santa Marianita, Manta), río Burro (Manta), río Muerto y quebradas Ahoga Vaca y Chorrillo (Montecristi). Vía Cañitas–Charapotó cerrada por inundación (9 nov). Hoy, lluvia normal a moderada en la mañana y tarde en Manta, Montecristi, Portoviejo, Jaramijó, Paján, Puerto López, San Vicente y El Carmen; lloviznas en Jipijapa, Chone y Pedernales (INAMHI).",
       "recomendacion": "Salir y circular con precaución, evitar Manta–Montecristi y Charapotó durante la lluvia, usar alternas a la vía Cañitas–Charapotó y no cruzar quebradas o calles con agua."
     },
     {
@@ -114,7 +114,7 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "Alóag–Santo Domingo sigue cerrada en el km 83 por la fragmentación de rocas; la Prefectura prevé habilitarla el 16 nov si hay condiciones (Primicias, 9 nov). SNGR (corte 11:00 del 9 nov): desbordados el estero Perinao (Balzar), el estero El Cañal y los ríos Pula y Jaboncillo (Laurel), el río Amarillo (Juján), el río Chilintomo (Babahoyo) y el río Catarama (Urdaneta); la vía Babahoyo–Juján volvió a quedar con agua. Esta noche, lluvia moderada en Quevedo, Buena Fe, Valencia, Ventanas y Santo Domingo.",
+      "situacion": "Alóag–Santo Domingo sigue cerrada en el km 83; la Prefectura prevé habilitarla el 16 nov si hay condiciones (Primicias, 9 nov). 9 nov: lluvia torrencial inundó Babahoyo y la vía Babahoyo–Juján tuvo 30 cm de agua en el km 55. SNGR (corte 11:00 del 9 nov): desbordados el estero Perinao (Balzar), el estero El Cañal y los ríos Pula y Jaboncillo (Laurel), el río Amarillo (Juján), el río Chilintomo (Babahoyo) y el río Catarama (Urdaneta). Hoy, en la tarde, lluvia normal a moderada en Babahoyo, Buena Fe, Valencia y Santo Domingo; lloviznas en Quevedo, Ventanas, Daule y Balzar (INAMHI).",
       "recomendacion": "Salir y circular con precaución, usar las alternas hacia Quito (Las Mercedes–Los Bancos o Valle Hermoso–Los Bancos), no cruzar tramos con agua cerca de Juján y Babahoyo y prever demoras."
     }
   ],
@@ -223,7 +223,7 @@
       "lat": -2.19,
       "lon": -79.879,
       "lugar": "Malecón Simón Bolívar y Malecón y Loja (Guayaquil)",
-      "detalle": "Agua sobre la calzada por la marea alta la noche del 8 nov y la mañana del 9 nov (pleamar de 4,45 m).",
+      "detalle": "Agua sobre la calzada por la marea alta la noche del 8 nov y la mañana del 9 nov (pleamar de 4,45 m); en la tarde del 9 el nivel bajó.",
       "fuente": "Segura EP (Diario Extra, 8 nov, noche); ECU 911 (Primicias y Diario Extra), 9 nov 2026, mañana"
     },
     {
@@ -239,6 +239,20 @@
       "lugar": "Isla Trinitaria, cooperativa 4 de Marzo (Guayaquil)",
       "detalle": "Acumulación de agua por la marea alta (ubicación aproximada).",
       "fuente": "ECU 911 / Segura EP (Primicias y El Comercio), 9 nov 2026, mañana"
+    },
+    {
+      "lat": -2.12,
+      "lon": -79.892,
+      "lugar": "Sauces (Guayaquil)",
+      "detalle": "Acumulación de agua la mañana del 9 nov por la marea alta, igual que en la bajada del puente Velero; en el monitoreo de la tarde el nivel había bajado (ubicación aproximada del sector).",
+      "fuente": "Teleamazonas, 9 nov 2026"
+    },
+    {
+      "lat": -1.8,
+      "lon": -79.535,
+      "lugar": "Centro urbano (Babahoyo)",
+      "detalle": "Lluvia torrencial, la más fuerte de la temporada, dejó calles, viviendas y negocios bajo el agua; clases presenciales suspendidas (ubicación aproximada en la ciudad).",
+      "fuente": "Diario Extra, 9 nov 2026"
     },
     {
       "lat": -0.955,
@@ -258,15 +272,15 @@
       "lat": -1.962,
       "lon": -79.725,
       "lugar": "Cabecera cantonal y recintos (Samborondón)",
-      "detalle": "Del 6 al 9 nov: sin novedades en la cabecera; esta noche, lluvia moderada prevista (INAMHI). Último reporte con agua (Municipio, 3 nov): acumulación en zonas urbanas y caminos anegados en recintos.",
-      "fuente": "INAMHI (El Universo), 9 nov 2026; Municipio de Samborondón (Vistazo), 3 nov"
+      "detalle": "Del 6 al 9 nov: sin novedades en la cabecera; hoy, 10 nov, solo lloviznas previstas (INAMHI). Último reporte con agua (Municipio, 3 nov): acumulación en zonas urbanas y caminos anegados en recintos.",
+      "fuente": "INAMHI (Diario Extra), 9 nov 2026, noche; Municipio de Samborondón (Vistazo), 3 nov"
     },
     {
       "lat": -2.1735,
       "lon": -79.8225,
       "lugar": "Vías principales del centro (Durán)",
-      "detalle": "Del 6 al 9 nov: sin novedades; esta noche solo lloviznas previstas (INAMHI). Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles específicas).",
-      "fuente": "INAMHI (El Universo), 9 nov 2026; El Telégrafo, 1 nov"
+      "detalle": "Del 6 al 9 nov: sin novedades; hoy, 10 nov, solo lloviznas previstas (INAMHI). Último reporte con agua: noche del 1 nov, varias vías principales con acumulación (sin calles específicas).",
+      "fuente": "INAMHI (Diario Extra), 9 nov 2026, noche; El Telégrafo, 1 nov"
     },
     {
       "lat": -2.165,
@@ -302,9 +316,9 @@
       "lat": -1.88,
       "lon": -79.56,
       "lugar": "Vía Babahoyo–Juján (Babahoyo)",
-      "detalle": "Volvió a quedar con agua sobre la calzada por el desborde de un afluente (ubicación aproximada).",
-      "fuente": "Primicias, 9 nov 2026"
+      "detalle": "30 cm de agua sobre la calzada en el km 55 por el desborde de un afluente; la CTE coordina el tránsito (ubicación aproximada).",
+      "fuente": "El Universo y Primicias, 9 nov 2026"
     }
   ],
-  "fuentes": "SNGR (cortes 07:00 y 11:00 del 9 nov, vía Metro Ecuador y El Comercio), INAMHI (pronóstico de la noche del 9 y madrugada del 10 nov vía El Universo y Primicias), INOCAR (pleamares vía Teleamazonas y El Comercio), ECU 911 y Segura EP (Primicias, Diario Extra, El Comercio, 9 nov), Municipio de Manta (Vistazo), Prefectura de Santo Domingo (Primicias, El Diario), Municipio de Samborondón, El Telégrafo"
+  "fuentes": "SNGR (corte 11:00 del 9 nov, vía Diario Extra, Metro Ecuador y El Comercio), INAMHI (pronóstico del martes 10 nov vía Diario Extra y Teleamazonas), INOCAR (pleamares y alerta de aguaje vía El Comercio), ECU 911 y Segura EP (Primicias, Diario Extra, El Comercio, Teleamazonas, 9 nov), Municipio de Manta (Vistazo), Prefectura de Santo Domingo (Primicias), El Universo, Municipio de Samborondón, El Telégrafo"
 }

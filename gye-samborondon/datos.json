@@ -1,33 +1,29 @@
 {
-  "actualizado": "2026-11-09T18:15:00-05:00",
-  "actualizado_texto": "lunes 9 nov 2026, 18:15",
+  "actualizado": "2026-11-10T06:15:00-05:00",
+  "actualizado_texto": "martes 10 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "marea",
-      "texto": "Aguaje del 9 al 12 nov (INOCAR). Esta noche, pleamar de 4,55 m a las 19:42. Evitar zonas bajas entre las 17:30 y las 21:30."
+      "texto": "Aguaje hasta el 12 nov (INOCAR). Hoy, pleamares de 4,36 m a las 07:44 y 4,48 m a las 20:17. Evitar zonas bajas entre las 06:00 y las 09:30 y entre las 18:00 y las 22:00."
     },
     {
       "tipo": "inundacion",
-      "texto": "Esta mañana (9 nov) la pleamar de 4,45 m dejó agua en calle 11 y La D, Colón e Ismael Pérez Pazmiño, calle 32 y Capitán Nájera, Isla Trinitaria (4 de Marzo) y Malecón y Loja (ECU 911 / Segura EP)."
+      "texto": "Última novedad publicada (mañana del 9 nov): la marea dejó agua en calle 11 y La D, Colón e Ismael Pérez Pazmiño, calle 32 y Capitán Nájera, Isla Trinitaria, Malecón y Loja, Sauces y la bajada del puente Velero. En la tarde el nivel bajó; no hay reportes de la noche del 9 ni de esta madrugada."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: calles anegadas por la marea la noche del 8 (ECU 911); esta noche se prevé lluvia moderada. Durán: solo lloviznas y sin novedades viales; la cooperativa Una Sola Fuerza sigue con calles de tierra que se anegan con poca lluvia."
+      "texto": "Samborondón: calles anegadas por la marea la noche del 8 (ECU 911); hoy solo lloviznas previstas. Durán: sin novedades viales; la cooperativa Una Sola Fuerza sigue con calles de tierra que se anegan con poca lluvia."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI: sin advertencia vigente; esta noche y madrugada, lluvia normal a moderada en Guayaquil y Samborondón."
+      "texto": "INAMHI: sin advertencia vigente; hoy, martes 10 nov, lloviznas en Guayaquil, Samborondón y Durán."
     }
   ],
   "marea": {
-    "titulo": "Aguaje del 9 al 12 nov · pleamar de hoy 4,55 m a las 19:42",
-    "altura": "4,55 m",
-    "texto": "pleamar de esta noche, lunes 9 nov, en Guayaquil-río (INOCAR); en la mañana fue de 4,45 m a las 07:09 y dejó calles con agua",
+    "titulo": "Aguaje del 9 al 12 nov · pleamar de hoy 4,48 m a las 20:17",
+    "altura": "4,48 m",
+    "texto": "pleamar de esta noche, martes 10 nov, en Guayaquil-río (INOCAR); en la mañana, 4,36 m a las 07:44",
     "horas": [
-      {
-        "dia": "Lun 9",
-        "hora": "19:42"
-      },
       {
         "dia": "Mar 10",
         "hora": "20:17"
@@ -35,9 +31,13 @@
       {
         "dia": "Mié 11",
         "hora": "20:49"
+      },
+      {
+        "dia": "Jue 12",
+        "hora": "21:21"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (vía Teleamazonas, 8 y 9 nov): mar 10 4,48 m (también 07:44, 4,36 m); mié 11 4,38 m (también 08:17, 4,25 m). Aguaje del 9 al 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "Horas y alturas del INOCAR (vía El Comercio, 9 nov): mié 11 4,38 m a las 20:49 (también 08:17, 4,25 m); jue 12 4,26 m a las 21:21 (también 08:49, 4,13 m). Aguaje del 9 al 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
   "puntos": [
     {
@@ -128,6 +128,16 @@
       "nivel": "acumulacion",
       "detalle": "Agua en la calzada por la marea alta; tránsito lento.",
       "fuente": "ECU 911 / Segura EP (Primicias, Diario Extra)",
+      "fecha": "9 nov, mañana"
+    },
+    {
+      "lat": -2.12,
+      "lon": -79.892,
+      "lugar": "Sauces",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en la mañana por la marea alta (también en la bajada del puente Velero); en la tarde el nivel había bajado (ubicación aproximada del sector).",
+      "fuente": "Teleamazonas",
       "fecha": "9 nov, mañana"
     }
   ],
@@ -253,5 +263,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "ECU 911 y Segura EP / C5GYE (Primicias, Diario Extra, El Comercio, 8 y 9 nov), INOCAR (pleamares vía Teleamazonas y El Comercio; calendario de aguajes vía Diario Extra), INAMHI (pronóstico de la noche del 9 nov vía El Universo), Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
+  "fuentes": "ECU 911 y Segura EP / C5GYE (Primicias, Diario Extra, El Comercio, Teleamazonas, 8 y 9 nov), INOCAR (pleamares vía El Comercio), INAMHI (pronóstico del martes 10 nov vía Diario Extra), Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
 }
