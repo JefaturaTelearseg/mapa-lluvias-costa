@@ -1,33 +1,29 @@
 {
-  "actualizado": "2026-11-10T18:15:00-05:00",
-  "actualizado_texto": "martes 10 nov 2026, 18:15",
+  "actualizado": "2026-11-11T06:15:00-05:00",
+  "actualizado_texto": "miércoles 11 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "marea",
-      "texto": "Aguaje hasta el 12 nov (INOCAR). Pleamar de esta noche: 4,48 m a las 20:17; mañana 4,25 m a las 08:17 y 4,38 m a las 20:49. Evitar zonas bajas entre las 18:00 y las 22:30 y mañana entre las 06:30 y las 10:00."
+      "texto": "Aguaje hasta el 12 nov (INOCAR). Pleamares de hoy: 4,25 m a las 08:17 y 4,38 m a las 20:49. Evitar zonas bajas entre las 06:30 y las 10:00 y entre las 19:00 y las 22:30."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI: alerta de lluvias de 19:00 de hoy a 07:00 del miércoles, normales a moderadas en Guayaquil y Durán. Coincide con la pleamar: el agua puede tardar en drenar."
+      "texto": "INAMHI: hoy lluvias normales a moderadas en la mañana y la tarde en Guayaquil, Durán y Samborondón. Si coinciden con la pleamar de la noche, el agua puede tardar en drenar."
     },
     {
-      "tipo": "intransitable",
-      "texto": "9 nov: en el Suburbio el agua llegó casi a las rodillas; cinco cuadras inundadas en la Novena y 10 de Agosto. También agua en calle 11 y La D, calle 32 y Capitán Nájera, Isla Trinitaria, Malecón y Loja y Sauces. Esta mañana solo calzadas mojadas (Orellana, Perimetral, vía a Daule)."
+      "tipo": "inundacion",
+      "texto": "Sin reportes de calles anegadas en la noche del 10 al 11 nov. Los últimos puntos con agua en el Suburbio son del 9 y 10 nov por el aguaje (ya no se muestran por tener más de 36 h)."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: el SNGR reporta el río Daule desbordado en varios sectores de La Puntilla (10 nov). Durán: lluvia fuerte esta madrugada, sin calles anegadas reportadas."
+      "texto": "Samborondón: el SNGR reporta el río Daule desbordado en varios sectores de La Puntilla (10 nov). Durán: lluvia fuerte la madrugada del 10 nov, sin calles anegadas reportadas."
     }
   ],
   "marea": {
-    "titulo": "Aguaje hasta el 12 nov · pleamar de hoy 4,48 m a las 20:17",
-    "altura": "4,48 m",
-    "texto": "pleamar de esta noche, martes 10 nov, en Guayaquil-río (INOCAR); coincide con la alerta de lluvia del INAMHI (19:00 a 07:00)",
+    "titulo": "Aguaje hasta el 12 nov · pleamares de hoy 4,25 m (08:17) y 4,38 m (20:49)",
+    "altura": "4,38 m",
+    "texto": "pleamar más alta de hoy, miércoles 11 nov, en Guayaquil-río (INOCAR), a las 20:49; en la mañana, 4,25 m a las 08:17",
     "horas": [
-      {
-        "dia": "Mar 10",
-        "hora": "20:17"
-      },
       {
         "dia": "Mié 11",
         "hora": "08:17 y 20:49"
@@ -35,81 +31,15 @@
       {
         "dia": "Jue 12",
         "hora": "08:49 y 21:21"
+      },
+      {
+        "dia": "Vie 13",
+        "hora": "~09:20 y ~21:55"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (Vistazo y Diario Extra, 10 nov): mié 11 4,25 m a las 08:17 y 4,38 m a las 20:49; jue 12 4,13 m a las 08:49 y 4,26 m a las 21:21. Aguaje hasta el 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "Horas y alturas del INOCAR (Vistazo y Diario Extra, 10 nov): mié 11 4,25 m a las 08:17 y 4,38 m a las 20:49; jue 12 4,13 m a las 08:49 y 4,26 m a las 21:21. Las horas del viernes 13 (~) son estimadas. Aguaje hasta el 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
   "puntos": [
-    {
-      "lat": -2.1945,
-      "lon": -79.902,
-      "lugar": "La Novena y 10 de Agosto (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "La marea alta inundó unas cinco cuadras alrededor de la Novena y 10 de Agosto; en el Suburbio había que caminar con agua casi hasta las rodillas (ubicación aproximada).",
-      "fuente": "Segura EP / ECU 911 (Diario Extra, 10 nov)",
-      "fecha": "9 nov"
-    },
-    {
-      "lat": -2.1965,
-      "lon": -79.9035,
-      "lugar": "Calle 11 y La D (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la marea alta que afectó el tránsito; en varias calles del Suburbio el agua llegó casi a las rodillas (ubicación aproximada).",
-      "fuente": "ECU 911 / Segura EP (Diario Extra 10 nov; Primicias)",
-      "fecha": "9 nov, mañana"
-    },
-    {
-      "lat": -2.2005,
-      "lon": -79.9105,
-      "lugar": "Colón e Ismael Pérez Pazmiño (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la marea alta (ubicación aproximada).",
-      "fuente": "ECU 911 / Segura EP (Primicias, Diario Extra)",
-      "fecha": "9 nov, mañana"
-    },
-    {
-      "lat": -2.2045,
-      "lon": -79.9175,
-      "lugar": "Calle 32 y Capitán Nájera (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la marea alta que afectó el tránsito; en varias calles del Suburbio el agua llegó casi a las rodillas (ubicación aproximada).",
-      "fuente": "ECU 911 / Segura EP (Diario Extra 10 nov; Primicias)",
-      "fecha": "9 nov, mañana"
-    },
-    {
-      "lat": -2.245,
-      "lon": -79.915,
-      "lugar": "Isla Trinitaria, cooperativa 4 de Marzo",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua por la marea alta (ubicación aproximada).",
-      "fuente": "ECU 911 / Segura EP (Primicias, El Comercio)",
-      "fecha": "9 nov, mañana"
-    },
-    {
-      "lat": -2.1885,
-      "lon": -79.8785,
-      "lugar": "Av. Malecón y Loja",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Agua en la calzada por la marea alta; tránsito lento.",
-      "fuente": "ECU 911 / Segura EP (Primicias, Diario Extra)",
-      "fecha": "9 nov, mañana"
-    },
-    {
-      "lat": -2.12,
-      "lon": -79.892,
-      "lugar": "Sauces",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en la mañana por la marea alta (también en la bajada del puente Velero); en la tarde el nivel había bajado (ubicación aproximada del sector).",
-      "fuente": "Teleamazonas",
-      "fecha": "9 nov, mañana"
-    },
     {
       "lat": -2.135,
       "lon": -79.872,
@@ -243,5 +173,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "ECU 911 y Segura EP / C5GYE (Diario Extra, Primicias, Teleamazonas, 9 y 10 nov), SNGR (corte 10:00 del 10 nov vía Primicias y Teleamazonas), INOCAR (pleamares vía Vistazo y Diario Extra), INAMHI (alerta de lluvias vía Primicias), Amarú, Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
+  "fuentes": "SNGR (corte 10:00 del 10 nov vía Primicias y Teleamazonas), INOCAR (pleamares vía Vistazo y Diario Extra), INAMHI (pronóstico del 11 nov vía El Universo y Teleamazonas), ECU 911 y Segura EP (Diario Extra, Teleamazonas), Amarú, Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
 }
