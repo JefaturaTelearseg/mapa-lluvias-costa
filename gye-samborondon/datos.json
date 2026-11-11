@@ -1,32 +1,32 @@
 {
-  "actualizado": "2026-11-11T06:15:00-05:00",
-  "actualizado_texto": "miércoles 11 nov 2026, 06:15",
+  "actualizado": "2026-11-11T18:15:00-05:00",
+  "actualizado_texto": "miércoles 11 nov 2026, 18:15",
   "alertas": [
     {
-      "tipo": "marea",
-      "texto": "Aguaje hasta el 12 nov (INOCAR). Pleamares de hoy: 4,25 m a las 08:17 y 4,38 m a las 20:49. Evitar zonas bajas entre las 06:30 y las 10:00 y entre las 19:00 y las 22:30."
+      "tipo": "aviso",
+      "texto": "INAMHI, Advertencia N.º 87: lluvias fuertes a intensas en Guayas desde hoy 11 nov a las 17:00 hasta el domingo 15 nov a las 07:00. Esta noche, lluvias normales a moderadas en Guayaquil, Durán y Samborondón."
     },
     {
-      "tipo": "aviso",
-      "texto": "INAMHI: hoy lluvias normales a moderadas en la mañana y la tarde en Guayaquil, Durán y Samborondón. Si coinciden con la pleamar de la noche, el agua puede tardar en drenar."
+      "tipo": "marea",
+      "texto": "Aguaje hasta el 12 nov (INOCAR). Pleamar de esta noche: 4,38 m a las 20:49; mañana 4,13 m a las 08:49 y 4,26 m a las 21:21. Evitar zonas bajas unas 2 h antes y después."
     },
     {
       "tipo": "inundacion",
-      "texto": "Sin reportes de calles anegadas en la noche del 10 al 11 nov. Los últimos puntos con agua en el Suburbio son del 9 y 10 nov por el aguaje (ya no se muestran por tener más de 36 h)."
+      "texto": "Sin calles anegadas reportadas hoy 11 nov hasta las 18:00 en Guayaquil, Samborondón y Durán: no hay puntos activos en el mapa. Los recurrentes siguen marcados como referencia."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: el SNGR reporta el río Daule desbordado en varios sectores de La Puntilla (10 nov). Durán: lluvia fuerte la madrugada del 10 nov, sin calles anegadas reportadas."
+      "texto": "Samborondón: el SNGR ya no reporta el río Daule desbordado en La Puntilla (corte 07:00 del 11 nov). Durán: sin reportes de calles con agua hoy."
     }
   ],
   "marea": {
-    "titulo": "Aguaje hasta el 12 nov · pleamares de hoy 4,25 m (08:17) y 4,38 m (20:49)",
+    "titulo": "Aguaje hasta el 12 nov · pleamar de esta noche 4,38 m (20:49)",
     "altura": "4,38 m",
-    "texto": "pleamar más alta de hoy, miércoles 11 nov, en Guayaquil-río (INOCAR), a las 20:49; en la mañana, 4,25 m a las 08:17",
+    "texto": "pleamar de esta noche, miércoles 11 nov, en Guayaquil-río (INOCAR), a las 20:49; mañana jueves 4,13 m a las 08:49 y 4,26 m a las 21:21",
     "horas": [
       {
         "dia": "Mié 11",
-        "hora": "08:17 y 20:49"
+        "hora": "20:49"
       },
       {
         "dia": "Jue 12",
@@ -37,20 +37,9 @@
         "hora": "~09:20 y ~21:55"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (Vistazo y Diario Extra, 10 nov): mié 11 4,25 m a las 08:17 y 4,38 m a las 20:49; jue 12 4,13 m a las 08:49 y 4,26 m a las 21:21. Las horas del viernes 13 (~) son estimadas. Aguaje hasta el 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "Horas y alturas del INOCAR (Vistazo, 10 nov; El Comercio y Diario Extra, 11 nov): mié 11 4,38 m a las 20:49; jue 12 4,13 m a las 08:49 y 4,26 m a las 21:21. Las horas del viernes 13 (~) son estimadas. Aguaje hasta el 12 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
-  "puntos": [
-    {
-      "lat": -2.135,
-      "lon": -79.872,
-      "lugar": "Riberas del río Daule (La Puntilla)",
-      "canton": "Samborondón",
-      "nivel": "acumulacion",
-      "detalle": "El SNGR reporta el río Daule desbordado en varios sectores de La Puntilla; no detalla calles (ubicación aproximada en la ribera).",
-      "fuente": "SNGR, corte 10:00 (Primicias y Teleamazonas)",
-      "fecha": "10 nov, mañana"
-    }
-  ],
+  "puntos": [],
   "recurrentes": [
     {
       "lat": -2.1405,
@@ -153,7 +142,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Madrugada del 10 nov: lluvia fuerte (reportes ciudadanos Amarú), sin calles anegadas reportadas. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas el 11 nov. Madrugada del 10 nov: lluvia fuerte, sin calles anegadas. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -173,5 +162,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "SNGR (corte 10:00 del 10 nov vía Primicias y Teleamazonas), INOCAR (pleamares vía Vistazo y Diario Extra), INAMHI (pronóstico del 11 nov vía El Universo y Teleamazonas), ECU 911 y Segura EP (Diario Extra, Teleamazonas), Amarú, Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
+  "fuentes": "SNGR (corte 07:00 del 11 nov vía Teleamazonas y KCH), INAMHI (Advertencia 87 y pronóstico de la noche del 11 nov vía Primicias y Teleamazonas), INOCAR (pleamares vía Vistazo, El Comercio y Diario Extra), Municipio de Samborondón, El Universo, Expreso, El Telégrafo"
 }
