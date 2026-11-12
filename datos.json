@@ -1,18 +1,18 @@
 {
-  "actualizado": "2026-11-12T06:15:00-05:00",
-  "actualizado_texto": "jueves 12 nov 2026, 06:15",
+  "actualizado": "2026-11-12T18:10:00-05:00",
+  "actualizado_texto": "jueves 12 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI, Advertencia N.º 87: lluvias fuertes a intensas en toda la Costa (Esmeraldas, Santo Domingo, Los Ríos, Guayas, Manabí, Santa Elena y El Oro) hasta el domingo 15 nov a las 07:00. Hoy jueves, lo más fuerte en la tarde: alerta roja en Balzar, Vinces, Mocache y Palenque."
+      "texto": "INAMHI, Advertencia N.º 87: lluvias fuertes a intensas en toda la Costa hasta el domingo 15 nov a las 07:00. Esta noche y la madrugada del viernes 13, lluvias fuertes en Guayas, Los Ríos, Manabí y Santo Domingo; moderadas en El Oro, Esmeraldas y Santa Elena."
     },
     {
       "tipo": "marea",
-      "texto": "Último día de aguaje (INOCAR). Pleamar en Guayaquil-río hoy: 4,13 m a las 08:49 y 4,26 m a las 21:21. Puerto Bolívar 2,73 m a las 18:39."
+      "texto": "Hoy terminó el aguaje (INOCAR). Pleamar en Guayaquil-río esta noche: 4,26 m a las 21:21. Viernes 13: 4,00 m a las 09:22 y 4,13 m a las 21:54."
     },
     {
       "tipo": "desborde",
-      "texto": "SNGR (corte 07:00 del 11 nov): 9 ríos y esteros desbordados en Guayas (Laurel en Daule y Los Amarillos en Juján), Santa Elena (Colonche) y Los Ríos (Salampe en Urdaneta y Chilintomo en Babahoyo); 15 con tendencia a subir, entre ellos Quevedo, Vinces, Colimes y Salitre."
+      "texto": "SNGR (corte 07:03 del 12 nov): 8 ríos y esteros desbordados en Guayas (El Cañal, Pula y Jaboncillo en Daule), Los Ríos (Chilintomo en Babahoyo y Salampe en Urdaneta) y Santa Elena (California, Salanguillo y Javita en Colonche); 12 con tendencia a subir, entre ellos Quevedo, Vinces, Colimes y Salitre."
     },
     {
       "tipo": "via",
@@ -20,13 +20,13 @@
     },
     {
       "tipo": "inundacion",
-      "texto": "Guayaquil, Durán y Samborondón: sin calles anegadas reportadas desde ayer. Hoy INAMHI prevé lluvia normal a moderada en Guayaquil y Samborondón y lloviznas en Durán, sobre todo en la tarde."
+      "texto": "Guayaquil: tormenta eléctrica desde las 04:30 de hoy con tráfico intenso en Alborada, Av. Francisco de Orellana, Av. de las Américas y Juan Tanca Marengo, sin calles anegadas reportadas. Samborondón: tormenta en la madrugada, sin calles con agua reportadas. Durán: sin novedades."
     }
   ],
   "marea": {
-    "titulo": "Último día de aguaje (12 nov) · pleamares de hoy 4,13 m (08:49) y 4,26 m (21:21)",
+    "titulo": "Fin del aguaje (12 nov) · pleamar esta noche 4,26 m a las 21:21",
     "altura": "4,26 m",
-    "texto": "pleamares de hoy, jueves 12 nov, en Guayaquil-río (INOCAR): 4,13 m a las 08:49 y 4,26 m a las 21:21; el aguaje termina hoy",
+    "texto": "pleamar de esta noche, jueves 12 nov, en Guayaquil-río (INOCAR): 4,26 m a las 21:21 (la de la mañana fue 4,13 m a las 08:49); el aguaje termina hoy",
     "horas": [
       {
         "dia": "Jue 12",
@@ -34,14 +34,14 @@
       },
       {
         "dia": "Vie 13",
-        "hora": "~09:20 y ~21:55"
+        "hora": "09:22 y 21:54"
       },
       {
         "dia": "Sáb 14",
-        "hora": "~09:55 y ~22:30"
+        "hora": "09:57 y 22:30"
       }
     ],
-    "nota": "Horas y alturas del INOCAR para hoy jueves 12 (El Comercio, 11 nov, 21:55): 4,13 m a las 08:49 y 4,26 m a las 21:21. Las horas del viernes 13 y sábado 14 (~) son estimadas. El aguaje termina hoy 12 nov; el INOCAR mantiene monitoreo de mareas hasta el 15 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
+    "nota": "Horas y alturas del INOCAR (Vistazo y Metro Ecuador, 12 nov): jueves 12, 4,13 m (08:49) y 4,26 m (21:21); viernes 13, 4,00 m (09:22) y 4,13 m (21:54); sábado 14, 3,86 m (09:57) y 4,01 m (22:30). El aguaje de noviembre fue del 9 al 12; el próximo, del 25 al 28 nov. INOCAR mantiene monitoreo de mareas hasta el 15 nov por coincidencia con lluvias. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. Hoy 12 nov es el último día de aguaje: la marea alta dejó agua en el Suburbio, el Malecón e Isla Trinitaria entre el 8 y el 10 nov. Con la Advertencia 87 del INAMHI, las pleamares de hoy (08:49, 4,13 m; 21:21, 4,26 m) pueden coincidir con lluvia: mayor riesgo de anegamiento."
+    "zonas_texto": "Zona baja o cercana a esteros. Hoy 12 nov termina el aguaje; la pleamar de esta noche (21:21, 4,26 m) y las del viernes (hasta 4,13 m) siguen altas y pueden coincidir con las lluvias fuertes previstas por el INAMHI: riesgo de anegamiento en el Suburbio, el Malecón, Isla Trinitaria y riberas de Samborondón y Durán."
   },
   "tramos": [
     {
@@ -82,7 +82,7 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Advertencia 87 del INAMHI (hasta el 15 nov): lluvias fuertes a intensas y riesgo de crecidas en Guayas y El Oro. Hoy jueves, lluvia normal a moderada en Naranjal, Balao, Tenguel, El Guabo y Huaquillas, y lloviznas en Durán y Yaguachi, más intensas en la tarde. Último reporte vial en El Oro (10 nov): cierre en la E25 en la Y del Cambio, La Iberia (El Guabo), sin confirmación de reapertura. Último día de aguaje: atención a esteros de Taura y Puerto Bolívar (pleamar 18:39). Durán: sin novedades viales reportadas.",
+      "situacion": "Advertencia 87 del INAMHI (hasta el 15 nov): lluvias fuertes a intensas y riesgo de crecidas en Guayas y El Oro; esta noche, lluvias fuertes en Guayas y moderadas en El Oro. Balao, Naranjal y Tenguel aparecen entre los cantones con lluvia fuerte en esta advertencia. Último reporte vial en El Oro (10 nov): cierre en la E25 en la Y del Cambio, La Iberia (El Guabo), sin confirmación de reapertura. Pleamar en Taura y Puerto Bolívar alta aunque el aguaje terminó hoy. Durán: sin novedades viales reportadas.",
       "recomendacion": "Salir y circular con precaución, prever desvíos y demoras en El Guabo (Y del Cambio), evitar el tránsito nocturno con lluvia entre Naranjal, Balao y Tenguel y no cruzar tramos con agua."
     },
     {
@@ -90,15 +90,15 @@
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: sin calles anegadas reportadas desde el 11 nov; hoy INAMHI prevé lluvia normal a moderada, sobre todo en la tarde, y la Advertencia 87 sigue hasta el 15 nov. Último día de aguaje: pleamares de 4,13 m (08:49) y 4,26 m (21:21). Samborondón: lluvia normal a moderada prevista hoy; sin calles anegadas reportadas y el SNGR ya no reporta el río Daule desbordado en La Puntilla. Durán: lloviznas previstas hoy; sin calles anegadas reportadas.",
-      "recomendacion": "Salir y circular con precaución; hoy entre las 07:00 y las 10:30 y entre las 19:30 y las 23:00 evitar el Malecón, el Suburbio, Isla Trinitaria, las riberas de La Puntilla (Samborondón) y El Recreo y Primavera (Durán), y no cruzar calles con agua."
+      "situacion": "Guayaquil: tormenta eléctrica desde las 04:30 de hoy con semáforos intermitentes y tráfico intenso en la Alborada, Av. Francisco de Orellana, Av. de las Américas y Juan Tanca Marengo; sin calles anegadas reportadas. Esta noche y madrugada, INAMHI prevé lluvias fuertes en Guayas. Pleamar 4,26 m a las 21:21 (fin del aguaje). Samborondón: tormenta eléctrica en la madrugada, sin calles con agua reportadas; Amaru Alertas considera probable anegamiento en la vía a Samborondón y La Puntilla. Durán: sin calles anegadas reportadas.",
+      "recomendacion": "Salir y circular con precaución; esta noche entre las 19:30 y las 23:00 y mañana entre las 07:30 y las 11:00 evitar el Malecón, el Suburbio, Isla Trinitaria, las riberas de La Puntilla (Samborondón) y El Recreo y Primavera (Durán), y no cruzar calles con agua."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "SNGR (corte 07:00 del 11 nov): siguen desbordados los ríos California, Salanguillo y Javita, en Colonche. La Advertencia 87 del INAMHI incluye a Santa Elena hasta el 15 nov; anoche, lloviznas en Santa Elena, Salinas y La Libertad. Hoy, lluvia normal a moderada en Playas. Último día de aguaje: pleamar en La Libertad a las 17:50 (2,13 m).",
+      "situacion": "SNGR (corte 07:03 del 12 nov): siguen desbordados los ríos California, Salanguillo y Javita, en Colonche. La Advertencia 87 del INAMHI incluye a Santa Elena hasta el 15 nov; esta noche, lluvias moderadas en Santa Elena. INOCAR: mar muy agitado en el borde costero, olas de hasta 1,50 m en Santa Elena y Guayas.",
       "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo en Colonche y Manglaralto; evitar viajar de noche con lluvia y no detenerse junto a la playa durante la pleamar."
     },
     {
@@ -106,16 +106,16 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Advertencia 87 del INAMHI: lluvias fuertes a intensas en Manabí hasta el 15 nov. Hoy, lluvia normal a moderada en Montecristi, Jaramijó, Portoviejo, Rocafuerte, Santa Ana y Tosagua, y lloviznas en Jipijapa, Chone y Manta. Montecristi: 133 damnificados, 39 viviendas afectadas y 18 destruidas por las inundaciones del lunes 9 (SNGR vía Primicias, 11 nov). Último día de aguaje: pleamar en Manta a las 17:49.",
-      "recomendacion": "Salir y circular con precaución, evitar Manta–Montecristi y el centro de Manabí durante la lluvia de la tarde y no cruzar quebradas o calles con agua."
+      "situacion": "Advertencia 87 del INAMHI: lluvias fuertes en Manabí hasta el 15 nov; esta noche y madrugada, lluvias fuertes en la provincia (24 de Mayo, Bolívar, Junín, Olmedo, Pichincha y Santa Ana entre los cantones con lluvia fuerte de la advertencia). Montecristi: 133 damnificados por las inundaciones del 9 nov (SNGR, 11 nov). Portoviejo: moradores de zonas bajas (calles Chile, 18 de Octubre y Sucre) temen nuevas inundaciones (12 nov).",
+      "recomendacion": "Salir y circular con precaución, evitar Manta–Montecristi y el centro de Manabí durante la lluvia de la noche y no cruzar quebradas o calles con agua."
     },
     {
       "id": "quevedo",
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "Hoy jueves, INAMHI pone en alerta roja por lluvia fuerte a Balzar, Vinces, Mocache y Palenque (sobre todo en la tarde); moderada en Quevedo, Buena Fe, Valencia y Ventanas. SNGR (corte 07:00 del 11 nov): desbordados el estero El Cañal y los ríos Pula y Jaboncillo (Laurel, Daule), Los Amarillos (Juján), Salampe (Urdaneta) y Chilintomo (Babahoyo); suben Quevedo, Vinces, Colimes y Salitre. E25 Babahoyo–Juján con agua de hasta 30 cm y calles anegadas en Babahoyo (11 nov). Alóag–Santo Domingo cerrada en el km 83 hasta el 16 nov.",
-      "recomendacion": "Salir y circular con precaución, usar las alternas hacia Quito (Las Mercedes–Los Bancos o Valle Hermoso–Los Bancos), no cruzar tramos con agua entre Babahoyo y Juján ni en Balzar y Vinces durante la lluvia de la tarde, y prever demoras."
+      "situacion": "Esta noche y madrugada, INAMHI prevé lluvias fuertes en Guayas, Los Ríos y Santo Domingo; hoy hubo alerta roja en Balzar, Vinces, Mocache y Palenque. SNGR (corte 07:03 del 12 nov): desbordados el estero El Cañal y los ríos Pula y Jaboncillo (Daule), Chilintomo (Babahoyo) y Salampe (Urdaneta); suben Quevedo, Vinces, Colimes, Salitre y Catarama. E25 Babahoyo–Juján con agua de hasta 30 cm (11 nov). Alóag–Santo Domingo cerrada en el km 83 hasta el 16 nov.",
+      "recomendacion": "Salir y circular con precaución, usar las alternas hacia Quito (Las Mercedes–Los Bancos o Valle Hermoso–Los Bancos), no cruzar tramos con agua entre Babahoyo y Juján ni en Balzar y Vinces de noche, y prever demoras."
     }
   ],
   "desbordes": [
@@ -124,35 +124,28 @@
       "lon": -79.96,
       "lugar": "Laurel (Daule)",
       "detalle": "Estero El Cañal y ríos Pula y Jaboncillo",
-      "fuente": "SNGR, corte 07:00 del 11 nov 2026 (Teleamazonas y KCH, 11 nov)"
-    },
-    {
-      "lat": -1.95,
-      "lon": -79.52,
-      "lugar": "Vía Juján–Simón Bolívar (Alfredo Baquerizo Moreno)",
-      "detalle": "Río Los Amarillos, cabecera cantonal de Juján (ubicación aproximada)",
-      "fuente": "SNGR, corte 07:00 del 11 nov 2026 (Teleamazonas y KCH, 11 nov)"
+      "fuente": "SNGR, corte 07:03 del 12 nov 2026 (El Comercio y El Universo, 12 nov)"
     },
     {
       "lat": -1.95,
       "lon": -80.66,
       "lugar": "Colonche (Santa Elena)",
-      "detalle": "Ríos California (La Ponga, Febres Cordero y Loma Alta), Salanguillo y Javita (Ceibitos y San Marcos) (ubicación aproximada)",
-      "fuente": "SNGR, corte 07:00 del 11 nov 2026 (Teleamazonas y KCH, 11 nov)"
+      "detalle": "Ríos California, Salanguillo y Javita (ubicación aproximada de la parroquia)",
+      "fuente": "SNGR, corte 07:03 del 12 nov 2026 (El Comercio y El Universo, 12 nov)"
     },
     {
       "lat": -1.8,
       "lon": -79.62,
       "lugar": "Las Cañitas, Febres Cordero (Babahoyo)",
-      "detalle": "Río Chilintomo, zona Mata de Cacao (ubicación aproximada)",
-      "fuente": "SNGR, corte 07:00 del 11 nov 2026 (Teleamazonas y KCH, 11 nov)"
+      "detalle": "Río Chilintomo (ubicación aproximada)",
+      "fuente": "SNGR, corte 07:03 del 12 nov 2026 (El Comercio y El Universo, 12 nov)"
     },
     {
       "lat": -1.56,
       "lon": -79.47,
       "lugar": "Salampe, parroquia Ricaurte (Urdaneta)",
       "detalle": "Río Salampe (ubicación aproximada en la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 11 nov 2026 (Teleamazonas y KCH, 11 nov)"
+      "fuente": "SNGR, corte 07:03 del 12 nov 2026 (El Comercio y El Universo, 12 nov)"
     }
   ],
   "inundaciones": [
@@ -174,8 +167,8 @@
       "lat": -2.135,
       "lon": -79.868,
       "lugar": "La Puntilla: riberas del río Daule, Entre Ríos, Av. Diana Quintana (Samborondón)",
-      "detalle": "Sin calles anegadas reportadas el 11 ni la madrugada del 12 nov; hoy INAMHI prevé lluvia normal a moderada. 11 nov: el SNGR ya no reporta el río Daule desbordado. Último reporte por calle (27 oct): Entre Ríos, Village Plaza y Av. Diana Quintana.",
-      "fuente": "SNGR (Teleamazonas y El Universo), 11 nov 2026; Municipio de Samborondón, 27 oct"
+      "detalle": "Tormenta eléctrica en la madrugada del 12 nov sin calles con agua reportadas; Amaru Alertas considera probable anegamiento hoy en la vía a Samborondón y La Puntilla. Último reporte por calle (27 oct): Entre Ríos, Village Plaza y Av. Diana Quintana.",
+      "fuente": "Metro Ecuador y Radiocentro, 12 nov 2026; Municipio de Samborondón, 27 oct"
     },
     {
       "lat": -1.962,
@@ -188,8 +181,8 @@
       "lat": -2.1735,
       "lon": -79.8225,
       "lugar": "Vías principales del centro (Durán)",
-      "detalle": "Sin calles anegadas reportadas el 11 ni la madrugada del 12 nov; hoy INAMHI prevé lloviznas. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación.",
-      "fuente": "INAMHI (El Comercio y Teleamazonas), 11 nov 2026; El Telégrafo, 1 nov"
+      "detalle": "Sin calles anegadas reportadas el 11 ni el 12 nov. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación.",
+      "fuente": "Sin reportes nuevos al 12 nov 2026; El Telégrafo, 1 nov"
     },
     {
       "lat": -1.8,
@@ -222,5 +215,5 @@
       "fuente": "ECU 911 y CTE (Primicias y Diario Extra), 11 nov 2026"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 11 nov vía El Universo y Teleamazonas; afectados en Montecristi vía Primicias), INAMHI (Advertencia 87 y pronóstico del 12 nov vía El Universo, El Comercio, Teleamazonas y Primicias), INOCAR (pleamares vía El Comercio y Diario Extra), ECU 911 y CTE (Primicias, Diario Extra), Prefectura de Santo Domingo (El Diario), Municipio de Samborondón"
+  "fuentes": "SNGR (corte 07:03 del 12 nov vía El Comercio y El Universo; Montecristi vía Primicias), INAMHI (Advertencia 87 y pronóstico vía Primicias, Infobae y El Universo), INOCAR (pleamares y oleaje vía Vistazo y Metro Ecuador), ECU 911 y CTE (Primicias, Diario Extra), Prefectura de Santo Domingo (El Diario), Metro Ecuador, Radiocentro, El Diario (Portoviejo), Municipio de Samborondón"
 }
