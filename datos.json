@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-14T18:10:00-05:00",
-  "actualizado_texto": "sábado 14 nov 2026, 18:10",
+  "actualizado": "2026-11-15T06:20:00-05:00",
+  "actualizado_texto": "domingo 15 nov 2026, 06:20",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.º 87): tormentas eléctricas, lluvia fuerte y ráfagas esta noche desde las 19:00 hasta las 07:00 del domingo 15, sobre todo en Guayas y Santa Elena; también Guayaquil, Durán, Samborondón y cantones de Los Ríos. Autoridades piden salir solo si es necesario."
+      "texto": "INAMHI (Advertencia N.º 87) vigente hasta las 07:00 de hoy domingo 15. Para el día: lluvia fuerte en Playas, Santa Elena, varios cantones de Manabí y Eloy Alfaro (Esmeraldas); lluvia moderada en Guayaquil, Durán, Samborondón y Milagro."
     },
     {
       "tipo": "inundacion",
-      "texto": "Balance de la lluvia del viernes 13: unos 45 sectores anegados en Guayaquil (norte, vía a Daule, Perimetral, Pascuales), dos fallecidos y dos desaparecidos en Florida Norte. Samborondón: agua en Ciudad Celeste. Durán: último reporte, El Recreo (13 nov). Hasta las 17:00 de hoy solo calzada mojada (Segura EP)."
+      "texto": "Sábado 14 en la noche: ATM reportó 14 puntos con agua en Guayaquil (vía a Daule, Perimetral, Las Orquídeas, Samanes, Urdesa) y el COE contabiliza 46 zonas afectadas el 13 y 14 nov. Samborondón: agua en la zona del Batán. Durán: último reporte, El Recreo (13 nov)."
     },
     {
       "tipo": "desborde",
-      "texto": "SNGR (corte 07:00 del 14 nov): 13 ríos y esteros desbordados: 8 en Guayas (Daule, Balzar, Milagro y Pedro Carbo), 2 en Los Ríos (Babahoyo, Ventanas) y 3 en Santa Elena (Colonche). Milagro con albergue activo."
-    },
-    {
-      "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar en Guayaquil-río esta noche: 4,01 m a las 22:30, coincidiendo con la ventana de tormentas (INOCAR)."
+      "texto": "SNGR (07:00 del 14 nov): 13 ríos y esteros desbordados en Guayas, Los Ríos y Santa Elena. Milagro con más del 80 % de la zona urbana inundada el sábado, agua a la cintura en algunos sectores."
     },
     {
       "tipo": "via",
-      "texto": "Alóag–Santo Domingo sigue cerrada en el km 83; se espera terminar los trabajos antes del 20 nov, sin fecha definitiva. Alternas: Las Mercedes–Los Bancos o Valle Hermoso–Los Bancos."
+      "texto": "Deslizamiento en el cerro Santa Ana (Guayaquil), junto al edificio El Astillero: área acordonada. Alóag–Santo Domingo sigue cerrada en el km 83; alternas por Los Bancos."
+    },
+    {
+      "tipo": "marea",
+      "texto": "Sin aguaje. Pleamares estimadas hoy en Guayaquil-río hacia las 10:35 y las 23:10 (~4,0 m)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar esta noche 4,01 m a las 22:30",
-    "altura": "4,01 m",
-    "texto": "pleamar de hoy, sábado 14 nov, en Guayaquil-río (INOCAR): 4,01 m a las 22:30 (bajamar de 0,83 m a las 16:47), dentro de la ventana de tormentas prevista hasta las 07:00 del domingo; no hay aguaje",
+    "titulo": "Sin aguaje · pleamar estimada hoy ~4,0 m (~10:35 y ~23:10)",
+    "altura": "~4,0 m",
+    "texto": "pleamar estimada de hoy, domingo 15 nov, en Guayaquil-río: hacia las 10:35 y las 23:10, de unos 4,0 m (el sábado 14, INOCAR: 3,86 m a las 09:57 y 4,01 m a las 22:30); no hay aguaje",
     "horas": [
-      {
-        "dia": "Sáb 14",
-        "hora": "09:57 y 22:30"
-      },
       {
         "dia": "Dom 15",
         "hora": "~10:35 y ~23:10"
@@ -39,9 +35,13 @@
       {
         "dia": "Lun 16",
         "hora": "~11:15 y ~23:50"
+      },
+      {
+        "dia": "Mar 17",
+        "hora": "~12:00"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (Extra, 14 nov; Vistazo y Metro Ecuador, 12 nov): sábado 14, 3,86 m (09:57) y 4,01 m (22:30). Las del domingo 15 y lunes 16 (~) son estimadas. Próximo aguaje: 25 al 28 nov. INOCAR mantiene monitoreo de mareas hasta el 15 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
+    "nota": "No se encontró tabla del INOCAR publicada para el 15 nov: horas y altura (~) estimadas a partir de las del sábado 14 (3,86 m a las 09:57 y 4,01 m a las 22:30; Extra, 14 nov). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje, pero la pleamar de esta noche (22:30, 4,01 m) coincide con las tormentas previstas: precaución en el Suburbio, el Malecón, Isla Trinitaria y riberas de Samborondón y Durán entre las 20:30 y las 00:30."
+    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje; con lluvia, precaución en el Suburbio, el Malecón, Isla Trinitaria y riberas de Samborondón y Durán cerca de la pleamar de la noche (~23:10)."
   },
   "tramos": [
     {
@@ -82,39 +82,39 @@
       "riesgo": "medio",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (07:00 del 14 nov): ríos Milagro, Venecia y estero San Miguel siguen desbordados en Milagro, con 8 familias en albergue. Esta noche INAMHI prevé tormentas en Guayas (Durán, Naranjal); en El Oro solo lloviznas en Machala, El Guabo y Pasaje, y lluvia fuerte en Las Lajas. Sin cierres reportados en la Troncal Sur.",
-      "recomendacion": "Salir y circular con precaución, sobre todo entre Durán, Taura y Naranjal esta noche y la madrugada del domingo; no cruzar tramos con agua."
+      "situacion": "SNGR (07:00 del 14 nov): ríos Milagro, Venecia y estero San Miguel desbordados en Milagro; el sábado más del 80 % de la zona urbana de Milagro quedó inundada, con agua a la cintura y albergue activo. Anoche INAMHI preveía tormentas en Durán, Naranjal y Balao y lluvia fuerte en Machala, Santa Rosa y Arenillas. Sin cierres reportados en la Troncal Sur.",
+      "recomendacion": "Salir y circular con precaución entre Durán, Taura y Naranjal y en los accesos a Milagro; no cruzar tramos con agua."
     },
     {
       "id": "urb",
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: la lluvia del viernes 13 dejó unos 45 sectores anegados (Segura EP): vía a Daule, Juan Tanca Marengo, Sauces 6, Alborada, Samanes, Perimetral (Entrada de la 8), Pascuales, Mucho Lote y Paraíso de la Flor; dos fallecidos y dos desaparecidos. Hasta las 17:00 de hoy solo calzada mojada. Samborondón: calles con agua en Ciudad Celeste (13 nov, noche). Durán: sin reportes nuevos; el último, El Recreo, segunda etapa (13 nov). Esta noche INAMHI prevé tormentas en los tres cantones, con pleamar de 4,01 m a las 22:30.",
-      "recomendacion": "Salir y circular con precaución; esta noche y la madrugada del domingo evitar la vía a Daule, Juan Tanca Marengo, la Perimetral norte y Pascuales, Ciudad Celeste (Samborondón) y El Recreo (Durán), y no cruzar calles con agua."
+      "situacion": "Guayaquil: el sábado 14 en la noche la ATM reportó 14 puntos con agua (vía a Daule en La Florida, Juan Montalvo y Parque California; Perimetral en la Entrada de la 8 y el túnel de La Flor; Francisco de Orellana y Gómez Lince en Las Orquídeas; Samanes; Urdesa) y Segura EP agua en Sauces 3, 6 y 9; deslizamiento en el cerro Santa Ana. COE: 46 zonas afectadas el 13 y 14 nov. Samborondón: acumulación en la zona del Batán y cortes de luz en La Puntilla y la cabecera (14 nov). Durán: sin reportes nuevos; el último, El Recreo (13 nov). Hoy INAMHI prevé lluvia moderada en los tres cantones.",
+      "recomendacion": "Salir y circular con precaución; evitar la vía a Daule, la Perimetral norte, Las Orquídeas y Sauces, la zona del Batán (Samborondón) y El Recreo (Durán) si llueve, y no cruzar calles con agua."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "SNGR (07:00 del 14 nov): ríos California, Salanguillo y Javita siguen desbordados en Colonche (Santa Elena). INAMHI ubica a Santa Elena entre las provincias con lluvia fuerte y tormentas esta noche hasta las 07:00 del domingo.",
-      "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo en Colonche y Manglaralto; evitar viajar de noche con lluvia."
+      "situacion": "SNGR (07:00 del 14 nov): ríos California, Salanguillo y Javita desbordados en Colonche (Santa Elena). Hoy domingo INAMHI prevé lluvia fuerte en toda Santa Elena y en Playas. Árbol caído en la Vía a la Costa el sábado (Segura EP), ya atendido.",
+      "recomendacion": "Salir y circular con precaución en la Vía a la Costa y la Ruta del Spondylus, sobre todo en Colonche y Manglaralto; reducir la velocidad con lluvia."
     },
     {
       "id": "manabi",
       "riesgo": "medio",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (07:00 del 14 nov): río Bachillero desbordado en Sabanilla (Pedro Carbo), sobre la salida de Guayaquil hacia Jipijapa. INAMHI prevé lluvia fuerte en Olmedo, Paján, Santa Ana, Pichincha y Manga del Cura; moderada en Jipijapa, Portoviejo y Manta. Sin cierres viales reportados en el corredor.",
-      "recomendacion": "Salir y circular con precaución, sobre todo entre Pedro Carbo y Jipijapa y de noche; no cruzar quebradas ni tramos con agua."
+      "situacion": "SNGR (07:00 del 14 nov): río Bachillero desbordado en Sabanilla (Pedro Carbo). Anoche INAMHI preveía lluvia fuerte en Portoviejo, Montecristi, Jipijapa, El Carmen y Puerto López, y hoy lluvia fuerte en varios cantones de Manabí. Sin cierres viales reportados en el corredor.",
+      "recomendacion": "Salir y circular con precaución entre Pedro Carbo y Jipijapa y en Portoviejo; no cruzar quebradas ni tramos con agua."
     },
     {
       "id": "quevedo",
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "SNGR (07:00 del 14 nov): siguen desbordados el estero San Juan en Balzar, el estero El Cañal y los ríos Pula y Jaboncillo en Daule (Laurel), el río Chilintomo en Babahoyo y el estero Las Trancas en Ventanas. Esta noche INAMHI prevé tormentas en Guayas y Los Ríos; hoy lluvia fuerte en Quevedo, Vinces, Mocache y Santo Domingo. Alóag–Santo Domingo cerrada en el km 83, sin fecha definitiva de reapertura (se espera antes del 20 nov).",
+      "situacion": "SNGR (07:00 del 14 nov): desbordados el estero San Juan en Balzar, el estero El Cañal y los ríos Pula y Jaboncillo en Daule (Laurel), el río Chilintomo en Babahoyo y el estero Las Trancas en Ventanas. Anoche había tormentas previstas en Daule y lluvia fuerte en Santo Domingo; hoy lluvia moderada en Quevedo. Alóag–Santo Domingo sigue cerrada en el km 83 (se espera reabrir antes del 20 nov).",
       "recomendacion": "Salir y circular con precaución, prever demoras en Daule, Balzar y El Empalme, no cruzar tramos con agua y usar las alternas hacia Quito (Las Mercedes–Los Bancos o Valle Hermoso–Los Bancos)."
     }
   ],
@@ -137,7 +137,7 @@
       "lat": -2.134,
       "lon": -79.594,
       "lugar": "Milagro y Roberto Astudillo (Milagro)",
-      "detalle": "Río Milagro (parroquia Ernesto Seminario), estero San Miguel (cabecera) y río Venecia (Roberto Astudillo); albergues activos (ubicación aproximada)",
+      "detalle": "Río Milagro (parroquia Ernesto Seminario), estero San Miguel (cabecera) y río Venecia (Roberto Astudillo); albergue activo (ubicación aproximada)",
       "fuente": "SNGR, corte 07:00 del 14 nov (El Universo y Primicias, 14 nov 2026)"
     },
     {
@@ -174,8 +174,8 @@
       "lat": -2.165,
       "lon": -79.828,
       "lugar": "El Recreo, segunda etapa (Durán)",
-      "detalle": "Calles de la segunda etapa amanecieron bajo el agua tras la tormenta de la madrugada (47,9 mm de lluvia en Durán). Sector que se inunda con frecuencia. Sin reportes nuevos en Durán el 14 nov hasta la tarde.",
-      "fuente": "Radiocentro, 13 nov 2026, 07:06; Qué Noticias (lluvia acumulada), 13 nov"
+      "detalle": "Último reporte conocido: calles de la segunda etapa bajo el agua tras la tormenta de la madrugada del 13 nov. Sin reportes nuevos en Durán el 14 nov ni en la madrugada del 15.",
+      "fuente": "Radiocentro, 13 nov 2026, 07:06"
     },
     {
       "lat": -2.178,
@@ -185,81 +185,81 @@
       "fuente": "Expreso y El Universo, 19 oct 2026"
     },
     {
+      "lat": -2.1735,
+      "lon": -79.8225,
+      "lugar": "Vías principales del centro (Durán)",
+      "detalle": "Sin calles anegadas reportadas. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación.",
+      "fuente": "Sin reportes nuevos al 15 nov 2026; El Telégrafo, 1 nov"
+    },
+    {
+      "lat": -2.101,
+      "lon": -79.861,
+      "lugar": "Zona del Batán y Ciudad Celeste (Samborondón)",
+      "detalle": "Acumulación de agua en la zona del Batán con la lluvia de la tarde del sábado 14; el viernes 13 en la noche, varias calles con agua en Ciudad Celeste (ubicación aproximada).",
+      "fuente": "El Universo, 14 nov 2026, 16:54; Teleamazonas, 13 nov"
+    },
+    {
       "lat": -2.135,
       "lon": -79.868,
-      "lugar": "La Puntilla: riberas del río Daule, Entre Ríos, Av. Diana Quintana (Samborondón)",
-      "detalle": "Sin calles con agua reportadas tras la tormenta del 13 nov (44,7 mm de lluvia en Samborondón). Último reporte por calle (27 oct): Entre Ríos, Village Plaza y Av. Diana Quintana.",
-      "fuente": "Qué Noticias (lluvia acumulada), 13 nov 2026; Municipio de Samborondón, 27 oct"
+      "lugar": "La Puntilla: Entre Ríos, Av. Diana Quintana (Samborondón)",
+      "detalle": "Lluvia fuerte y cortes de luz el sábado 14, sin calles con agua reportadas. Último reporte por calle (27 oct): Entre Ríos, Village Plaza y Av. Diana Quintana.",
+      "fuente": "El Universo, 14 nov 2026, 22:29; Municipio de Samborondón, 27 oct"
     },
     {
       "lat": -1.962,
       "lon": -79.725,
       "lugar": "Cabecera cantonal y recintos (Samborondón)",
-      "detalle": "Lluvia en la madrugada del 10 nov, sin novedades reportadas en la cabecera. Último reporte con agua (Municipio, 3 nov): acumulación en zonas urbanas y caminos anegados en recintos.",
-      "fuente": "Teleamazonas, 10 nov 2026; Municipio de Samborondón (Vistazo), 3 nov"
-    },
-    {
-      "lat": -2.1735,
-      "lon": -79.8225,
-      "lugar": "Vías principales del centro (Durán)",
-      "detalle": "Sin calles anegadas reportadas en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación.",
-      "fuente": "Sin reportes nuevos en el centro al 13 nov 2026; El Telégrafo, 1 nov"
+      "detalle": "Sin luz el sábado 14 por falla de CNEL; sin agua reportada. Último reporte con agua (3 nov): acumulación en zonas urbanas y caminos anegados en recintos.",
+      "fuente": "CNEL (El Universo), 14 nov 2026; Municipio de Samborondón (Vistazo), 3 nov"
     },
     {
       "lat": -2.134,
       "lon": -79.594,
       "lugar": "Milagro (Milagro)",
-      "detalle": "Calles inundadas el 13 nov en Coronel Enrique Valdez, Camilo Andrade y Ernesto Seminario; 32 personas (8 familias) en el albergue de la U.E. Teniente Hugo Ortiz.",
-      "fuente": "SNGR (Qué Noticias, 13 nov; Primicias, 14 nov 2026)"
+      "detalle": "Más del 80 % de la zona urbana inundada tras más de cinco horas de lluvia el sábado 14; agua a la cintura y evacuaciones en balsas; albergue en la U.E. Teniente Hugo Ortiz.",
+      "fuente": "Centro TV y Notimundo, 14 nov 2026"
     },
     {
-      "lat": -2.0985,
-      "lon": -79.8585,
-      "lugar": "Ciudad Celeste (Samborondón)",
-      "detalle": "Varias calles con acumulación de agua por la lluvia de la tarde y noche; también agua en el campus de Ecotec. Sin reportes nuevos el 14 nov hasta la tarde.",
-      "fuente": "Teleamazonas, 13 nov 2026, 20:41"
+      "lat": -2.12,
+      "lon": -79.897,
+      "lugar": "Sauces 3, 6 y 9 (Guayaquil)",
+      "detalle": "Acumulación de agua el sábado 14 desde las 18:00 en Sauces 6 (calle Gabriel Roldós), Sauces 9 (Av. Antonio Parra Velasco) y Sauces 3 (Av. Isidro Ayora); el viernes 13 agua hasta la rodilla en Sauces 6.",
+      "fuente": "Segura EP (Metro Ecuador), 14 nov 2026, 21:11"
     },
     {
-      "lat": -2.121,
-      "lon": -79.899,
-      "lugar": "Sauces 6 y Alborada (Guayaquil)",
-      "detalle": "Agua hasta la rodilla en calles de Sauces 6; alcantarillas desbordadas en la Alborada.",
-      "fuente": "Segura EP (Metro Ecuador y El Universo), 13 nov 2026, noche"
-    },
-    {
-      "lat": -2.108,
-      "lon": -79.933,
-      "lugar": "Vía a Daule, entrada a La Florida (Guayaquil)",
-      "detalle": "Agua a la cadera; tramos de la vía a Daule (km 7 a 12) anegados y con congestión (ubicación aproximada).",
-      "fuente": "El Universo y El Comercio, 13 nov 2026, noche"
+      "lat": -2.095,
+      "lon": -79.94,
+      "lugar": "Vía a Daule: La Florida, Juan Montalvo y Parque California (Guayaquil)",
+      "detalle": "Acumulación de agua el sábado 14 en la noche; el viernes 13, agua a la cadera en La Florida (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov"
     },
     {
       "lat": -2.116,
       "lon": -79.953,
-      "lugar": "Perimetral, Entrada de la 8 (Guayaquil)",
-      "detalle": "Agua hasta la mitad de la carrocería de vehículos bajo el paso a desnivel (ubicación aproximada).",
-      "fuente": "El Universo, 13 nov 2026, noche"
+      "lugar": "Perimetral: Entrada de la 8 y túnel de La Flor (Guayaquil)",
+      "detalle": "Acumulación de agua el sábado 14 en la noche; el viernes 13, agua hasta media carrocería bajo el paso a desnivel (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov"
+    },
+    {
+      "lat": -2.085,
+      "lon": -79.918,
+      "lugar": "Las Orquídeas y Mucho Lote (Guayaquil)",
+      "detalle": "Agua en Av. Francisco de Orellana (ingreso a Las Orquídeas) y Av. Gómez Lince el sábado 14; el canal se desbordó el viernes 13 (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.908,
+      "lugar": "Urdesa: Víctor Emilio Estrada (Guayaquil)",
+      "detalle": "Acumulación de agua el sábado 14 en V. E. Estrada y Costanera, Ilanes y Jiguas (ubicación aproximada).",
+      "fuente": "ATM y Segura EP (Metro Ecuador), 14 nov 2026"
     },
     {
       "lat": -2.078,
       "lon": -79.955,
       "lugar": "Paraíso de la Flor (Guayaquil)",
-      "detalle": "Barrio inundado, agua a la cadera (ubicación aproximada).",
+      "detalle": "Barrio inundado el viernes 13, agua a la cadera (ubicación aproximada).",
       "fuente": "El Universo, 13 nov 2026, noche"
-    },
-    {
-      "lat": -2.082,
-      "lon": -79.925,
-      "lugar": "Mucho Lote 1 y Las Orquídeas (Guayaquil)",
-      "detalle": "Canal desbordado; agua ingresó a viviendas (ubicación aproximada).",
-      "fuente": "El Universo y El Comercio, 13 nov 2026, noche"
-    },
-    {
-      "lat": -2.065,
-      "lon": -79.955,
-      "lugar": "Pascuales (Guayaquil)",
-      "detalle": "Calles anegadas el viernes 13 en la noche; el agua ingresó a un taxi (ubicación aproximada).",
-      "fuente": "Vistazo y Primicias, 14 nov 2026"
     }
   ],
   "vias": [
@@ -267,9 +267,16 @@
       "lat": -0.33,
       "lon": -78.96,
       "lugar": "Vía Alóag–Santo Domingo, km 83 (Mejía)",
-      "detalle": "Cierre total por el derrumbe del 5 nov; solo un carril para maquinaria. Se espera terminar los trabajos antes del 20 nov, sin fecha definitiva. Alternas: Las Mercedes–Los Bancos y Valle Hermoso–Los Bancos (ubicación aproximada).",
+      "detalle": "Cierre total por el derrumbe del 5 nov; se espera terminar los trabajos antes del 20 nov, sin fecha definitiva. Alternas: Las Mercedes–Los Bancos y Valle Hermoso–Los Bancos (ubicación aproximada).",
       "fuente": "El Diario, 14 nov 2026, 12:51"
+    },
+    {
+      "lat": -2.18,
+      "lon": -79.876,
+      "lugar": "Cerro Santa Ana, Puerto Santa Ana (Guayaquil)",
+      "detalle": "Deslizamiento de lodo y rocas el sábado 14 a las 17:45 junto al edificio El Astillero; edificio evacuado y acceso restringido; Bomberos pide mantener 50 m de distancia (ubicación aproximada).",
+      "fuente": "Metro Ecuador y Notimundo, 14 nov 2026"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 14 nov vía El Universo y Primicias), INAMHI (Advertencia 87 y pronóstico del 14 nov vía Teleamazonas, Vistazo y Primicias), INOCAR (pleamares vía Extra, Vistazo y Metro Ecuador), Segura EP (vía Metro Ecuador, Primicias y El Universo), Vistazo, Teleamazonas, Radiocentro, El Diario (Alóag–Santo Domingo)"
+  "fuentes": "SNGR (corte 07:00 del 14 nov vía El Universo y Extra), INAMHI (Advertencia 87 y pronóstico del 15 nov vía Extra, El Universo y Primicias), INOCAR (pleamares del 14 nov vía Extra; 15 y 16 nov estimadas), ATM y Segura EP (vía Metro Ecuador), COE Guayaquil, CNEL, El Universo, Centro TV, Notimundo, Radiocentro, El Diario"
 }

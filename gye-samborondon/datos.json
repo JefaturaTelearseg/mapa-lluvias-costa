@@ -1,33 +1,33 @@
 {
-  "actualizado": "2026-11-14T18:10:00-05:00",
-  "actualizado_texto": "sábado 14 nov 2026, 18:10",
+  "actualizado": "2026-11-15T06:20:00-05:00",
+  "actualizado_texto": "domingo 15 nov 2026, 06:20",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI (Advertencia N.º 87): tormentas eléctricas y lluvia fuerte esta noche desde las 19:00 hasta las 07:00 del domingo 15 en Guayaquil, Durán y Samborondón. Salir solo si es necesario."
-    },
-    {
-      "tipo": "intransitable",
-      "texto": "Viernes 13 en la noche: unos 45 sectores anegados en Guayaquil, con agua a la cadera en la vía a Daule (La Florida) y Paraíso de la Flor y vehículos con agua hasta la mitad en la Perimetral, Entrada de la 8. Dos fallecidos y dos desaparecidos."
+      "texto": "INAMHI: la Advertencia N.º 87 termina a las 07:00 de hoy. Para el domingo prevé lluvia moderada en Guayaquil, Durán y Samborondón."
     },
     {
       "tipo": "inundacion",
-      "texto": "Hasta las 17:00 de hoy Segura EP solo reporta calzada mojada (vía a Daule, Narcisa de Jesús, Vergeles, Francisco de Orellana). Samborondón: último reporte, Ciudad Celeste (13 nov, noche). Durán: último reporte, El Recreo (13 nov, madrugada)."
+      "texto": "Sábado 14 en la noche: ATM reportó 14 puntos con agua (vía a Daule, Perimetral, Las Orquídeas, Samanes, Urdesa) y Segura EP agua en Sauces 3, 6 y 9. El COE suma 46 zonas afectadas el 13 y 14 nov."
+    },
+    {
+      "tipo": "via",
+      "texto": "Deslizamiento en el cerro Santa Ana junto al edificio El Astillero (Puerto Santa Ana): área acordonada, evitar el sector."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Samborondón: acumulación de agua en la zona del Batán (sábado 14, tarde) y cortes de luz en La Puntilla y la cabecera. Durán: sin reportes nuevos; el último, El Recreo (13 nov)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar esta noche 4,01 m a las 22:30, en plena ventana de tormentas: evitar zonas bajas entre las 20:30 y las 00:30."
+      "texto": "Sin aguaje. Pleamar estimada hoy hacia las 10:35 y las 23:10 (~4,0 m)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar esta noche 4,01 m a las 22:30",
-    "altura": "4,01 m",
-    "texto": "pleamar de hoy, sábado 14 nov, en Guayaquil-río (INOCAR): 4,01 m a las 22:30 (bajamar de 0,83 m a las 16:47), dentro de la ventana de tormentas prevista hasta las 07:00 del domingo; no hay aguaje",
+    "titulo": "Sin aguaje · pleamar estimada hoy ~4,0 m (~10:35 y ~23:10)",
+    "altura": "~4,0 m",
+    "texto": "pleamar estimada de hoy, domingo 15 nov, en Guayaquil-río: hacia las 10:35 y las 23:10, de unos 4,0 m (el sábado 14, INOCAR: 3,86 m a las 09:57 y 4,01 m a las 22:30); no hay aguaje",
     "horas": [
-      {
-        "dia": "Sáb 14",
-        "hora": "09:57 y 22:30"
-      },
       {
         "dia": "Dom 15",
         "hora": "~10:35 y ~23:10"
@@ -35,140 +35,164 @@
       {
         "dia": "Lun 16",
         "hora": "~11:15 y ~23:50"
+      },
+      {
+        "dia": "Mar 17",
+        "hora": "~12:00"
       }
     ],
-    "nota": "Horas y alturas del INOCAR (Extra, 14 nov; Vistazo y Metro Ecuador, 12 nov): sábado 14, 3,86 m (09:57) y 4,01 m (22:30). Las del domingo 15 y lunes 16 (~) son estimadas. Próximo aguaje: 25 al 28 nov. INOCAR mantiene monitoreo de mareas hasta el 15 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "No se encontró tabla del INOCAR publicada para el 15 nov: horas y altura (~) estimadas a partir de las del sábado 14 (3,86 m a las 09:57 y 4,01 m a las 22:30; Extra, 14 nov). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
   "puntos": [
-    {
-      "lat": -2.121,
-      "lon": -79.899,
-      "lugar": "Sauces 6, calle Gabriel Roldós Garcés",
-      "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Agua hasta la rodilla en algunas calles y hasta el nivel del parterre; también afectada en la madrugada del 13 nov.",
-      "fuente": "Segura EP (Metro Ecuador y El Universo), 13 nov 2026",
-      "fecha": "13 nov, noche"
-    },
     {
       "lat": -2.108,
       "lon": -79.933,
       "lugar": "Vía a Daule, entrada a La Florida",
       "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Agua a la cadera; motociclistas empujando sus vehículos (ubicación aproximada).",
-      "fuente": "El Universo, 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua el sábado en la noche; el viernes 13, agua a la cadera (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov",
+      "fecha": "14 nov, noche"
     },
     {
-      "lat": -2.1,
-      "lon": -79.94,
-      "lugar": "Vía a Daule, km 7 a km 12",
+      "lat": -2.095,
+      "lon": -79.942,
+      "lugar": "Vía a Daule y Av. Guano (cooperativa Juan Montalvo)",
       "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Calzada anegada y alta congestión en el km 8,5; Segura EP pidió usar vías alternas (ubicación aproximada).",
-      "fuente": "Segura EP y ECU 911 (El Comercio y El Universo), 13 nov 2026",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en la vía a Daule a la altura de Juan Montalvo y dentro de la cooperativa (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
+    },
+    {
+      "lat": -2.075,
+      "lon": -79.948,
+      "lugar": "Vía a Daule, Parque California",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua el sábado; el viernes 13 un taxi quedó atrapado en el agua en el sector (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; Extra, 14 nov",
+      "fecha": "14 nov, noche"
     },
     {
       "lat": -2.116,
       "lon": -79.953,
       "lugar": "Perimetral, Entrada de la 8",
       "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Agua hasta la mitad de la carrocería de una furgoneta bajo el paso a desnivel; conductores se subieron a la acera (ubicación aproximada).",
-      "fuente": "El Universo, 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua el sábado; el viernes 13, agua hasta media carrocería bajo el paso a desnivel (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov",
+      "fecha": "14 nov, noche"
     },
     {
-      "lat": -2.155,
-      "lon": -79.957,
-      "lugar": "Perimetral, viaducto de La Prosperina",
+      "lat": -2.083,
+      "lon": -79.958,
+      "lugar": "Perimetral y Modesto Luque, túnel de La Flor",
       "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Agua sobre parte de la calzada y congestión; reportes de agua cubriendo parte de vehículos en el acceso al túnel de la Perimetral (ubicación aproximada).",
-      "fuente": "El Comercio, 13 nov 2026, 20:29",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
     },
     {
-      "lat": -2.15,
-      "lon": -79.918,
-      "lugar": "Av. Juan Tanca Marengo (Colegio Americano y Martha de Roldós)",
+      "lat": -2.088,
+      "lon": -79.914,
+      "lugar": "Av. Francisco de Orellana, ingreso a Las Orquídeas",
       "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Acumulación de agua sobre la calzada y tránsito lento; Segura EP pidió evitarla (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio y Metro Ecuador), 13 nov 2026",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
     },
     {
-      "lat": -2.137,
-      "lon": -79.902,
-      "lugar": "Alborada, 13.ª etapa",
+      "lat": -2.083,
+      "lon": -79.922,
+      "lugar": "Av. Gómez Lince, entre Las Orquídeas y Mucho Lote",
       "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Alcantarillas desbordadas y agua cubriendo buena parte de vehículos cerca de un centro comercial (ubicación aproximada).",
-      "fuente": "Metro Ecuador y Segura EP (El Universo), 13 nov 2026",
-      "fecha": "13 nov, noche"
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua el sábado; el canal de Las Orquídeas se desbordó el viernes 13 (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; El Universo, 13 nov",
+      "fecha": "14 nov, noche"
+    },
+    {
+      "lat": -2.11,
+      "lon": -79.905,
+      "lugar": "Av. Francisco Rizzo (Samanes)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
+    },
+    {
+      "lat": -2.143,
+      "lon": -79.897,
+      "lugar": "Calle Twinza, detrás de Riocentro Norte",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.908,
+      "lugar": "Urdesa: Víctor Emilio Estrada (Costanera, Ilanes y Jiguas)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en tres cruces de V. E. Estrada (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22; Segura EP, 19:30",
+      "fecha": "14 nov, noche"
+    },
+    {
+      "lat": -2.121,
+      "lon": -79.899,
+      "lugar": "Sauces 6, calle Gabriel Roldós",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua desde las 18:00 del sábado; el viernes 13 el agua llegó a la rodilla en algunas calles.",
+      "fuente": "Segura EP (Metro Ecuador), 14 nov 2026, 21:11",
+      "fecha": "14 nov, 18:00"
+    },
+    {
+      "lat": -2.116,
+      "lon": -79.893,
+      "lugar": "Sauces 9, Av. Antonio Parra Velasco y Gabriel Gómez",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador), 14 nov 2026, 21:11",
+      "fecha": "14 nov, 18:00"
     },
     {
       "lat": -2.128,
-      "lon": -79.924,
-      "lugar": "Colinas de la Alborada",
+      "lon": -79.893,
+      "lugar": "Sauces 3, Av. Isidro Ayora",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en algunas calles (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador), 14 nov 2026, 21:11",
+      "fecha": "14 nov, 19:30"
     },
     {
-      "lat": -2.105,
-      "lon": -79.905,
-      "lugar": "Samanes 1, 2, 6 y 7 (Av. José Martínez Queirolo)",
+      "lat": -2.142,
+      "lon": -79.898,
+      "lugar": "Guillermo Pareja y Miguel Ángel Jijón",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en algunas calles (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (Metro Ecuador), 14 nov 2026, 21:11",
+      "fecha": "14 nov, 18:00"
     },
     {
-      "lat": -2.115,
-      "lon": -79.913,
-      "lugar": "Av. Narcisa de Jesús",
+      "lat": -2.18,
+      "lon": -79.876,
+      "lugar": "Cerro Santa Ana, junto al edificio El Astillero (Puerto Santa Ana)",
       "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua y congestión (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
-    },
-    {
-      "lat": -2.104,
-      "lon": -79.928,
-      "lugar": "Florida Norte, calle Eduardo Solá Franco",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Acumulación de agua; dos personas cayeron a una zanja del sector y son buscadas (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo) y ECU 911 (EFE), 13 nov 2026",
-      "fecha": "13 nov, noche"
-    },
-    {
-      "lat": -2.082,
-      "lon": -79.925,
-      "lugar": "Mucho Lote 1 y Las Orquídeas (canal)",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Canal desbordado; agua ingresó a viviendas de la quinta etapa de Mucho Lote 1 (ubicación aproximada). El sábado el canal bajó de nivel, pero persisten calles con agua.",
-      "fuente": "El Universo y El Comercio, 13 nov 2026; Vistazo, 14 nov",
-      "fecha": "13 nov, noche"
-    },
-    {
-      "lat": -2.086,
-      "lon": -79.946,
-      "lugar": "Bastión Popular, bloque 8",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en algunas calles (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
+      "nivel": "cerrado",
+      "detalle": "Deslizamiento de lodo y rocas a las 17:45; edificio evacuado, área acordonada y acceso restringido; mantener 50 m de distancia (ubicación aproximada).",
+      "fuente": "Metro Ecuador y Notimundo, 14 nov 2026",
+      "fecha": "14 nov, tarde"
     },
     {
       "lat": -2.078,
@@ -181,14 +205,24 @@
       "fecha": "13 nov, noche"
     },
     {
-      "lat": -2.065,
-      "lon": -79.955,
-      "lugar": "Pascuales (Chunchi y La Joya de los Sachas)",
+      "lat": -2.104,
+      "lon": -79.928,
+      "lugar": "Florida Norte, calle Eduardo Solá Franco",
       "canton": "Guayaquil",
       "nivel": "alto",
-      "detalle": "Calles anegadas; el agua ingresó a un taxi en circulación (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov; Vistazo y Primicias, 14 nov 2026",
+      "detalle": "Acumulación de agua; dos personas cayeron a una zanja del sector el viernes y siguen desaparecidas (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo), 13 nov; Notimundo, 14 nov 2026",
       "fecha": "13 nov, noche"
+    },
+    {
+      "lat": -2.101,
+      "lon": -79.861,
+      "lugar": "Zona del Batán",
+      "canton": "Samborondón",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua con la lluvia de la tarde del sábado, según residentes de la vía a Samborondón (ubicación aproximada).",
+      "fuente": "El Universo, 14 nov 2026, 16:54",
+      "fecha": "14 nov, tarde"
     },
     {
       "lat": -2.0985,
@@ -196,59 +230,9 @@
       "lugar": "Ciudad Celeste",
       "canton": "Samborondón",
       "nivel": "acumulacion",
-      "detalle": "Varias calles con acumulación de agua por la lluvia de la tarde y noche; también agua en espacios del campus de Ecotec (ubicación aproximada).",
+      "detalle": "Varias calles con acumulación de agua por la lluvia del viernes; también agua en el campus de Ecotec (ubicación aproximada).",
       "fuente": "Teleamazonas, 13 nov 2026, 20:41",
       "fecha": "13 nov, noche"
-    },
-    {
-      "lat": -2.17,
-      "lon": -79.906,
-      "lugar": "Urdesa Central",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia de la tarde del viernes (también afectada en la madrugada).",
-      "fuente": "Segura EP (Metro Ecuador), 13 nov 2026, 19:38",
-      "fecha": "13 nov, tarde"
-    },
-    {
-      "lat": -2.1955,
-      "lon": -79.8875,
-      "lugar": "Av. Quito y Sucre (centro)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia de la tarde del viernes (también afectada en la madrugada).",
-      "fuente": "Segura EP (Metro Ecuador), 13 nov 2026, 19:38",
-      "fecha": "13 nov, tarde"
-    },
-    {
-      "lat": -2.143,
-      "lon": -79.938,
-      "lugar": "Vía a Daule y Av. Honorato Vásquez",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia de la tarde del viernes (también afectada en la madrugada).",
-      "fuente": "Segura EP (Metro Ecuador), 13 nov 2026, 19:38",
-      "fecha": "13 nov, tarde"
-    },
-    {
-      "lat": -2.163,
-      "lon": -79.826,
-      "lugar": "El Recreo, segunda etapa",
-      "canton": "Durán",
-      "nivel": "alto",
-      "detalle": "Las calles de la segunda etapa amanecieron bajo el agua tras la tormenta de la madrugada (ubicación aproximada).",
-      "fuente": "Radiocentro, 13 nov 2026, 07:06",
-      "fecha": "13 nov, madrugada"
-    },
-    {
-      "lat": -2.145,
-      "lon": -79.91,
-      "lugar": "Av. Francisco de Orellana",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia del viernes; el sábado en la tarde con calzada mojada (ubicación aproximada).",
-      "fuente": "Segura EP (Metro Ecuador, 13 nov; Primicias, 14 nov 2026)",
-      "fecha": "13 nov, tarde"
     }
   ],
   "recurrentes": [
@@ -305,8 +289,8 @@
       "lon": -79.8585,
       "lugar": "Ciudad Celeste (ingreso)",
       "canton": "Samborondón",
-      "detalle": "Punto de anegación recurrente. Último reporte: varias calles con acumulación de agua la noche del 13 nov. Antes, el ingreso por Plaza Batán se anegó (27 oct).",
-      "fuente": "Teleamazonas, 13 nov; Municipio de Samborondón (Diario Extra, 27 oct)"
+      "detalle": "Punto de anegación recurrente. Último reporte: acumulación de agua en la zona del Batán el sábado 14 en la tarde; el 13 nov, varias calles con agua en Ciudad Celeste. Antes, el ingreso por Plaza Batán se anegó (27 oct).",
+      "fuente": "El Universo, 14 nov; Teleamazonas, 13 nov; Municipio de Samborondón (Diario Extra, 27 oct)"
     },
     {
       "lat": -2.105,
@@ -373,5 +357,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP / C5GYE (vía Metro Ecuador, El Universo, Primicias y El Comercio), ECU 911, Vistazo, Teleamazonas (Samborondón, 13 nov), Radiocentro (Durán, 13 nov), INAMHI (Advertencia 87 vía Teleamazonas y Primicias), INOCAR (pleamares vía Extra y Vistazo), Municipio de Samborondón, Expreso, El Telégrafo"
+  "fuentes": "ATM y Segura EP / C5GYE (vía Metro Ecuador), COE Guayaquil, CNEL, El Universo (Samborondón, 14 nov), Teleamazonas, Notimundo, Extra, Radiocentro (Durán, 13 nov), INAMHI (Advertencia 87 y pronóstico del 15 nov vía Extra, El Universo y Primicias), INOCAR (pleamares del 14 nov vía Extra; 15 y 16 nov estimadas), Municipio de Samborondón"
 }
