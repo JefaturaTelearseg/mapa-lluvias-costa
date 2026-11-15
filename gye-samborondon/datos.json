@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-15T06:20:00-05:00",
-  "actualizado_texto": "domingo 15 nov 2026, 06:20",
+  "actualizado": "2026-11-15T18:10:00-05:00",
+  "actualizado_texto": "domingo 15 nov 2026, 18:10",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI: la Advertencia N.º 87 termina a las 07:00 de hoy. Para el domingo prevé lluvia moderada en Guayaquil, Durán y Samborondón."
+      "texto": "INAMHI: esta noche (19:00 a 07:00) solo llovizna en Guayaquil, Durán y Samborondón, sin tormentas eléctricas."
     },
     {
       "tipo": "inundacion",
-      "texto": "Sábado 14 en la noche: ATM reportó 14 puntos con agua (vía a Daule, Perimetral, Las Orquídeas, Samanes, Urdesa) y Segura EP agua en Sauces 3, 6 y 9. El COE suma 46 zonas afectadas el 13 y 14 nov."
+      "texto": "Hoy domingo sin nuevos reportes de calles con agua. Los puntos del mapa son del sábado 14 en la noche: ATM reportó 14 puntos (vía a Daule, Perimetral, Las Orquídeas, Samanes, Urdesa, Av. Pedro Menéndez) y Segura EP agua en Sauces 3, 6 y 9."
     },
     {
       "tipo": "via",
-      "texto": "Deslizamiento en el cerro Santa Ana junto al edificio El Astillero (Puerto Santa Ana): área acordonada, evitar el sector."
+      "texto": "Sigue acordonada el área del deslizamiento en el cerro Santa Ana, junto al edificio El Astillero (Puerto Santa Ana): evitar el sector."
     },
     {
       "tipo": "inundacion",
-      "texto": "Samborondón: acumulación de agua en la zona del Batán (sábado 14, tarde) y cortes de luz en La Puntilla y la cabecera. Durán: sin reportes nuevos; el último, El Recreo (13 nov)."
+      "texto": "Samborondón: acumulación de agua en la zona del Batán (sábado 14) y cortes de luz en La Puntilla. Durán: sin reportes nuevos; el último, El Recreo (13 nov)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar estimada hoy hacia las 10:35 y las 23:10 (~4,0 m)."
+      "texto": "Sin aguaje. Pleamar de esta noche: 3,90 m a las 23:09 (INOCAR)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar estimada hoy ~4,0 m (~10:35 y ~23:10)",
-    "altura": "~4,0 m",
-    "texto": "pleamar estimada de hoy, domingo 15 nov, en Guayaquil-río: hacia las 10:35 y las 23:10, de unos 4,0 m (el sábado 14, INOCAR: 3,86 m a las 09:57 y 4,01 m a las 22:30); no hay aguaje",
+    "titulo": "Sin aguaje · pleamar de esta noche 3,90 m (23:09)",
+    "altura": "3,90 m",
+    "texto": "pleamar de hoy, domingo 15 nov, en Guayaquil-río según INOCAR: 3,72 m a las 10:36 y 3,90 m a las 23:09 (bajamar 0,88 m a las 17:15); no hay aguaje",
     "horas": [
       {
         "dia": "Dom 15",
-        "hora": "~10:35 y ~23:10"
+        "hora": "10:36 y 23:09"
       },
       {
         "dia": "Lun 16",
-        "hora": "~11:15 y ~23:50"
+        "hora": "~11:15 y ~23:45"
       },
       {
         "dia": "Mar 17",
-        "hora": "~12:00"
+        "hora": "~11:55"
       }
     ],
-    "nota": "No se encontró tabla del INOCAR publicada para el 15 nov: horas y altura (~) estimadas a partir de las del sábado 14 (3,86 m a las 09:57 y 4,01 m a las 22:30; Extra, 14 nov). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "Horas del 15 nov: INOCAR (Vistazo, 12 nov; El Universo, 15 nov). 16 y 17 nov estimadas (~), alturas cercanas a 3,8 m. Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
   },
   "puntos": [
     {
@@ -135,6 +135,16 @@
       "fecha": "14 nov, noche"
     },
     {
+      "lat": -2.16,
+      "lon": -79.888,
+      "lugar": "Av. Pedro Menéndez Gilbert, sector Neumorecancías",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "ATM (Metro Ecuador), 14 nov 2026, 21:22",
+      "fecha": "14 nov, noche"
+    },
+    {
       "lat": -2.168,
       "lon": -79.908,
       "lugar": "Urdesa: Víctor Emilio Estrada (Costanera, Ilanes y Jiguas)",
@@ -195,26 +205,6 @@
       "fecha": "14 nov, tarde"
     },
     {
-      "lat": -2.078,
-      "lon": -79.955,
-      "lugar": "Paraíso de la Flor (manzana 278)",
-      "canton": "Guayaquil",
-      "nivel": "intransitable",
-      "detalle": "Barrio inundado, agua a la cadera según video (ubicación aproximada).",
-      "fuente": "El Universo, 13 nov 2026, 19:19",
-      "fecha": "13 nov, noche"
-    },
-    {
-      "lat": -2.104,
-      "lon": -79.928,
-      "lugar": "Florida Norte, calle Eduardo Solá Franco",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Acumulación de agua; dos personas cayeron a una zanja del sector el viernes y siguen desaparecidas (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo), 13 nov; Notimundo, 14 nov 2026",
-      "fecha": "13 nov, noche"
-    },
-    {
       "lat": -2.101,
       "lon": -79.861,
       "lugar": "Zona del Batán",
@@ -223,16 +213,6 @@
       "detalle": "Acumulación de agua con la lluvia de la tarde del sábado, según residentes de la vía a Samborondón (ubicación aproximada).",
       "fuente": "El Universo, 14 nov 2026, 16:54",
       "fecha": "14 nov, tarde"
-    },
-    {
-      "lat": -2.0985,
-      "lon": -79.8585,
-      "lugar": "Ciudad Celeste",
-      "canton": "Samborondón",
-      "nivel": "acumulacion",
-      "detalle": "Varias calles con acumulación de agua por la lluvia del viernes; también agua en el campus de Ecotec (ubicación aproximada).",
-      "fuente": "Teleamazonas, 13 nov 2026, 20:41",
-      "fecha": "13 nov, noche"
     }
   ],
   "recurrentes": [
@@ -357,5 +337,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "ATM y Segura EP / C5GYE (vía Metro Ecuador), COE Guayaquil, CNEL, El Universo (Samborondón, 14 nov), Teleamazonas, Notimundo, Extra, Radiocentro (Durán, 13 nov), INAMHI (Advertencia 87 y pronóstico del 15 nov vía Extra, El Universo y Primicias), INOCAR (pleamares del 14 nov vía Extra; 15 y 16 nov estimadas), Municipio de Samborondón"
+  "fuentes": "ATM y Segura EP / C5GYE (vía Metro Ecuador, 14 nov), COE Guayaquil, El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), INAMHI (pronóstico de la noche del 15 al 16 nov vía TC Televisión; diurno vía Vistazo y Primicias), INOCAR (pleamares del 15 nov vía Vistazo y El Universo; 16 y 17 nov estimadas), Municipio de Samborondón"
 }
