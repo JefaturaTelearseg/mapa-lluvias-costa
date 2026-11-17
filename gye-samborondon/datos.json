@@ -1,28 +1,28 @@
 {
-  "actualizado": "2026-11-17T06:15:00-05:00",
-  "actualizado_texto": "martes 17 nov 2026, 06:15",
+  "actualizado": "2026-11-17T18:15:00-05:00",
+  "actualizado_texto": "martes 17 nov 2026, 18:15",
   "alertas": [
     {
       "tipo": "inundacion",
-      "texto": "Lunes 16 en la tarde: acumulación de agua en la vía a Daule, km 7,5, y reportes ciudadanos en Samanes 7 y Alborada II; sin novedades reportadas en la noche ni en la madrugada del 17."
+      "texto": "Madrugada del martes 17: acumulación de agua en el Guasmo Sur (av. Domingo Comín), la av. 25 de Julio y las cooperativas Amazonas y Los Jardines (Segura EP); a las 15:00 la ATM reportaba tránsito fluido."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI, hoy martes 17 (07:00 a 19:00): solo llovizna en Guayaquil, Durán y Samborondón; prevé que las lluvias se reactiven el miércoles 18 y jueves 19."
+      "texto": "INAMHI, Advertencia N.º 88: lluvias fuertes y riesgo de crecidas en Guayas desde las 16:00 de hoy hasta las 10:00 del sábado 21; esta noche y madrugada del 18, lluvia fuerte en Daule, Milagro y El Triunfo."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: la SNGR reportó un canal desbordado el 16 nov sin precisar sector; última calle anegada, El Recreo (13 nov). Samborondón: sin reportes nuevos; el último, zona del Batán (14 nov)."
+      "texto": "Durán: la SNGR mantiene un canal desbordado sin precisar sector; última calle anegada, El Recreo (13 nov). Samborondón: sin reportes nuevos; el último, zona del Batán (14 nov)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy 3,50 m a las 12:14; la más alta, 3,84 m, el jueves 19 a las 01:43 (INOCAR)."
+      "texto": "Sin aguaje. Próximas pleamares: 3,79 m a las 00:46 del miércoles 18 y 3,84 m a la 01:43 del jueves 19; si llueve a esas horas, más agua en zonas bajas (INOCAR)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy 3,50 m (12:14)",
+    "titulo": "Sin aguaje · pleamar de hoy 3,50 m (12:14); próxima 3,79 m (00:46 del 18)",
     "altura": "3,50 m",
-    "texto": "pleamar de hoy, martes 17 nov, en Guayaquil-río: 3,50 m a las 12:14; mañana miércoles 18: 3,79 m a las 00:46 y 3,49 m a las 13:16; jueves 19: 3,84 m a las 01:43 (la más alta de los tres días) y 3,59 m a las 14:20; no hay aguaje",
+    "texto": "pleamar de hoy, martes 17 nov, en Guayaquil-río: 3,50 m a las 12:14 (bajamar 1,04 m a las 18:36); miércoles 18: 3,79 m a las 00:46 y 3,49 m a las 13:16; jueves 19: 3,84 m a las 01:43 (la más alta de los tres días) y 3,59 m a las 14:20; no hay aguaje",
     "horas": [
       {
         "dia": "Mar 17",
@@ -37,9 +37,49 @@
         "hora": "01:43 y 14:20"
       }
     ],
-    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov, 21:49; El Comercio, 16 nov). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov, 21:49; Segura EP vía El Comercio, 17 nov). Oleaje moderado a agitado hasta el jueves 19 (0,5 a 1,5 m en Guayas y Santa Elena). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.262,
+      "lon": -79.885,
+      "lugar": "Av. Domingo Comín y Primer Callejón 54C SE, Guasmo Sur (coop. 12 de Octubre)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua tras la lluvia de la noche del 16 y madrugada del 17 (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 08:00 (El Comercio, 17 nov 2026, 08:43); Extra, 17 nov, 15:05",
+      "fecha": "17 nov, madrugada"
+    },
+    {
+      "lat": -2.245,
+      "lon": -79.89,
+      "lugar": "Av. 25 de Julio (varios tramos)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en varios tramos (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 08:00 (El Comercio, 17 nov 2026, 08:43); Extra, 17 nov, 15:05",
+      "fecha": "17 nov, madrugada"
+    },
+    {
+      "lat": -2.257,
+      "lon": -79.895,
+      "lugar": "Av. Puyo y av. Tena, cooperativa Amazonas",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua en la intersección (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 08:00 (El Comercio, 17 nov 2026, 08:43); Extra, 17 nov, 15:05",
+      "fecha": "17 nov, madrugada"
+    },
+    {
+      "lat": -2.255,
+      "lon": -79.91,
+      "lugar": "Primer Pasaje 1 SO y Noveno Callejón 53, cooperativa Los Jardines",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 08:00 (El Comercio, 17 nov 2026, 08:43)",
+      "fecha": "17 nov, madrugada"
+    },
     {
       "lat": -2.105,
       "lon": -79.932,
@@ -193,5 +233,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP / C5GYE y Plataforma Amaru (vía Metro Ecuador y El Comercio, 16 nov), SNGR (corte 07:00 del 16 nov vía El Comercio), INOCAR (pleamares 17 a 19 nov vía Metro Ecuador y El Comercio), INAMHI (pronóstico por cantones del 17 nov vía El Oriente y Extra; semanal vía El Comercio), El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
+  "fuentes": "Segura EP y ATM (El Comercio y Extra, 17 nov), Plataforma Amaru (Metro Ecuador y El Comercio, 16 nov), SNGR (corte 06:34 del 17 nov vía Extra y El Universo), INAMHI (Advertencia N.º 88 vía Metro Ecuador; pronóstico por cantones vía El Diario, 17 nov), INOCAR (pleamares 17 a 19 nov vía Metro Ecuador), El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
 }
