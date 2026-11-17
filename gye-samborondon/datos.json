@@ -1,47 +1,43 @@
 {
-  "actualizado": "2026-11-16T18:15:00-05:00",
-  "actualizado_texto": "lunes 16 nov 2026, 18:15",
+  "actualizado": "2026-11-17T06:15:00-05:00",
+  "actualizado_texto": "martes 17 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "inundacion",
-      "texto": "Lunes 16 en la tarde: lluvia moderada a fuerte en el norte y centro de Guayaquil; acumulación de agua en la vía a Daule, km 7,5, y reportes ciudadanos en Samanes 7 y Alborada II."
+      "texto": "Lunes 16 en la tarde: acumulación de agua en la vía a Daule, km 7,5, y reportes ciudadanos en Samanes 7 y Alborada II; sin novedades reportadas en la noche ni en la madrugada del 17."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI, esta noche (19:00 a 07:00): solo llovizna en Guayaquil, Durán y Samborondón; para el miércoles 18 y jueves 19 prevé que las lluvias se reactiven en el Litoral."
+      "texto": "INAMHI, hoy martes 17 (07:00 a 19:00): solo llovizna en Guayaquil, Durán y Samborondón; prevé que las lluvias se reactiven el miércoles 18 y jueves 19."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán y Samborondón: sin reportes nuevos. Últimos: El Recreo (Durán, 13 nov) y zona del Batán (Samborondón, 14 nov)."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Los puntos del sábado 14 y el deslizamiento del cerro Santa Ana salieron del mapa por no tener reportes nuevos en las últimas 36 h."
+      "texto": "Durán: la SNGR reportó un canal desbordado el 16 nov sin precisar sector; última calle anegada, El Recreo (13 nov). Samborondón: sin reportes nuevos; el último, zona del Batán (14 nov)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy 3,82 m a las 23:54 (Segura EP)."
+      "texto": "Sin aguaje. Pleamar de hoy 3,50 m a las 12:14; la más alta, 3,84 m, el jueves 19 a las 01:43 (INOCAR)."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy 3,82 m (23:54)",
-    "altura": "3,82 m",
-    "texto": "pleamar de hoy, lunes 16 nov, en Guayaquil-río: 3,59 m a las 11:20 y 3,82 m a las 23:54 (la más alta del día); bajamar 0,95 m a las 17:51; no hay aguaje",
+    "titulo": "Sin aguaje · pleamar de hoy 3,50 m (12:14)",
+    "altura": "3,50 m",
+    "texto": "pleamar de hoy, martes 17 nov, en Guayaquil-río: 3,50 m a las 12:14; mañana miércoles 18: 3,79 m a las 00:46 y 3,49 m a las 13:16; jueves 19: 3,84 m a las 01:43 (la más alta de los tres días) y 3,59 m a las 14:20; no hay aguaje",
     "horas": [
       {
-        "dia": "Lun 16",
-        "hora": "11:20 y 23:54"
-      },
-      {
         "dia": "Mar 17",
-        "hora": "~12:25"
+        "hora": "12:14"
       },
       {
         "dia": "Mié 18",
-        "hora": "~00:50 y ~13:15"
+        "hora": "00:46 y 13:16"
+      },
+      {
+        "dia": "Jue 19",
+        "hora": "01:43 y 14:20"
       }
     ],
-    "nota": "Mareas del 16 nov según Segura EP (El Universo, 16 nov, 07:31). Horas del 17 y 18 nov estimadas (~), alturas cercanas a 3,8 m. Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar."
+    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov, 21:49; El Comercio, 16 nov). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -197,5 +193,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP / C5GYE (mareas y calzadas, vía El Universo, Metro Ecuador y El Comercio, 16 nov), Plataforma Amaru (reportes ciudadanos, 16 nov), ECU 911, INAMHI (pronóstico por cantones de la noche del 16 vía Teleamazonas y Metro Ecuador; semanal vía El Comercio), El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
+  "fuentes": "Segura EP / C5GYE y Plataforma Amaru (vía Metro Ecuador y El Comercio, 16 nov), SNGR (corte 07:00 del 16 nov vía El Comercio), INOCAR (pleamares 17 a 19 nov vía Metro Ecuador y El Comercio), INAMHI (pronóstico por cantones del 17 nov vía El Oriente y Extra; semanal vía El Comercio), El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
 }
