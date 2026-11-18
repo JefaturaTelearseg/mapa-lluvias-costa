@@ -1,22 +1,22 @@
 {
-  "actualizado": "2026-11-18T06:15:00-05:00",
-  "actualizado_texto": "miércoles 18 nov 2026, 06:15",
+  "actualizado": "2026-11-18T18:15:00-05:00",
+  "actualizado_texto": "miércoles 18 nov 2026, 18:15",
   "alertas": [
     {
+      "tipo": "inundacion",
+      "texto": "Tarde del miércoles 18: la ATM reportó anegamientos en la vía a Daule (Penitenciaría), Pascuales, la Perimetral y la av. Francisco de Orellana; también hubo agua en Samanes, la av. Narcisa de Jesús y Mucho Lote, con tráfico pesado."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Samborondón: lluvia torrencial anegó calles en el ingreso a Ciudad Celeste, km 9,5 de la av. Samborondón (18 nov). Durán: sin calles anegadas reportadas hoy; la SNGR mantiene un canal desbordado."
+    },
+    {
       "tipo": "aviso",
-      "texto": "INAMHI, Advertencia N.º 88 vigente hasta las 10:00 del sábado 21: hoy miércoles 18, de 07:00 a 19:00 y sobre todo en la tarde, lluvia moderada en Guayaquil y Samborondón y llovizna en Durán."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Últimos puntos con agua: madrugada del martes 17 en el Guasmo Sur (av. Domingo Comín), la av. 25 de Julio y las cooperativas Amazonas y Los Jardines (Segura EP); sin reportes nuevos hasta las 06:15 de hoy."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Durán: la SNGR mantiene un canal desbordado sin precisar sector; última calle anegada, El Recreo (13 nov). Samborondón: sin reportes nuevos; el último, zona del Batán (14 nov)."
+      "texto": "INAMHI, Advertencia N.º 88 hasta las 10:00 del sábado 21: esta noche de 19:00 a 07:00 del jueves 19, lluvia moderada en Guayaquil, Durán y Samborondón."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamares: 3,49 m a las 13:16 de hoy y 3,84 m a la 01:43 del jueves 19; si llueve a esas horas, más agua en zonas bajas (INOCAR)."
+      "texto": "Sin aguaje. Próxima pleamar: 3,84 m a la 01:43 del jueves 19, la más alta de la semana; si llueve a esa hora, más agua en zonas bajas (INOCAR)."
     }
   ],
   "marea": {
@@ -37,9 +37,109 @@
         "hora": "~02:40 y ~15:20"
       }
     ],
-    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov, 21:49; Segura EP vía El Comercio, 17 nov); horas del viernes 20 estimadas. Oleaje moderado a agitado hasta el jueves 19 (0,5 a 1,5 m en Guayas y Santa Elena). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov; El Universo, 18 nov 07:19: pleamar 3,49 m a las 13:16 y bajamar 1,13 m a las 19:31); horas del viernes 20 estimadas. Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.085,
+      "lon": -79.945,
+      "lugar": "Vía a Daule, a la altura de la Penitenciaría",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Anegamiento con tráfico pesado (ubicación aproximada).",
+      "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.063,
+      "lon": -79.958,
+      "lugar": "Pascuales: San Lorenzo y La Joya de los Sachas",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Anegamiento (ubicación aproximada).",
+      "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.118,
+      "lon": -79.958,
+      "lugar": "Vía Perimetral, ingreso a la Casuarina",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Anegamiento (ubicación aproximada).",
+      "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.137,
+      "lon": -79.906,
+      "lugar": "Av. Francisco de Orellana y calle Gómez Lince",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Anegamiento (ubicación aproximada).",
+      "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.125,
+      "lon": -79.937,
+      "lugar": "Vía Perimetral y av. Francisco de Orellana",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Anegamiento en la intersección (ubicación aproximada).",
+      "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.1,
+      "lon": -79.898,
+      "lugar": "Alrededores del parque Samanes",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles anegadas y congestión (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.113,
+      "lon": -79.912,
+      "lugar": "Av. Narcisa de Jesús",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles anegadas y congestión; la ATM reportó baja visibilidad en el sector Los Vergeles (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49; ATM (Metro Ecuador, 18 nov)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.092,
+      "lon": -79.922,
+      "lugar": "Mucho Lote 1 y 2",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles anegadas (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.145,
+      "lon": -79.925,
+      "lugar": "Ciudadela Martha de Roldós",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Calles anegadas (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.0985,
+      "lon": -79.8585,
+      "lugar": "Ingreso a Ciudad Celeste, km 9,5 av. Samborondón (La Puntilla)",
+      "canton": "Samborondón",
+      "nivel": "acumulacion",
+      "detalle": "Lluvia torrencial anegó calles de la urbanización (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49",
+      "fecha": "18 nov, tarde"
+    },
     {
       "lat": -2.262,
       "lon": -79.885,
@@ -135,8 +235,8 @@
       "lon": -79.8585,
       "lugar": "Ciudad Celeste (ingreso)",
       "canton": "Samborondón",
-      "detalle": "Punto de anegación recurrente. Último reporte: acumulación de agua en la zona del Batán el sábado 14 en la tarde; el 13 nov, varias calles con agua en Ciudad Celeste. Antes, el ingreso por Plaza Batán se anegó (27 oct).",
-      "fuente": "El Universo, 14 nov; Teleamazonas, 13 nov; Municipio de Samborondón (Diario Extra, 27 oct)"
+      "detalle": "Punto de anegación recurrente. Último reporte: lluvia torrencial anegó calles en el ingreso, km 9,5 de la av. Samborondón, en la tarde del 18 nov. Antes, acumulación en la zona del Batán (14 nov) y el ingreso por Plaza Batán (27 oct).",
+      "fuente": "El Universo, 18 nov; El Universo, 14 nov; Municipio de Samborondón (Diario Extra, 27 oct)"
     },
     {
       "lat": -2.105,
@@ -203,5 +303,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP y ATM (El Comercio y Extra, 17 nov), SNGR (cortes del 17 nov vía Extra, El Universo y El Diario), INAMHI (Advertencia N.º 88 vía Extra; pronóstico del 18 nov vía El Universo y El Diario), INOCAR (pleamares vía Metro Ecuador), El Universo (Samborondón, 14 nov), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
+  "fuentes": "ATM (Metro Ecuador, 18 nov), Segura EP (Extra, 18 nov; El Comercio y Extra, 17 nov), El Universo (Guayaquil y Samborondón, 18 nov), SNGR (corte 06:51 del 18 nov vía El Universo), INAMHI (Advertencia N.º 88; pronóstico de la noche del 18 vía El Universo y Metro Ecuador), INOCAR (pleamares vía Metro Ecuador y El Universo), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
 }
