@@ -1,28 +1,28 @@
 {
-  "actualizado": "2026-11-19T06:15:00-05:00",
-  "actualizado_texto": "jueves 19 nov 2026, 06:15",
+  "actualizado": "2026-11-19T18:15:00-05:00",
+  "actualizado_texto": "jueves 19 nov 2026, 18:15",
   "alertas": [
     {
-      "tipo": "inundacion",
-      "texto": "Tarde del miércoles 18: anegamientos en la vía a Daule (Penitenciaría), Pascuales, la Perimetral, la av. Francisco de Orellana, Samanes, la av. Narcisa de Jesús, Mucho Lote y El Fortín. Sin nuevos reportes de calles con agua en la noche ni en la madrugada."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Samborondón: calles anegadas en el ingreso a Ciudad Celeste, km 9,5 de la av. Samborondón (18 nov). Durán: sin calles anegadas reportadas desde el 13 nov; la SNGR mantiene un canal desbordado."
-    },
-    {
       "tipo": "aviso",
-      "texto": "INAMHI, Advertencia N.º 88 hasta las 10:00 del sábado 21: hoy jueves 19, lluvia normal a moderada al final de la tarde en Guayaquil, Samborondón y Durán."
+      "texto": "Hoy jueves 19: lloviznas en la tarde y lluvia en la noche en Guayaquil (Segura EP, INAMHI). Advertencia N.º 88 vigente hasta las 10:00 del sábado 21."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Sin calles anegadas reportadas hoy; en la mañana solo calzadas mojadas en la Perimetral, Los Olivos y Ceibos Norte. Las últimas fueron la tarde del 18: unos 17 puntos en el norte (Pascuales, vía a Daule, Perimetral, av. Francisco de Orellana, Narcisa de Jesús, Mucho Lote, Bastión Popular, Flor de Bastión, Guayacanes)."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Samborondón: última anegación en el ingreso a Ciudad Celeste, km 9,5 de la av. Samborondón (18 nov). Durán: sin calles anegadas reportadas desde el 13 nov; la SNGR mantiene un canal desbordado (19 nov)."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy: 3,84 m a la 01:43 y 3,59 m a las 14:20; si llueve cerca de esa hora, más agua en zonas bajas (INOCAR)."
+      "texto": "Sin aguaje. Pleamar de hoy: 3,84 m a la 01:43 y 3,59 m a las 14:20; bajamar 1,21 m a las 20:37 (INOCAR). Mañana, pleamares hacia las ~02:40 y ~15:20."
     }
   ],
   "marea": {
     "titulo": "Sin aguaje · pleamar de hoy 3,84 m (01:43) y 3,59 m (14:20)",
     "altura": "3,84 m",
-    "texto": "pleamar de hoy, jueves 19 nov, en Guayaquil-río: 3,84 m a la 01:43 (la más alta de la semana) y 3,59 m a las 14:20; viernes 20: pleamares estimadas hacia las ~02:40 y ~15:20; sábado 21: hacia las ~03:35 y ~16:15; no hay aguaje",
+    "texto": "pleamar de hoy, jueves 19 nov, en Guayaquil-río: 3,84 m a la 01:43 y 3,59 m a las 14:20, bajamar de 1,21 m a las 20:37; viernes 20: pleamares estimadas hacia las ~02:40 y ~15:20; sábado 21: hacia las ~03:35 y ~16:15; no hay aguaje",
     "horas": [
       {
         "dia": "Jue 19",
@@ -37,7 +37,7 @@
         "hora": "~03:35 y ~16:15"
       }
     ],
-    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov; El Universo, 18 nov); horas del viernes 20 y sábado 21 estimadas. Próximo aguaje: 25 al 28 nov. INOCAR: oleaje de largo periodo (hasta 1,7 m en el continente) hasta el 20 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Tabla de INOCAR (Metro Ecuador, 16 nov; Segura EP vía El Universo, 19 nov); horas del viernes 20 y sábado 21 estimadas. Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -76,7 +76,7 @@
       "lugar": "Av. Francisco de Orellana y calle Gómez Lince",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Anegamiento (ubicación aproximada).",
+      "detalle": "Anegamiento; también en los cruces con la calle Roberto Estrada y la entrada a Los Geranios (ubicación aproximada).",
       "fuente": "ATM, corte 15:45 (Metro Ecuador, 18 nov 2026, 16:03)",
       "fecha": "18 nov, tarde"
     },
@@ -106,8 +106,8 @@
       "lugar": "Av. Narcisa de Jesús",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Calles anegadas y congestión; la ATM reportó baja visibilidad en el sector Los Vergeles (ubicación aproximada).",
-      "fuente": "El Universo, 18 nov 2026, 15:49; ATM (Metro Ecuador, 18 nov)",
+      "detalle": "Calles anegadas y congestión; también en el tramo de Metrópolis y en Mucho Lote 2 con Sebastián Piñera (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, 18 nov 2026, 15:49); ATM (Metro Ecuador, 18 nov)",
       "fecha": "18 nov, tarde"
     },
     {
@@ -148,6 +148,46 @@
       "nivel": "acumulacion",
       "detalle": "Calles anegadas según reportes ciudadanos (ubicación aproximada).",
       "fuente": "Primicias, 18 nov 2026, 15:46",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.078,
+      "lon": -79.945,
+      "lugar": "Bastión Popular: bloques 1B y 2 y lotización Los Ranchos",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Vías con agua; en el bloque 2 había menores jugando en la calle inundada (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, 18 nov 2026, 17:25)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.068,
+      "lon": -79.965,
+      "lugar": "Flor de Bastión, calle G y calle 30",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, 18 nov 2026, 17:25)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.12,
+      "lon": -79.905,
+      "lugar": "Guayacanes 1.ª etapa, tercer callejón",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, 18 nov 2026, 17:25)",
+      "fecha": "18 nov, tarde"
+    },
+    {
+      "lat": -2.06,
+      "lon": -79.952,
+      "lugar": "Pascuales, av. Leonidas Plaza y 3.er pasaje 38F",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP (El Universo, 18 nov 2026, 15:49; Primicias, 18 nov)",
       "fecha": "18 nov, tarde"
     }
   ],
@@ -253,7 +293,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Sin calles anegadas reportadas del 11 al 13 nov en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas del 11 al 19 nov en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -273,5 +313,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "ATM (Metro Ecuador, 18 nov), Segura EP (Extra, 18 nov), El Universo y Primicias (Guayaquil y Samborondón, 18 nov), SNGR (corte 06:51 del 18 nov vía El Universo y Diario Correo), INAMHI (Advertencia N.º 88; pronóstico del 19 nov vía El Universo), INOCAR (pleamares vía Metro Ecuador y El Universo), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
+  "fuentes": "Segura EP (pronóstico y calzadas del 19 nov vía El Universo; puntos del 18 nov vía El Universo y Primicias), ATM (Metro Ecuador, 18 nov), SNGR (corte 07:04 del 19 nov vía El Comercio), INAMHI (Advertencia N.º 88), INOCAR (pleamares vía Metro Ecuador y El Universo), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
 }
