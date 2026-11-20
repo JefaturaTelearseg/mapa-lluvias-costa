@@ -1,32 +1,32 @@
 {
-  "actualizado": "2026-11-20T06:15:00-05:00",
-  "actualizado_texto": "viernes 20 nov 2026, 06:15",
+  "actualizado": "2026-11-20T18:10:00-05:00",
+  "actualizado_texto": "viernes 20 nov 2026, 18:10",
   "alertas": [
     {
+      "tipo": "inundacion",
+      "texto": "Guayaquil, mañana del 20: calles anegadas en Los Ceibos (av. Leopoldo Carrera Calvo, Olimpus, IESS Los Ceibos) y carril hacia Riocentro Los Ceibos cerrado; tráfico pesado."
+    },
+    {
       "tipo": "aviso",
-      "texto": "Hoy viernes 20 (feriado), tarde y noche: lluvias moderadas en Guayaquil y Durán y fuertes en Samborondón (INAMHI). Advertencia N.º 88 vigente hasta las 10:00 del sábado 21."
+      "texto": "Esta noche y madrugada del sábado 21: lluvias fuertes en Durán y moderadas en Guayaquil y Samborondón (INAMHI). Advertencia N.º 88 vigente hasta las 10:00 del sábado."
     },
     {
       "tipo": "inundacion",
-      "texto": "Sin calles anegadas reportadas en las últimas 36 h en Guayaquil, Samborondón ni Durán. Las últimas fueron la tarde del 18 en el norte de Guayaquil (Pascuales, vía a Daule, Perimetral, Mucho Lote, Bastión Popular) y en el ingreso a Ciudad Celeste."
-    },
-    {
-      "tipo": "inundacion",
-      "texto": "Samborondón: con lluvia fuerte, atención en Ciudad Celeste, La Puntilla (Los Arcos, Entre Ríos) y el centro cantonal. Durán: sin calles anegadas reportadas desde el 13 nov (El Recreo); la SNGR mantiene un canal desbordado (19 nov)."
+      "texto": "Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 20 nov); sin calles anegadas reportadas. Samborondón: sin reportes hoy; con lluvia, atención en Ciudad Celeste y La Puntilla."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamares estimadas hoy hacia las ~02:40 y ~15:20, de unos 3,8 m (la tabla del jueves 19 marcó 3,84 m). Próximo aguaje: 25 al 28 nov."
+      "texto": "Sin aguaje. Pleamar de hoy: 3,77 m a las 15:22; mañana hacia las ~03:35 y ~16:15. Próximo aguaje: 25 al 28 nov."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy ~3,8 m hacia las ~02:40 y ~15:20 (estimada)",
-    "altura": "~3,80 m",
-    "texto": "pleamar de hoy, viernes 20 nov, en Guayaquil-río estimada hacia las ~02:40 y ~15:20, de unos 3,8 m (el jueves 19 la tabla de INOCAR marcó 3,84 m a la 01:43 y 3,59 m a las 14:20); sábado 21: hacia las ~03:35 y ~16:15; domingo 22: hacia las ~04:30 y ~17:05; no hay aguaje",
+    "titulo": "Sin aguaje · pleamar de hoy 3,77 m a las 15:22",
+    "altura": "3,77 m",
+    "texto": "pleamar de hoy, viernes 20 nov, en Guayaquil-río: 3,77 m a las 15:22 (bajamar 1,13 m a las 09:37); la de la madrugada fue hacia las ~02:40; sábado 21: hacia las ~03:35 y ~16:15; domingo 22: hacia las ~04:30 y ~17:05; no hay aguaje",
     "horas": [
       {
         "dia": "Vie 20",
-        "hora": "~02:40 y ~15:20"
+        "hora": "~02:40 y 15:22"
       },
       {
         "dia": "Sáb 21",
@@ -37,9 +37,50 @@
         "hora": "~04:30 y ~17:05"
       }
     ],
-    "nota": "Horas y altura de hoy estimadas a partir de la tabla de INOCAR del 19 nov (Segura EP vía El Universo); no se publicó la tabla del 20. Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Pleamar de la tarde de hoy según la tabla publicada por El Universo (20 nov); las demás horas son estimadas (~). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
-  "puntos": [],
+  "puntos": [
+    {
+      "lat": -2.1695,
+      "lon": -79.9465,
+      "lugar": "Carril hacia Riocentro Los Ceibos (Los Ceibos)",
+      "canton": "Guayaquil",
+      "nivel": "cerrado",
+      "detalle": "Carril cerrado por acumulación de agua; tráfico pesado en las vías del sector (ubicación aproximada).",
+      "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)",
+      "fecha": "20 nov, mañana"
+    },
+    {
+      "lat": -2.166,
+      "lon": -79.942,
+      "lugar": "Av. Leopoldo Carrera Calvo (Los Ceibos)",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Calles anegadas tras una hora de lluvia intensa; el agua brotaba de la calzada y los vehículos avanzaban con dificultad (ubicación aproximada).",
+      "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)",
+      "fecha": "20 nov, mañana"
+    },
+    {
+      "lat": -2.162,
+      "lon": -79.936,
+      "lugar": "Olimpus (Los Ceibos)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Reportes ciudadanos de calles anegadas o cerradas (ubicación aproximada).",
+      "fuente": "Amarú (Teleamazonas, 20 nov 2026, 11:10)",
+      "fecha": "20 nov, mañana"
+    },
+    {
+      "lat": -2.1745,
+      "lon": -79.94,
+      "lugar": "Hospital General del IESS Los Ceibos",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Reportes ciudadanos de calles anegadas en los alrededores (ubicación aproximada).",
+      "fuente": "Amarú (Teleamazonas, 20 nov 2026, 11:10)",
+      "fecha": "20 nov, mañana"
+    }
+  ],
   "recurrentes": [
     {
       "lat": -2.1405,
@@ -118,8 +159,8 @@
       "lon": -79.828,
       "lugar": "El Recreo, etapas 1 a 4",
       "canton": "Durán",
-      "detalle": "Se inunda con frecuencia. Último reporte: calles de la segunda etapa amanecieron bajo el agua (13 nov). Antes, el 19 oct, el agua superó las aceras en las etapas 1 a 4.",
-      "fuente": "Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
+      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR reporta un canal desbordado en El Recreo, sector La Esperanza (20 nov, 07:00), sin calles anegadas reportadas. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
+      "fuente": "SNGR (Teleamazonas, 20 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
     },
     {
       "lat": -2.178,
@@ -142,7 +183,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Sin calles anegadas reportadas del 11 al 20 nov en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas del 11 al 20 nov (18:10) en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -162,5 +203,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "INAMHI (pronóstico del 20 nov y Advertencia N.º 88, vía El Universo y El Diario, 19 nov), INOCAR (tabla del 19 nov vía Segura EP/El Universo), Segura EP y ATM (El Universo, Primicias y Metro Ecuador, 18 nov), SNGR (corte 07:04 del 19 nov vía El Comercio), Radiocentro (Durán, 13 nov), Municipio de Samborondón"
+  "fuentes": "Segura EP e Interagua (Teleamazonas y Extra, 20 nov), Amarú (Teleamazonas, 20 nov), INAMHI (pronóstico de la noche del 20 vía Primicias y Extra; Advertencia N.º 88), INOCAR (pleamar del 20 nov vía El Universo), SNGR (corte 07:00 del 20 nov vía Teleamazonas), Radiocentro, Municipio de Samborondón"
 }
