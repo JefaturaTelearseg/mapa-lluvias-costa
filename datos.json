@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-21T06:20:00-05:00",
-  "actualizado_texto": "sábado 21 nov 2026, 06:20",
+  "actualizado": "2026-11-21T18:10:00-05:00",
+  "actualizado_texto": "sábado 21 nov 2026, 18:10",
   "alertas": [
     {
-      "tipo": "aviso",
-      "texto": "INAMHI: la Advertencia N.º 88 termina hoy a las 10:00. Hoy, de 07:00 a 19:00: lluvias fuertes en A. Baquerizo Moreno (Jujan), Babahoyo y Montalvo, y en Puyango y Chaguarpamba (Loja); normales o moderadas en Guayaquil, Durán, Samborondón, Daule, Milagro, Playas y cantones de Manabí y Esmeraldas. Sábado y domingo: chubascos por la tarde, de menor intensidad. Feriado hasta el domingo 22."
+      "tipo": "inundacion",
+      "texto": "Guayaquil: tormenta eléctrica en la madrugada del 21 (861 rayos sobre Guayaquil, Durán y Samborondón). Segura EP reportó más de 40 puntos con agua: Los Ceibos (av. Leopoldo Carrera), av. del Bombero, Urdesa (V. E. Estrada, agua cerca de la rodilla), centro (av. Quito y Machala), Kennedy, Garzota, Sauces, Alborada y Samanes. Muro colapsado en Puerto Santa Ana. Sin calles anegadas reportadas en Durán ni Samborondón."
     },
     {
       "tipo": "desborde",
-      "texto": "SNGR (último corte publicado, 07:00 del 20 nov): 18 ríos y esteros desbordados, 11 en Guayas (Daule, Balzar, Pedro Carbo, Palestina, Simón Bolívar, Taura y un canal en El Recreo, Durán), 5 en Los Ríos (Babahoyo, Vinces, Urdaneta), 1 en Manabí (Charapotó) y 1 en Santa Elena (Julio Moreno)."
-    },
-    {
-      "tipo": "via",
-      "texto": "Babahoyo–Jujan con agua de 30 a 60 cm (km 53 a 56), desvío por Chilintomo y la T de Baba. Cañitas–Charapotó cerrada. Balao: ingreso inhabilitado, desvío por Tenguel. Alóag–Santo Domingo km 83: solo livianos y medianos, de 09:00 a 18:00 (ECU 911, 20 nov)."
+      "texto": "SNGR (07:00 del 21 nov): 22 ríos y esteros desbordados (25 a las 11:00): 12 en Guayas (Daule, Colimes, Balzar, Pedro Carbo, Palestina, Simón Bolívar, Taura y un canal en El Recreo, Durán), 3 en Los Ríos y 3 en Santa Elena (Simón Bolívar y Dos Mangas). 17 con tendencia a subir, entre ellos los ríos Quevedo, Milagro, Chaguana (El Guabo) y Palmales (Arenillas)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Guayaquil: Los Ceibos se anegó la mañana del 20 (carril hacia Riocentro Los Ceibos cerrado). Sin nuevos reportes de calles anegadas esta madrugada en Guayaquil, Samborondón ni Durán al cierre de esta actualización."
+      "texto": "SNGR (noche del 20 a 07:00 del 21): inundaciones en Machala, Santa Rosa y Huaquillas (El Oro), Guayaquil y La Troncal. Santa Ana (Manabí): unas 20 comunidades de San Pablo de Pueblo Nuevo con agua, a lo largo de 14 km de vía."
+    },
+    {
+      "tipo": "via",
+      "texto": "Último reporte de ECU 911 (20 nov): Babahoyo–Jujan con agua de 30 a 60 cm (km 53 a 56), desvío por Chilintomo y la T de Baba; Cañitas–Charapotó cerrada; Balao con desvío por Tenguel; Alóag–Santo Domingo km 83 solo livianos y medianos de 09:00 a 18:00. Retorno del feriado el domingo 22."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy en Guayaquil-río estimada en ~3,95 m hacia las ~16:20. Próximo aguaje: 25 al 28 nov."
+      "texto": "Sin aguaje. Pleamar de hoy en Guayaquil-río estimada en ~3,95 m (~16:20); domingo hacia las ~04:40 y ~17:15. Aguaje del 25 al 28 nov. Esta noche, posible chubasco fuerte en Guayaquil."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m hacia las ~16:20",
+    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m (~16:20); aguaje desde el 25 nov",
     "altura": "~3,95 m",
-    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; la de la madrugada, hacia las ~03:45; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; no hay aguaje, pero las mareas suben cada día hacia el aguaje",
+    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; martes 24: hacia las ~06:15 y ~18:45; no hay aguaje, pero las mareas suben cada día hacia el aguaje del 25 al 28 nov",
     "horas": [
-      {
-        "dia": "Sáb 21",
-        "hora": "~03:45 y ~16:20"
-      },
       {
         "dia": "Dom 22",
         "hora": "~04:40 y ~17:15"
@@ -39,9 +35,13 @@
       {
         "dia": "Lun 23",
         "hora": "~05:30 y ~18:00"
+      },
+      {
+        "dia": "Mar 24",
+        "hora": "~06:15 y ~18:45"
       }
     ],
-    "nota": "Horas y altura estimadas (~) a partir de la pleamar de INOCAR del 20 nov (3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el próximo aguaje (25 al 28 nov). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve.",
+    "nota": "Horas y altura estimadas (~) a partir de la última pleamar publicada por INOCAR (20 nov, 3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el aguaje (25 al 28 nov, COE Guayas vía La República). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje, pero la marea sube día a día hacia el aguaje del 25 al 28 nov; si llueve cerca de la pleamar de la tarde (~16:20), precaución en el Suburbio, el Guasmo, Isla Trinitaria y riberas de Samborondón y Durán."
+    "zonas_texto": "Zona baja o cercana a esteros. No hay aguaje, pero la marea sube día a día hacia el aguaje del 25 al 28 nov; si llueve cerca de la pleamar de la tarde (~17:15 el domingo), precaución en el Suburbio, el Guasmo, Isla Trinitaria y riberas de Samborondón y Durán."
   },
   "tramos": [
     {
@@ -82,40 +82,40 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (20 nov, 07:00): río Culebra desbordado en el recinto Cascajal (Taura, Naranjal), río Los Amarillos en Simón Bolívar y un canal en El Recreo (Durán). Balao: vía de ingreso inhabilitada por el desborde del río; desvío por Tenguel. El Oro: deslizamiento en Las Lajas–Puyango y afectaciones en Sarayacu–Piñas y Balsas–Río Pindo; Alamor–Arenillas cerrada en Chirimoyo y Cochurcho (Loja). Cuenca–Molleturo–Naranjal parcialmente habilitada (km 71 a 101) (ECU 911, 20 nov). Hoy: lluvias normales o moderadas en Durán; lloviznas en El Oro (INAMHI).",
-      "recomendacion": "Salir y circular con precaución entre Durán, Taura, Naranjal, Balao y Tenguel y en El Oro; seguir el desvío por Tenguel en Balao, no usar Alamor–Arenillas, no cruzar tramos con agua y prever más tráfico por el feriado."
+      "situacion": "SNGR (21 nov, 07:00): río Culebra desbordado en el recinto Cascajal (Taura, Naranjal), río Los Amarillos en Simón Bolívar y un canal en El Recreo, sector La Esperanza (Durán). El Oro: inundaciones en Machala, Santa Rosa y Huaquillas (noche del 20 a la mañana del 21) y ríos Chaguana (Tendales, El Guabo) y Palmales (Arenillas) con tendencia a subir; calles del centro de La Troncal con agua. Último reporte vial (20 nov): Balao con ingreso inhabilitado y desvío por Tenguel; deslizamiento en Las Lajas–Puyango; Alamor–Arenillas cerrada en Chirimoyo; Cuenca–Molleturo–Naranjal parcial.",
+      "recomendacion": "Salir y circular con precaución entre Durán, Taura, Naranjal, Balao y Tenguel y en Machala, Santa Rosa, El Guabo, Arenillas y Huaquillas; seguir el desvío por Tenguel en Balao, no cruzar tramos con agua y prever más tráfico por el retorno del feriado."
     },
     {
       "id": "urb",
-      "riesgo": "medio",
+      "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: en la mañana del 20, calles anegadas en Los Ceibos (av. Leopoldo Carrera Calvo, Olimpus, Hospital del IESS Los Ceibos) y cierre del carril hacia Riocentro Los Ceibos. Samborondón: sin calles anegadas reportadas; la última fue en el ingreso a Ciudad Celeste (18 nov). Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 20 nov); sin calles anegadas reportadas. Sin reportes nuevos esta madrugada en los tres cantones. Hoy, lluvias normales o moderadas en Guayaquil, Samborondón y Durán (INAMHI); pleamar hacia las ~16:20.",
-      "recomendacion": "Salir y circular con precaución; con lluvia, evitar Los Ceibos y la av. del Bombero, la vía a Daule y Bastión Popular en Guayaquil, la av. Samborondón y Ciudad Celeste en Samborondón y El Recreo en Durán, y no cruzar calles con agua, sobre todo cerca de la pleamar de la tarde."
+      "situacion": "Guayaquil: tormenta eléctrica en la madrugada del 21; Segura EP reportó más de 40 puntos con agua, entre ellos Los Ceibos (av. Leopoldo Carrera con lodo y piedras), av. del Bombero, Urdesa (V. E. Estrada, agua cerca de la rodilla), centro (av. Quito y Machala, Los Ríos y Sucre, 9 de Octubre), Kennedy, Garzota, Mapasingue, Sauces, Alborada y Samanes; muro de contención colapsado en Puerto Santa Ana (área cerrada). Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 21 nov), sin calles anegadas reportadas. Samborondón: sin calles anegadas reportadas; la última fue el ingreso a Ciudad Celeste (18 nov). Pronóstico: posible chubasco fuerte esta noche en Guayaquil.",
+      "recomendacion": "Salir y circular con precaución; con lluvia, evitar Los Ceibos y la av. del Bombero, Urdesa, el centro, Sauces y Alborada en Guayaquil, la av. Samborondón y Ciudad Celeste en Samborondón y El Recreo en Durán, y no cruzar calles con agua."
     },
     {
       "id": "costa",
       "riesgo": "medio",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "Ruta del Spondylus: sentido norte–sur cerrado en Manglaralto, sector Playa Bruja (La República, 20 nov). SNGR: río La Bellita desbordado en Julio Moreno (comunas La Barranca y Sacachún, Santa Elena). Hoy, lluvias normales o moderadas en Playas (INAMHI). Sin cierres reportados en la Vía a la Costa. Feriado: más tráfico hacia las playas.",
-      "recomendacion": "Salir y circular con precaución en la Vía a la Costa, Playas y la Ruta del Spondylus; en Manglaralto seguir las indicaciones de tránsito, reducir la velocidad con lluvia y prever más tráfico por el feriado."
+      "situacion": "SNGR (21 nov, 07:00): desbordados los ríos La Bellita y Ebanito (comunas La Barranca, Buenos Aires y Sacachún, parroquia Simón Bolívar) y el río Dos Mangas (Manglaralto); río La Aguadita (Colonche) con tendencia a subir. Ruta del Spondylus: sentido norte–sur cerrado en Playa Bruja, Manglaralto (La República, 20 nov). Sin cierres reportados en la Vía a la Costa. Retorno del feriado el domingo 22.",
+      "recomendacion": "Salir y circular con precaución en la Vía a la Costa, Playas y la Ruta del Spondylus; en Manglaralto y Colonche seguir las indicaciones de tránsito, reducir la velocidad con lluvia y prever más tráfico por el retorno del feriado."
     },
     {
       "id": "manabi",
       "riesgo": "alto",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "ECU 911 (20 nov): Cañitas–Charapotó cerrada; quebrada Las Cañitas desbordada en Charapotó (SNGR). Portoviejo–Manta: un carril inundado en Río de Oro (km 4,5) y Las Banderas. Parcialmente habilitadas: Jipijapa–La Cadena (hundimiento en el km 75), Rocafuerte–Tosagua (socavón en el km 187), Tosagua–Bahía (km 5, Verdún), Canuto–Calceta, Montecristi–Jaramijó y Chamanga–Pedernales. SNGR: río Bachillero y estero Miraflora desbordados en Pedro Carbo. Hoy, lluvias normales o moderadas en varios cantones de Manabí.",
-      "recomendacion": "Salir y circular con precaución; usar alternas a Cañitas–Charapotó, prever pasos a un carril entre Jipijapa y La Cadena, Portoviejo–Manta, Rocafuerte, Tosagua y Pedernales–Chamanga, y no cruzar quebradas ni tramos con agua."
+      "situacion": "Santa Ana: unas 20 comunidades de San Pablo de Pueblo Nuevo con agua a lo largo de 14 km de vía, en el límite con Guayas (El Comercio y La República, 21 nov). Último reporte de ECU 911 (20 nov): Cañitas–Charapotó cerrada; Portoviejo–Manta con un carril inundado en Río de Oro y Las Banderas; parcialmente habilitadas Jipijapa–La Cadena (hundimiento en el km 75), Rocafuerte–Tosagua (socavón en el km 187), Tosagua–Bahía (Verdún), Canuto–Calceta, Montecristi–Jaramijó y Chamanga–Pedernales. SNGR (21 nov): ríos Bachillero y estero Miraflora desbordados en Pedro Carbo.",
+      "recomendacion": "Salir y circular con precaución; usar alternas a Cañitas–Charapotó, evitar la zona de San Pablo de Pueblo Nuevo, prever pasos a un carril entre Jipijapa y La Cadena, Portoviejo–Manta, Rocafuerte, Tosagua y Pedernales–Chamanga, y no cruzar quebradas ni tramos con agua."
     },
     {
       "id": "quevedo",
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "SNGR (20 nov, 07:00): desbordados el estero El Cañal y los ríos Pula y Jaboncillo (Laurel, Daule), el estero San Juan (Balzar), el río Pula y el estero Guabito (Palestina), y en Los Ríos los ríos Chilintomo y La Clementina (Babahoyo), Macul (Vinces), Salampe y Pijullo (Urdaneta). Babahoyo–Jujan con agua de 30 a 60 cm (km 53 a 56) y paso restringido en el puente Los Gemelos (ECU 911, 20 nov). Alóag–Santo Domingo, km 83: solo livianos y medianos, de 09:00 a 18:00. Hoy, lluvias fuertes en Babahoyo, Montalvo y Jujan (INAMHI).",
-      "recomendacion": "Salir y circular con precaución, prever demoras entre Daule, Balzar, Quevedo y Babahoyo, usar el desvío por Chilintomo y la T de Baba y no cruzar tramos con agua; hacia Quito, los pesados deben usar Santo Domingo–Las Mercedes–Los Bancos."
+      "situacion": "SNGR (21 nov, 07:00): río Daule desbordado en Colimes (recintos Perinao y Jordán, y San Jacinto); estero El Cañal y río Jaboncillo en Laurel (Daule); estero San Juan (Balzar); río Pula y estero Guabito (Palestina); ríos Chilintomo (Babahoyo), Macul (Vinces) y Salampe (Urdaneta). Con tendencia a subir: río Quevedo (malecón, San Camilo), Guandubi y Las Trancas (Ventanas), Catarama (Urdaneta), Cristal (Montalvo), El Arenal (Baba), La Clementina (Babahoyo) y río Vinces (Salitre). Último reporte de ECU 911 (20 nov): Babahoyo–Jujan con agua de 30 a 60 cm (km 53 a 56); Alóag–Santo Domingo km 83 solo livianos y medianos de 09:00 a 18:00.",
+      "recomendacion": "Salir y circular con precaución, prever demoras entre Daule, Colimes, Balzar, Quevedo y Babahoyo, usar el desvío por Chilintomo y la T de Baba y no cruzar tramos con agua; hacia Quito, los pesados deben usar Santo Domingo–Las Mercedes–Los Bancos."
     }
   ],
   "desbordes": [
@@ -123,122 +123,199 @@
       "lat": -1.72,
       "lon": -79.96,
       "lugar": "Laurel (Daule)",
-      "detalle": "Estero El Cañal y ríos Pula y Jaboncillo, desbordados (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "detalle": "Estero El Cañal y río Jaboncillo, desbordados (ubicación aproximada de la parroquia)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
+    },
+    {
+      "lat": -1.545,
+      "lon": -80.01,
+      "lugar": "Recintos Perinao y Jordán (Colimes)",
+      "detalle": "Río Daule fuera de su cauce (ubicación aproximada de la cabecera cantonal)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
+    },
+    {
+      "lat": -1.45,
+      "lon": -80.02,
+      "lugar": "La Unión de San Jacinto, Eduardo y Boquerón, San Jacinto (Colimes)",
+      "detalle": "Río Daule fuera de su cauce (ubicación aproximada de la parroquia)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.39,
       "lon": -79.9,
       "lugar": "San Juan del Cerrito (Balzar)",
       "detalle": "Estero San Juan (ubicación aproximada)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.8,
       "lon": -80.2,
       "lugar": "Sabanilla, La Pamela (Pedro Carbo)",
       "detalle": "Río Bachillero (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.9,
       "lon": -80.17,
       "lugar": "Valle de la Virgen, Miraflores (Pedro Carbo)",
       "detalle": "Estero Miraflora (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -2.32,
       "lon": -79.76,
       "lugar": "Recinto Cascajal, Taura (Naranjal)",
       "detalle": "Río Culebra (ubicación aproximada de la parroquia Taura)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.6,
       "lon": -80.0,
       "lugar": "Macul de Abajo y Las Abras (Palestina)",
       "detalle": "Río Pula y estero Guabito (ubicación de la cabecera cantonal)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -2.165,
       "lon": -79.828,
       "lugar": "El Recreo, sector La Esperanza (Durán)",
       "detalle": "Canal sin nombre desbordado (ubicación aproximada de El Recreo)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -2.0,
       "lon": -79.48,
-      "lugar": "Recinto Las Delicias, Pedregal (Simón Bolívar)",
+      "lugar": "Recinto Las Delicias, Crnel. Lorenzo de Garaicoa (Simón Bolívar)",
       "detalle": "Río Los Amarillos (ubicación de la cabecera cantonal)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.95,
       "lon": -79.63,
       "lugar": "Las Cañitas, Febres Cordero (Babahoyo)",
       "detalle": "Río Chilintomo (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
-    },
-    {
-      "lat": -1.8,
-      "lon": -79.53,
-      "lugar": "Recinto La Puntilla, La Unión (Babahoyo)",
-      "detalle": "Río La Clementina (ubicación de la cabecera cantonal)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.6,
       "lon": -79.83,
       "lugar": "Recinto Macul, Antonio Sotomayor (Vinces)",
       "detalle": "Río Macul (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -1.56,
       "lon": -79.47,
-      "lugar": "Salampe y Roblecito, Ricaurte (Urdaneta)",
-      "detalle": "Ríos Salampe y Pijullo (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
-    },
-    {
-      "lat": -0.82,
-      "lon": -80.48,
-      "lugar": "San Clemente, Charapotó (Sucre)",
-      "detalle": "Quebrada Las Cañitas (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "lugar": "Sector Salampe, Ricaurte (Urdaneta)",
+      "detalle": "Río Salampe (ubicación aproximada de la parroquia)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     },
     {
       "lat": -2.25,
       "lon": -80.6,
-      "lugar": "La Barranca y Sacachún, Julio Moreno (Santa Elena)",
-      "detalle": "Río La Bellita (ubicación aproximada de la parroquia)",
-      "fuente": "SNGR, corte 07:00 del 20 nov (Teleamazonas, 20 nov 2026, 09:05; El Universo, 10:42)"
+      "lugar": "La Barranca, Buenos Aires y Sacachún, Simón Bolívar (Santa Elena)",
+      "detalle": "Ríos La Bellita y Ebanito (ubicación aproximada de la parroquia)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
+    },
+    {
+      "lat": -1.81,
+      "lon": -80.69,
+      "lugar": "Comuna Dos Mangas, Manglaralto (Santa Elena)",
+      "detalle": "Río Dos Mangas (ubicación aproximada de la comuna)",
+      "fuente": "SNGR, corte 07:00 del 21 nov (Teleamazonas, 21 nov 2026, 09:45; El Universo, 10:55)"
     }
   ],
   "inundaciones": [
     {
-      "lat": -2.168,
-      "lon": -79.944,
+      "lat": -2.166,
+      "lon": -79.942,
       "lugar": "Los Ceibos (Guayaquil)",
-      "detalle": "Calles anegadas tras una hora de lluvia intensa en la mañana; cierre del carril hacia Riocentro Los Ceibos y tráfico pesado; agua en la av. Leopoldo Carrera Calvo, Olimpus y el Hospital del IESS Los Ceibos (ubicación aproximada).",
-      "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)"
+      "detalle": "Madrugada y mañana del 21: av. Leopoldo Carrera con agua, piedras y lodo desde las 05:00, paso de vehículos dificultado; también la colina de Los Ceibos y la av. del Bombero junto al nuevo paso a desnivel. Se repitió lo del 20 nov (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; El Universo, 11:00)"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.908,
+      "lugar": "Urdesa, av. Víctor Emilio Estrada (Guayaquil)",
+      "detalle": "Agua cerca de la rodilla en la mañana del 21; también V. E. Estrada y Costanera (ubicación aproximada).",
+      "fuente": "Segura EP (La República, 21 nov 2026; Extra, 07:27)"
+    },
+    {
+      "lat": -2.196,
+      "lon": -79.891,
+      "lugar": "Centro: av. Quito y Machala, Los Ríos y Sucre, 9 de Octubre (Guayaquil)",
+      "detalle": "Agua cerca de la rodilla en av. Quito y Machala; acumulación en Los Ríos y Sucre, Lizardo García y 9 de Octubre, 6 de Marzo y Vélez y 1.º de Mayo y av. del Ejército (ubicación aproximada).",
+      "fuente": "Segura EP (La República, 21 nov 2026; Extra, 07:27)"
+    },
+    {
+      "lat": -2.122,
+      "lon": -79.902,
+      "lugar": "Sauces, Alborada, Guayacanes y Samanes (Guayaquil)",
+      "detalle": "Acumulación de agua en Sauces 9 (av. Antonio Parra Velasco), av. Ángel Jijón Terán, Guayacanes y Alfredo Pareja Diezcanseco y Samanes 2 (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)"
+    },
+    {
+      "lat": -2.155,
+      "lon": -79.898,
+      "lugar": "Kennedy Nueva, Garzota y Tanca Marengo (Guayaquil)",
+      "detalle": "Acumulación en Luis Cornejo y Armando Pareja, Garzota 2 (av. Rodolfo Baquerizo) y av. Juan Tanca Marengo km 1,7 (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)"
+    },
+    {
+      "lat": -2.165,
+      "lon": -79.922,
+      "lugar": "Mapasingue Oeste, Miraflores y Bellavista (Guayaquil)",
+      "detalle": "Acumulación en av. Quinta y Cuarta (Mapasingue Oeste), Miraflores y Bellavista (av. Barcelona) (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)"
+    },
+    {
+      "lat": -3.26,
+      "lon": -79.955,
+      "lugar": "Machala (Machala)",
+      "detalle": "Sectores inundados entre la noche del 20 y la mañana del 21; sin detalle de calles (cabecera cantonal).",
+      "fuente": "SNGR (Extra, 21 nov 2026, 11:05)"
+    },
+    {
+      "lat": -3.45,
+      "lon": -79.96,
+      "lugar": "Santa Rosa (Santa Rosa)",
+      "detalle": "Sectores inundados entre la noche del 20 y la mañana del 21; sin detalle de calles (cabecera cantonal).",
+      "fuente": "SNGR (Extra, 21 nov 2026, 11:05)"
+    },
+    {
+      "lat": -3.475,
+      "lon": -80.23,
+      "lugar": "Huaquillas (Huaquillas)",
+      "detalle": "Sectores inundados entre la noche del 20 y la mañana del 21; sin detalle de calles (cabecera cantonal).",
+      "fuente": "SNGR (Extra, 21 nov 2026, 11:05)"
+    },
+    {
+      "lat": -2.42,
+      "lon": -79.34,
+      "lugar": "Centro (La Troncal)",
+      "detalle": "Calles del centro inundadas entre la noche del 20 y la mañana del 21 (cabecera cantonal).",
+      "fuente": "SNGR (Extra, 21 nov 2026, 11:05)"
+    },
+    {
+      "lat": -1.33,
+      "lon": -80.27,
+      "lugar": "San Pablo de Pueblo Nuevo (Santa Ana)",
+      "detalle": "Unas 20 comunidades con agua a lo largo de una vía de 14 km, en el límite con Guayas (Agua Fría, Guarumo, Fruta de Pan, El Quemado, Tarira); pérdida de animales y terrenos inundados (ubicación muy aproximada).",
+      "fuente": "Presidente del GAD parroquial (El Comercio, 21 nov 2026, 12:26; La República, 21 nov)"
     },
     {
       "lat": -2.0985,
       "lon": -79.8585,
       "lugar": "Ingreso a Ciudad Celeste, km 9,5 av. Samborondón (Samborondón)",
-      "detalle": "Último reporte conocido: lluvia torrencial anegó calles de la urbanización en la tarde del 18 nov; sin reportes nuevos en Samborondón al 21 nov, 06:20 (ubicación aproximada).",
-      "fuente": "El Universo, 18 nov 2026, 15:49"
+      "detalle": "Último reporte conocido: lluvia torrencial anegó calles de la urbanización en la tarde del 18 nov; sin calles anegadas reportadas en Samborondón tras la tormenta del 21 nov (ubicación aproximada).",
+      "fuente": "El Universo, 18 nov 2026, 15:49; sin reportes nuevos al 21 nov, 18:10"
     },
     {
       "lat": -2.165,
       "lon": -79.828,
-      "lugar": "El Recreo, segunda etapa (Durán)",
-      "detalle": "Último reporte de calles anegadas: segunda etapa bajo el agua tras la tormenta del 13 nov. Al 20 nov (07:00) la SNGR reporta un canal desbordado en el sector La Esperanza; sin calles anegadas reportadas en Durán al 21 nov, 06:20.",
-      "fuente": "Radiocentro, 13 nov 2026, 07:06; SNGR (Teleamazonas, 20 nov 2026, 09:05)"
+      "lugar": "El Recreo (Durán)",
+      "detalle": "Último reporte de calles anegadas: segunda etapa bajo el agua tras la tormenta del 13 nov. Al 21 nov (07:00) la SNGR mantiene un canal desbordado en el sector La Esperanza; sin calles anegadas reportadas en Durán tras la tormenta del 21 nov.",
+      "fuente": "Radiocentro, 13 nov 2026; SNGR (Teleamazonas, 21 nov 2026, 09:45)"
     }
   ],
   "vias": [
@@ -327,5 +404,5 @@
       "fuente": "ECU 911, corte 10:22 del 20 nov (El Comercio, 20 nov 2026)"
     }
   ],
-  "fuentes": "SNGR (corte 07:00 del 20 nov vía Teleamazonas y El Universo), INAMHI (Advertencia N.º 88; pronóstico del 21 nov vía El Universo, Vistazo y Extra), INOCAR (pleamar del 20 nov vía El Universo; horas de hoy estimadas), ECU 911 (El Comercio, Metro Ecuador y Vistazo, 20 nov), La República, El Diario, Segura EP e Interagua (Teleamazonas y Extra, 20 nov)"
+  "fuentes": "SNGR (cortes 07:00 y 11:00 del 21 nov vía Teleamazonas, El Universo, Extra y El Comercio), Segura EP y ATM (Extra y Metro Ecuador, 21 nov), La República (rayos GOES-19 y COE Guayas, 21 nov), El Universo (Los Ceibos y pronóstico, 21 nov), INAMHI (pronóstico del 21 nov vía El Universo y Metro Ecuador), INOCAR (pleamar del 20 nov; horas siguientes estimadas), ECU 911 (Vistazo y El Comercio, 20 nov), El Comercio (Santa Ana, 21 nov)"
 }

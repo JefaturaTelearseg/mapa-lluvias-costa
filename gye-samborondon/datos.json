@@ -1,33 +1,33 @@
 {
-  "actualizado": "2026-11-21T06:20:00-05:00",
-  "actualizado_texto": "sábado 21 nov 2026, 06:20",
+  "actualizado": "2026-11-21T18:10:00-05:00",
+  "actualizado_texto": "sábado 21 nov 2026, 18:10",
   "alertas": [
     {
-      "tipo": "aviso",
-      "texto": "Hoy sábado, de 07:00 a 19:00: lluvias normales o moderadas en Guayaquil, Samborondón y Durán (INAMHI). La Advertencia N.º 88 termina a las 10:00; fin de semana con chubascos por la tarde, de menor intensidad."
+      "tipo": "intransitable",
+      "texto": "Madrugada del 21: tormenta eléctrica (861 rayos sobre los tres cantones). Agua cerca de la rodilla en Urdesa (av. Víctor Emilio Estrada) y en el centro (av. Quito y Machala), según la lista de Segura EP de las 08:15 (más de 40 puntos)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Guayaquil, mañana del 20: calles anegadas en Los Ceibos (av. Leopoldo Carrera Calvo, Olimpus, IESS Los Ceibos) y carril hacia Riocentro Los Ceibos cerrado. Sin reportes nuevos esta madrugada."
+      "texto": "Los Ceibos otra vez con agua, piedras y lodo en la av. Leopoldo Carrera y la av. del Bombero junto al paso a desnivel; acumulación en Kennedy, Garzota, Sauces, Alborada, Samanes, Mapasingue y Bellavista."
+    },
+    {
+      "tipo": "via",
+      "texto": "Puerto Santa Ana: colapsó un muro de contención a la altura del Museo del Astillero; área perimetrada, sin heridos (Bomberos, 21 nov)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 20 nov); sin calles anegadas reportadas. Samborondón: sin reportes; con lluvia, atención en Ciudad Celeste y La Puntilla."
+      "texto": "Durán: 181 rayos en la madrugada; canal desbordado en El Recreo, sector La Esperanza (SNGR, 21 nov), sin calles anegadas reportadas. Samborondón: 145 rayos; sin calles anegadas reportadas."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy estimada en ~3,95 m hacia las ~16:20; mañana hacia las ~04:40 y ~17:15. Próximo aguaje: 25 al 28 nov."
+      "texto": "Sin aguaje. Pleamar de hoy estimada en ~3,95 m (~16:20); domingo hacia las ~04:40 y ~17:15. Aguaje del 25 al 28 nov. Posible chubasco fuerte esta noche."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m hacia las ~16:20",
+    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m (~16:20); aguaje desde el 25 nov",
     "altura": "~3,95 m",
-    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; la de la madrugada, hacia las ~03:45; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; no hay aguaje, pero las mareas suben cada día hacia el aguaje",
+    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; martes 24: hacia las ~06:15 y ~18:45; no hay aguaje, pero las mareas suben cada día hacia el aguaje del 25 al 28 nov",
     "horas": [
-      {
-        "dia": "Sáb 21",
-        "hora": "~03:45 y ~16:20"
-      },
       {
         "dia": "Dom 22",
         "hora": "~04:40 y ~17:15"
@@ -35,11 +35,205 @@
       {
         "dia": "Lun 23",
         "hora": "~05:30 y ~18:00"
+      },
+      {
+        "dia": "Mar 24",
+        "hora": "~06:15 y ~18:45"
       }
     ],
-    "nota": "Horas y altura estimadas (~) a partir de la pleamar de INOCAR del 20 nov (3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el próximo aguaje (25 al 28 nov). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas y altura estimadas (~) a partir de la última pleamar publicada por INOCAR (20 nov, 3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el aguaje (25 al 28 nov, COE Guayas vía La República). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
+    {
+      "lat": -2.166,
+      "lon": -79.942,
+      "lugar": "Av. Leopoldo Carrera Calvo (Los Ceibos)",
+      "canton": "Guayaquil",
+      "nivel": "alto",
+      "detalle": "Acumulación desde las 05:00; a las 10:00 seguía con agua, piedras y lodo; paso de vehículos dificultado, ATM regulaba el tránsito e Interagua limpiaba con hidrocleaner (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; El Universo, 11:00)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.16,
+      "lon": -79.948,
+      "lugar": "Colina de Los Ceibos, calle Dr. Francisco Martínez Aguirre",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.163,
+      "lon": -79.935,
+      "lugar": "Av. del Bombero, nuevo paso a desnivel (Los Ceibos)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación reportada por la ATM hacia las 05:00 (ubicación aproximada).",
+      "fuente": "ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.908,
+      "lugar": "Av. Víctor Emilio Estrada (Urdesa)",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Agua cerca de la rodilla; también acumulación en V. E. Estrada y Costanera y en V. E. Estrada y av. Otto Arosemena (ubicación aproximada).",
+      "fuente": "Segura EP (La República, 21 nov 2026, lista de las 08:15); Extra, 07:27",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.199,
+      "lon": -79.891,
+      "lugar": "Av. Quito y av. Machala (centro)",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Agua cerca de la rodilla (ubicación aproximada del sector).",
+      "fuente": "Segura EP (La República, 21 nov 2026, lista de las 08:15); El Universo, 11:00",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.193,
+      "lon": -79.886,
+      "lugar": "Los Ríos y Sucre (centro)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.188,
+      "lon": -79.893,
+      "lugar": "Lizardo García y 9 de Octubre (centro)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; también 6 de Marzo y Vélez (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.186,
+      "lon": -79.888,
+      "lugar": "1.º de Mayo y av. del Ejército (centro)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.167,
+      "lon": -79.9,
+      "lugar": "Kennedy Nueva, Luis Cornejo y Armando Pareja",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.15,
+      "lon": -79.893,
+      "lugar": "Garzota 2, av. Rodolfo Baquerizo Nazur",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.152,
+      "lon": -79.903,
+      "lugar": "Av. Juan Tanca Marengo km 1,7 y María Piedad Castillo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.16,
+      "lon": -79.925,
+      "lugar": "Av. Quinta y Cuarta (Mapasingue Oeste)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.18,
+      "lon": -79.925,
+      "lugar": "Bellavista, av. Barcelona y av. 44",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.17,
+      "lon": -79.918,
+      "lugar": "Miraflores, av. Enrique Cuesta y Agustín Vera Loor",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.118,
+      "lon": -79.9,
+      "lugar": "Sauces 9, av. Antonio Parra Velasco",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; también Antonio Parra Velasco y Crnel. Gómez Sánchez (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.13,
+      "lon": -79.898,
+      "lugar": "Av. Ángel Jijón Terán y av. Guillermo Pareja Rolando (Alborada)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.124,
+      "lon": -79.906,
+      "lugar": "Guayacanes, Alfredo Pareja Diezcanseco y Jiguas",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.105,
+      "lon": -79.905,
+      "lugar": "Samanes 2, av. Francisco Rizzo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (Extra, 21 nov 2026, 07:27; Metro Ecuador, 08:21)",
+      "fecha": "21 nov, mañana"
+    },
+    {
+      "lat": -2.179,
+      "lon": -79.877,
+      "lugar": "Puerto Santa Ana, Museo del Astillero",
+      "canton": "Guayaquil",
+      "nivel": "cerrado",
+      "detalle": "Colapsó un muro de contención por desprendimiento de tierra hacia las 07:47; área perimetrada, sin heridos ni edificios afectados (ubicación aproximada).",
+      "fuente": "Bomberos y Segura EP (La República y El Universo, 21 nov 2026)",
+      "fecha": "21 nov, mañana"
+    },
     {
       "lat": -2.1695,
       "lon": -79.9465,
@@ -47,16 +241,6 @@
       "canton": "Guayaquil",
       "nivel": "cerrado",
       "detalle": "Carril cerrado por acumulación de agua; tráfico pesado en las vías del sector (ubicación aproximada).",
-      "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)",
-      "fecha": "20 nov, mañana"
-    },
-    {
-      "lat": -2.166,
-      "lon": -79.942,
-      "lugar": "Av. Leopoldo Carrera Calvo (Los Ceibos)",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Calles anegadas tras una hora de lluvia intensa; el agua brotaba de la calzada y los vehículos avanzaban con dificultad (ubicación aproximada).",
       "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)",
       "fecha": "20 nov, mañana"
     },
@@ -159,8 +343,8 @@
       "lon": -79.828,
       "lugar": "El Recreo, etapas 1 a 4",
       "canton": "Durán",
-      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR reporta un canal desbordado en El Recreo, sector La Esperanza (20 nov, 07:00), sin calles anegadas reportadas. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
-      "fuente": "SNGR (Teleamazonas, 20 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
+      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR mantiene un canal desbordado en El Recreo, sector La Esperanza (21 nov, 07:00), sin calles anegadas reportadas tras la tormenta del 21. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
+      "fuente": "SNGR (Teleamazonas, 21 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
     },
     {
       "lat": -2.178,
@@ -183,7 +367,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Sin calles anegadas reportadas del 11 al 20 nov (18:10) en el centro. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas del 11 al 21 nov (18:10) en el centro, incluida la tormenta del 21. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -203,5 +387,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP e Interagua (Teleamazonas y Extra, 20 nov), Amarú (Teleamazonas, 20 nov), INAMHI (pronóstico del 21 nov vía El Universo y Vistazo; Advertencia N.º 88), INOCAR (pleamar del 20 nov vía El Universo; horas de hoy estimadas), SNGR (corte 07:00 del 20 nov vía Teleamazonas), Radiocentro, Municipio de Samborondón"
+  "fuentes": "Segura EP y ATM (Extra y Metro Ecuador, 21 nov), La República (lista de Segura EP de las 08:15 y rayos GOES-19, 21 nov), El Universo (Los Ceibos y pronóstico, 21 nov), Bomberos de Guayaquil (Puerto Santa Ana), SNGR (corte 07:00 del 21 nov vía Teleamazonas), INAMHI (pronóstico del 21 nov), INOCAR (pleamar del 20 nov; horas siguientes estimadas), Teleamazonas (20 nov), Radiocentro, Municipio de Samborondón"
 }
