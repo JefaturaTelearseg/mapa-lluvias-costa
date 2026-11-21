@@ -1,43 +1,43 @@
 {
-  "actualizado": "2026-11-20T18:10:00-05:00",
-  "actualizado_texto": "viernes 20 nov 2026, 18:10",
+  "actualizado": "2026-11-21T06:20:00-05:00",
+  "actualizado_texto": "sábado 21 nov 2026, 06:20",
   "alertas": [
     {
-      "tipo": "inundacion",
-      "texto": "Guayaquil, mañana del 20: calles anegadas en Los Ceibos (av. Leopoldo Carrera Calvo, Olimpus, IESS Los Ceibos) y carril hacia Riocentro Los Ceibos cerrado; tráfico pesado."
-    },
-    {
       "tipo": "aviso",
-      "texto": "Esta noche y madrugada del sábado 21: lluvias fuertes en Durán y moderadas en Guayaquil y Samborondón (INAMHI). Advertencia N.º 88 vigente hasta las 10:00 del sábado."
+      "texto": "Hoy sábado, de 07:00 a 19:00: lluvias normales o moderadas en Guayaquil, Samborondón y Durán (INAMHI). La Advertencia N.º 88 termina a las 10:00; fin de semana con chubascos por la tarde, de menor intensidad."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 20 nov); sin calles anegadas reportadas. Samborondón: sin reportes hoy; con lluvia, atención en Ciudad Celeste y La Puntilla."
+      "texto": "Guayaquil, mañana del 20: calles anegadas en Los Ceibos (av. Leopoldo Carrera Calvo, Olimpus, IESS Los Ceibos) y carril hacia Riocentro Los Ceibos cerrado. Sin reportes nuevos esta madrugada."
+    },
+    {
+      "tipo": "inundacion",
+      "texto": "Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 20 nov); sin calles anegadas reportadas. Samborondón: sin reportes; con lluvia, atención en Ciudad Celeste y La Puntilla."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy: 3,77 m a las 15:22; mañana hacia las ~03:35 y ~16:15. Próximo aguaje: 25 al 28 nov."
+      "texto": "Sin aguaje. Pleamar de hoy estimada en ~3,95 m hacia las ~16:20; mañana hacia las ~04:40 y ~17:15. Próximo aguaje: 25 al 28 nov."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy 3,77 m a las 15:22",
-    "altura": "3,77 m",
-    "texto": "pleamar de hoy, viernes 20 nov, en Guayaquil-río: 3,77 m a las 15:22 (bajamar 1,13 m a las 09:37); la de la madrugada fue hacia las ~02:40; sábado 21: hacia las ~03:35 y ~16:15; domingo 22: hacia las ~04:30 y ~17:05; no hay aguaje",
+    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m hacia las ~16:20",
+    "altura": "~3,95 m",
+    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; la de la madrugada, hacia las ~03:45; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; no hay aguaje, pero las mareas suben cada día hacia el aguaje",
     "horas": [
       {
-        "dia": "Vie 20",
-        "hora": "~02:40 y 15:22"
-      },
-      {
         "dia": "Sáb 21",
-        "hora": "~03:35 y ~16:15"
+        "hora": "~03:45 y ~16:20"
       },
       {
         "dia": "Dom 22",
-        "hora": "~04:30 y ~17:05"
+        "hora": "~04:40 y ~17:15"
+      },
+      {
+        "dia": "Lun 23",
+        "hora": "~05:30 y ~18:00"
       }
     ],
-    "nota": "Pleamar de la tarde de hoy según la tabla publicada por El Universo (20 nov); las demás horas son estimadas (~). Próximo aguaje: 25 al 28 nov. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas y altura estimadas (~) a partir de la pleamar de INOCAR del 20 nov (3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el próximo aguaje (25 al 28 nov). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -203,5 +203,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP e Interagua (Teleamazonas y Extra, 20 nov), Amarú (Teleamazonas, 20 nov), INAMHI (pronóstico de la noche del 20 vía Primicias y Extra; Advertencia N.º 88), INOCAR (pleamar del 20 nov vía El Universo), SNGR (corte 07:00 del 20 nov vía Teleamazonas), Radiocentro, Municipio de Samborondón"
+  "fuentes": "Segura EP e Interagua (Teleamazonas y Extra, 20 nov), Amarú (Teleamazonas, 20 nov), INAMHI (pronóstico del 21 nov vía El Universo y Vistazo; Advertencia N.º 88), INOCAR (pleamar del 20 nov vía El Universo; horas de hoy estimadas), SNGR (corte 07:00 del 20 nov vía Teleamazonas), Radiocentro, Municipio de Samborondón"
 }
