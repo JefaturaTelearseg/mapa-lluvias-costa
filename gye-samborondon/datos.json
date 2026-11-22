@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-21T18:10:00-05:00",
-  "actualizado_texto": "sábado 21 nov 2026, 18:10",
+  "actualizado": "2026-11-22T06:15:00-05:00",
+  "actualizado_texto": "domingo 22 nov 2026, 06:15",
   "alertas": [
     {
-      "tipo": "intransitable",
-      "texto": "Madrugada del 21: tormenta eléctrica (861 rayos sobre los tres cantones). Agua cerca de la rodilla en Urdesa (av. Víctor Emilio Estrada) y en el centro (av. Quito y Machala), según la lista de Segura EP de las 08:15 (más de 40 puntos)."
+      "tipo": "aviso",
+      "texto": "INAMHI, advertencia N.º 89: lluvias fuertes y tormentas eléctricas hasta las 10:00 del martes 24 nov; para la noche del 21 a la mañana del 22 previó lluvias fuertes en Guayaquil y Durán. Sin nuevas calles inundadas reportadas hasta las 06:15 del domingo."
     },
     {
-      "tipo": "inundacion",
-      "texto": "Los Ceibos otra vez con agua, piedras y lodo en la av. Leopoldo Carrera y la av. del Bombero junto al paso a desnivel; acumulación en Kennedy, Garzota, Sauces, Alborada, Samanes, Mapasingue y Bellavista."
+      "tipo": "intransitable",
+      "texto": "Último reporte (madrugada del 21): agua cerca de la rodilla en Urdesa (av. Víctor Emilio Estrada) y en el centro (av. Quito y Machala); más de 40 puntos con agua según Segura EP."
     },
     {
       "tipo": "via",
-      "texto": "Puerto Santa Ana: colapsó un muro de contención a la altura del Museo del Astillero; área perimetrada, sin heridos (Bomberos, 21 nov)."
+      "texto": "Puerto Santa Ana: área cerrada por el colapso de un muro de contención junto al Museo del Astillero (21 nov). Hoy, retorno del feriado: más tráfico en accesos a la ciudad."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: 181 rayos en la madrugada; canal desbordado en El Recreo, sector La Esperanza (SNGR, 21 nov), sin calles anegadas reportadas. Samborondón: 145 rayos; sin calles anegadas reportadas."
+      "texto": "Durán: canal desbordado en El Recreo, sector La Esperanza (SNGR, 21 nov), sin calles anegadas reportadas. Samborondón: sin calles anegadas reportadas desde el 18 nov."
     },
     {
       "tipo": "marea",
-      "texto": "Sin aguaje. Pleamar de hoy estimada en ~3,95 m (~16:20); domingo hacia las ~04:40 y ~17:15. Aguaje del 25 al 28 nov. Posible chubasco fuerte esta noche."
+      "texto": "Sin aguaje. Pleamar de hoy estimada en ~4,00 m hacia las ~17:15. Aguaje del 25 al 28 nov: con lluvia, más riesgo en zonas bajas."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy ~3,95 m (~16:20); aguaje desde el 25 nov",
-    "altura": "~3,95 m",
-    "texto": "pleamar de hoy, sábado 21 nov, en Guayaquil-río: estimada ~3,95 m hacia las ~16:20; domingo 22: hacia las ~04:40 y ~17:15; lunes 23: hacia las ~05:30 y ~18:00; martes 24: hacia las ~06:15 y ~18:45; no hay aguaje, pero las mareas suben cada día hacia el aguaje del 25 al 28 nov",
+    "titulo": "Sin aguaje · pleamar de hoy ~4,00 m (~17:15); aguaje desde el 25 nov",
+    "altura": "~4,00 m",
+    "texto": "pleamar de hoy, domingo 22 nov, en Guayaquil-río: estimada ~4,00 m hacia las ~17:15 (la de la madrugada fue hacia las ~04:40); lunes 23: hacia las ~05:30 y ~18:00; martes 24: hacia las ~06:15 y ~18:45; miércoles 25: hacia las ~07:00 y ~19:30; no hay aguaje, pero las mareas suben cada día hacia el aguaje del 25 al 28 nov",
     "horas": [
-      {
-        "dia": "Dom 22",
-        "hora": "~04:40 y ~17:15"
-      },
       {
         "dia": "Lun 23",
         "hora": "~05:30 y ~18:00"
@@ -39,9 +35,13 @@
       {
         "dia": "Mar 24",
         "hora": "~06:15 y ~18:45"
+      },
+      {
+        "dia": "Mié 25",
+        "hora": "~07:00 y ~19:30"
       }
     ],
-    "nota": "Horas y altura estimadas (~) a partir de la última pleamar publicada por INOCAR (20 nov, 3,77 m a las 15:22) y de la tendencia de las tablas de mareas; mareas cada vez más altas hasta el aguaje (25 al 28 nov, COE Guayas vía La República). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas y altura estimadas (~) a partir de la última pleamar publicada por INOCAR (20 nov, 3,77 m a las 15:22) y de la tendencia de las tablas de mareas; aguaje del 25 al 28 nov (CN-ERFEN vía Primicias, 21 nov). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -233,36 +233,6 @@
       "detalle": "Colapsó un muro de contención por desprendimiento de tierra hacia las 07:47; área perimetrada, sin heridos ni edificios afectados (ubicación aproximada).",
       "fuente": "Bomberos y Segura EP (La República y El Universo, 21 nov 2026)",
       "fecha": "21 nov, mañana"
-    },
-    {
-      "lat": -2.1695,
-      "lon": -79.9465,
-      "lugar": "Carril hacia Riocentro Los Ceibos (Los Ceibos)",
-      "canton": "Guayaquil",
-      "nivel": "cerrado",
-      "detalle": "Carril cerrado por acumulación de agua; tráfico pesado en las vías del sector (ubicación aproximada).",
-      "fuente": "Segura EP e Interagua (Teleamazonas, 20 nov 2026, 11:10; Extra, 20 nov, 10:55)",
-      "fecha": "20 nov, mañana"
-    },
-    {
-      "lat": -2.162,
-      "lon": -79.936,
-      "lugar": "Olimpus (Los Ceibos)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Reportes ciudadanos de calles anegadas o cerradas (ubicación aproximada).",
-      "fuente": "Amarú (Teleamazonas, 20 nov 2026, 11:10)",
-      "fecha": "20 nov, mañana"
-    },
-    {
-      "lat": -2.1745,
-      "lon": -79.94,
-      "lugar": "Hospital General del IESS Los Ceibos",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Reportes ciudadanos de calles anegadas en los alrededores (ubicación aproximada).",
-      "fuente": "Amarú (Teleamazonas, 20 nov 2026, 11:10)",
-      "fecha": "20 nov, mañana"
     }
   ],
   "recurrentes": [
@@ -343,7 +313,7 @@
       "lon": -79.828,
       "lugar": "El Recreo, etapas 1 a 4",
       "canton": "Durán",
-      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR mantiene un canal desbordado en El Recreo, sector La Esperanza (21 nov, 07:00), sin calles anegadas reportadas tras la tormenta del 21. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
+      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR mantiene un canal desbordado en El Recreo, sector La Esperanza (21 nov), sin calles anegadas reportadas hasta el 22 nov. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
       "fuente": "SNGR (Teleamazonas, 21 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
     },
     {
@@ -367,7 +337,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Sin calles anegadas reportadas del 11 al 21 nov (18:10) en el centro, incluida la tormenta del 21. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas del 11 al 22 nov (06:15) en el centro, incluida la tormenta del 21. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -387,5 +357,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP y ATM (Extra y Metro Ecuador, 21 nov), La República (lista de Segura EP de las 08:15 y rayos GOES-19, 21 nov), El Universo (Los Ceibos y pronóstico, 21 nov), Bomberos de Guayaquil (Puerto Santa Ana), SNGR (corte 07:00 del 21 nov vía Teleamazonas), INAMHI (pronóstico del 21 nov), INOCAR (pleamar del 20 nov; horas siguientes estimadas), Teleamazonas (20 nov), Radiocentro, Municipio de Samborondón"
+  "fuentes": "Segura EP y ATM (Extra y Metro Ecuador, 21 nov), La República (lista de Segura EP de las 08:15, 21 nov), El Universo (21 nov), Bomberos de Guayaquil (Puerto Santa Ana), SNGR (cortes 07:00 y 11:00 del 21 nov vía Teleamazonas y El Comercio), INAMHI (advertencia N.º 89 y pronóstico del 21 nov), INOCAR (pleamar del 20 nov; horas siguientes estimadas), Radiocentro, Municipio de Samborondón"
 }
