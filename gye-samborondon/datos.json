@@ -1,43 +1,43 @@
 {
-  "actualizado": "2026-11-23T18:15:00-05:00",
-  "actualizado_texto": "lunes 23 nov 2026, 18:15",
+  "actualizado": "2026-11-24T06:15:00-05:00",
+  "actualizado_texto": "martes 24 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI, advertencia N.º 89 hasta las 10:00 del martes 24 nov: lluvias al final de la tarde y en la noche de hoy en Guayaquil, Durán y Samborondón."
+      "texto": "INAMHI, advertencia N.º 89 hasta las 10:00 de hoy martes 24; las lluvias se intensificarían al final de la tarde de hoy."
     },
     {
       "tipo": "inundacion",
-      "texto": "Hoy 23 nov: agua en la calzada en la av. 25 de Julio, av. Barcelona (túnel San Eduardo), Perimetral en Isla Trinitaria y av. del Bombero (ATM, 13:10). Sin cierres."
+      "texto": "23 nov: agua en la av. 25 de Julio, av. Barcelona (túnel San Eduardo), Perimetral en Isla Trinitaria, av. del Bombero, Malvinas Norte y Cisne 2. Sin cierres."
     },
     {
       "tipo": "marea",
-      "texto": "Con la marea alta de la mañana, agua en el Malecón, 10 de Agosto y Santa Elena, Cisne 2 e Isla Trinitaria. Pleamar de esta tarde: 4,38 m a las 18:19. Aguaje del 25 al 28 nov."
+      "texto": "Pleamar de hoy hacia las ~19:10 (estimada). Aguaje del 25 al 28 nov: el 23 la marea alta ya llevó agua al Malecón, el centro, Cisne 2 e Isla Trinitaria. La SNGR reporta desbordado el estero Salado."
     },
     {
       "tipo": "aviso",
-      "texto": "Durán: la SNGR mantiene un canal desbordado (23 nov), sin calles anegadas reportadas. Samborondón: sin calles anegadas reportadas desde el 18 nov."
+      "texto": "Durán: la SNGR mantiene un canal desbordado (corte 23 nov, 19:01), sin calles anegadas reportadas. Samborondón: sin calles anegadas reportadas desde el 18 nov."
     }
   ],
   "marea": {
-    "titulo": "Sin aguaje · pleamar de hoy 4,38 m a las 18:19 (4,37 m a las 05:32); aguaje del 25 al 28 nov",
-    "altura": "4,38 m",
-    "texto": "pleamares de hoy, lunes 23 nov, en Guayaquil-río: 4,37 m a las 05:32 y 4,38 m a las 18:19; martes 24: hacia las ~06:15 y ~19:05; miércoles 25: hacia las ~07:00 y ~19:50. No hay aguaje, pero las mareas suben hacia el aguaje del 25 al 28 nov",
+    "titulo": "Sin aguaje · pleamar de hoy hacia las ~19:10 (~4,40 m, estimada); aguaje del 25 al 28 nov",
+    "altura": "~4,40 m",
+    "texto": "pleamares de hoy, martes 24 nov, en Guayaquil-río hacia las ~06:35 y ~19:10 (altura estimada ~4,40 m; ayer 4,37 m y 4,38 m); miércoles 25: ~07:20 y ~19:55; jueves 26: ~08:10 y ~20:45. No hay aguaje hoy, pero las mareas suben hacia el aguaje del 25 al 28 nov",
     "horas": [
       {
-        "dia": "Lun 23",
-        "hora": "05:32 y 18:19"
-      },
-      {
         "dia": "Mar 24",
-        "hora": "~06:15 y ~19:05"
+        "hora": "~06:35 y ~19:10"
       },
       {
         "dia": "Mié 25",
-        "hora": "~07:00 y ~19:50"
+        "hora": "~07:20 y ~19:55"
+      },
+      {
+        "dia": "Jue 26",
+        "hora": "~08:10 y ~20:45"
       }
     ],
-    "nota": "Pleamares de hoy según la tabla difundida por Segura EP (Diario Extra, 23 nov, 11:04). Horas de los días siguientes estimadas (~). Aguaje del 25 al 28 nov (CN-ERFEN). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas estimadas (~) con tablas de predicción de mareas; la altura de hoy es estimada a partir de la tabla de Segura EP del 23 nov (4,37 m y 4,38 m). Aguaje del 25 al 28 nov (CN-ERFEN). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -68,6 +68,26 @@
       "nivel": "acumulacion",
       "detalle": "Agua en la calzada; acumulaciones en varios tramos de la avenida y congestión con la lluvia de las 11:50 (ubicación aproximada).",
       "fuente": "ATM (Metro Ecuador y El Universo, 23 nov 2026, 13:10-13:36); El Universo, 12:12",
+      "fecha": "23 nov, mediodía"
+    },
+    {
+      "lat": -2.245,
+      "lon": -79.895,
+      "lugar": "Av. 25 de Julio y calle 50C",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; Emapag e Interagua desplegados (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 13:15 (El Comercio, 23 nov 2026)",
+      "fecha": "23 nov, mediodía"
+    },
+    {
+      "lat": -2.236,
+      "lon": -79.905,
+      "lugar": "Malvinas Norte, av. Ernesto Albán y Cuarto Pasaje",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; Emapag e Interagua desplegados (ubicación aproximada).",
+      "fuente": "Segura EP, actualización 13:15 (El Comercio, 23 nov 2026)",
       "fecha": "23 nov, mediodía"
     },
     {
@@ -113,12 +133,12 @@
     {
       "lat": -2.212,
       "lon": -79.913,
-      "lugar": "Callejón 21, Cisne 2",
+      "lugar": "Callejón 21 SO y calle 40, Cisne 2",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la marea alta (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE y ATM (Extra, 23 nov 2026, 11:04)",
-      "fecha": "23 nov, mañana"
+      "detalle": "Acumulación de agua con la marea alta en la mañana y de nuevo con la lluvia del mediodía (Segura EP, 13:15) (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE y ATM (Extra, 23 nov 2026, 11:04); Segura EP (El Comercio, 23 nov)",
+      "fecha": "23 nov, mañana y mediodía"
     },
     {
       "lat": -2.237,
@@ -219,8 +239,8 @@
       "lon": -79.828,
       "lugar": "El Recreo, etapas 1 a 4",
       "canton": "Durán",
-      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR mantiene un canal desbordado en Durán (23 nov; sector La Esperanza de El Recreo según el corte del 21), sin calles anegadas reportadas hasta la tarde del 23. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
-      "fuente": "SNGR (El Diario, 23 nov; Teleamazonas, 21 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
+      "detalle": "Se inunda con frecuencia. Último reporte: la SNGR mantiene un canal desbordado en Durán (corte 23 nov, 19:01; sector La Esperanza de El Recreo según el corte del 21), sin calles anegadas reportadas hasta la mañana del 24. Antes, calles de la segunda etapa bajo el agua (13 nov) y agua sobre las aceras en las etapas 1 a 4 (19 oct).",
+      "fuente": "SNGR (El Comercio, 23 nov; Teleamazonas, 21 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
     },
     {
       "lat": -2.178,
@@ -243,7 +263,7 @@
       "lon": -79.8225,
       "lugar": "Centro de Durán",
       "canton": "Durán",
-      "detalle": "Sin calles anegadas reportadas del 11 al 23 nov (tarde) en el centro, incluida la tormenta del 21. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
+      "detalle": "Sin calles anegadas reportadas del 11 al 24 nov (mañana) en el centro, incluida la tormenta del 21. Último reporte con agua: noche del 1 nov, varias vías principales con acumulación; antes, calles Loja y Esmeraldas (29 oct).",
       "fuente": "Amarú (Teleamazonas, 10 nov); El Telégrafo, 1 nov; SNGR (El Universo, 30 oct)"
     },
     {
@@ -263,5 +283,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "ATM (Metro Ecuador y El Universo, 23 nov), Segura EP / C5GYE (Extra y Primicias, 23 nov), SNGR (reporte del 23 nov vía El Diario), INAMHI (advertencia N.º 89 y pronóstico del 23 nov vía Vistazo y Primicias), pleamar de hoy (tabla difundida por Segura EP vía Extra), Radiocentro, Municipio de Samborondón"
+  "fuentes": "ATM y Segura EP / C5GYE (Metro Ecuador, El Universo, El Comercio y Extra, 23 nov), SNGR (corte 23 nov 19:01 vía El Comercio), INAMHI (advertencia N.º 89 y pronóstico del 24 nov vía El Universo y El Comercio), tablas de predicción de mareas, Radiocentro, Municipio de Samborondón"
 }
