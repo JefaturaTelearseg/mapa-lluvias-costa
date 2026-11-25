@@ -1,47 +1,47 @@
 {
-  "actualizado": "2026-11-24T18:15:00-05:00",
-  "actualizado_texto": "martes 24 nov 2026, 18:15",
+  "actualizado": "2026-11-25T06:15:00-05:00",
+  "actualizado_texto": "miércoles 25 nov 2026, 06:15",
   "alertas": [
     {
       "tipo": "aviso",
-      "texto": "INAMHI, advertencia N.º 90 desde las 16:00 de hoy martes 24 hasta las 22:00 del viernes 27: lluvias fuertes, tormentas eléctricas y ráfagas en Esmeraldas, Santo Domingo, Manabí, Los Ríos, Guayas, Santa Elena y El Oro. Esta noche, lluvia fuerte en Durán, Milagro, Naranjal, Yaguachi, Balao, Machala, Pasaje y El Guabo. Mañana 25, clases no presenciales en la Costa."
+      "texto": "INAMHI, advertencia N.º 90 hasta las 22:00 del viernes 27: lluvias fuertes y tormentas en la Costa. Hoy 25, entre las 07:00 y las 19:00, lluvia fuerte en Milagro, Naranjito, El Triunfo, Balao, Tenguel, El Guabo, Machala, Pasaje, Quevedo, Buena Fe, Ventanas, Montalvo, El Carmen y Santo Domingo. Hoy, clases no presenciales solo en la Costa y Galápagos."
     },
     {
       "tipo": "desborde",
-      "texto": "SNGR (corte 24 nov, 07:00): 33 ríos y esteros desbordados en Guayas, Los Ríos, Manabí y Santa Elena; sigue el canal desbordado en Durán. Nuevo: río Burro en Manta, que inundó cinco barrios en la madrugada."
+      "texto": "SNGR (corte 24 nov, 07:00): 33 ríos y esteros desbordados en Guayas, Los Ríos, Manabí y Santa Elena, incluido un canal en Durán. En Manta el agua llegó a unos 2 m en el barrio 4 de Noviembre; en Montalvo el río Tigrera destruyó 5 viviendas en Pisagua Alto."
     },
     {
       "tipo": "via",
-      "texto": "Cerradas: vía Puerto López–Salango–Manglaralto en Cinco Cerros (deslave, 24 nov), Alóag–Santo Domingo en el km 83 (rocas, 24 nov) y Montalvo–Balsapamba. La Ruta del Spondylus en La Entrada se reabrió a las 10:30."
+      "texto": "Cerradas: Puerto López–Salango–Manglaralto en Cinco Cerros (deslave, 24 nov), Alóag–Santo Domingo en el km 83 (rocas, 24 nov) y Montalvo–Balsapamba. La inundación en Babahoyo llegó a la vía Babahoyo–Quevedo."
     },
     {
       "tipo": "marea",
-      "texto": "Pleamar de hoy 4,48 m a las 19:12 y aguaje del 25 al 28 nov. En la mañana la marea anegó el Malecón, Puerto Santa Ana, Sauces 4, La Floresta 2, el Suburbio y Entre Ríos (Samborondón)."
+      "texto": "Aguaje del 25 al 28 nov. Pleamares de hoy en Guayaquil-río ~07:15 y ~19:55 (estimadas). Ayer la marea anegó el Malecón, Puerto Santa Ana, la av. Pedro Menéndez Gilbert, el Suburbio, Cisne 2 y Entre Ríos (Samborondón)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Durán: canal desbordado (SNGR), sin calles anegadas reportadas hoy; INAMHI prevé lluvia fuerte esta noche. Samborondón: anegaciones en Entre Ríos con la pleamar de la mañana y tránsito lento en la av. Samborondón km 5."
+      "texto": "Durán: canal desbordado (SNGR), sin calles anegadas reportadas hasta esta mañana; INAMHI preveía lluvia fuerte anoche. Samborondón: Entre Ríos se anegó con la pleamar del 24; con el aguaje puede repetirse."
     }
   ],
   "marea": {
-    "titulo": "Aguaje del 25 al 28 nov · pleamar de hoy 4,48 m a las 19:12",
-    "altura": "4,48 m",
-    "texto": "pleamares de hoy, martes 24 nov, en Guayaquil-río: 4,42 m a las 06:26 y 4,48 m a las 19:12 (la marea empieza a subir hacia las 16:30); miércoles 25: ~07:20 y ~19:55; jueves 26: ~08:10 y ~20:45. Coincide con luna llena y el aguaje del 25 al 28 nov; la pleamar de la mañana ya anegó calles del centro, el sur y el norte de Guayaquil y Entre Ríos (Samborondón)",
+    "titulo": "Aguaje del 25 al 28 nov · pleamar de hoy ~4,50 m a las ~19:55",
+    "altura": "4,50 m",
+    "texto": "pleamares estimadas en Guayaquil-río: hoy, miércoles 25 nov, ~07:15 y ~19:55 (~4,5 m); jueves 26: ~08:05 y ~20:40; viernes 27: ~08:55 y ~21:25. Ayer, 24 nov, hubo 4,42 m a las 06:26 y 4,48 m a las 19:12, con calles anegadas en el centro, el sur y el suroeste de Guayaquil y en Entre Ríos (Samborondón). Empieza el aguaje (25 al 28 nov)",
     "horas": [
       {
-        "dia": "Mar 24",
-        "hora": "06:26 y 19:12"
-      },
-      {
         "dia": "Mié 25",
-        "hora": "~07:20 y ~19:55"
+        "hora": "~07:15 y ~19:55"
       },
       {
         "dia": "Jue 26",
-        "hora": "~08:10 y ~20:45"
+        "hora": "~08:05 y ~20:40"
+      },
+      {
+        "dia": "Vie 27",
+        "hora": "~08:55 y ~21:25"
       }
     ],
-    "nota": "Horas y alturas de hoy: tabla de Segura EP con datos de INOCAR (Extra, Metro Ecuador y El Comercio, 24 nov). Horas del 25 y 26 estimadas (~) con tablas de predicción de mareas. Aguaje del 25 al 28 nov (CN-ERFEN). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve.",
+    "nota": "Horas estimadas (~) a partir de las pleamares del 24 nov (INOCAR y Segura EP, El Comercio 24 nov) y tablas de predicción; altura de hoy estimada. Aguaje del 25 al 28 nov (CN-ERFEN, El Universo 24 nov). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve.",
     "zonas": [
       {
         "lat": -2.23,
@@ -74,7 +74,7 @@
         "titulo": "Puerto Bolívar y costa de El Oro"
       }
     ],
-    "zonas_texto": "Zona baja o cercana a esteros. Hay aguaje del 25 al 28 nov y la pleamar de hoy llega a 4,48 m a las 19:12; esta mañana el agua llegó al Malecón, Puerto Santa Ana, el Suburbio, La Floresta y Sauces en Guayaquil y a Entre Ríos en Samborondón. Precaución en el Suburbio, el Guasmo, Isla Trinitaria y riberas de Samborondón y Durán."
+    "zonas_texto": "Zona baja o cercana a esteros. Hay aguaje del 25 al 28 nov, con pleamares de hoy hacia las ~07:15 y ~19:55; ayer el agua llegó al Malecón, Puerto Santa Ana, la av. Pedro Menéndez Gilbert, el Suburbio, Cisne 2 y Sauces en Guayaquil y a Entre Ríos en Samborondón. Precaución en el Suburbio, el Guasmo, Isla Trinitaria y riberas de Samborondón y Durán."
   },
   "tramos": [
     {
@@ -82,23 +82,23 @@
       "riesgo": "alto",
       "nombre": "Troncal Sur: Durán – Machala – Arenillas",
       "clientes": "AQ1 y Biomar",
-      "situacion": "SNGR (corte 24 nov, 07:00): siguen desbordados el río Culebra (Naranjal), el estero Las Cañas (Balao) y un canal en Durán. INAMHI (advertencia N.º 90, hasta el viernes 27) prevé lluvia fuerte esta noche en Durán, Yaguachi, Milagro, Naranjal, Balao, Machala, Pasaje y El Guabo. Sin reportes nuevos de calles con agua ni cierres en Machala, Santa Rosa ni Arenillas.",
-      "recomendacion": "Salir y circular con precaución entre Durán, Taura, Naranjal, Balao y Tenguel y en Machala, Pasaje, El Guabo, Santa Rosa y Arenillas; reducir la velocidad con lluvia, sobre todo esta noche, y no cruzar tramos con agua."
+      "situacion": "SNGR (corte 24 nov, 07:00): siguen desbordados el río Culebra (Naranjal), el estero Las Cañas (Balao) y un canal en Durán. INAMHI (advertencia N.º 90, hasta el viernes 27) prevé hoy, entre las 07:00 y las 19:00, lluvia fuerte en Milagro, Naranjito, El Triunfo, Balao, Tenguel, El Guabo, Machala y Pasaje. Sin reportes nuevos de calles con agua ni cierres en Machala, Santa Rosa ni Arenillas.",
+      "recomendacion": "Salir y circular con precaución entre Durán, Taura, Naranjal, Balao y Tenguel y en Machala, Pasaje, El Guabo, Santa Rosa y Arenillas; reducir la velocidad con lluvia, sobre todo de día hoy, y no cruzar tramos con agua."
     },
     {
       "id": "urb",
       "riesgo": "alto",
       "nombre": "Guayaquil, Samborondón y Durán",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Guayaquil: con la pleamar de 4,42 m de la mañana (06:26) hubo agua en el Malecón y Loja/Colón, Puerto Santa Ana, Colón e Ismael Pérez Pazmiño, av. Benjamín Rosales, Sauces 4, La Floresta 2 y el Suburbio (Capitán Nájera con calle 32 y con Assad Bucaram); sin cierres. El COE pide precaución esta tarde y noche en la av. 25 de Julio, la Perimetral, el Guasmo y Sauces. Samborondón: anegaciones en vías de Entre Ríos con la marea de la mañana y tránsito lento en la av. Samborondón km 5. Durán: canal desbordado (SNGR), sin calles anegadas reportadas; tránsito cargado en el Puente de la Unidad Nacional hacia Guayaquil. Pleamar 4,48 m a las 19:12 y aguaje desde mañana.",
-      "recomendacion": "Salir y circular con precaución; con lluvia o marea alta, evitar el Malecón, Puerto Santa Ana, la av. 25 de Julio y la Perimetral en Guayaquil, Entre Ríos y la av. Samborondón en Samborondón y El Recreo en Durán, y no cruzar calles con agua."
+      "situacion": "Guayaquil: el 24 nov la marea anegó el Malecón (Loja y Colón), Puerto Santa Ana, la av. Benjamín Rosales, la av. Pedro Menéndez Gilbert, Lorenzo de Garaicoa y 10 de Agosto, Sauces 4, La Floresta 2, el Suburbio (Capitán Nájera, Otavalo y Sucre) y Cisne 2 (puente de la G, La Pista); sin cierres. Samborondón: anegaciones en Entre Ríos y tránsito lento en la av. Samborondón km 5 con la pleamar del 24. Durán: canal desbordado (SNGR), sin calles anegadas reportadas; tránsito cargado el 24 en el Puente de la Unidad Nacional hacia Guayaquil. Desde hoy hay aguaje (25 al 28 nov), con pleamares hacia las ~07:15 y ~19:55.",
+      "recomendacion": "Salir y circular con precaución; cerca de la pleamar, evitar el Malecón, Puerto Santa Ana, la av. Pedro Menéndez Gilbert y el Suburbio en Guayaquil, Entre Ríos y la av. Samborondón en Samborondón y El Recreo en Durán, y no cruzar calles con agua."
     },
     {
       "id": "costa",
       "riesgo": "alto",
       "nombre": "Vía a la Costa y Ruta del Spondylus",
       "clientes": "Biomar (AQ1 hasta Chongón y Cerecita)",
-      "situacion": "Vía Puerto López–Salango–Manglaralto cerrada por un deslave en Cinco Cerros (Salango) desde la mañana del 24 nov; sin hora de reapertura. En La Entrada (Santa Elena) un cerro bloqueó la Ruta del Spondylus más de 2 horas y se habilitó hacia las 10:30. Tugaduaja–Engunga (Chanduy) cerrada 48 h por trabajos. SNGR: desbordados el río Arenas (Playas), el Javita y el Dos Bocas (Santa Elena). INAMHI: lluvias fuertes en Santa Elena hasta el viernes 27.",
+      "situacion": "Vía Puerto López–Salango–Manglaralto cerrada por un deslave en Cinco Cerros (Salango) desde la mañana del 24 nov, sin reapertura reportada. En La Entrada (Santa Elena) un cerro bloqueó la Ruta del Spondylus más de 2 horas el 24 y se habilitó hacia las 10:30. Tugaduaja–Engunga (Chanduy) cerrada 48 h por trabajos. SNGR: desbordados el río Arenas (Playas), el Javita y el Dos Bocas (Santa Elena). INAMHI: lluvias fuertes en la Costa hasta el viernes 27; Guayaquil–Salinas en monitoreo.",
       "recomendacion": "Salir y circular con precaución en la Vía a la Costa, Playas y la Ruta del Spondylus; hacia Puerto López usar rutas alternas mientras siga cerrado Cinco Cerros, reducir la velocidad con lluvia y atención en Chanduy y La Entrada."
     },
     {
@@ -106,7 +106,7 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Manabí hasta Pedernales",
       "clientes": "AQ1 y Biomar",
-      "situacion": "Los ríos Burro y Manta se desbordaron en la madrugada del 24 nov e inundaron los barrios 8 de Enero, 5 de Junio, 4 de Noviembre, 16 de Septiembre y Miraflores en Manta (52 mm de lluvia). ECU 911: pasos parciales por socavones en Tosagua–Bahía (Verdún), Rocafuerte–Tosagua (km 187), Canuto–Calceta, Santa Ana–Olmedo y San José de Chamanga–Pedernales; el resto de vías de Manabí habilitadas. SNGR: río Bachillero y estero Miraflora desbordados en Pedro Carbo.",
+      "situacion": "Los ríos Burro y Manta se desbordaron en la madrugada del 24 nov e inundaron al menos 8 barrios de Manta; en el 4 de Noviembre el agua llegó a unos 2 m. ECU 911 (24 nov): pasos parciales por socavones en Tosagua–Bahía (Verdún), Rocafuerte–Tosagua (km 187), Canuto–Calceta, Santa Ana–Olmedo y San José de Chamanga–Pedernales. INAMHI: lluvia fuerte en el 75 % de Manabí; riesgo alto de inundación en Jaramijó, Montecristi, Rocafuerte, Sucre y parte de Portoviejo. SNGR: río Bachillero y estero Miraflora desbordados en Pedro Carbo.",
       "recomendacion": "Salir y circular con precaución; reducir la velocidad con lluvia entre Jipijapa, Portoviejo, Bahía y Pedernales, prever demoras en los pasos parciales y no cruzar quebradas ni tramos con agua."
     },
     {
@@ -114,8 +114,8 @@
       "riesgo": "alto",
       "nombre": "Guayaquil – Quevedo – Santo Domingo",
       "clientes": "AQ1",
-      "situacion": "SNGR (corte 24 nov, 07:00): desbordados el río Daule (Colimes), estero El Cañal y río Jaboncillo (Daule), estero San Juan (Balzar), ríos Vinces, Salitre y Pula (Salitre), Pula y estero Guabito (Palestina); en Los Ríos, Caracol, La Clementina y Chilintomo (Babahoyo), Macul (Vinces), Salampe, Pompeya y Jatuví (Urdaneta), Calope y Chipe (Quinsaloma), Tigrera, Las Baslas y La Esmeralda (Montalvo) y río Mocache. FF. AA. rescataron a 6 personas por el desborde del río Cristal en Montalvo. Vía Alóag–Santo Domingo cerrada en el km 83 desde las 06:45 del 24; Montalvo–Balsapamba cerrada. Santo Domingo–Quevedo, –El Carmen y –Quinindé habilitadas. INAMHI: lluvia fuerte esta noche en Babahoyo, Quevedo, Ventanas y Santo Domingo.",
-      "recomendacion": "Salir y circular con precaución, prever demoras entre Daule, Colimes, Balzar, Quevedo y Babahoyo, evitar las vías Alóag–Santo Domingo y Montalvo–Balsapamba y no cruzar tramos con agua."
+      "situacion": "SNGR (corte 24 nov, 07:00): desbordados el río Daule (Colimes), estero El Cañal y río Jaboncillo (Daule), estero San Juan (Balzar), ríos Vinces, Salitre y Pula (Salitre), Pula y estero Guabito (Palestina); en Los Ríos, Caracol, La Clementina y Chilintomo (Babahoyo), Macul (Vinces), Salampe, Pompeya y Jatuví (Urdaneta), Calope y Chipe (Quinsaloma), Tigrera y estero La Esmeralda (Montalvo) y río Mocache. La inundación en Babahoyo llegó a la vía Babahoyo–Quevedo. Alóag–Santo Domingo cerrada en el km 83 y Montalvo–Balsapamba cerrada. INAMHI: hoy lluvia fuerte entre las 07:00 y las 19:00 en Balzar, El Empalme, Palestina, Quevedo, Buena Fe, Valencia, Ventanas y Santo Domingo; vías Santo Domingo–Quevedo y Buena Fe–Quevedo en monitoreo.",
+      "recomendacion": "Salir y circular con precaución, prever demoras entre Daule, Colimes, Balzar, Quevedo y Babahoyo y en la vía Babahoyo–Quevedo, evitar las vías Alóag–Santo Domingo y Montalvo–Balsapamba y no cruzar tramos con agua."
     }
   ],
   "desbordes": [
@@ -235,8 +235,8 @@
       "lat": -1.79,
       "lon": -79.29,
       "lugar": "Montalvo (Montalvo)",
-      "detalle": "Ríos Tigrera y Las Baslas y estero La Esmeralda desbordados; FF. AA. rescataron a 6 personas por el desborde del río Cristal (ubicación de la cabecera cantonal)",
-      "fuente": "SNGR, reporte con corte 24 nov 07:00 (Teleamazonas y Radio Centro, 24 nov); Ministerio de Defensa (Teleamazonas, 24 nov, 10:25)"
+      "detalle": "Ríos Tigrera y Las Baslas y estero La Esmeralda desbordados; la crecida del Tigrera destruyó 5 viviendas en Pisagua Alto y FF. AA. rescataron a 6 personas por el desborde del río Cristal (ubicación de la cabecera cantonal)",
+      "fuente": "SNGR, reporte con corte 24 nov 07:00 (Teleamazonas y Radio Centro, 24 nov); Ministerio de Defensa (Teleamazonas, 24 nov, 10:25); El Mercurio, 24 nov, 19:35"
     },
     {
       "lat": -2.37,
@@ -263,8 +263,8 @@
       "lat": -0.96,
       "lon": -80.72,
       "lugar": "Río Burro (Manta)",
-      "detalle": "Ríos Burro y Manta desbordados en la madrugada del 24 nov; barrios 8 de Enero, 5 de Junio, 4 de Noviembre, 16 de Septiembre y Miraflores inundados y familias rescatadas (ubicación aproximada).",
-      "fuente": "SNGR, reporte con corte 24 nov 07:00 (Teleamazonas y Radio Centro, 24 nov); Primicias, 24 nov, 09:18"
+      "detalle": "Ríos Burro y Manta desbordados en la madrugada del 24 nov; al menos 8 barrios inundados, agua de unos 2 m en el 4 de Noviembre y evacuaciones en botes (ubicación aproximada).",
+      "fuente": "SNGR, reporte con corte 24 nov 07:00 (Teleamazonas y Radio Centro, 24 nov); Primicias, 24 nov, 09:18; El Mercurio, 24 nov, 19:35"
     }
   ],
   "inundaciones": [
@@ -272,8 +272,8 @@
       "lat": -2.189,
       "lon": -79.879,
       "lugar": "Malecón Simón Bolívar, Loja y Colón, y Puerto Santa Ana (Guayaquil)",
-      "detalle": "Mañana del 24 nov: acumulación de agua con la pleamar de 4,42 m (06:26); también Colón e Ismael Pérez Pazmiño. Ya pasó el 23 nov (ubicación aproximada).",
-      "fuente": "Segura EP y ECU 911 (Extra 08:54, Metro Ecuador 07:54 y El Comercio 09:44, 24 nov)"
+      "detalle": "24 nov: acumulación de agua con las pleamares de 4,42 m (06:26) y 4,48 m (19:12); también Colón e Ismael Pérez Pazmiño y Lorenzo de Garaicoa y 10 de Agosto. Con el aguaje (25-28 nov) puede repetirse (ubicación aproximada).",
+      "fuente": "Segura EP y ECU 911 (Extra, Metro Ecuador y El Comercio, 24 nov); El Universo, 24 nov, 20:12"
     },
     {
       "lat": -2.145,
@@ -299,44 +299,44 @@
     {
       "lat": -2.2,
       "lon": -79.912,
-      "lugar": "Suburbio: Capitán Nájera con calle 32 y con Assad Bucaram (Guayaquil)",
-      "detalle": "Mañana del 24 nov: acumulación de agua con la marea alta; alcantarillas taponadas por basura (ubicación aproximada).",
-      "fuente": "Segura EP y ECU 911 (Extra 08:54, Metro Ecuador 07:54 y El Comercio 09:44, 24 nov); Radio Centro, 24 nov, 10:59"
+      "lugar": "Suburbio: Capitán Nájera con calle 32 y con Assad Bucaram, Otavalo y Sucre (Guayaquil)",
+      "detalle": "24 nov: acumulación de agua con la marea alta; peatones caminando entre el agua y alcantarillas taponadas por basura (ubicación aproximada).",
+      "fuente": "Segura EP y ECU 911 (Teleamazonas 08:38, El Comercio 09:44 y Extra 21:31, 24 nov)"
     },
     {
-      "lat": -2.24,
-      "lon": -79.893,
-      "lugar": "Av. 25 de Julio, sur (Guayaquil)",
-      "detalle": "23 nov: agua en la calzada en la av. 25 de Julio y calle Puyo, y C50C, y a la altura del IESS Valdivia; congestión con la lluvia del mediodía (ubicación aproximada).",
-      "fuente": "ATM y Segura EP (Metro Ecuador, El Universo y El Comercio, 23 nov, 13:10-13:36)"
+      "lat": -2.165,
+      "lon": -79.888,
+      "lugar": "Av. Pedro Menéndez Gilbert (Guayaquil)",
+      "detalle": "24 nov: agua en la calzada con la marea alta que dificultó el paso de vehículos (ubicación aproximada).",
+      "fuente": "El Universo, 24 nov, 20:12"
     },
     {
-      "lat": -2.228,
-      "lon": -79.922,
-      "lugar": "Vía Perimetral, Isla Trinitaria (Guayaquil)",
-      "detalle": "23 nov: agua en la calzada y lluvia intensa a la altura del primer puente; también calles de Isla Trinitaria y Cisne 2 con la marea alta (ubicación aproximada).",
-      "fuente": "ATM (Metro Ecuador y El Universo, 23 nov, 13:10-13:36); Segura EP (Extra, 23 nov, 11:04)"
+      "lat": -2.213,
+      "lon": -79.915,
+      "lugar": "Cisne 2: puente de la G y sector La Pista (Guayaquil)",
+      "detalle": "24 nov: acumulación de agua con la marea alta (ubicación aproximada).",
+      "fuente": "El Universo, 24 nov, 20:12"
     },
     {
       "lat": -2.1355,
       "lon": -79.863,
       "lugar": "Entre Ríos, La Puntilla (Samborondón)",
-      "detalle": "Mañana del 24 nov: anegaciones en varias vías de la urbanización con la pleamar de 4,42 m (06:26); tránsito lento en la av. Samborondón km 5 (ubicación aproximada).",
+      "detalle": "24 nov: anegaciones en varias vías de la urbanización con la pleamar de 4,42 m (06:26); tránsito lento en la av. Samborondón km 5. Con el aguaje (25-28 nov) puede repetirse (ubicación aproximada).",
       "fuente": "Última Hora Ecuador y ECU 911 Samborondón (citados por El Comercio, 24 nov, 09:44)"
     },
     {
       "lat": -2.165,
       "lon": -79.828,
       "lugar": "El Recreo (Durán)",
-      "detalle": "Último reporte de calles anegadas: segunda etapa bajo el agua tras la tormenta del 13 nov. La SNGR mantiene un canal desbordado en Durán (corte 24 nov, 07:00); sin calles anegadas reportadas hasta la tarde del 24. INAMHI prevé lluvia fuerte en Durán esta noche.",
-      "fuente": "Radiocentro, 13 nov 2026; SNGR (Teleamazonas, 24 nov); sin reportes nuevos al 24 nov, 18:15"
+      "detalle": "Último reporte de calles anegadas: segunda etapa bajo el agua tras la tormenta del 13 nov. La SNGR mantiene un canal desbordado en Durán (corte 24 nov, 07:00); sin calles anegadas reportadas hasta la mañana del 25.",
+      "fuente": "Radiocentro, 13 nov 2026; SNGR (Teleamazonas, 24 nov); sin reportes nuevos al 25 nov, 06:15"
     },
     {
       "lat": -0.955,
       "lon": -80.725,
       "lugar": "Barrios 8 de Enero, 5 de Junio y Miraflores (Manta)",
-      "detalle": "Madrugada del 24 nov: calles y casas inundadas por el desborde de los ríos Burro y Manta; también 4 de Noviembre y 16 de Septiembre (ubicación aproximada).",
-      "fuente": "Bomberos y Municipio de Manta (Primicias, 24 nov, 09:18)"
+      "detalle": "Madrugada del 24 nov: calles y casas inundadas por el desborde de los ríos Burro y Manta; en el 4 de Noviembre el agua llegó a unos 2 m (ubicación aproximada).",
+      "fuente": "Bomberos y Municipio de Manta (Primicias, 24 nov, 09:18; El Mercurio, 24 nov, 19:35)"
     }
   ],
   "vias": [
@@ -344,7 +344,7 @@
       "lat": -1.62,
       "lon": -80.8,
       "lugar": "Cinco Cerros, Salango, vía Puerto López–Manglaralto (Puerto López)",
-      "detalle": "Vía cerrada por deslizamiento de tierra desde la mañana del 24 nov; maquinaria en limpieza, sin hora de reapertura (ubicación aproximada).",
+      "detalle": "Vía cerrada por deslizamiento de tierra desde la mañana del 24 nov; maquinaria en limpieza, sin reapertura reportada (ubicación aproximada).",
       "fuente": "ECU 911 (El Diario, 24 nov, 10:13; El Universo, 11:18)"
     },
     {
@@ -372,16 +372,9 @@
       "lat": -1.75,
       "lon": -79.2,
       "lugar": "Pisagua Alto, vía E-491 Montalvo–Balsapamba (Montalvo)",
-      "detalle": "Vía cerrada por desborde de un río y deslizamientos desde la madrugada del 23 nov, sin reapertura confirmada. Alternas: livianos Caluma–Telimbela–Guaranda; pesados Ventanas–Caluma–La Piedra–Guaranda o Riobamba–Pallatanga–Bucay (ubicación aproximada).",
-      "fuente": "ECU 911 (El Comercio y Extra, 23 nov; sin reapertura al 24 nov)"
-    },
-    {
-      "lat": -0.98,
-      "lon": -79.48,
-      "lugar": "Recinto La Victoria, sector El Desquite (Quevedo)",
-      "detalle": "Deslizamiento de tierra sobre una vivienda en la madrugada del 23 nov; 2 fallecidos (ubicación aproximada).",
-      "fuente": "ECU 911 y Bomberos de Quevedo (El Universo, 23 nov, 11:09)"
+      "detalle": "Vía cerrada por desborde del río Tigrera y deslizamientos desde la madrugada del 23 nov; el 24 se informó de 5 viviendas destruidas en Pisagua Alto, sin reapertura confirmada. Alternas: livianos Caluma–Telimbela–Guaranda; pesados Ventanas–Caluma–La Piedra–Guaranda o Riobamba–Pallatanga–Bucay (ubicación aproximada).",
+      "fuente": "ECU 911 (El Comercio y Extra, 23 nov); El Mercurio, 24 nov, 19:35"
     }
   ],
-  "fuentes": "INAMHI (advertencias N.º 89 y 90 vía El Universo y El Diario, 24 nov), SNGR (corte 24 nov 07:00 vía Teleamazonas y Radio Centro), Segura EP, ECU 911 y COE cantonal (Extra, Metro Ecuador, El Comercio, Primicias, Vistazo y Radio Centro, 24 nov), ECU 911 (El Diario, El Universo, Extra, El Comercio, 23-24 nov), Primicias (Manta), Teleamazonas (Montalvo), Ministerio de Educación (Extra), INOCAR y CN-ERFEN (mareas)"
+  "fuentes": "INAMHI (advertencia N.º 90 vía El Comercio, El Diario y Primicias, 24 nov), SNGR (corte 24 nov 07:00 vía Teleamazonas y Radio Centro; balance vía El Mercurio), Segura EP, ECU 911 y COE cantonal (Extra, Metro Ecuador, El Comercio, El Universo, Teleamazonas y Primicias, 24 nov), ECU 911 (El Diario, El Universo, Extra, 23-24 nov), Ministerio de Educación (Extra y Primicias, 24 nov), INOCAR y CN-ERFEN (mareas)"
 }
