@@ -1,32 +1,32 @@
 {
-  "actualizado": "2026-11-26T06:15:00-05:00",
-  "actualizado_texto": "jueves 26 nov 2026, 06:15",
+  "actualizado": "2026-11-26T18:15:00-05:00",
+  "actualizado_texto": "jueves 26 nov 2026, 18:15",
   "alertas": [
     {
-      "tipo": "aviso",
-      "texto": "INAMHI, advertencia N.º 90 hasta las 22:00 del viernes 27: lluvias fuertes y tormentas en la Costa; alerta por tormentas en Guayas hasta las 07:00 de hoy. Clases no presenciales hoy."
+      "tipo": "marea",
+      "texto": "Aguaje hasta el 28 nov: pleamar de esta noche 4,47 m a las 20:49; mañana 4,21 m a las 08:55 y 4,41 m a las 21:36. Evitar zonas bajas y cercanas al río Guayas y al estero Salado unas 2 h antes y después."
+    },
+    {
+      "tipo": "via",
+      "texto": "Esta mañana, con la pleamar de 4,32 m, la ATM restringió la circulación en el Malecón y Roca; agua en 9 de Octubre y Malecón, 10 de Agosto, Benjamín Rosales (Terminal Terrestre) y Pedro Menéndez (Base Naval)."
     },
     {
       "tipo": "inundacion",
-      "texto": "Noche del 25: Segura EP contó 30 puntos con agua a las 19:00 y 41 a las 21:00, sobre todo en Sauces, Alborada, Samanes, Los Ceibos, Bastión Popular, el Suburbio y el centro. El COE pidió no salir de casa."
-    },
-    {
-      "tipo": "marea",
-      "texto": "Aguaje hasta el 28 nov: pleamar de hoy 4,32 m a las 08:07 y 4,47 m a las 20:49; mañana 08:55 y 21:36. Evitar zonas bajas y cercanas al río Guayas y al estero Salado unas 2 h antes y después."
+      "texto": "Noche del 25: Segura EP contó 47 sectores con agua hasta las 23:00, sobre todo en Sauces, Alborada, Samanes, Urdesa, Mapasingue, Kennedy Norte, Los Ceibos, La Floresta, el Suburbio y el centro."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: río Babahoyo desbordado en Tarifa (SNGR, 25 nov); sin calles anegadas reportadas en La Puntilla desde el 24. Durán: sin calles anegadas reportadas."
+      "texto": "Samborondón: sin calles anegadas confirmadas desde el 24 nov; La Puntilla, en alerta por la marea. Durán: sin calles anegadas reportadas; la SNGR (26 nov) no registra desbordes en ninguno de los dos cantones."
     },
     {
       "tipo": "aviso",
-      "texto": "Árboles caídos en Víctor Emilio Estrada y Laureles (Urdesa) y en Rodríguez Bonín y Santa Rita. Emergencia por deslizamiento en el cerro San Eduardo (cooperativa 25 de Julio)."
+      "texto": "INAMHI, advertencia N.º 90 hasta las 22:00 del viernes 27: hoy lluvia normal a moderada en Guayaquil, Durán y Samborondón, más probable al final de la tarde y la noche."
     }
   ],
   "marea": {
-    "titulo": "Aguaje del 25 al 28 nov · pleamar de hoy 4,47 m a las 20:49",
+    "titulo": "Aguaje hasta el 28 nov · pleamar de esta noche 4,47 m a las 20:49",
     "altura": "4,47 m",
-    "texto": "pleamares en Guayaquil-río (INOCAR): hoy, jueves 26 nov, 4,32 m a las 08:07 y 4,47 m a las 20:49 (bajamar 0,47 m a las 15:25); viernes 27: 4,21 m a las 08:55 y 4,41 m a las 21:36; sábado 28: ~09:40 y ~22:20 (estimadas). Anoche, la pleamar de 4,50 m (20:01) coincidió con la lluvia: Segura EP contó 41 puntos con agua a las 21:00 en Guayaquil. Aguaje hasta el 28 nov",
+    "texto": "pleamares en Guayaquil-río (INOCAR): hoy, jueves 26 nov, 4,32 m a las 08:07 y 4,47 m a las 20:49 (bajamar 0,47 m a las 15:25); viernes 27: 4,21 m a las 08:55 y 4,41 m a las 21:36; sábado 28: 4,11 m a las 09:44 y 4,36 m a las 22:24. Esta mañana, con la pleamar de 4,32 m, hubo agua en el Malecón y el centro de Guayaquil; anoche, con lluvia y pleamar de 4,50 m, Segura EP contó 47 sectores con agua hasta las 23:00. Aguaje hasta el 28 nov",
     "horas": [
       {
         "dia": "Jue 26",
@@ -38,31 +38,81 @@
       },
       {
         "dia": "Sáb 28",
-        "hora": "~09:40 y ~22:20"
+        "hora": "09:44 y 22:24"
       }
     ],
-    "nota": "Horas del jueves y viernes: tabla de mareas predichas del INOCAR (Guayaquil-río). Sábado estimadas (~). Aguaje del 25 al 28 nov (INOCAR). Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas de la tabla de mareas predichas del INOCAR (Guayaquil-río), vía Vistazo y El Comercio (26 nov). Aguaje hasta el 28 nov. El nivel observado puede ser mayor por lluvia y caudal del río. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
-      "lat": -2.1935,
-      "lon": -79.8805,
-      "lugar": "Malecón Simón Bolívar y Sucre",
+      "lat": -2.1915,
+      "lon": -79.8795,
+      "lugar": "Malecón Simón Bolívar y Roca",
       "canton": "Guayaquil",
       "nivel": "cerrado",
-      "detalle": "Cierre parcial del Malecón por el agua de la marea alta; también hubo agua en Las Peñas (ubicación aproximada).",
-      "fuente": "ATM y Segura EP (Vistazo 13:07 y El Comercio 08:40, 25 nov 2026)",
-      "fecha": "25 nov, mañana"
+      "detalle": "Circulación vehicular restringida por acumulación de agua en la calzada con la marea alta (pleamar de 4,32 m de las 08:07) (ubicación aproximada).",
+      "fuente": "ATM y Segura EP (El Comercio 09:16 y Metro Ecuador 06:54, 26 nov 2026)",
+      "fecha": "26 nov, mañana"
     },
     {
-      "lat": -2.199,
-      "lon": -79.8915,
-      "lugar": "10 de Agosto y Gral. Eugenio Garzón López",
+      "lat": -2.1925,
+      "lon": -79.8802,
+      "lugar": "Av. 9 de Octubre y Malecón",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la pleamar de 4,40 m de las 07:17 y la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra, El Comercio 08:40 y Vistazo 13:07, 25 nov 2026)",
-      "fecha": "25 nov, mañana"
+      "detalle": "Presencia de agua por marea alta; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP (Vistazo 07:00 y El Comercio 09:16, 26 nov 2026)",
+      "fecha": "26 nov, mañana"
+    },
+    {
+      "lat": -2.2005,
+      "lon": -79.9035,
+      "lugar": "10 de Agosto y la Décima",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Presencia de agua con la marea alta; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (El Comercio, 26 nov 2026, 09:16)",
+      "fecha": "26 nov, mañana"
+    },
+    {
+      "lat": -2.2055,
+      "lon": -79.911,
+      "lugar": "Calle 19 y Alcedo",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Presencia de agua con la marea alta; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (El Comercio, 26 nov 2026, 09:16)",
+      "fecha": "26 nov, mañana"
+    },
+    {
+      "lat": -2.2025,
+      "lon": -79.91,
+      "lugar": "Calle 18 y Cristóbal Colón",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Presencia de agua con la marea alta; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (El Comercio, 26 nov 2026, 09:16)",
+      "fecha": "26 nov, mañana"
+    },
+    {
+      "lat": -2.168,
+      "lon": -79.9065,
+      "lugar": "Las Monjas y Urdesa Norte (calle 14)",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; también en V. E. Estrada y Jiguas; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (Extra, 26 nov 2026, 06:44)",
+      "fecha": "25 nov, noche"
+    },
+    {
+      "lat": -2.2,
+      "lon": -79.915,
+      "lugar": "Calle 29 y Capitán Nájera",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE (Extra, 26 nov 2026, 06:44)",
+      "fecha": "25 nov, noche"
     },
     {
       "lat": -2.1945,
@@ -72,17 +122,7 @@
       "nivel": "acumulacion",
       "detalle": "Acumulación de agua en la mañana (pleamar de 4,40 m) y otra vez en la noche del 25 con la lluvia y la pleamar de 4,50 m; no se informó la altura (ubicación aproximada).",
       "fuente": "Segura EP / C5GYE (Extra, Vistazo y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, mañana y noche"
-    },
-    {
-      "lat": -2.213,
-      "lon": -79.932,
-      "lugar": "Rosendo Avilés y calle 50 (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la pleamar de 4,40 m de las 07:17 y la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra, El Comercio 08:40 y Vistazo 13:07, 25 nov 2026)",
-      "fecha": "25 nov, mañana"
+      "fecha": "25 nov, noche"
     },
     {
       "lat": -2.199,
@@ -92,7 +132,7 @@
       "nivel": "acumulacion",
       "detalle": "Acumulación de agua con la marea alta y la lluvia en la mañana y la noche del 25; no se informó la altura (ubicación aproximada). También el 24 nov.",
       "fuente": "Segura EP / C5GYE (Extra, Vistazo y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, mañana y noche"
+      "fecha": "25 nov, noche"
     },
     {
       "lat": -2.212,
@@ -105,44 +145,24 @@
       "fecha": "25 nov, mañana y noche"
     },
     {
-      "lat": -2.118,
-      "lon": -79.903,
-      "lugar": "Guayacanes (8.º pasaje 20B NE y 3.er pasaje 3 NE)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la pleamar de 4,40 m de las 07:17 y la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra y Vistazo, 25 nov 2026)",
-      "fecha": "25 nov, mañana"
-    },
-    {
       "lat": -2.145,
       "lon": -79.89,
       "lugar": "Av. Benjamín Rosales (frente a la Terminal Terrestre)",
       "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Agua con la marea alta desde la noche del 24 hasta la mañana del 25; alta carga vehicular hacia el Puente de la Unidad Nacional (ubicación aproximada).",
-      "fuente": "Qué Noticias y Vistazo, 25 nov; Segura EP (Metro Ecuador, 25 nov, 19:34)",
-      "fecha": "25 nov, mañana y noche"
+      "nivel": "alto",
+      "detalle": "Mañana del 26 nov: acumulación con la marea alta frente a la Terminal Terrestre, con alto flujo vehicular en ambos sentidos; la ATM desplegó agentes. También el 25 nov (ubicación aproximada).",
+      "fuente": "Segura EP y ATM (El Comercio, 26 nov 2026, 09:16)",
+      "fecha": "26 nov, mañana"
     },
     {
       "lat": -2.165,
       "lon": -79.888,
-      "lugar": "Av. Pedro Menéndez Gilbert",
+      "lugar": "Av. Pedro Menéndez Gilbert (cerca de la Base Naval)",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Agua en la calzada con la marea alta la noche del 24; volvió a reportarse con agua la noche del 25 (ubicación aproximada).",
-      "fuente": "El Universo, 24 nov; Segura EP (Metro Ecuador y El Universo, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.1945,
-      "lon": -79.889,
-      "lugar": "Lorenzo de Garaicoa y 10 de Agosto",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la marea alta (ubicación aproximada).",
-      "fuente": "El Universo, 24 nov, 20:12; Qué Noticias, 25 nov 2026",
-      "fecha": "24 nov, noche"
+      "detalle": "Acumulación por marea alta en la mañana del 26; también con agua en la noche del 25 (ubicación aproximada).",
+      "fuente": "Segura EP (El Comercio, 26 nov 2026, 09:16); Segura EP (Extra, 26 nov, 06:44)",
+      "fecha": "26 nov, mañana"
     },
     {
       "lat": -2.214,
@@ -593,8 +613,8 @@
       "lon": -79.828,
       "lugar": "El Recreo, etapas 1 a 4",
       "canton": "Durán",
-      "detalle": "Se inunda con frecuencia. Último reporte: calles de la segunda etapa bajo el agua (13 nov); antes, agua sobre las aceras en las etapas 1 a 4 (19 oct). La SNGR reportó un canal desbordado en Durán hasta el 24 nov; el corte del 25 nov (07:00) ya no lo incluye. Sin calles anegadas reportadas el 25 ni en la noche del 25 al 26.",
-      "fuente": "SNGR (Teleamazonas, 24 nov; El Universo, 25 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
+      "detalle": "Se inunda con frecuencia. Último reporte: calles de la segunda etapa bajo el agua (13 nov); antes, agua sobre las aceras en las etapas 1 a 4 (19 oct). La SNGR reportó un canal desbordado en Durán hasta el 24 nov; los cortes del 25 y 26 nov ya no lo incluyen. Sin calles anegadas reportadas el 25 ni el 26.",
+      "fuente": "SNGR (Teleamazonas, 24 nov; El Comercio, 26 nov); Radiocentro, 13 nov; Expreso y El Universo, 19 oct"
     },
     {
       "lat": -2.178,
@@ -637,5 +657,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP / C5GYE, ATM, ECU 911 y COE cantonal (El Comercio, El Universo y Metro Ecuador, 25 nov, noche; Extra y Vistazo, 25 nov, mañana), SNGR (corte 25 nov vía El Universo y Teleamazonas), INAMHI (advertencia N.º 90 vía Extra y Primicias), INOCAR (tabla de mareas Guayaquil-río), Municipio de Samborondón"
+  "fuentes": "Segura EP / C5GYE y ATM (Extra 06:44, El Comercio 09:16, Vistazo 07:00 y Metro Ecuador 06:54, 26 nov), ECU 911 (El Universo, 25 nov, noche), SNGR (corte 26 nov 07:01 vía El Comercio), INAMHI (advertencia N.º 90 y pronóstico por cantón vía Qué Noticias y El Universo, 26 nov), INOCAR (tabla de mareas Guayaquil-río vía Vistazo, 26 nov), Municipio de Samborondón"
 }
