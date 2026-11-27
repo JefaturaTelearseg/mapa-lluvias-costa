@@ -1,37 +1,33 @@
 {
-  "actualizado": "2026-11-26T18:15:00-05:00",
-  "actualizado_texto": "jueves 26 nov 2026, 18:15",
+  "actualizado": "2026-11-27T06:20:00-05:00",
+  "actualizado_texto": "viernes 27 nov 2026, 06:20",
   "alertas": [
     {
       "tipo": "marea",
-      "texto": "Aguaje hasta el 28 nov: pleamar de esta noche 4,47 m a las 20:49; mañana 4,21 m a las 08:55 y 4,41 m a las 21:36. Evitar zonas bajas y cercanas al río Guayas y al estero Salado unas 2 h antes y después."
+      "texto": "Aguaje hasta el sábado 28: pleamar hoy 4,21 m a las 08:55 y 4,41 m a las 21:36; sábado 4,11 m a las 09:44 y 4,36 m a las 22:24. Evitar zonas bajas junto al río Guayas, el Daule y el estero Salado unas 2 h antes y después."
     },
     {
-      "tipo": "via",
-      "texto": "Esta mañana, con la pleamar de 4,32 m, la ATM restringió la circulación en el Malecón y Roca; agua en 9 de Octubre y Malecón, 10 de Agosto, Benjamín Rosales (Terminal Terrestre) y Pedro Menéndez (Base Naval)."
+      "tipo": "intransitable",
+      "texto": "Noche del 26: calzada inundada detrás de la Terminal Terrestre, sin paso y con autos atrapados; agua a la rodilla en Barrio Cuba y junto a la Universidad Salesiana."
     },
     {
       "tipo": "inundacion",
-      "texto": "Noche del 25: Segura EP contó 47 sectores con agua hasta las 23:00, sobre todo en Sauces, Alborada, Samanes, Urdesa, Mapasingue, Kennedy Norte, Los Ceibos, La Floresta, el Suburbio y el centro."
+      "texto": "Segura EP (20:30 del 26): agua en el Malecón, Santa Elena y 10 de Agosto, la Décima y Bolivia, El Oro y la 44, El Cisne y Guasmo Norte; también Av. Las Monjas. Congestión en el puente de la Unidad Nacional hacia Guayaquil."
     },
     {
       "tipo": "aviso",
-      "texto": "Samborondón: sin calles anegadas confirmadas desde el 24 nov; La Puntilla, en alerta por la marea. Durán: sin calles anegadas reportadas; la SNGR (26 nov) no registra desbordes en ninguno de los dos cantones."
+      "texto": "Samborondón: la marea alta del 26 inundó ciudadelas junto al río Daule, según usuarios (sin calles precisadas). Durán: sin calles anegadas reportadas."
     },
     {
       "tipo": "aviso",
-      "texto": "INAMHI, advertencia N.º 90 hasta las 22:00 del viernes 27: hoy lluvia normal a moderada en Guayaquil, Durán y Samborondón, más probable al final de la tarde y la noche."
+      "texto": "INAMHI, advertencia N.º 90 hasta las 22:00 de hoy; anoche marcó énfasis de lluvia y tormentas en Guayaquil y Samborondón."
     }
   ],
   "marea": {
-    "titulo": "Aguaje hasta el 28 nov · pleamar de esta noche 4,47 m a las 20:49",
-    "altura": "4,47 m",
-    "texto": "pleamares en Guayaquil-río (INOCAR): hoy, jueves 26 nov, 4,32 m a las 08:07 y 4,47 m a las 20:49 (bajamar 0,47 m a las 15:25); viernes 27: 4,21 m a las 08:55 y 4,41 m a las 21:36; sábado 28: 4,11 m a las 09:44 y 4,36 m a las 22:24. Esta mañana, con la pleamar de 4,32 m, hubo agua en el Malecón y el centro de Guayaquil; anoche, con lluvia y pleamar de 4,50 m, Segura EP contó 47 sectores con agua hasta las 23:00. Aguaje hasta el 28 nov",
+    "titulo": "Aguaje hasta el 28 nov · pleamar de esta noche 4,41 m a las 21:36",
+    "altura": "4,41 m",
+    "texto": "pleamares en Guayaquil-río (INOCAR): hoy, viernes 27 nov, 4,21 m a las 08:55 y 4,41 m a las 21:36; sábado 28: 4,11 m a las 09:44 y 4,36 m a las 22:24 (último día de aguaje); domingo 29, horas estimadas. Anoche, con lluvia y pleamar de 4,47 m (20:49), se inundaron la parte posterior de la Terminal Terrestre, Barrio Cuba, el Malecón y sectores del sur de Guayaquil.",
     "horas": [
-      {
-        "dia": "Jue 26",
-        "hora": "08:07 y 20:49"
-      },
       {
         "dia": "Vie 27",
         "hora": "08:55 y 21:36"
@@ -39,9 +35,13 @@
       {
         "dia": "Sáb 28",
         "hora": "09:44 y 22:24"
+      },
+      {
+        "dia": "Dom 29",
+        "hora": "~10:30 y ~23:10"
       }
     ],
-    "nota": "Horas de la tabla de mareas predichas del INOCAR (Guayaquil-río), vía Vistazo y El Comercio (26 nov). Aguaje hasta el 28 nov. El nivel observado puede ser mayor por lluvia y caudal del río. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
+    "nota": "Horas de la tabla de mareas predichas del INOCAR (Guayaquil-río), vía Vistazo, Metro Ecuador y Extra (26 nov); las del domingo 29 (~) son estimadas. Aguaje hasta el 28 nov. El nivel observado puede ser mayor por lluvia y caudal del río. Evitar zonas bajas y esteros unas 2 h antes y después de la pleamar, sobre todo si llueve."
   },
   "puntos": [
     {
@@ -50,9 +50,9 @@
       "lugar": "Malecón Simón Bolívar y Roca",
       "canton": "Guayaquil",
       "nivel": "cerrado",
-      "detalle": "Circulación vehicular restringida por acumulación de agua en la calzada con la marea alta (pleamar de 4,32 m de las 08:07) (ubicación aproximada).",
-      "fuente": "ATM y Segura EP (El Comercio 09:16 y Metro Ecuador 06:54, 26 nov 2026)",
-      "fecha": "26 nov, mañana"
+      "detalle": "Mañana del 26: circulación restringida por agua en la calzada con la marea alta (4,32 m). Noche del 26: nueva acumulación en el Malecón con lluvia y pleamar de 4,47 m (ubicación aproximada).",
+      "fuente": "ATM y Segura EP (El Comercio 09:16, 26 nov); Segura EP C5 (Extra 21:04 y Teleamazonas 21:59, 26 nov)",
+      "fecha": "26 nov, mañana y noche"
     },
     {
       "lat": -2.1925,
@@ -95,66 +95,6 @@
       "fecha": "26 nov, mañana"
     },
     {
-      "lat": -2.168,
-      "lon": -79.9065,
-      "lugar": "Las Monjas y Urdesa Norte (calle 14)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; también en V. E. Estrada y Jiguas; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra, 26 nov 2026, 06:44)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.2,
-      "lon": -79.915,
-      "lugar": "Calle 29 y Capitán Nájera",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra, 26 nov 2026, 06:44)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.1945,
-      "lon": -79.8885,
-      "lugar": "10 de Agosto y Santa Elena",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en la mañana (pleamar de 4,40 m) y otra vez en la noche del 25 con la lluvia y la pleamar de 4,50 m; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra, Vistazo y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.199,
-      "lon": -79.909,
-      "lugar": "Capitán Nájera y Assad Bucaram (Suburbio)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la marea alta y la lluvia en la mañana y la noche del 25; no se informó la altura (ubicación aproximada). También el 24 nov.",
-      "fuente": "Segura EP / C5GYE (Extra, Vistazo y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.212,
-      "lon": -79.917,
-      "lugar": "Puente de la G (El Cisne 2)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua en la mañana del 25 (pleamar de 4,40 m) y otra vez en la noche con la lluvia y la pleamar de 4,50 m; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra y Vistazo, 25 nov; El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, mañana y noche"
-    },
-    {
-      "lat": -2.145,
-      "lon": -79.89,
-      "lugar": "Av. Benjamín Rosales (frente a la Terminal Terrestre)",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Mañana del 26 nov: acumulación con la marea alta frente a la Terminal Terrestre, con alto flujo vehicular en ambos sentidos; la ATM desplegó agentes. También el 25 nov (ubicación aproximada).",
-      "fuente": "Segura EP y ATM (El Comercio, 26 nov 2026, 09:16)",
-      "fecha": "26 nov, mañana"
-    },
-    {
       "lat": -2.165,
       "lon": -79.888,
       "lugar": "Av. Pedro Menéndez Gilbert (cerca de la Base Naval)",
@@ -165,374 +105,104 @@
       "fecha": "26 nov, mañana"
     },
     {
-      "lat": -2.214,
-      "lon": -79.913,
-      "lugar": "Sector La Pista (Cisne 2)",
+      "lat": -2.145,
+      "lon": -79.89,
+      "lugar": "Parte posterior de la Terminal Terrestre y Av. Benjamín Rosales",
       "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la marea alta la noche del 24 y otra vez la noche del 25 (ubicación aproximada).",
-      "fuente": "El Universo, 24 nov, 20:12; Segura EP (El Comercio, 25 nov, 22:13)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.07,
-      "lon": -79.95,
-      "lugar": "Vía a Daule, km 16,5",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026); repetido en la noche (Metro Ecuador 19:34 y El Comercio 22:13)",
-      "fecha": "25 nov, tarde y noche"
-    },
-    {
-      "lat": -2.163,
-      "lon": -79.935,
-      "lugar": "Av. del Bombero, sentido av. Carlos Julio Arosemena",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026)",
-      "fecha": "25 nov, tarde"
-    },
-    {
-      "lat": -2.1645,
-      "lon": -79.9095,
-      "lugar": "Av. Costanera y av. Víctor Emilio Estrada (Urdesa)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026)",
-      "fecha": "25 nov, tarde"
-    },
-    {
-      "lat": -2.164,
-      "lon": -79.9035,
-      "lugar": "Av. Víctor Emilio Estrada e Ilanes (Urdesa)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026)",
-      "fecha": "25 nov, tarde"
-    },
-    {
-      "lat": -2.155,
-      "lon": -79.935,
-      "lugar": "Mapasingue Oeste",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026); repetido en la noche (Metro Ecuador 19:34 y El Comercio 22:13)",
-      "fecha": "25 nov, tarde y noche"
+      "nivel": "intransitable",
+      "detalle": "Calzada inundada por completo con la marea alta; sin paso vehicular hacia la autopista y el aeropuerto y varios autos atrapados, según ciudadanos. El río se desbordó en el sector (ubicación aproximada).",
+      "fuente": "Teleamazonas 21:59 y El Universo 22:40, 26 nov 2026; Extra 21:04",
+      "fecha": "26 nov, noche"
     },
     {
       "lat": -2.152,
-      "lon": -79.925,
-      "lugar": "Mapasingue Este, av. 4.ª y Alianza",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026); repetido en la noche (Metro Ecuador 19:34 y El Comercio 22:13)",
-      "fecha": "25 nov, tarde y noche"
-    },
-    {
-      "lat": -2.15,
-      "lon": -79.918,
-      "lugar": "Av. Las Aguas",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026); repetido en la noche (Metro Ecuador 19:34 y El Comercio 22:13)",
-      "fecha": "25 nov, tarde y noche"
-    },
-    {
-      "lat": -2.16,
-      "lon": -79.895,
-      "lugar": "Kennedy Norte, 7.ª etapa",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura del agua ni cierres (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (Extra 16:19, Metro Ecuador 16:20 y El Comercio 16:34, 25 nov 2026); repetido en la noche (Metro Ecuador 19:34 y El Comercio 22:13)",
-      "fecha": "25 nov, tarde y noche"
-    },
-    {
-      "lat": -2.127,
-      "lon": -79.905,
-      "lugar": "Sauces 6",
+      "lon": -79.873,
+      "lugar": "Puente de la Unidad Nacional, sentido Samborondón–Guayaquil",
       "canton": "Guayaquil",
       "nivel": "alto",
-      "detalle": "Acumulación de agua con la lluvia; una foto mostró el agua cubriendo parte de las llantas de los vehículos (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "detalle": "Congestión vehicular por la acumulación de agua en la bajada hacia la Terminal Terrestre (ubicación aproximada).",
+      "fuente": "ECU 911 (El Universo 22:40 y Vistazo 23:18, 26 nov 2026)",
+      "fecha": "26 nov, noche"
     },
     {
-      "lat": -2.113,
-      "lon": -79.911,
-      "lugar": "Sauces 9",
+      "lat": -2.228,
+      "lon": -79.887,
+      "lugar": "Barrio Cuba",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Calzadas con agua hasta la rodilla de los moradores (ubicación aproximada).",
+      "fuente": "Bomberos de Guayaquil (El Universo, 26 nov 2026, 22:40)",
+      "fecha": "26 nov, noche"
+    },
+    {
+      "lat": -2.221,
+      "lon": -79.89,
+      "lugar": "Exteriores de la Universidad Politécnica Salesiana",
+      "canton": "Guayaquil",
+      "nivel": "intransitable",
+      "detalle": "Agua casi hasta las rodillas y vehículos con las llantas parcialmente sumergidas; estudiantes atrapados (ubicación aproximada).",
+      "fuente": "Extra 21:22 y Teleamazonas 21:59, 26 nov 2026",
+      "fecha": "26 nov, noche"
+    },
+    {
+      "lat": -2.1945,
+      "lon": -79.8885,
+      "lugar": "10 de Agosto y Santa Elena",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "detalle": "Acumulación de agua con la lluvia y la pleamar; no se informó la altura (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE, 20:30 (Extra 21:04, Teleamazonas 21:59 y Vistazo 23:18, 26 nov 2026)",
+      "fecha": "26 nov, noche"
     },
     {
-      "lat": -2.122,
-      "lon": -79.896,
-      "lugar": "Sauces 5",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio, El Universo y Metro Ecuador, 25 nov, noche)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.133,
-      "lon": -79.903,
-      "lugar": "Alborada 6.ª y 7.ª etapa",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.129,
-      "lon": -79.91,
-      "lugar": "Alborada 13.ª etapa",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio, El Universo y Metro Ecuador, 25 nov, noche)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.105,
-      "lon": -79.912,
-      "lugar": "Samanes 1 y 2",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.099,
+      "lat": -2.206,
       "lon": -79.902,
-      "lugar": "Samanes 6",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.121,
-      "lon": -79.923,
-      "lugar": "San Felipe",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.17,
-      "lon": -79.952,
-      "lugar": "Los Ceibos",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Calles con acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.122,
-      "lon": -79.899,
-      "lugar": "Av. José María Roura, entre Sauces 2 y Sauces 7",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Agua en la calzada vista por las cámaras del ECU 911 (ubicación aproximada).",
-      "fuente": "ECU 911 (El Universo, 25 nov 2026, 20:18)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.128,
-      "lon": -79.897,
-      "lugar": "José Luis Tamayo e Isidro Ayora",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Agua en la intersección vista por las cámaras del ECU 911 (ubicación aproximada).",
-      "fuente": "ECU 911 (El Universo, 25 nov 2026, 20:18)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.153,
-      "lon": -79.893,
-      "lugar": "Av. Francisco de Orellana y Miguel H. Alcívar",
-      "canton": "Guayaquil",
-      "nivel": "alto",
-      "detalle": "Agua en la avenida; agentes de la ATM regularon el tránsito (ubicación aproximada).",
-      "fuente": "Segura EP y ATM (El Universo 20:18 y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.14,
-      "lon": -79.913,
-      "lugar": "Av. Juan Tanca Marengo",
+      "lugar": "Calle 10 (la Décima) y Bolivia",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
       "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "fuente": "Segura EP / C5GYE, 20:30 (Extra 21:04, Teleamazonas 21:59 y Vistazo 23:18, 26 nov 2026)",
+      "fecha": "26 nov, noche"
     },
     {
-      "lat": -2.135,
-      "lon": -79.917,
-      "lugar": "Av. Benjamín Carrión",
+      "lat": -2.208,
+      "lon": -79.925,
+      "lugar": "El Oro y calle 44",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
       "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "fuente": "Segura EP / C5GYE, 20:30 (Extra 21:04, Teleamazonas 21:59 y Vistazo 23:18, 26 nov 2026)",
+      "fecha": "26 nov, noche"
     },
     {
-      "lat": -2.118,
-      "lon": -79.903,
-      "lugar": "Av. Guillermo Pareja",
+      "lat": -2.214,
+      "lon": -79.921,
+      "lugar": "El Cisne, 2.º callejón 21 SO y calle 40 SO",
+      "canton": "Guayaquil",
+      "nivel": "acumulacion",
+      "detalle": "Acumulación de agua; calles del Suburbio con agua según Bomberos (ubicación aproximada).",
+      "fuente": "Segura EP / C5GYE, 20:30 (Extra 21:04, Teleamazonas 21:59 y Vistazo 23:18, 26 nov 2026); Bomberos (El Universo 22:40)",
+      "fecha": "26 nov, noche"
+    },
+    {
+      "lat": -2.245,
+      "lon": -79.885,
+      "lugar": "Guasmo Norte, cooperativa 5 de Agosto",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
       "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "fuente": "Segura EP / C5GYE, 20:30 (Extra 21:04, Teleamazonas 21:59 y Vistazo 23:18, 26 nov 2026)",
+      "fecha": "26 nov, noche"
     },
     {
-      "lat": -2.104,
-      "lon": -79.922,
-      "lugar": "Av. Manuel Gómez Lince",
+      "lat": -2.167,
+      "lon": -79.907,
+      "lugar": "Av. Las Monjas: con Costanera y bajada del puente",
       "canton": "Guayaquil",
       "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.168,
-      "lon": -79.896,
-      "lugar": "Av. Plaza Dañín",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio 22:13, El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.06,
-      "lon": -79.92,
-      "lugar": "Av. Narcisa de Jesús, altura de Los Vergeles",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP / COE (Metro Ecuador, 25 nov 2026, 19:34)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.095,
-      "lon": -79.945,
-      "lugar": "Vía a Daule, km 12 (parque California)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo 20:18 y Metro Ecuador 19:34, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.085,
-      "lon": -79.948,
-      "lugar": "Bastión Popular",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia; también en el bloque 2 de Unión de Bananeros (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo 20:18 y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.205,
-      "lon": -79.93,
-      "lugar": "Batallón del Suburbio (calle 45 y la Ñ)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia y la pleamar (ubicación aproximada).",
-      "fuente": "Segura EP / C5GYE (El Comercio, 25 nov 2026, 22:13)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.207,
-      "lon": -79.912,
-      "lugar": "Calle 28 y la G",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia y la pleamar (ubicación aproximada).",
-      "fuente": "Segura EP / COE (Metro Ecuador, 25 nov 2026, 19:34)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.198,
-      "lon": -79.9,
-      "lugar": "Calle 11 y Sucre",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua con la lluvia y la pleamar (ubicación aproximada).",
-      "fuente": "Segura EP / COE (Metro Ecuador, 25 nov 2026, 19:34)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.199,
-      "lon": -79.888,
-      "lugar": "Quito y San Martín",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo 20:18 y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.205,
-      "lon": -79.894,
-      "lugar": "Guaranda y Venezuela",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo 20:18 y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.172,
-      "lon": -79.886,
-      "lugar": "Atarazana",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio, El Universo y Metro Ecuador, 25 nov, noche)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.232,
-      "lon": -79.9,
-      "lugar": "La Floresta 1 y 2",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Comercio, El Universo y Metro Ecuador, 25 nov, noche)",
-      "fecha": "25 nov, noche"
-    },
-    {
-      "lat": -2.19,
-      "lon": -79.995,
-      "lugar": "Bosque de la Costa (vía a la Costa)",
-      "canton": "Guayaquil",
-      "nivel": "acumulacion",
-      "detalle": "Acumulación de agua; no se informó la altura (ubicación aproximada).",
-      "fuente": "Segura EP (El Universo 20:18 y El Comercio 22:13, 25 nov 2026)",
-      "fecha": "25 nov, noche"
+      "detalle": "Acumulación de agua en la intersección con la Costanera y en la bajada del puente; no se informó la altura (ubicación aproximada).",
+      "fuente": "El Universo, 26 nov 2026, 22:40",
+      "fecha": "26 nov, noche"
     }
   ],
   "recurrentes": [
@@ -657,5 +327,5 @@
       "fuente": "El Universo, 9 nov"
     }
   ],
-  "fuentes": "Segura EP / C5GYE y ATM (Extra 06:44, El Comercio 09:16, Vistazo 07:00 y Metro Ecuador 06:54, 26 nov), ECU 911 (El Universo, 25 nov, noche), SNGR (corte 26 nov 07:01 vía El Comercio), INAMHI (advertencia N.º 90 y pronóstico por cantón vía Qué Noticias y El Universo, 26 nov), INOCAR (tabla de mareas Guayaquil-río vía Vistazo, 26 nov), Municipio de Samborondón"
+  "fuentes": "Segura EP / C5GYE (Extra, Teleamazonas y Vistazo, noche del 26 nov), ATM (El Comercio, 26 nov), ECU 911 y Bomberos de Guayaquil (El Universo y Vistazo, 26 nov), INAMHI (advertencia N.º 90 vía Teleamazonas y El Universo), INOCAR (tabla de mareas Guayaquil-río vía Vistazo y Extra, 26 nov), Municipio de Samborondón"
 }
